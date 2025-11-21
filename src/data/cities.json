@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Austin",
+        "state": "TX",
+        "cost_of_living_factor": 1.1,
+        "vet_cost_factor": 1.2,
+        "climate": "Hot summers, mild winters",
+        "notes": "Dog friendly city"
+    },
+    {
+        "name": "New York",
+        "state": "NY",
+        "cost_of_living_factor": 1.8,
+        "vet_cost_factor": 1.9,
+        "climate": "Cold winters, hot summers",
+        "notes": "Apartment living dominant"
+    }
+]

@@ -1,0 +1,76 @@
+{
+    "id": "quiz_lifestyle_001",
+    "slug": "lifestyle-match-quiz",
+    "title": "Find Your Perfect Dog Breed",
+    "description": "Answer 3 questions to find the best dog breed for your lifestyle.",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "Do you live in an apartment?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "yes",
+                    "label": "Yes",
+                    "value": 5
+                },
+                {
+                    "id": "no",
+                    "label": "No, I have a yard",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "id": "q2",
+            "text": "How active are you?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "low",
+                    "label": "Couch potato",
+                    "value": 0
+                },
+                {
+                    "id": "med",
+                    "label": "Daily walks",
+                    "value": 5
+                },
+                {
+                    "id": "high",
+                    "label": "Runner / Hiker",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "id": "active_breed",
+            "min_score": 10,
+            "max_score": 15,
+            "title": "Active Breeds (Golden Retriever, etc.)",
+            "description": "You need a high-energy dog to keep up with you!",
+            "cta_label": "View Golden Retrievers",
+            "cta_url": "/breeds/golden-retriever"
+        },
+        {
+            "id": "apartment_breed",
+            "min_score": 5,
+            "max_score": 9,
+            "title": "Apartment Friendly (Frenchie, etc.)",
+            "description": "A smaller, lower energy dog is best for your space.",
+            "cta_label": "View French Bulldogs",
+            "cta_url": "/breeds/french-bulldog"
+        },
+        {
+            "id": "chill_breed",
+            "min_score": 0,
+            "max_score": 4,
+            "title": "Chill Companions",
+            "description": "Look for a low-maintenance buddy.",
+            "cta_label": "View Top Lap Dogs",
+            "cta_url": "/lists/best-dogs-for-apartments"
+        }
+    ]
+}

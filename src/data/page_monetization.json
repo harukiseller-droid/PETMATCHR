@@ -1,0 +1,42 @@
+[
+    {
+        "slug": "golden-retriever-cost-austin-texas",
+        "page_type": "cost",
+        "cluster": "insurance",
+        "primary_funnel": "insurance_quiz",
+        "secondary_funnels": [
+            "lifestyle_quiz"
+        ],
+        "primary_offer_type": "insurance_offer",
+        "secondary_offer_types": [
+            "generic_affiliate"
+        ],
+        "show_ads": true,
+        "show_email_capture": true,
+        "primary_quiz_slug": "insurance-fit-quiz",
+        "secondary_quiz_slugs": [
+            "lifestyle-match-quiz"
+        ],
+        "primary_campaign_id": "camp_ins_001"
+    },
+    {
+        "slug": "golden-retriever-separation-anxiety",
+        "page_type": "problem",
+        "cluster": "training",
+        "primary_funnel": "behavior_quiz",
+        "secondary_funnels": [
+            "insurance_quiz"
+        ],
+        "primary_offer_type": "training_course",
+        "secondary_offer_types": [
+            "cbd_offer"
+        ],
+        "show_ads": false,
+        "show_email_capture": true,
+        "primary_quiz_slug": "behavior-check-quiz",
+        "secondary_quiz_slugs": [
+            "insurance-fit-quiz"
+        ],
+        "primary_campaign_id": "camp_train_001"
+    }
+]

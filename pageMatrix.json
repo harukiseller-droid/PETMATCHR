@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "golden-retriever-cost-undefined",
+    "page_type": "cost",
+    "data": {
+      "breed_name": "Golden Retriever",
+      "city_name": "Austin",
+      "state_code": "TX"
+    }
+  },
+  {
+    "slug": "golden-retriever-cost-undefined",
+    "page_type": "cost",
+    "data": {
+      "breed_name": "Golden Retriever",
+      "city_name": "New York",
+      "state_code": "NY"
+    }
+  },
+  {
+    "slug": "french-bulldog-cost-undefined",
+    "page_type": "cost",
+    "data": {
+      "breed_name": "French Bulldog",
+      "city_name": "Austin",
+      "state_code": "TX"
+    }
+  },
+  {
+    "slug": "french-bulldog-cost-undefined",
+    "page_type": "cost",
+    "data": {
+      "breed_name": "French Bulldog",
+      "city_name": "New York",
+      "state_code": "NY"
+    }
+  },
+  {
+    "slug": "golden-retriever-separation-anxiety",
+    "page_type": "problem",
+    "data": {
+      "breed_name": "Golden Retriever"
+    }
+  },
+  {
+    "slug": "golden-retriever-excessive-barking",
+    "page_type": "problem",
+    "data": {
+      "breed_name": "Golden Retriever"
+    }
+  },
+  {
+    "slug": "french-bulldog-separation-anxiety",
+    "page_type": "problem",
+    "data": {
+      "breed_name": "French Bulldog"
+    }
+  },
+  {
+    "slug": "french-bulldog-excessive-barking",
+    "page_type": "problem",
+    "data": {
+      "breed_name": "French Bulldog"
+    }
+  },
+  {
+    "slug": "golden-retriever-vs-french-bulldog",
+    "page_type": "comparison",
+    "data": {
+      "breed1_name": "Golden Retriever",
+      "breed2_name": "French Bulldog"
+    }
+  },
+  {
+    "slug": "golden-retriever-anxiety",
+    "page_type": "anxiety",
+    "data": {
+      "breed_name": "Golden Retriever"
+    }
+  },
+  {
+    "slug": "french-bulldog-anxiety",
+    "page_type": "anxiety",
+    "data": {
+      "breed_name": "French Bulldog"
+    }
+  },
+  {
+    "slug": "best-dogs-for-undefined",
+    "page_type": "location",
+    "data": {
+      "city_name": "Austin"
+    }
+  },
+  {
+    "slug": "best-dogs-for-undefined",
+    "page_type": "location",
+    "data": {
+      "city_name": "New York"
+    }
+  },
+  {
+    "slug": "best-dogs-for-apartments",
+    "page_type": "list",
+    "data": {
+      "lifestyle_name": "apartments"
+    }
+  },
+  {
+    "slug": "best-dogs-for-families",
+    "page_type": "list",
+    "data": {
+      "lifestyle_name": "families"
+    }
+  },
+  {
+    "slug": "best-dogs-for-active-owners",
+    "page_type": "list",
+    "data": {
+      "lifestyle_name": "active-owners"
+    }
+  }
+]

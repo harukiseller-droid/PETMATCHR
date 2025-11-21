@@ -1,0 +1,20 @@
+[
+    {
+        "breed_id": "golden-retriever",
+        "apartment_score": 3,
+        "busy_worker_score": 3,
+        "family_with_kids_score": 9,
+        "allergy_friendly_score": 2,
+        "beginner_friendly_score": 5,
+        "active_outdoor_score": 9
+    },
+    {
+        "breed_id": "french-bulldog",
+        "apartment_score": 9,
+        "busy_worker_score": 6,
+        "family_with_kids_score": 7,
+        "allergy_friendly_score": 3,
+        "beginner_friendly_score": 8,
+        "active_outdoor_score": 4
+    }
+]

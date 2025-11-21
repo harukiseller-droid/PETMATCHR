@@ -1,0 +1,81 @@
+{
+    "id": "quiz_behavior_001",
+    "slug": "behavior-check-quiz",
+    "title": "Dog Behavior Assessment",
+    "description": "Is your dog's behavior normal or a sign of a deeper issue? Get a quick assessment.",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "Does your dog bark excessively when you leave?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "never",
+                    "label": "Never",
+                    "value": 0
+                },
+                {
+                    "id": "sometimes",
+                    "label": "Sometimes (5-10 mins)",
+                    "value": 5
+                },
+                {
+                    "id": "always",
+                    "label": "Always / For hours",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "id": "q2",
+            "text": "Has your dog ever destroyed furniture or doors?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "no",
+                    "label": "No",
+                    "value": 0
+                },
+                {
+                    "id": "minor",
+                    "label": "Minor chewing",
+                    "value": 5
+                },
+                {
+                    "id": "major",
+                    "label": "Yes, significant damage",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "id": "severe",
+            "min_score": 15,
+            "max_score": 20,
+            "title": "Severe Separation Anxiety Likely",
+            "description": "Your dog shows signs of severe distress. Professional training or vet intervention is recommended.",
+            "cta_label": "View Training Course",
+            "cta_url": "https://partner.link/training"
+        },
+        {
+            "id": "mild",
+            "min_score": 5,
+            "max_score": 14,
+            "title": "Mild Anxiety / Boredom",
+            "description": "This might be boredom or mild anxiety. Increasing exercise and mental stimulation often helps.",
+            "cta_label": "See Mental Games",
+            "cta_url": "/articles/brain-games"
+        },
+        {
+            "id": "normal",
+            "min_score": 0,
+            "max_score": 4,
+            "title": "Normal Behavior",
+            "description": "Your dog seems well-adjusted! Keep up the good work.",
+            "cta_label": "Browse Fun Toys",
+            "cta_url": "https://partner.link/toys"
+        }
+    ]
+}

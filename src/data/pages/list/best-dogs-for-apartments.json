@@ -1,0 +1,50 @@
+{
+    "slug": "best-dogs-for-apartments",
+    "meta": {
+        "title": "Best Dogs for Apartments: Top Breeds for Small Spaces",
+        "description": "Living in an apartment? These dog breeds are quiet, low-energy, and perfect for small spaces. See our top picks."
+    },
+    "h1": "Best Dogs for Apartments",
+    "intro": {
+        "title": "Finding the Perfect Apartment Dog",
+        "description": "Not all dogs are happy in small spaces. The best apartment dogs are generally quiet, have lower energy levels, and are polite with neighbors."
+    },
+    "ranking_table": [
+        {
+            "rank": 1,
+            "breed_name": "French Bulldog",
+            "score": 9.8,
+            "one_line_reason": "Quiet, low energy, and loves to lounge."
+        },
+        {
+            "rank": 2,
+            "breed_name": "Cavalier King Charles Spaniel",
+            "score": 9.5,
+            "one_line_reason": "Gentle, affectionate, and adaptable."
+        },
+        {
+            "rank": 3,
+            "breed_name": "Pug",
+            "score": 9.2,
+            "one_line_reason": "Charming, small, and doesn't need much exercise."
+        }
+    ],
+    "breed_snippets": [
+        {
+            "breed_slug": "french-bulldog",
+            "breed_name": "French Bulldog",
+            "description": "Frenchies are the ultimate apartment dogs. They rarely bark and are happy with short walks."
+        },
+        {
+            "breed_slug": "cavalier-king-charles-spaniel",
+            "breed_name": "Cavalier King Charles Spaniel",
+            "description": "These spaniels are true lap dogs. They are friendly with everyone and content indoors."
+        }
+    ],
+    "cta": {
+        "quiz_anchor": "Still not sure? Take the Lifestyle Match Quiz to find your perfect breed.",
+        "secondary_anchor": "Check out our guide on Potty Training in an Apartment."
+    },
+    "quick_answers": [],
+    "faq": []
+}

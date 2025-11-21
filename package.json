@@ -1,0 +1,30 @@
+{
+  "name": "petmatchr-v7",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:matrix": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\" scripts/pageMatrix.ts",
+    "gen:content": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\" scripts/generate-pages.ts",
+    "qa": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\" scripts/qa-check.ts",
+    "sitemap": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\" scripts/sitemap-generator.ts"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "openai": "^4.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}

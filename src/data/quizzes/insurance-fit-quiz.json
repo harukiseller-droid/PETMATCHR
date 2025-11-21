@@ -1,0 +1,103 @@
+{
+    "id": "quiz_insurance_001",
+    "slug": "insurance-fit-quiz",
+    "title": "Is Pet Insurance Worth It For You?",
+    "description": "Find out if pet insurance makes financial sense for your specific situation in under 60 seconds.",
+    "questions": [
+        {
+            "id": "q1",
+            "text": "How old is your dog?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "puppy",
+                    "label": "Puppy (under 1 year)",
+                    "value": 10
+                },
+                {
+                    "id": "adult",
+                    "label": "Adult (1-7 years)",
+                    "value": 5
+                },
+                {
+                    "id": "senior",
+                    "label": "Senior (8+ years)",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "id": "q2",
+            "text": "What breed size is your dog?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "small",
+                    "label": "Small / Toy",
+                    "value": 5
+                },
+                {
+                    "id": "medium",
+                    "label": "Medium",
+                    "value": 5
+                },
+                {
+                    "id": "large",
+                    "label": "Large / Giant",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "id": "q3",
+            "text": "Could you comfortably pay a $3,000 vet bill today?",
+            "type": "single_choice",
+            "options": [
+                {
+                    "id": "yes_easy",
+                    "label": "Yes, no problem",
+                    "value": 0
+                },
+                {
+                    "id": "yes_hard",
+                    "label": "Yes, but it would hurt",
+                    "value": 5
+                },
+                {
+                    "id": "no",
+                    "label": "No, I would struggle",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "id": "high_fit",
+            "min_score": 20,
+            "max_score": 30,
+            "title": "High Priority: Insurance is Highly Recommended",
+            "description": "Based on your answers, you are in a high-risk category for expensive vet bills. Locking in a policy now could save you thousands.",
+            "cta_label": "See Top Rated Plans",
+            "cta_url": "https://partner.link/insurance"
+        },
+        {
+            "id": "medium_fit",
+            "min_score": 10,
+            "max_score": 19,
+            "title": "Medium Priority: Consider Accident-Only or Major Medical",
+            "description": "You have some risk factors. If a full policy is too pricey, look for accident-only coverage to protect against catastrophes.",
+            "cta_label": "Compare Basic Plans",
+            "cta_url": "https://partner.link/insurance"
+        },
+        {
+            "id": "low_fit",
+            "min_score": 0,
+            "max_score": 9,
+            "title": "Low Priority: Self-Insurance Might Work",
+            "description": "You seem financially prepared or have a lower-risk dog. Putting money into a savings account might be a better option for you.",
+            "cta_label": "Learn About Savings Accounts",
+            "cta_url": "/articles/pet-savings-account"
+        }
+    ]
+}

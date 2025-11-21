@@ -1,0 +1,38 @@
+{
+    "slug": "best-dogs-for-austin-texas",
+    "meta": {
+        "title": "Best Dogs for Austin, Texas Living",
+        "description": "Living in Austin? Here are the best dog breeds for the climate and lifestyle."
+    },
+    "h1": "Best Dogs for Austin, TX",
+    "city": "Austin",
+    "state": "TX",
+    "intro": "Austin is one of the most dog-friendly cities in the US, but the heat can be tough on some breeds.",
+    "top_breeds_for_city": [
+        {
+            "slug": "golden-retriever",
+            "name": "Golden Retriever",
+            "reason": "Great for the many parks and swimming spots like Barton Springs."
+        },
+        {
+            "slug": "vizsla",
+            "name": "Vizsla",
+            "reason": "Handles the heat well and loves the active lifestyle."
+        }
+    ],
+    "local_tips": [
+        {
+            "title": "Watch the Heat",
+            "content": "Pavement gets hot quickly. Walk early in the morning during summer."
+        },
+        {
+            "title": "Leash Laws",
+            "content": "Most parks require leashes, but there are designated off-leash areas."
+        }
+    ],
+    "cta": {
+        "quiz_anchor": "Find your perfect Austin companion"
+    },
+    "quick_answers": [],
+    "faq": []
+}

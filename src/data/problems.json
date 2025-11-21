@@ -1,0 +1,14 @@
+[
+    {
+        "id": "separation-anxiety",
+        "slug": "separation-anxiety",
+        "name": "Separation Anxiety",
+        "description": "Distress when left alone"
+    },
+    {
+        "id": "excessive-barking",
+        "slug": "excessive-barking",
+        "name": "Excessive Barking",
+        "description": "Barking at everything"
+    }
+]

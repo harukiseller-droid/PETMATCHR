@@ -1,0 +1,16 @@
+[
+    {
+        "breed_id": "golden-retriever",
+        "base_price_min": 1500,
+        "base_price_max": 3500,
+        "food_monthly_min": 70,
+        "food_monthly_max": 120
+    },
+    {
+        "breed_id": "french-bulldog",
+        "base_price_min": 2000,
+        "base_price_max": 4000,
+        "food_monthly_min": 50,
+        "food_monthly_max": 90
+    }
+]
