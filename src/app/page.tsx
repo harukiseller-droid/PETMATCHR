@@ -226,7 +226,7 @@ export default function HomePage() {
                             {
                                 title: "Compare two breeds",
                                 desc: "Torn between two options? Get a clear verdict with trade-offs for your home.",
-                                link: "/compare/golden-retriever-vs-labrador-apartments",
+                                link: "/compare/golden-retriever-vs-french-bulldog",
                                 linkText: "See a comparison example"
                             },
                             {

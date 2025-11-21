@@ -20,9 +20,13 @@ vercel --prod
 Muốn commit tất cả thay đổi trong repo thay vì chỉ 1 file:
 
 git add .
-git commit -m "update content"
+git commit -m "update content + clear cache deploy"
 git push origin main
-vercel --prod
+vercel --prod --force
+
+
+vercel --prod --force
+
 
 
 =====================
