@@ -1,5 +1,13 @@
 import { notFound } from "next/navigation";
-import { getBreedBySlug, getLifestyleScoreForBreed, getBreedPageBySlug } from "@/lib/data";
+import {
+    getBreedBySlug,
+    getLifestyleScoreForBreed,
+    getBreedPageBySlug,
+    getCostPagesForBreed,
+    getProblemPagesForBreed,
+    getAnxietyPagesForBreed,
+    getComparisonPagesForBreed
+} from "@/lib/data";
 import BreedPageView from "@/components/BreedPageView";
 import { Metadata } from "next";
 
@@ -29,11 +37,20 @@ export default async function BreedPage({ params }: PageProps) {
         notFound();
     }
 
+    const costPages = await getCostPagesForBreed(slug);
+    const problemPages = await getProblemPagesForBreed(slug);
+    const anxietyPages = await getAnxietyPagesForBreed(slug);
+    const comparisonPages = await getComparisonPagesForBreed(slug);
+
     return (
         <BreedPageView
             breed={breed}
             scores={scores}
             content={content}
+            costPages={costPages}
+            problemPages={problemPages}
+            anxietyPages={anxietyPages}
+            comparisonPages={comparisonPages}
         />
     );
 }

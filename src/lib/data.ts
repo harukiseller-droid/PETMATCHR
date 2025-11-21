@@ -103,7 +103,68 @@ export async function getCities(): Promise<City[]> {
     return JSON.parse(data);
 }
 
-export async function getCityBySlug(slug: string): Promise<City | null> {
-    const cities = await getCities();
-    return cities.find((c) => c.name.toLowerCase().replace(/ /g, '-') === slug || c.name.toLowerCase() === slug) || null;
+
+export async function getCostPagesForBreed(breedSlug: string): Promise<CostPage[]> {
+    const dir = path.join(DATA_DIR, 'pages', 'cost');
+    try {
+        const files = await fs.readdir(dir);
+        const pages = await Promise.all(
+            files.map(async (file) => {
+                const data = await fs.readFile(path.join(dir, file), 'utf-8');
+                return JSON.parse(data) as CostPage;
+            })
+        );
+        return pages.filter(p => p.slug.includes(breedSlug));
+    } catch (e) {
+        return [];
+    }
 }
+
+export async function getProblemPagesForBreed(breedSlug: string): Promise<ProblemPage[]> {
+    const dir = path.join(DATA_DIR, 'pages', 'problem');
+    try {
+        const files = await fs.readdir(dir);
+        const pages = await Promise.all(
+            files.map(async (file) => {
+                const data = await fs.readFile(path.join(dir, file), 'utf-8');
+                return JSON.parse(data) as ProblemPage;
+            })
+        );
+        return pages.filter(p => p.slug.includes(breedSlug));
+    } catch (e) {
+        return [];
+    }
+}
+
+export async function getAnxietyPagesForBreed(breedSlug: string): Promise<AnxietyPage[]> {
+    const dir = path.join(DATA_DIR, 'pages', 'anxiety');
+    try {
+        const files = await fs.readdir(dir);
+        const pages = await Promise.all(
+            files.map(async (file) => {
+                const data = await fs.readFile(path.join(dir, file), 'utf-8');
+                return JSON.parse(data) as AnxietyPage;
+            })
+        );
+        return pages.filter(p => p.slug.includes(breedSlug));
+    } catch (e) {
+        return [];
+    }
+}
+
+export async function getComparisonPagesForBreed(breedSlug: string): Promise<ComparisonPage[]> {
+    const dir = path.join(DATA_DIR, 'pages', 'comparison');
+    try {
+        const files = await fs.readdir(dir);
+        const pages = await Promise.all(
+            files.map(async (file) => {
+                const data = await fs.readFile(path.join(dir, file), 'utf-8');
+                return JSON.parse(data) as ComparisonPage;
+            })
+        );
+        return pages.filter(p => p.breed_1 === breedSlug || p.breed_2 === breedSlug);
+    } catch (e) {
+        return [];
+    }
+}
+

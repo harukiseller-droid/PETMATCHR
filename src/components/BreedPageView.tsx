@@ -1,14 +1,28 @@
 import React from "react";
-import { Breed, LifestyleScore, BreedPage } from "@/lib/types";
+import { Breed, LifestyleScore, BreedPage, CostPage, ProblemPage, AnxietyPage, ComparisonPage } from "@/lib/types";
 import Link from "next/link";
 
 interface BreedPageViewProps {
     breed: Breed;
     scores: LifestyleScore | null;
     content: BreedPage;
+    costPages?: CostPage[];
+    problemPages?: ProblemPage[];
+    anxietyPages?: AnxietyPage[];
+    comparisonPages?: ComparisonPage[];
 }
 
-export default function BreedPageView({ breed, scores, content }: BreedPageViewProps) {
+export default function BreedPageView({
+    breed,
+    scores,
+    content,
+    costPages = [],
+    problemPages = [],
+    anxietyPages = [],
+    comparisonPages = []
+}: BreedPageViewProps) {
+    const hasRelatedGuides = costPages.length > 0 || problemPages.length > 0 || anxietyPages.length > 0 || comparisonPages.length > 0;
+
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}
@@ -90,6 +104,39 @@ export default function BreedPageView({ breed, scores, content }: BreedPageViewP
                             ))}
                         </div>
                     </section>
+
+                    {/* Related Guides */}
+                    {hasRelatedGuides && (
+                        <section className="border-t border-gray-200 pt-12">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">More Guides for {breed.name}s</h2>
+                            <div className="grid gap-4 sm:grid-cols-2">
+                                {costPages.map(page => (
+                                    <Link key={page.slug} href={`/cost/${page.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
+                                        <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Cost</span>
+                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                    </Link>
+                                ))}
+                                {problemPages.map(page => (
+                                    <Link key={page.slug} href={`/problems/${page.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
+                                        <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">Problem</span>
+                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                    </Link>
+                                ))}
+                                {anxietyPages.map(page => (
+                                    <Link key={page.slug} href={`/anxiety/${page.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
+                                        <span className="text-xs font-bold text-purple-600 uppercase tracking-wider">Anxiety</span>
+                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                    </Link>
+                                ))}
+                                {comparisonPages.map(page => (
+                                    <Link key={page.slug} href={`/compare/${page.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
+                                        <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Compare</span>
+                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                    </Link>
+                                ))}
+                            </div>
+                        </section>
+                    )}
 
                 </div>
 

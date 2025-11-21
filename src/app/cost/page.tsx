@@ -14,6 +14,11 @@ export default function CostIndexPage() {
             title: "Golden Retriever in Austin, TX",
             slug: "golden-retriever-austin-tx",
             description: "First-year and monthly cost breakdown for a Golden Retriever in Austin."
+        },
+        {
+            title: "Golden Retriever in New York, NY",
+            slug: "golden-retriever-new-york-ny",
+            description: "High-cost city breakdown for owning a Golden in NYC."
         }
     ];
 
