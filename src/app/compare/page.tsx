@@ -46,7 +46,7 @@ export default async function ComparePage() {
                         </div>
                         <div>
                             <div className="w-12 h-12 mx-auto bg-slate-900 rounded-full flex items-center justify-center mb-4 text-emerald-400 font-bold text-lg border border-slate-800">
-                                🧠
+                                B
                             </div>
                             <h3 className="text-lg font-bold text-slate-100 mb-2">Behavior Check</h3>
                             <p className="text-sm text-slate-400">Compare separation anxiety, barking, and training difficulty side-by-side.</p>

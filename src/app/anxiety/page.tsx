@@ -1,12 +1,25 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { getPageIndex } from "@/lib/internal-links";
 
 export const metadata: Metadata = {
     title: "Dog Anxiety Guides | PetMatchr",
     description: "Expert guides on handling separation anxiety, noise phobias, and travel stress in dogs.",
 };
 
-export default function AnxietyIndexPage() {
+export default async function AnxietyIndexPage() {
+    const index = await getPageIndex();
+    const anxietyEntries = index.filter((entry) => entry.page_type === "anxiety");
+
+    // Normalize entries and fall back to a single known guide if index data is empty
+    const normalizedPages = (anxietyEntries.length ? anxietyEntries : [
+        { slug: "golden-retriever", title: "Golden Retriever Anxiety", blurb: "Do Golden Retrievers get anxiety? Learn the signs and how to help your anxious Golden." }
+    ]).map((entry) => ({
+        slug: entry.slug,
+        title: "short_label" in entry && entry.short_label ? entry.short_label : entry.title,
+        description: "blurb" in entry && entry.blurb ? entry.blurb : entry.title
+    })).sort((a, b) => a.title.localeCompare(b.title));
+
     return (
         <main className="min-h-screen bg-slate-950 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
@@ -18,20 +31,23 @@ export default function AnxietyIndexPage() {
                 </div>
 
                 <div className="grid gap-6">
-                    <Link
-                        href="/anxiety/golden-retriever"
-                        className="group block rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-purple-500/50 hover:bg-slate-900 transition-all"
-                    >
-                        <h2 className="text-2xl font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">
-                            Golden Retriever Anxiety
-                        </h2>
-                        <p className="text-slate-400 mb-4">
-                            Specific tips for calming the sensitive Golden Retriever soul.
-                        </p>
-                        <div className="flex items-center text-sm font-medium text-purple-500">
-                            Read Guide <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                        </div>
-                    </Link>
+                    {normalizedPages.map((page) => (
+                        <Link
+                            key={page.slug}
+                            href={`/anxiety/${page.slug}`}
+                            className="group block rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-purple-500/50 hover:bg-slate-900 transition-all"
+                        >
+                            <h2 className="text-2xl font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">
+                                {page.title}
+                            </h2>
+                            <p className="text-slate-400 mb-4">
+                                {page.description}
+                            </p>
+                            <div className="flex items-center text-sm font-medium text-purple-500">
+                                Read Guide <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </main>

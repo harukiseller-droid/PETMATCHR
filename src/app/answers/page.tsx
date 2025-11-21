@@ -77,7 +77,7 @@ export default function AnswersHubPage() {
                         <div className="flex justify-center gap-4">
                             <Link href="/breeds/golden-retriever" className="text-indigo-600 hover:underline">Golden Retrievers</Link>
                             <span className="text-gray-300">|</span>
-                            <Link href="/cost/golden-retriever-cost-austin-texas" className="text-indigo-600 hover:underline">Cost Guides</Link>
+                            <Link href="/cost/golden-retriever-austin-tx" className="text-indigo-600 hover:underline">Cost Guides</Link>
                             <span className="text-gray-300">|</span>
                             <Link href="/problems/golden-retriever-separation-anxiety" className="text-indigo-600 hover:underline">Problem Solving</Link>
                         </div>

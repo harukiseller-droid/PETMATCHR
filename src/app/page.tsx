@@ -208,38 +208,44 @@ export default function HomePage() {
                             {
                                 title: "Explore breeds",
                                 desc: "Honest guides for each breed: personality, exercise, shedding, kids, apartments, and more.",
-                                link: "/breeds/golden-retriever",
-                                linkText: "View a breed guide"
+                                link: "/breeds",
+                                linkText: "View breed library"
                             },
                             {
                                 title: "See real-world costs",
                                 desc: "First-year vs monthly costs, emergency fund ranges, and when insurance actually makes sense.",
-                                link: "/cost/golden-retriever-austin-tx",
-                                linkText: "Check a cost breakdown"
+                                link: "/cost",
+                                linkText: "Open cost hub"
                             },
                             {
                                 title: "Fix behavior & anxiety",
                                 desc: "Separation anxiety, barking, reactivity, and more — explained by breed with step-by-step plans.",
-                                link: "/problems/golden-retriever-separation-anxiety",
-                                linkText: "See a problem guide"
+                                link: "/problems",
+                                linkText: "Browse problem guides"
                             },
                             {
                                 title: "Compare two breeds",
                                 desc: "Torn between two options? Get a clear verdict with trade-offs for your home.",
-                                link: "/compare/golden-retriever-vs-french-bulldog",
-                                linkText: "See a comparison example"
+                                link: "/compare",
+                                linkText: "Use the comparison tool"
                             },
                             {
                                 title: "Anxiety & calming",
                                 desc: "Understand anxiety patterns by breed and when calming tools or vet guidance are worth exploring.",
-                                link: "/anxiety/golden-retriever-separation-anxiety",
-                                linkText: "Explore an anxiety profile"
+                                link: "/anxiety",
+                                linkText: "Explore anxiety hub"
                             },
                             {
                                 title: "Dog life in your city",
                                 desc: "Climate, vet costs, and dog-friendliness for your city — plus breeds that thrive there.",
                                 link: "/locations/austin-tx",
                                 linkText: "See a city example"
+                            },
+                            {
+                                title: "Curated lists",
+                                desc: "Shortcut to the best dogs for families, apartments, and more — all in one place.",
+                                link: "/lists/best-family-dogs",
+                                linkText: "Browse top lists"
                             }
                         ].map((card, i) => (
                             <div key={i} className="flex flex-col justify-between rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/50 transition-colors">
