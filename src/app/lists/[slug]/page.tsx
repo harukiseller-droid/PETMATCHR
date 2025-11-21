@@ -5,7 +5,9 @@ import ListPageView from "@/components/ListPageView";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-    return getAllStaticParams().list || [];
+    const params = getAllStaticParams();
+    // folder trong data là "list", không phải "lists"
+    return params.list ?? [];
 }
 
 interface PageProps {
@@ -17,7 +19,6 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const page = await getListPageBySlug(params.slug);
     if (!page) return {};
-
     return {
         title: page.meta.title,
         description: page.meta.description,
@@ -25,8 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ListPage({ params }: PageProps) {
-    const { slug } = params;
-    const page = await getListPageBySlug(slug);
+    const page = await getListPageBySlug(params.slug);
 
     if (!page) {
         notFound();
