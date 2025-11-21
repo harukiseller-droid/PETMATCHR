@@ -1,0 +1,43 @@
+{
+    "slug": "golden-retriever-noise-anxiety",
+    "meta": {
+        "title": "Golden Retriever Noise Anxiety: Thunder & Fireworks",
+        "description": "Help your Golden Retriever cope with loud noises like thunder and fireworks. Effective calming strategies and desensitization tips."
+    },
+    "h1": "Helping a Golden Retriever with Noise Anxiety",
+    "breed": "Golden Retriever",
+    "anxiety_type": "Noise Phobia",
+    "symptoms": [
+        "Trembling during storms",
+        "Hiding in bathtubs or closets",
+        "Pacing and panting"
+    ],
+    "triggers": [
+        "Thunderstorms",
+        "Fireworks",
+        "Construction noise"
+    ],
+    "solutions": [
+        {
+            "title": "Create a Safe Space",
+            "description": "Soundproof a room or use a crate covered with heavy blankets."
+        },
+        {
+            "title": "White Noise",
+            "description": "Use fans or calming music to mask the scary sounds."
+        },
+        {
+            "title": "Thundershirt",
+            "description": "Pressure wraps can provide a calming effect."
+        }
+    ],
+    "product_recommendations": [
+        "Thundershirt",
+        "Calming Chews",
+        "White Noise Machine"
+    ],
+    "monetization": {
+        "cbd_cta": "Try CBD for Noise Anxiety",
+        "cbd_url": "https://example.com/cbd-noise"
+    }
+}

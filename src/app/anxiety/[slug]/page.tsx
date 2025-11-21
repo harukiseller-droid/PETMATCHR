@@ -25,10 +25,16 @@ export default async function AnxietyPage({ params }: Props) {
     const page = await getAnxietyPageBySlug(params.slug);
     if (!page) notFound();
 
+    // Resolve breed slug for back navigation
+    const { getBreeds } = await import("@/lib/data");
+    const breeds = await getBreeds();
+    const breed = breeds.find(b => b.name === page.breed); // Note: AnxietyPage uses 'breed' field, not 'hero.breed_name'
+    const breedSlug = breed?.slug;
+
     const monetization = await getPageMonetization(params.slug);
     const ctaConfig = monetization ? resolvePageCTAs(monetization, page) : {
         quizPrimary: null, quizSecondary: [], offerPrimary: null, offerSecondary: [], showAds: false, showEmailCapture: false
     };
 
-    return <AnxietyPageView page={page} ctaConfig={ctaConfig} />;
+    return <AnxietyPageView page={page} ctaConfig={ctaConfig} breedSlug={breedSlug} />;
 }

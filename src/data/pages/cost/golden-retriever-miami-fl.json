@@ -1,0 +1,50 @@
+{
+    "slug": "golden-retriever-miami-fl",
+    "meta": {
+        "title": "Golden Retriever Cost in Miami, FL (2025 Price Guide)",
+        "description": "Complete breakdown of Golden Retriever costs in Miami. Puppy prices, vet bills, grooming, and monthly expenses for Miami dog owners."
+    },
+    "h1": "How Much Does a Golden Retriever Cost in Miami?",
+    "last_updated": "2025-01-15",
+    "city": {
+        "name": "Miami",
+        "state": "FL",
+        "cost_index": 1.25
+    },
+    "breed": {
+        "name": "Golden Retriever",
+        "size": "Large"
+    },
+    "costs": {
+        "puppy_price": {
+            "low": 1200,
+            "high": 3000,
+            "average": 2200
+        },
+        "initial_setup": {
+            "supplies": 550,
+            "medical": 400,
+            "license": 50,
+            "microchip": 45
+        },
+        "monthly": {
+            "food": 85,
+            "insurance": 65,
+            "preventative_meds": 50,
+            "toys_treats": 35,
+            "grooming": 90,
+            "total_min": 220,
+            "total_max": 400
+        },
+        "annual_total": 3800
+    },
+    "local_insights": [
+        "Heartworm prevention is critical in Miami year-round, adding to monthly costs.",
+        "Grooming is essential due to humidity and heat.",
+        "Vet costs are moderately high compared to rural Florida."
+    ],
+    "monetization": {
+        "insurance_cta": "Get a quote for Miami Pet Insurance",
+        "insurance_url": "https://example.com/insurance-miami"
+    }
+}

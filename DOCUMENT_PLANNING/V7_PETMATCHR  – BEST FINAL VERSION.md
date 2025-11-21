@@ -3,6 +3,79 @@ PETMATCHR V7 – BEST FINAL VERSION
 Bản này đã gộp toàn bộ V6 + chỉnh lại cho mạch lạc, bỏ noise, giữ nguyên “xương sống” $5K/tháng sau 12 tháng.
 V6_PETMATCHR
 
+## PHẦN 1: EXECUTIVE SUMMARY
+
+**Tên dự án:** PetMatchr  
+**Tagline:** Find Your Perfect Pet Match  
+**Mô hình:** Programmatic SEO Directory + Quiz  
+**Timeline:** 6 tháng  
+**Budget:** $5,000  
+**Team:** 1-2 người (technical strong)  
+**Target Revenue tháng 6:** $1,500-3,000/tháng  
+
+---
+
+## PHẦN 2: PHẢN BIỆN IDEA - TẠI SAO PETMATCHR?
+
+### 2.1 Điểm mạnh
+
+| Yếu tố | Đánh giá | Giải thích |
+|--------|----------|------------|
+| **Market size** | ✅ Lớn | Pet industry $150B+, pet insurance market $5B (2024), CAGR 21% |
+| **Search demand** | ✅ Cao | "Best dog breed for apartment" - hàng chục nghìn searches/tháng |
+| **Competition** | ✅ Trung bình | AKC quiz đơn giản, không personalization sâu |
+| **Data availability** | ✅ Dễ | Breed data công khai (AKC, Wikipedia, các nguồn vet) |
+| **Monetization** | ✅ Rõ ràng | Pet insurance $36-125/lead, affiliate products 4-10% |
+| **Technical fit** | ✅ Phù hợp | Programmatic SEO cần technical skill - đúng thế mạnh |
+
+### 2.2 Điểm yếu & Rủi ro
+
+| Rủi ro | Mức độ | Mitigation |
+|--------|--------|------------|
+| SEO sandbox 3-6 tháng | Cao | Reddit/Quora marketing song song |
+| Affiliate approval cho site mới | Trung bình | Bắt đầu Amazon → upgrade sau |
+| Content quality bị Google đánh | Trung bình | Thêm unique data, UGC, expert quotes |
+| Đối thủ lớn copy | Thấp | First mover + niche deeper |
+
+### 2.3 Tại sao không bị AI thay thế?
+
+**AI CÓ THỂ:**
+- Liệt kê các breed phù hợp apartment
+- Mô tả đặc điểm từng breed
+- Trả lời câu hỏi đơn giản
+
+**AI KHÔNG THỂ:**
+- Cung cấp **database có cấu trúc** với 50+ traits có thể filter
+- Cho **quiz interactive** với scoring algorithm phức tạp
+- Hiển thị **comparison table** side-by-side nhiều breeds
+- Cung cấp **UGC reviews** từ owner thật
+- Link trực tiếp đến **affiliate/adoption** với tracking
+- Cập nhật **real-time data** về adoption availability
+- Tạo **personalized result page** có thể bookmark/share
+
+**Moat theo thời gian:**
+1. **Data moat:** Database breed traits chi tiết hơn đối thủ
+2. **UGC moat:** Reviews từ owner tích lũy
+3. **SEO moat:** Backlinks + authority xây dựng
+4. **Brand moat:** "PetMatchr" = đi-đến-đầu-tiên khi chọn pet
+
+---
+
+## PHẦN 3: KIẾN TRÚC KỸ THUẬT
+
+### 3.1 Tech Stack
+
+| Component | Lựa chọn | Lý do | Chi phí |
+|-----------|----------|-------|---------|
+| **Framework** | Next.js 14 | SSG cho SEO, React ecosystem | Free |
+| **Database** | Supabase | PostgreSQL, free tier đủ dùng | Free → $25/m |
+| **Hosting** | Vercel | Auto-deploy, edge CDN, fast | Free → $20/m |
+| **CMS** | Notion + API | Dễ edit content, free | Free |
+| **Analytics** | Plausible | Privacy-focused, lightweight | $9/m |
+| **Email** | ConvertKit | Free đến 1000 subs | Free |
+
+**Tổng chi phí hosting/tools:** ~$30-50/tháng
+====================
 EXECUTIVE SUMMARY – MỤC TIÊU 12 THÁNG
 Target 12 tháng (realistic–aggressive, không ảo)
 Pages live

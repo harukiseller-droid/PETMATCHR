@@ -1,0 +1,50 @@
+{
+    "slug": "golden-retriever-denver-co",
+    "meta": {
+        "title": "Golden Retriever Cost in Denver, CO (2025 Price Guide)",
+        "description": "Complete breakdown of Golden Retriever costs in Denver. Puppy prices, vet bills, grooming, and monthly expenses for Denver dog owners."
+    },
+    "h1": "How Much Does a Golden Retriever Cost in Denver?",
+    "last_updated": "2025-01-15",
+    "city": {
+        "name": "Denver",
+        "state": "CO",
+        "cost_index": 1.2
+    },
+    "breed": {
+        "name": "Golden Retriever",
+        "size": "Large"
+    },
+    "costs": {
+        "puppy_price": {
+            "low": 1200,
+            "high": 2800,
+            "average": 2000
+        },
+        "initial_setup": {
+            "supplies": 550,
+            "medical": 400,
+            "license": 25,
+            "microchip": 45
+        },
+        "monthly": {
+            "food": 85,
+            "insurance": 60,
+            "preventative_meds": 40,
+            "toys_treats": 35,
+            "grooming": 90,
+            "total_min": 210,
+            "total_max": 380
+        },
+        "annual_total": 3600
+    },
+    "local_insights": [
+        "Active outdoor lifestyle means higher spend on gear (harnesses, boots).",
+        "Vet costs are moderate but emergency care can be pricey.",
+        "Many apartments are dog-friendly but may charge pet rent."
+    ],
+    "monetization": {
+        "insurance_cta": "Get a quote for Denver Pet Insurance",
+        "insurance_url": "https://example.com/insurance-denver"
+    }
+}

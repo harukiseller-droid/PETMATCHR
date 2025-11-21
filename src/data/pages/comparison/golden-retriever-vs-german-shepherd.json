@@ -1,0 +1,39 @@
+{
+    "slug": "golden-retriever-vs-german-shepherd",
+    "meta": {
+        "title": "Golden Retriever vs German Shepherd: Breed Comparison",
+        "description": "Golden Retriever vs GSD: One is a lover, one is a protector. Which breed fits your lifestyle? Detailed comparison of temperament and needs."
+    },
+    "h1": "Golden Retriever vs German Shepherd",
+    "breed_1": "golden-retriever",
+    "breed_2": "german-shepherd",
+    "comparison_points": [
+        {
+            "title": "Temperament",
+            "breed_1_val": "Friendly, goofy",
+            "breed_2_val": "Loyal, protective",
+            "verdict": "Goldens love everyone; GSDs are devoted to their family but wary of strangers."
+        },
+        {
+            "title": "Exercise Needs",
+            "breed_1_val": "High",
+            "breed_2_val": "Very High",
+            "verdict": "GSDs need a 'job' and mental stimulation; Goldens are happy with fetch and walks."
+        },
+        {
+            "title": "Shedding",
+            "breed_1_val": "High",
+            "breed_2_val": "High (German Shedder)",
+            "verdict": "Both shed heavily. Get a good vacuum."
+        }
+    ],
+    "winner_for": {
+        "families": "Golden Retriever",
+        "protection": "German Shepherd",
+        "first_time_owners": "Golden Retriever"
+    },
+    "monetization": {
+        "insurance_cta": "Protect Your Large Breed Dog",
+        "insurance_url": "https://example.com/insurance-large-breed"
+    }
+}

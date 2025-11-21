@@ -1,0 +1,34 @@
+{
+    "slug": "miami-fl",
+    "meta": {
+        "title": "Best Dogs for Miami Living: Heat & Humidity Guide",
+        "description": "Living in Miami with a dog? Discover the best breeds for hot weather, top dog beaches, and tips for keeping your pup cool in the 305."
+    },
+    "h1": "Best Dogs for Miami, FL",
+    "city": {
+        "name": "Miami",
+        "state": "FL",
+        "climate": "Tropical",
+        "dog_friendly_score": 8.5
+    },
+    "top_breeds": [
+        "Golden Retriever",
+        "Labrador Retriever",
+        "Chihuahua",
+        "French Bulldog"
+    ],
+    "local_tips": [
+        "Avoid walking on hot pavement between 11 AM and 4 PM.",
+        "Heartworm prevention is mandatory year-round.",
+        "Many beaches have specific dog-friendly hours."
+    ],
+    "parks": [
+        "Haulover Beach Park (Dog Beach)",
+        "Tropical Park Dog Park",
+        "Margaret Pace Park"
+    ],
+    "monetization": {
+        "insurance_cta": "Protect Your Miami Pup",
+        "insurance_url": "https://example.com/insurance-miami"
+    }
+}

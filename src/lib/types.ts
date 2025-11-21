@@ -269,6 +269,7 @@ export type ComparisonPage = BasePage & {
 };
 
 export type AnxietyPage = BasePage & {
+    breed: string;
     hero: {
         title: string;
         subtitle: string;

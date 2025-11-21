@@ -30,6 +30,12 @@ export default async function CostPage({ params }: PageProps) {
         notFound();
     }
 
+    // Resolve breed slug for back navigation
+    const { getBreeds } = await import("@/lib/data");
+    const breeds = await getBreeds();
+    const breed = breeds.find(b => b.name === page.hero.breed_name);
+    const breedSlug = breed?.slug;
+
     // If no monetization config found, use a default or empty one to avoid crashing
     // In production, we should probably have defaults.
     const ctaConfig = monetization
@@ -40,6 +46,7 @@ export default async function CostPage({ params }: PageProps) {
         <CostPageView
             page={page}
             ctaConfig={ctaConfig}
+            breedSlug={breedSlug}
         />
     );
 }

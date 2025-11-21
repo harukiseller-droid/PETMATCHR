@@ -5,13 +5,21 @@ import Link from 'next/link';
 interface Props {
     page: AnxietyPage;
     ctaConfig: CTAConfig;
+    breedSlug?: string;
 }
 
-export default function AnxietyPageView({ page, ctaConfig }: Props) {
+export default function AnxietyPageView({ page, ctaConfig, breedSlug }: Props) {
     return (
         <div className="container mx-auto px-4 py-8">
             {/* Hero */}
             <header className="mb-12 text-center bg-purple-50 p-8 rounded-xl">
+                {breedSlug && (
+                    <div className="mb-4 text-left">
+                        <Link href={`/breeds/${breedSlug}`} className="text-purple-600 hover:text-purple-800 font-medium inline-block">
+                            &larr; Back to {page.breed} Profile
+                        </Link>
+                    </div>
+                )}
                 <h1 className="text-4xl font-bold mb-4">{page.h1}</h1>
                 <h2 className="text-2xl text-purple-800 mb-4">{page.hero.title}</h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">{page.hero.subtitle}</p>

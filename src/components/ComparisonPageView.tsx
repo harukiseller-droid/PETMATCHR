@@ -12,6 +12,15 @@ export default function ComparisonPageView({ page, ctaConfig }: Props) {
         <div className="container mx-auto px-4 py-8">
             {/* Hero */}
             <header className="mb-12 text-center">
+                <div className="flex justify-center gap-4 mb-6 text-sm">
+                    <Link href={`/breeds/${page.breed_1}`} className="text-indigo-600 hover:text-indigo-800 font-medium">
+                        &larr; Back to {page.breed_1.replace(/-/g, ' ')}
+                    </Link>
+                    <span className="text-gray-300">|</span>
+                    <Link href={`/breeds/${page.breed_2}`} className="text-indigo-600 hover:text-indigo-800 font-medium">
+                        Back to {page.breed_2.replace(/-/g, ' ')} &rarr;
+                    </Link>
+                </div>
                 <h1 className="text-4xl font-bold mb-4">{page.h1}</h1>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">{page.intro}</p>
             </header>
@@ -37,8 +46,8 @@ export default function ComparisonPageView({ page, ctaConfig }: Props) {
                                     <td className="border p-4">{point.breed_2_val}</td>
                                     <td className="border p-4">
                                         <span className={`px-2 py-1 rounded text-sm ${point.winner === page.breed_1 ? 'bg-blue-100 text-blue-800' :
-                                                point.winner === page.breed_2 ? 'bg-green-100 text-green-800' :
-                                                    'bg-gray-100 text-gray-800'
+                                            point.winner === page.breed_2 ? 'bg-green-100 text-green-800' :
+                                                'bg-gray-100 text-gray-800'
                                             }`}>
                                             {point.winner === 'tie' ? 'Tie' : point.winner}
                                         </span>

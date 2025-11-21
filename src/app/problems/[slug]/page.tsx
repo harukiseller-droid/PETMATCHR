@@ -30,6 +30,12 @@ export default async function ProblemPage({ params }: PageProps) {
         notFound();
     }
 
+    // Resolve breed slug for back navigation
+    const { getBreeds } = await import("@/lib/data");
+    const breeds = await getBreeds();
+    const breed = breeds.find(b => b.name === page.hero.breed_name);
+    const breedSlug = breed?.slug;
+
     const ctaConfig = monetization
         ? resolvePageCTAs(monetization, page)
         : null;
@@ -38,6 +44,7 @@ export default async function ProblemPage({ params }: PageProps) {
         <ProblemPageView
             page={page}
             ctaConfig={ctaConfig}
+            breedSlug={breedSlug}
         />
     );
 }

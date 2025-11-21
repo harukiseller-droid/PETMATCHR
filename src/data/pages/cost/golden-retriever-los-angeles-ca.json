@@ -1,0 +1,50 @@
+{
+    "slug": "golden-retriever-los-angeles-ca",
+    "meta": {
+        "title": "Golden Retriever Cost in Los Angeles, CA (2025 Price Guide)",
+        "description": "Complete breakdown of Golden Retriever costs in LA. Puppy prices, vet bills, grooming, and monthly expenses for Los Angeles dog owners."
+    },
+    "h1": "How Much Does a Golden Retriever Cost in Los Angeles?",
+    "last_updated": "2025-01-15",
+    "city": {
+        "name": "Los Angeles",
+        "state": "CA",
+        "cost_index": 1.45
+    },
+    "breed": {
+        "name": "Golden Retriever",
+        "size": "Large"
+    },
+    "costs": {
+        "puppy_price": {
+            "low": 1500,
+            "high": 3500,
+            "average": 2500
+        },
+        "initial_setup": {
+            "supplies": 600,
+            "medical": 450,
+            "license": 20,
+            "microchip": 50
+        },
+        "monthly": {
+            "food": 90,
+            "insurance": 75,
+            "preventative_meds": 45,
+            "toys_treats": 40,
+            "grooming": 100,
+            "total_min": 250,
+            "total_max": 450
+        },
+        "annual_total": 4200
+    },
+    "local_insights": [
+        "Vet costs in LA are 45% higher than the national average.",
+        "Dog walkers in LA charge $25-35 per 30-minute walk.",
+        "Grooming for a large Golden Retriever in LA typically costs $100-140."
+    ],
+    "monetization": {
+        "insurance_cta": "Get a quote for LA Pet Insurance",
+        "insurance_url": "https://example.com/insurance-la"
+    }
+}

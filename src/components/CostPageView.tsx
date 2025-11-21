@@ -5,14 +5,20 @@ import Link from "next/link";
 interface CostPageViewProps {
     page: CostPage;
     ctaConfig: CTAConfig | null;
+    breedSlug?: string;
 }
 
-export default function CostPageView({ page, ctaConfig }: CostPageViewProps) {
+export default function CostPageView({ page, ctaConfig, breedSlug }: CostPageViewProps) {
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
             {/* Hero */}
             <div className="bg-white border-b border-gray-200">
                 <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                    {breedSlug && (
+                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-600 hover:text-indigo-800 font-medium mb-4 inline-block">
+                            &larr; Back to {page.hero.breed_name} Profile
+                        </Link>
+                    )}
                     <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4">
                         {page.h1}
                     </h1>

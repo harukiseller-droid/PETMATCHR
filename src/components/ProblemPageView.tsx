@@ -5,14 +5,20 @@ import Link from "next/link";
 interface ProblemPageViewProps {
     page: ProblemPage;
     ctaConfig: CTAConfig | null;
+    breedSlug?: string;
 }
 
-export default function ProblemPageView({ page, ctaConfig }: ProblemPageViewProps) {
+export default function ProblemPageView({ page, ctaConfig, breedSlug }: ProblemPageViewProps) {
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
             {/* Hero */}
             <div className="bg-white border-b border-gray-200">
                 <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                    {breedSlug && (
+                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-600 hover:text-indigo-800 font-medium mb-4 inline-block">
+                            &larr; Back to {page.hero.breed_name} Profile
+                        </Link>
+                    )}
                     <div className="text-sm font-bold text-indigo-600 uppercase tracking-wide mb-2">
                         {page.hero.breed_name} Problem Guide
                     </div>

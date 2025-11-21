@@ -1,0 +1,39 @@
+{
+    "slug": "golden-retriever-vs-bernese",
+    "meta": {
+        "title": "Golden Retriever vs Bernese Mountain Dog: Gentle Giants",
+        "description": "Golden Retriever vs Bernese Mountain Dog. Comparing two of the most affectionate family dogs. Size, lifespan, and shedding differences."
+    },
+    "h1": "Golden Retriever vs Bernese Mountain Dog",
+    "breed_1": "golden-retriever",
+    "breed_2": "bernese-mountain-dog",
+    "comparison_points": [
+        {
+            "title": "Size",
+            "breed_1_val": "Large (55-75 lbs)",
+            "breed_2_val": "Giant (70-115 lbs)",
+            "verdict": "Berners are significantly larger and stronger."
+        },
+        {
+            "title": "Lifespan",
+            "breed_1_val": "10-12 years",
+            "breed_2_val": "7-10 years",
+            "verdict": "Goldens typically live longer than Berners."
+        },
+        {
+            "title": "Energy",
+            "breed_1_val": "High",
+            "breed_2_val": "Moderate",
+            "verdict": "Berners are calmer indoors but still need exercise."
+        }
+    ],
+    "winner_for": {
+        "longevity": "Golden Retriever",
+        "cuddling": "Tie (Both are velcro dogs)",
+        "cold_weather": "Bernese Mountain Dog"
+    },
+    "monetization": {
+        "insurance_cta": "Insurance for Giant Breeds",
+        "insurance_url": "https://example.com/insurance-giant"
+    }
+}
