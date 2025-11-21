@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { getBreeds } from '@/lib/data';
+import { getBreeds, getComparisonPageBySlug } from '@/lib/data';
+import { getPageIndex } from "@/lib/internal-links";
 import BreedComparisonSelector from '@/components/BreedComparisonSelector';
 
 export const metadata: Metadata = {
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function ComparePage() {
     const breeds = await getBreeds();
+    const comparisons = await getFeaturedComparisons();
 
     return (
         <div className="min-h-screen bg-slate-950 text-slate-50">
@@ -28,6 +30,25 @@ export default async function ComparePage() {
                     </div>
 
                     <BreedComparisonSelector breeds={breeds} />
+
+                    <div className="mt-16">
+                        <h2 className="text-xl font-bold text-slate-100 mb-4">Featured comparisons</h2>
+                        <div className="grid gap-4 md:grid-cols-2">
+                            {comparisons.map((page) => (
+                                <a
+                                    key={page.slug}
+                                    href={`/compare/${page.slug}`}
+                                    className="rounded-xl border border-slate-800 bg-slate-900/40 p-4 hover:border-emerald-500/40 hover:bg-slate-900/60 transition-colors flex items-center justify-between"
+                                >
+                                    <div>
+                                        <p className="text-sm text-emerald-400 uppercase tracking-wide font-semibold">Golden Retriever match-up</p>
+                                        <p className="text-base font-bold text-slate-100">{page.title}</p>
+                                    </div>
+                                    <span className="text-emerald-400">→</span>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
 
                     <div className="mt-20 grid gap-8 md:grid-cols-3 text-center">
                         <div>
@@ -56,4 +77,15 @@ export default async function ComparePage() {
             </div>
         </div>
     );
+}
+
+async function getFeaturedComparisons() {
+    const index = await getPageIndex();
+    const entries = index.filter((entry) => entry.page_type === "comparison");
+    const pages = await Promise.all(entries.map(async (entry) => {
+        const page = await getComparisonPageBySlug(entry.slug);
+        return page ? { slug: entry.slug, title: page.meta.title } : null;
+    }));
+    const list = pages.filter((p): p is NonNullable<typeof p> => !!p);
+    return list.length ? list.sort((a, b) => a.title.localeCompare(b.title)) : [];
 }

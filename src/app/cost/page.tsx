@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { getPageIndex } from "@/lib/internal-links";
+import { getCostPageBySlug } from "@/lib/data";
 
 export const metadata: Metadata = {
     title: "Dog Cost Calculators | PetMatchr",
@@ -7,21 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function CostIndexPage() {
-    // In a real app, we might fetch a list of available cost pages dynamically.
-    // For now, we'll link to the ones we know exist or have data for.
-    const costExamples = [
-        {
-            title: "Golden Retriever in Austin, TX",
-            slug: "golden-retriever-austin-tx",
-            description: "First-year and monthly cost breakdown for a Golden Retriever in Austin."
-        },
-        {
-            title: "Golden Retriever in New York, NY",
-            slug: "golden-retriever-new-york-ny",
-            description: "High-cost city breakdown for owning a Golden in NYC."
-        }
-    ];
-
     return (
         <main className="min-h-screen bg-slate-950 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
@@ -32,26 +19,60 @@ export default function CostIndexPage() {
                     </p>
                 </div>
 
-                <div className="grid gap-6">
-                    {costExamples.map((example) => (
-                        <Link
-                            key={example.slug}
-                            href={`/cost/${example.slug}`}
-                            className="group block rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-emerald-500/50 hover:bg-slate-900 transition-all"
-                        >
-                            <h2 className="text-2xl font-bold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">
-                                {example.title}
-                            </h2>
-                            <p className="text-slate-400 mb-4">
-                                {example.description}
-                            </p>
-                            <div className="flex items-center text-sm font-medium text-emerald-500">
-                                See Breakdown <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
+                <CostList />
             </div>
         </main>
+    );
+}
+
+async function CostList() {
+    const index = await getPageIndex();
+    const costEntries = index.filter((entry) => entry.page_type === "cost");
+
+    const pages = await Promise.all(
+        costEntries.map(async (entry) => {
+            const page = await getCostPageBySlug(entry.slug);
+            if (!page) return null;
+            return {
+                slug: entry.slug,
+                title: page.meta.title,
+                description: page.meta.description,
+                label: entry.short_label || page.meta.title
+            };
+        })
+    );
+
+    const costPages = pages.filter((p): p is NonNullable<typeof p> => !!p).sort((a, b) => a.title.localeCompare(b.title));
+
+    const fallback = [
+        {
+            slug: "golden-retriever-austin-tx",
+            title: "Golden Retriever Cost in Austin, Texas (First Year & Monthly Breakdown)",
+            description: "First-year and monthly cost breakdown for a Golden Retriever in Austin.",
+            label: "Golden Retriever in Austin, TX"
+        }
+    ];
+
+    const list = costPages.length ? costPages : fallback;
+    return (
+        <div className="grid gap-6">
+            {list.map((page) => (
+                <Link
+                    key={page.slug}
+                    href={`/cost/${page.slug}`}
+                    className="group block rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-emerald-500/50 hover:bg-slate-900 transition-all"
+                >
+                    <h2 className="text-2xl font-bold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">
+                        {page.title}
+                    </h2>
+                    <p className="text-slate-400 mb-4">
+                        {page.description}
+                    </p>
+                    <div className="flex items-center text-sm font-medium text-emerald-500">
+                        See Breakdown <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </Link>
+            ))}
+        </div>
     );
 }
