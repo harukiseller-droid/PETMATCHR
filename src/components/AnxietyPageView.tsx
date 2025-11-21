@@ -1,14 +1,15 @@
 import React from 'react';
-import { AnxietyPage, CTAConfig } from '@/lib/types';
+import { AnxietyPage, CTAConfig, PageIndexEntry } from '@/lib/types';
 import Link from 'next/link';
 
 interface Props {
     page: AnxietyPage;
     ctaConfig: CTAConfig;
     breedSlug?: string;
+    relatedPages?: PageIndexEntry[];
 }
 
-export default function AnxietyPageView({ page, ctaConfig, breedSlug }: Props) {
+export default function AnxietyPageView({ page, ctaConfig, breedSlug, relatedPages = [] }: Props) {
     return (
         <div className="container mx-auto px-4 py-8">
             {/* Hero */}
@@ -72,7 +73,7 @@ export default function AnxietyPageView({ page, ctaConfig, breedSlug }: Props) {
             </section>
 
             {/* CTA */}
-            <section className="text-center bg-gray-900 text-white p-12 rounded-xl">
+            <section className="text-center bg-gray-900 text-white p-12 rounded-xl mb-12">
                 <h2 className="text-2xl font-bold mb-6">Need Personalized Help?</h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                     {page.cta.quiz_anchor && (
@@ -90,6 +91,21 @@ export default function AnxietyPageView({ page, ctaConfig, breedSlug }: Props) {
                     )}
                 </div>
             </section>
+
+            {/* Related Pages */}
+            {relatedPages.length > 0 && (
+                <section className="border-t border-gray-200 pt-12">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                        {relatedPages.map(p => (
+                            <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all">
+                                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{p.page_type}</span>
+                                <h3 className="font-bold text-gray-900 mt-1">{p.title}</h3>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+            )}
         </div>
     );
 }

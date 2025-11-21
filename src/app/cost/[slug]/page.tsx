@@ -4,6 +4,8 @@ import { getPageMonetization } from "@/lib/monetization";
 import { resolvePageCTAs } from "@/lib/cta";
 import CostPageView from "@/components/CostPageView";
 import { Metadata } from "next";
+import { getRelatedForPage } from "@/lib/internal-links";
+import JsonLd from "@/components/JsonLd";
 
 interface PageProps {
     params: {
@@ -36,17 +38,41 @@ export default async function CostPage({ params }: PageProps) {
     const breed = breeds.find(b => b.name === page.hero.breed_name);
     const breedSlug = breed?.slug;
 
-    // If no monetization config found, use a default or empty one to avoid crashing
-    // In production, we should probably have defaults.
-    const ctaConfig = monetization
-        ? resolvePageCTAs(monetization, page)
-        : null;
+    // Get related pages
+    let relatedPages: any[] = [];
+    if (breedSlug) {
+        const related = await getRelatedForPage({
+            page_type: 'cost',
+            main_breed_slug: breedSlug,
+            city_slug: page.local_context.city.toLowerCase().replace(/ /g, '-'), // Approximate slug
+            limit_per_type: 2
+        });
+        relatedPages = [...related.primary_links, ...related.secondary_links];
+    }
+
+    const ctaConfig = monetization ? resolvePageCTAs(monetization, page) : {
+        quizPrimary: null, quizSecondary: [], offerPrimary: null, offerSecondary: [], showAds: false, showEmailCapture: false
+    };
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": page.h1,
+        "description": page.meta.description,
+        "author": {
+            "@type": "Organization",
+            "name": "PetMatchr"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://petmatchr.com/cost/${slug}`
+        }
+    };
 
     return (
-        <CostPageView
-            page={page}
-            ctaConfig={ctaConfig}
-            breedSlug={breedSlug}
-        />
+        <>
+            <JsonLd data={jsonLd} />
+            <CostPageView page={page} ctaConfig={ctaConfig} breedSlug={breedSlug} relatedPages={relatedPages} />
+        </>
     );
 }

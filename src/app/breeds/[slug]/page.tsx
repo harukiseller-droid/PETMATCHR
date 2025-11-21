@@ -27,6 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
 }
 
+import JsonLd from "@/components/JsonLd";
+
 export default async function BreedPage({ params }: PageProps) {
     const { slug } = params;
     const breed = await getBreedBySlug(slug);
@@ -42,15 +44,34 @@ export default async function BreedPage({ params }: PageProps) {
     const anxietyPages = await getAnxietyPagesForBreed(slug);
     const comparisonPages = await getComparisonPagesForBreed(slug);
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": content.h1,
+        "description": content.meta.description,
+        "image": breed.primary_image_url,
+        "author": {
+            "@type": "Organization",
+            "name": "PetMatchr"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://petmatchr.com/breeds/${slug}`
+        }
+    };
+
     return (
-        <BreedPageView
-            breed={breed}
-            scores={scores}
-            content={content}
-            costPages={costPages}
-            problemPages={problemPages}
-            anxietyPages={anxietyPages}
-            comparisonPages={comparisonPages}
-        />
+        <>
+            <JsonLd data={jsonLd} />
+            <BreedPageView
+                breed={breed}
+                scores={scores}
+                content={content}
+                costPages={costPages}
+                problemPages={problemPages}
+                anxietyPages={anxietyPages}
+                comparisonPages={comparisonPages}
+            />
+        </>
     );
 }

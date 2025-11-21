@@ -1,9 +1,10 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { callLLM } from './llmClient';
-import { basicValidateOutput } from './validators';
+import { callLLM } from '../src/lib/llmClient';
+import { basicValidateOutput } from '../src/lib/validators';
 import { savePage } from './savePage';
-import { SYSTEM_PROMPT, COST_PAGE_PROMPT, PROBLEM_PAGE_PROMPT, COMPARISON_PAGE_PROMPT, ANXIETY_PAGE_PROMPT, LOCATION_PAGE_PROMPT, LIST_PAGE_PROMPT } from './prompts';
+import { SYSTEM_PROMPT, COST_PAGE_PROMPT, PROBLEM_PAGE_PROMPT, COMPARISON_PAGE_PROMPT, ANXIETY_PAGE_PROMPT, LOCATION_PAGE_PROMPT, LIST_PAGE_PROMPT } from '../src/lib/prompts';
+import { updatePageIndexEntryForSlug } from '../src/lib/internal-links';
 
 interface PageMatrixItem {
     slug: string;
@@ -71,6 +72,16 @@ async function generatePages() {
                         // Inject slug if missing
                         data.slug = item.slug;
                         await savePage(item.page_type, item.slug, data);
+
+                        // Update Index
+                        const extra: any = {};
+                        if (item.page_type === 'cost' || item.page_type === 'location') {
+                            extra.city_slug = item.data.city_slug; // Assuming data has city_slug
+                        }
+                        // Extract breed slugs from data if possible, or from matrix data
+                        // For now, simple update
+                        await updatePageIndexEntryForSlug(item.slug, item.page_type, data.meta, extra);
+
                     } else {
                         console.error(`Validation failed for ${item.slug}`);
                     }

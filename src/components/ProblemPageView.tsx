@@ -1,14 +1,15 @@
 import React from "react";
-import { ProblemPage, CTAConfig } from "@/lib/types";
+import { ProblemPage, CTAConfig, PageIndexEntry } from "@/lib/types";
 import Link from "next/link";
 
 interface ProblemPageViewProps {
     page: ProblemPage;
     ctaConfig: CTAConfig | null;
     breedSlug?: string;
+    relatedPages?: PageIndexEntry[];
 }
 
-export default function ProblemPageView({ page, ctaConfig, breedSlug }: ProblemPageViewProps) {
+export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPages = [] }: ProblemPageViewProps) {
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
             {/* Hero */}
@@ -126,6 +127,21 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug }: ProblemP
                             ))}
                         </div>
                     </section>
+
+                    {/* Related Pages */}
+                    {relatedPages.length > 0 && (
+                        <section className="border-t border-gray-200 pt-12">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+                            <div className="grid gap-4 sm:grid-cols-2">
+                                {relatedPages.map(p => (
+                                    <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
+                                        <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{p.page_type}</span>
+                                        <h3 className="font-bold text-gray-900 mt-1">{p.title}</h3>
+                                    </Link>
+                                ))}
+                            </div>
+                        </section>
+                    )}
 
                 </div>
 

@@ -17,8 +17,8 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
     const totalQuestions = quiz.questions.length;
     const progress = ((currentQuestionIndex) / totalQuestions) * 100;
 
-    const handleOptionSelect = (value: number) => {
-        const newAnswers = { ...answers, [currentQuestion.id]: value };
+    const handleOptionSelect = (score: number) => {
+        const newAnswers = { ...answers, [currentQuestion.id]: score };
         setAnswers(newAnswers);
 
         if (currentQuestionIndex < totalQuestions - 1) {
@@ -31,15 +31,29 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
     const calculateResult = (finalAnswers: Record<string, number>) => {
         const totalScore = Object.values(finalAnswers).reduce((a, b) => a + b, 0);
 
-        const bucket = quiz.results.find(
+        const results = quiz.result_mapping || quiz.results || [];
+        const bucket = results.find(
             (r) => totalScore >= r.min_score && totalScore <= r.max_score
         );
 
-        setResultBucket(bucket || quiz.results[0]); // Fallback to first result
+        setResultBucket(bucket || results[0]); // Fallback to first result
         setShowResult(true);
     };
 
+    const getCtaUrl = (action: string) => {
+        switch (action) {
+            case 'show_top_apartment_breeds': return '/lists/best-dogs-for-apartments';
+            case 'show_family_friendly_breeds': return '/lists/best-family-dogs';
+            case 'show_active_dog_breeds': return '/lists/best-active-dogs';
+            case 'show_low_energy_breeds': return '/lists/best-low-energy-dogs';
+            default: return '/breeds';
+        }
+    };
+
     if (showResult && resultBucket) {
+        const ctaUrl = resultBucket.cta_url || getCtaUrl(resultBucket.primary_call_to_action);
+        const ctaLabel = resultBucket.cta_label || "See Your Matches";
+
         return (
             <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
                 <div className="bg-indigo-600 p-8 text-center text-white">
@@ -50,10 +64,10 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
                     <p className="text-xl text-gray-700 mb-8">{resultBucket.description}</p>
 
                     <a
-                        href={resultBucket.cta_url}
+                        href={ctaUrl}
                         className="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-lg"
                     >
-                        {resultBucket.cta_label}
+                        {ctaLabel}
                     </a>
 
                     <button
@@ -89,10 +103,10 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
                 </h2>
 
                 <div className="space-y-4">
-                    {currentQuestion.options.map((option) => (
+                    {currentQuestion.options.map((option, idx) => (
                         <button
-                            key={option.id}
-                            onClick={() => handleOptionSelect(option.value)}
+                            key={idx}
+                            onClick={() => handleOptionSelect(option.score)}
                             className="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-500 hover:bg-indigo-50 transition-all duration-200 group"
                         >
                             <span className="font-medium text-gray-700 group-hover:text-indigo-700">

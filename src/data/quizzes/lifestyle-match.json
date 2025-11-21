@@ -1,76 +1,563 @@
 {
-    "id": "quiz_lifestyle_001",
     "slug": "lifestyle-match",
-    "title": "Find Your Perfect Dog Breed",
-    "description": "Answer 3 questions to find the best dog breed for your lifestyle.",
+    "cluster": "lifestyle",
+    "title": "Find Your Best Dog Match",
+    "description": "Quick 2-phase quiz that matches your lifestyle and budget to the right dog breeds.",
+    "conversion_goal": "lead_form",
     "questions": [
         {
-            "id": "q1",
-            "text": "Do you live in an apartment?",
+            "id": "profile_home_type",
+            "text": "What type of home do you live in?",
             "type": "single_choice",
+            "required": true,
             "options": [
                 {
-                    "id": "yes",
-                    "label": "Yes",
-                    "value": 5
+                    "value": "apartment_small",
+                    "label": "Small apartment (<600 sqft)",
+                    "score": 3,
+                    "tags": [
+                        "apartment",
+                        "small_space"
+                    ]
                 },
                 {
-                    "id": "no",
-                    "label": "No, I have a yard",
-                    "value": 0
+                    "value": "apartment_medium",
+                    "label": "Medium apartment (600–1200 sqft)",
+                    "score": 2,
+                    "tags": [
+                        "apartment"
+                    ]
+                },
+                {
+                    "value": "house_yard",
+                    "label": "House with fenced yard",
+                    "score": 1,
+                    "tags": [
+                        "house",
+                        "yard"
+                    ]
+                },
+                {
+                    "value": "rural_property",
+                    "label": "Rural / countryside, large outdoor space",
+                    "score": 0,
+                    "tags": [
+                        "rural",
+                        "large_space"
+                    ]
                 }
             ]
         },
         {
-            "id": "q2",
-            "text": "How active are you?",
+            "id": "profile_work_pattern",
+            "text": "What best describes your work schedule?",
             "type": "single_choice",
+            "required": true,
             "options": [
                 {
-                    "id": "low",
-                    "label": "Couch potato",
-                    "value": 0
+                    "value": "remote_home",
+                    "label": "Mostly remote, home most of the day",
+                    "score": 0,
+                    "tags": [
+                        "time_at_home_high"
+                    ]
                 },
                 {
-                    "id": "med",
-                    "label": "Daily walks",
-                    "value": 5
+                    "value": "office_full_day",
+                    "label": "Office 8–10 hours per day, 5 days/week",
+                    "score": 3,
+                    "tags": [
+                        "time_away_long",
+                        "needs_independent_dog"
+                    ]
                 },
                 {
-                    "id": "high",
-                    "label": "Runner / Hiker",
-                    "value": 10
+                    "value": "irregular_travel",
+                    "label": "Irregular schedule, frequent travel",
+                    "score": 3,
+                    "tags": [
+                        "time_away_unstable",
+                        "needs_super_independent_dog"
+                    ]
+                },
+                {
+                    "value": "flexible",
+                    "label": "Flexible schedule, some days home, some away",
+                    "score": 1,
+                    "tags": [
+                        "time_at_home_medium"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "profile_family_structure",
+            "text": "Who lives with you?",
+            "type": "single_choice",
+            "required": true,
+            "options": [
+                {
+                    "value": "live_alone",
+                    "label": "I live alone",
+                    "score": 1,
+                    "tags": [
+                        "solo_owner"
+                    ]
+                },
+                {
+                    "value": "partner_only",
+                    "label": "With partner/roommate, no kids",
+                    "score": 1,
+                    "tags": [
+                        "adult_household"
+                    ]
+                },
+                {
+                    "value": "kids_under_5",
+                    "label": "With kids under 5 years old",
+                    "score": 3,
+                    "tags": [
+                        "small_kids",
+                        "needs_kid_friendly"
+                    ]
+                },
+                {
+                    "value": "kids_6_12",
+                    "label": "With kids 6–12 years old",
+                    "score": 2,
+                    "tags": [
+                        "kids",
+                        "needs_kid_friendly"
+                    ]
+                },
+                {
+                    "value": "with_seniors",
+                    "label": "With seniors (65+)",
+                    "score": 2,
+                    "tags": [
+                        "senior_household",
+                        "needs_low_energy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "profile_activity_level",
+            "text": "How active are you in a typical week?",
+            "type": "single_choice",
+            "required": true,
+            "options": [
+                {
+                    "value": "low_activity",
+                    "label": "Mostly indoors, light walks only",
+                    "score": 3,
+                    "tags": [
+                        "owner_low_activity"
+                    ]
+                },
+                {
+                    "value": "moderate_activity",
+                    "label": "Walks 20–30 minutes per day",
+                    "score": 1,
+                    "tags": [
+                        "owner_moderate_activity"
+                    ]
+                },
+                {
+                    "value": "high_activity",
+                    "label": "Runs, hikes, or long walks most days",
+                    "score": 0,
+                    "tags": [
+                        "owner_high_activity"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "profile_budget_monthly",
+            "text": "What is your realistic monthly budget for dog expenses?",
+            "type": "single_choice",
+            "required": true,
+            "options": [
+                {
+                    "value": "budget_under_200",
+                    "label": "Under $200/month",
+                    "score": 3,
+                    "tags": [
+                        "budget_tight"
+                    ]
+                },
+                {
+                    "value": "budget_200_400",
+                    "label": "$200–400/month",
+                    "score": 2,
+                    "tags": [
+                        "budget_mid"
+                    ]
+                },
+                {
+                    "value": "budget_400_600",
+                    "label": "$400–600/month",
+                    "score": 1,
+                    "tags": [
+                        "budget_comfortable"
+                    ]
+                },
+                {
+                    "value": "budget_over_600",
+                    "label": "Over $600/month",
+                    "score": 0,
+                    "tags": [
+                        "budget_premium"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "profile_experience",
+            "text": "How much experience do you have owning dogs?",
+            "type": "single_choice",
+            "required": true,
+            "options": [
+                {
+                    "value": "first_time_owner",
+                    "label": "This will be my first dog as an adult",
+                    "score": 3,
+                    "tags": [
+                        "first_time_owner"
+                    ]
+                },
+                {
+                    "value": "some_experience",
+                    "label": "I’ve owned a dog for 1–3 years",
+                    "score": 1,
+                    "tags": [
+                        "some_experience"
+                    ]
+                },
+                {
+                    "value": "very_experienced",
+                    "label": "I’ve owned dogs for 3+ years and feel very confident",
+                    "score": 0,
+                    "tags": [
+                        "experienced_owner"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "profile_noise_tolerance",
+            "text": "How much barking/noise can your living situation tolerate?",
+            "type": "single_choice",
+            "required": true,
+            "options": [
+                {
+                    "value": "very_sensitive",
+                    "label": "Very sensitive – shared walls, strict neighbors",
+                    "score": 3,
+                    "tags": [
+                        "needs_low_barking"
+                    ]
+                },
+                {
+                    "value": "some_noise_ok",
+                    "label": "Some barking is okay",
+                    "score": 1,
+                    "tags": [
+                        "noise_flexible"
+                    ]
+                },
+                {
+                    "value": "noise_no_issue",
+                    "label": "Noise is not a big issue where I live",
+                    "score": 0,
+                    "tags": [
+                        "noise_not_critical"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_kids_dog_style",
+            "text": "How do you want your dog to interact with kids (now or in the future)?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "no_kids",
+                    "label": "No kids in the picture",
+                    "score": 0,
+                    "tags": [
+                        "no_kids"
+                    ]
+                },
+                {
+                    "value": "gentle_companion",
+                    "label": "Gentle, patient, not too big",
+                    "score": 3,
+                    "tags": [
+                        "needs_super_kid_friendly"
+                    ]
+                },
+                {
+                    "value": "playful_energy",
+                    "label": "Playful, energetic, likes running with kids",
+                    "score": 2,
+                    "tags": [
+                        "kid_playmate"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_other_pets",
+            "text": "Do you have other pets at home?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "no_other_pets",
+                    "label": "No other pets",
+                    "score": 0,
+                    "tags": [
+                        "no_other_pets"
+                    ]
+                },
+                {
+                    "value": "have_cat",
+                    "label": "I have a cat and need a cat-friendly dog",
+                    "score": 3,
+                    "tags": [
+                        "needs_cat_friendly"
+                    ]
+                },
+                {
+                    "value": "have_dog",
+                    "label": "I have another dog and need a dog-friendly breed",
+                    "score": 2,
+                    "tags": [
+                        "needs_dog_friendly"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_shedding_preference",
+            "text": "How much shedding can you tolerate?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "shedding_no_issue",
+                    "label": "Shedding is fine, I don’t mind fur",
+                    "score": 0,
+                    "tags": [
+                        "shedding_ok"
+                    ]
+                },
+                {
+                    "value": "shedding_low",
+                    "label": "I prefer low shedding",
+                    "score": 2,
+                    "tags": [
+                        "needs_low_shedding"
+                    ]
+                },
+                {
+                    "value": "shedding_minimal",
+                    "label": "I need very low / hypoallergenic if possible",
+                    "score": 3,
+                    "tags": [
+                        "needs_hypoallergenic"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_grooming_preference",
+            "text": "How do you feel about grooming and coat care?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "grooming_ok",
+                    "label": "I don’t mind regular grooming if needed",
+                    "score": 1,
+                    "tags": [
+                        "grooming_ok"
+                    ]
+                },
+                {
+                    "value": "grooming_minimal",
+                    "label": "I prefer minimal grooming and simple coat care",
+                    "score": 3,
+                    "tags": [
+                        "needs_low_grooming"
+                    ]
+                },
+                {
+                    "value": "grooming_enjoy",
+                    "label": "I enjoy grooming and don’t mind extra work",
+                    "score": 0,
+                    "tags": [
+                        "grooming_hobby"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_main_goal",
+            "text": "What is your main goal in getting a dog?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "companion",
+                    "label": "Companionship and emotional support",
+                    "score": 2,
+                    "tags": [
+                        "goal_companion"
+                    ]
+                },
+                {
+                    "value": "walk_buddy",
+                    "label": "Walking/running buddy to stay active",
+                    "score": 0,
+                    "tags": [
+                        "goal_active"
+                    ]
+                },
+                {
+                    "value": "guard_dog",
+                    "label": "Guard dog / protection",
+                    "score": 3,
+                    "tags": [
+                        "goal_guard"
+                    ]
+                },
+                {
+                    "value": "just_love_dogs",
+                    "label": "I just love dogs and want one in my life",
+                    "score": 1,
+                    "tags": [
+                        "goal_general"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_independence_preference",
+            "text": "How independent should your ideal dog be?",
+            "type": "single_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "very_independent",
+                    "label": "Very independent, okay being alone for longer hours",
+                    "score": 3,
+                    "tags": [
+                        "needs_independent_dog"
+                    ]
+                },
+                {
+                    "value": "moderately_independent",
+                    "label": "Moderately independent, some alone time is okay",
+                    "score": 1,
+                    "tags": [
+                        "needs_moderate_independence"
+                    ]
+                },
+                {
+                    "value": "very_clingy_ok",
+                    "label": "I’m okay with a velcro dog that wants to be with me always",
+                    "score": 0,
+                    "tags": [
+                        "ok_clingy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "deep_support_options",
+            "text": "Which of these are you realistically willing to use for support?",
+            "type": "multi_choice",
+            "required": false,
+            "options": [
+                {
+                    "value": "will_use_dog_walker",
+                    "label": "I can pay for a dog walker (1–3x/week)",
+                    "score": 0,
+                    "tags": [
+                        "support_dog_walker"
+                    ]
+                },
+                {
+                    "value": "will_use_daycare",
+                    "label": "I can use doggy daycare occasionally",
+                    "score": 0,
+                    "tags": [
+                        "support_daycare"
+                    ]
+                },
+                {
+                    "value": "will_use_trainer",
+                    "label": "I’m open to paying for a trainer if needed",
+                    "score": 0,
+                    "tags": [
+                        "support_trainer"
+                    ]
+                },
+                {
+                    "value": "support_limited",
+                    "label": "My budget/time is tight, I need a low-support breed",
+                    "score": 3,
+                    "tags": [
+                        "needs_low_maintenance"
+                    ]
                 }
             ]
         }
     ],
-    "results": [
+    "result_mapping": [
         {
-            "id": "active_breed",
+            "slug": "apartment_worker_first_time_budget",
+            "title": "Apartment worker, first-time owner, budget-conscious",
+            "description": "You live in a smaller space, work long hours, and are watching your monthly budget. You need a low- to medium-energy, apartment-friendly, beginner-friendly breed with manageable costs.",
+            "min_score": 22,
+            "max_score": 39,
+            "primary_call_to_action": "show_top_apartment_breeds",
+            "recommended_quiz_followup": "insurance-fit",
+            "email_sequence_id": "lifestyle_apartment_first_time_seq"
+        },
+        {
+            "slug": "active_family_with_kids",
+            "title": "Active family with kids",
+            "description": "You have (or plan to have) kids and like to stay active. You can handle more energy and playfulness, and want a friendly, family-safe dog that can keep up.",
             "min_score": 10,
-            "max_score": 15,
-            "title": "Active Breeds (Golden Retriever, etc.)",
-            "description": "You need a high-energy dog to keep up with you!",
-            "cta_label": "View Golden Retrievers",
-            "cta_url": "/breeds/golden-retriever"
+            "max_score": 21,
+            "primary_call_to_action": "show_family_friendly_breeds",
+            "recommended_quiz_followup": "behavior-check",
+            "email_sequence_id": "lifestyle_active_family_seq"
         },
         {
-            "id": "apartment_breed",
-            "min_score": 5,
-            "max_score": 9,
-            "title": "Apartment Friendly (Frenchie, etc.)",
-            "description": "A smaller, lower energy dog is best for your space.",
-            "cta_label": "View French Bulldogs",
-            "cta_url": "/breeds/french-bulldog"
-        },
-        {
-            "id": "chill_breed",
+            "slug": "experienced_owner_high_activity",
+            "title": "Experienced owner, high-activity lifestyle",
+            "description": "You’ve owned dogs before and want an active companion for runs, hikes, and long walks. You can handle training and higher exercise needs.",
             "min_score": 0,
-            "max_score": 4,
-            "title": "Chill Companions",
-            "description": "Look for a low-maintenance buddy.",
-            "cta_label": "View Top Lap Dogs",
-            "cta_url": "/lists/best-dogs-for-apartments"
+            "max_score": 9,
+            "primary_call_to_action": "show_active_dog_breeds",
+            "recommended_quiz_followup": "behavior-check",
+            "email_sequence_id": "lifestyle_high_activity_seq"
+        },
+        {
+            "slug": "low_energy_senior_or_calm_household",
+            "title": "Low-energy, calm household",
+            "description": "You prefer a calmer, lower-energy companion that fits well with seniors or a quieter lifestyle, with minimal chaos and easier daily care.",
+            "min_score": 30,
+            "max_score": 45,
+            "primary_call_to_action": "show_low_energy_breeds",
+            "recommended_quiz_followup": "anxiety-level",
+            "email_sequence_id": "lifestyle_low_energy_seq"
         }
     ]
 }

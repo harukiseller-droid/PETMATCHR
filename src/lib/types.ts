@@ -188,6 +188,7 @@ export type ProblemPage = BasePage & {
         breed_name: string;
         one_line_summary: string;
     };
+    problem: string; // Matches JSON
     intro: {
         paragraphs: string[];
     };
@@ -376,4 +377,16 @@ export type CTAConfig = {
     offerSecondary: OfferCTA[];
     showAds: boolean;
     showEmailCapture: boolean;
+};
+
+export type PageIndexEntry = {
+    slug: string;           // "golden-retriever-cost-austin-texas"
+    page_type: PageType;    // "breed" | "cost" | "problem" | "anxiety" | "comparison" | "location" | "list"
+    breed_slugs: string[];  // ["golden-retriever"] or ["golden-retriever","labrador"]
+    city_slug?: string | null;      // "austin-texas"
+    problem_slug?: string | null;   // "separation-anxiety"
+    primary_intent: "informational" | "commercial_high" | "mixed";
+    primary_cluster?: "insurance" | "training" | "cbd" | "generic" | null;
+    title: string;          // h1 or meta title
+    short_label: string;    // label for list display
 };

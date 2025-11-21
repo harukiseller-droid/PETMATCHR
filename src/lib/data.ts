@@ -104,67 +104,37 @@ export async function getCities(): Promise<City[]> {
 }
 
 
+import { getPagesByBreed } from '@/lib/internal-links';
+
 export async function getCostPagesForBreed(breedSlug: string): Promise<CostPage[]> {
-    const dir = path.join(DATA_DIR, 'pages', 'cost');
-    try {
-        const files = await fs.readdir(dir);
-        const pages = await Promise.all(
-            files.map(async (file) => {
-                const data = await fs.readFile(path.join(dir, file), 'utf-8');
-                return JSON.parse(data) as CostPage;
-            })
-        );
-        return pages.filter(p => p.slug.includes(breedSlug));
-    } catch (e) {
-        return [];
-    }
+    const { costPages } = await getPagesByBreed(breedSlug);
+    const pages = await Promise.all(
+        costPages.map(entry => getCostPageBySlug(entry.slug))
+    );
+    return pages.filter((p): p is CostPage => p !== null);
 }
 
 export async function getProblemPagesForBreed(breedSlug: string): Promise<ProblemPage[]> {
-    const dir = path.join(DATA_DIR, 'pages', 'problem');
-    try {
-        const files = await fs.readdir(dir);
-        const pages = await Promise.all(
-            files.map(async (file) => {
-                const data = await fs.readFile(path.join(dir, file), 'utf-8');
-                return JSON.parse(data) as ProblemPage;
-            })
-        );
-        return pages.filter(p => p.slug.includes(breedSlug));
-    } catch (e) {
-        return [];
-    }
+    const { problemPages } = await getPagesByBreed(breedSlug);
+    const pages = await Promise.all(
+        problemPages.map(entry => getProblemPageBySlug(entry.slug))
+    );
+    return pages.filter((p): p is ProblemPage => p !== null);
 }
 
 export async function getAnxietyPagesForBreed(breedSlug: string): Promise<AnxietyPage[]> {
-    const dir = path.join(DATA_DIR, 'pages', 'anxiety');
-    try {
-        const files = await fs.readdir(dir);
-        const pages = await Promise.all(
-            files.map(async (file) => {
-                const data = await fs.readFile(path.join(dir, file), 'utf-8');
-                return JSON.parse(data) as AnxietyPage;
-            })
-        );
-        return pages.filter(p => p.slug.includes(breedSlug));
-    } catch (e) {
-        return [];
-    }
+    const { anxietyPages } = await getPagesByBreed(breedSlug);
+    const pages = await Promise.all(
+        anxietyPages.map(entry => getAnxietyPageBySlug(entry.slug))
+    );
+    return pages.filter((p): p is AnxietyPage => p !== null);
 }
 
 export async function getComparisonPagesForBreed(breedSlug: string): Promise<ComparisonPage[]> {
-    const dir = path.join(DATA_DIR, 'pages', 'comparison');
-    try {
-        const files = await fs.readdir(dir);
-        const pages = await Promise.all(
-            files.map(async (file) => {
-                const data = await fs.readFile(path.join(dir, file), 'utf-8');
-                return JSON.parse(data) as ComparisonPage;
-            })
-        );
-        return pages.filter(p => p.breed_1 === breedSlug || p.breed_2 === breedSlug);
-    } catch (e) {
-        return [];
-    }
+    const { comparisonPages } = await getPagesByBreed(breedSlug);
+    const pages = await Promise.all(
+        comparisonPages.map(entry => getComparisonPageBySlug(entry.slug))
+    );
+    return pages.filter((p): p is ComparisonPage => p !== null);
 }
 

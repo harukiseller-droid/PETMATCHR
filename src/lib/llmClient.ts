@@ -32,13 +32,22 @@ export class HybridLLMError extends Error {
 
 // --- Configuration ---
 
+// --- Configuration ---
+
 const CLOUD_MODEL = process.env.PETMATCHR_LLM_MODEL ?? "gpt-4o-mini";
 const LOCAL_LLM_URL = process.env.PETMATCHR_LOCAL_LLM_URL; // e.g. http://localhost:11434/api/chat
 const LOCAL_LLM_MODEL = process.env.PETMATCHR_LOCAL_LLM_MODEL ?? "llama3";
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
+let openaiInstance: OpenAI | null = null;
+
+function getOpenAI() {
+    if (!openaiInstance) {
+        openaiInstance = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY,
+        });
+    }
+    return openaiInstance;
+}
 
 // --- Helper to format prompt ---
 
@@ -55,6 +64,7 @@ export async function callCloudLLM(params: LLMParams): Promise<any> {
     }
 
     try {
+        const openai = getOpenAI();
         const content = formatUserPrompt(params.user, params.jsonInput);
 
         const completion = await openai.chat.completions.create({

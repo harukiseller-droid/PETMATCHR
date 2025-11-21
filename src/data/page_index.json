@@ -1,0 +1,276 @@
+{
+  "entries": [
+    {
+      "slug": "golden-retriever",
+      "page_type": "breed",
+      "title": "Golden Retriever Breed Guide: Personality, Lifespan & Care",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "The Golden Retriever: Friendly, Devoted, and Enthusiastic"
+    },
+    {
+      "slug": "golden-retriever-austin-tx",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in Austin, Texas (First Year & Monthly Breakdown)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: Austin"
+    },
+    {
+      "slug": "golden-retriever-denver-co",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in Denver, CO (2025 Price Guide)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: Denver"
+    },
+    {
+      "slug": "golden-retriever-los-angeles-ca",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in Los Angeles, CA (2025 Price Guide)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: Los Angeles"
+    },
+    {
+      "slug": "golden-retriever-miami-fl",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in Miami, FL (2025 Price Guide)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: Miami"
+    },
+    {
+      "slug": "golden-retriever-new-york-ny",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in New York, NY (First Year & Monthly Breakdown)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: New York"
+    },
+    {
+      "slug": "golden-retriever-seattle-wa",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost in Seattle, WA (2025 Price Guide)",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Cost: Seattle"
+    },
+    {
+      "slug": "golden-retriever-aggression",
+      "page_type": "problem",
+      "title": "Golden Retriever Aggression: Signs & Training Tips",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Dealing with Aggression in Golden Retrievers"
+    },
+    {
+      "slug": "golden-retriever-chewing",
+      "page_type": "problem",
+      "title": "Golden Retriever Destructive Chewing: Causes & Solutions",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "How to Stop a Golden Retriever From Chewing Everything"
+    },
+    {
+      "slug": "golden-retriever-excessive-barking",
+      "page_type": "problem",
+      "title": "Golden Retriever Excessive Barking: Causes & Solutions",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Excessive Barking Guide"
+    },
+    {
+      "slug": "golden-retriever-hip-mobility",
+      "page_type": "problem",
+      "title": "Golden Retriever Hip Dysplasia & Mobility Issues",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Hip Mobility Issues in Golden Retrievers"
+    },
+    {
+      "slug": "golden-retriever-pulling",
+      "page_type": "problem",
+      "title": "Stop Golden Retriever Pulling on Leash: Easy Training",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "How to Stop Your Golden Retriever From Pulling on Leash"
+    },
+    {
+      "slug": "golden-retriever-separation-anxiety",
+      "page_type": "problem",
+      "title": "Golden Retriever Separation Anxiety: Real Fixes for Clingy Goldens",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Separation Anxiety: Causes, Signs and a Realistic Plan"
+    },
+    {
+      "slug": "golden-retriever-shedding",
+      "page_type": "problem",
+      "title": "Golden Retriever Shedding: How to Manage the Fur",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Managing Golden Retriever Shedding"
+    },
+    {
+      "slug": "golden-retriever-noise-anxiety",
+      "page_type": "anxiety",
+      "title": "Golden Retriever Noise Anxiety: Thunder & Fireworks",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Helping a Golden Retriever with Noise Anxiety"
+    },
+    {
+      "slug": "golden-retriever-senior-anxiety",
+      "page_type": "anxiety",
+      "title": "Anxiety in Senior Golden Retrievers: Causes & Care",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Managing Anxiety in Senior Golden Retrievers"
+    },
+    {
+      "slug": "golden-retriever-separation-anxiety",
+      "page_type": "anxiety",
+      "title": "Golden Retriever Anxiety: Symptoms and Solutions",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Anxiety Guide"
+    },
+    {
+      "slug": "golden-retriever-travel-anxiety",
+      "page_type": "anxiety",
+      "title": "Golden Retriever Car Anxiety: Travel Tips",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Curing Golden Retriever Travel Anxiety"
+    },
+    {
+      "slug": "golden-retriever-vs-bernese",
+      "page_type": "comparison",
+      "title": "Golden Retriever vs Bernese Mountain Dog: Gentle Giants",
+      "breed_slugs": [
+        "golden-retriever",
+        "bernese-mountain-dog"
+      ],
+      "primary_intent": "informational",
+      "short_label": "golden-retriever vs bernese-mountain-dog"
+    },
+    {
+      "slug": "golden-retriever-vs-french-bulldog",
+      "page_type": "comparison",
+      "title": "Golden Retriever vs French Bulldog: Which is Right for You?",
+      "breed_slugs": [
+        "golden-retriever",
+        "french-bulldog"
+      ],
+      "primary_intent": "informational",
+      "short_label": "golden-retriever vs french-bulldog"
+    },
+    {
+      "slug": "golden-retriever-vs-german-shepherd",
+      "page_type": "comparison",
+      "title": "Golden Retriever vs German Shepherd: Breed Comparison",
+      "breed_slugs": [
+        "golden-retriever",
+        "german-shepherd"
+      ],
+      "primary_intent": "informational",
+      "short_label": "golden-retriever vs german-shepherd"
+    },
+    {
+      "slug": "golden-retriever-vs-labrador",
+      "page_type": "comparison",
+      "title": "Golden Retriever vs Labrador: Which Family Dog is Best?",
+      "breed_slugs": [
+        "golden-retriever",
+        "labrador-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "golden-retriever vs labrador-retriever"
+    },
+    {
+      "slug": "golden-retriever-vs-poodle",
+      "page_type": "comparison",
+      "title": "Golden Retriever vs Standard Poodle: Shedding & Smarts",
+      "breed_slugs": [
+        "golden-retriever",
+        "poodle"
+      ],
+      "primary_intent": "informational",
+      "short_label": "golden-retriever vs poodle"
+    },
+    {
+      "slug": "austin-tx",
+      "page_type": "location",
+      "title": "Best Dogs for Austin, Texas Living",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Dogs for Austin, Texas Living"
+    },
+    {
+      "slug": "miami-fl",
+      "page_type": "location",
+      "title": "Best Dogs for Miami Living: Heat & Humidity Guide",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Dogs for Miami Living: Heat & Humidity Guide"
+    },
+    {
+      "slug": "new-york-ny",
+      "page_type": "location",
+      "title": "Best Dogs for New York, NY Living",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Dogs for New York, NY Living"
+    },
+    {
+      "slug": "seattle-wa",
+      "page_type": "location",
+      "title": "Best Dogs for Seattle Living: Rain & Hiking Guide",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Dogs for Seattle Living: Rain & Hiking Guide"
+    },
+    {
+      "slug": "best-dogs-for-apartments",
+      "page_type": "list",
+      "title": "Best Dogs for Apartments: Top Breeds for Small Spaces",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Dogs for Apartments: Top Breeds for Small Spaces"
+    }
+  ],
+  "generated_at": "2025-11-21T11:37:20.631Z"
+}
