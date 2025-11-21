@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
-import { getListPageBySlug, getPagesFromCategory } from "@/lib/data";
+import { getListPageBySlug } from "@/lib/data";
+import { getAllStaticParams } from "@/lib/static-params";
 import ListPageView from "@/components/ListPageView";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-    const pages = await getPagesFromCategory("list");
-    return pages.map((p) => ({ slug: p.slug }));
+    return getAllStaticParams().list || [];
 }
 
 interface PageProps {
