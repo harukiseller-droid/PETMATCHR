@@ -24,6 +24,8 @@ export default function RootLayout({
                             <Link href="/quiz/lifestyle-match" className="hover:text-emerald-400 transition-colors">Quiz</Link>
                             <Link href="/breeds" className="hover:text-emerald-400 transition-colors">Breeds</Link>
                             <Link href="/cost" className="hover:text-emerald-400 transition-colors">Costs</Link>
+                            <Link href="/anxiety" className="hover:text-emerald-400 transition-colors">Anxiety</Link>
+                            <Link href="/problems" className="hover:text-emerald-400 transition-colors">Problems</Link>
                             <Link
                                 href="/quiz/lifestyle-match"
                                 className="rounded-full bg-emerald-500/10 px-4 py-2 text-emerald-400 ring-1 ring-inset ring-emerald-500/20 hover:bg-emerald-500/20 transition-all"
