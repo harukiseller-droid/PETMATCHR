@@ -41,9 +41,9 @@ export default function ComparisonPageView({ page, ctaConfig }: Props) {
                         <tbody>
                             {page.comparison_points.map((point, idx) => (
                                 <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                                    <td className="border p-4 font-medium">{point.point}</td>
-                                    <td className="border p-4">{point.breed_1_val}</td>
-                                    <td className="border p-4">{point.breed_2_val}</td>
+                                    <td className="border p-4 font-medium text-gray-900">{point.point}</td>
+                                    <td className="border p-4 text-gray-900">{point.breed_1_val}</td>
+                                    <td className="border p-4 text-gray-900">{point.breed_2_val}</td>
                                     <td className="border p-4">
                                         <span className={`px-2 py-1 rounded text-sm ${point.winner === page.breed_1 ? 'bg-blue-100 text-blue-800' :
                                             point.winner === page.breed_2 ? 'bg-green-100 text-green-800' :
