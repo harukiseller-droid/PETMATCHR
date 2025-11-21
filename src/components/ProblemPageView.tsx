@@ -11,22 +11,22 @@ interface ProblemPageViewProps {
 
 export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPages = [] }: ProblemPageViewProps) {
     return (
-        <main className="min-h-screen bg-gray-50 pb-20">
+        <main className="min-h-screen bg-slate-950 pb-20">
             {/* Hero */}
-            <div className="bg-white border-b border-gray-200">
+            <div className="bg-slate-900/50 border-b border-slate-800 backdrop-blur-sm">
                 <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
                     {breedSlug && (
-                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-600 hover:text-indigo-800 font-medium mb-4 inline-block">
+                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-400 hover:text-indigo-300 font-medium mb-4 inline-block transition-colors">
                             &larr; Back to {page.hero.breed_name} Profile
                         </Link>
                     )}
-                    <div className="text-sm font-bold text-indigo-600 uppercase tracking-wide mb-2">
+                    <div className="text-sm font-bold text-indigo-400 uppercase tracking-wide mb-2">
                         {page.hero.breed_name} Problem Guide
                     </div>
-                    <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4">
+                    <h1 className="text-4xl font-extrabold text-slate-50 tracking-tight sm:text-5xl mb-4">
                         {page.h1}
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-slate-300 max-w-2xl">
                         {page.hero.one_line_summary}
                     </p>
                 </div>
@@ -36,7 +36,7 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
                 <div className="lg:col-span-2 space-y-12">
 
                     {/* Intro */}
-                    <section className="prose prose-blue max-w-none text-gray-600">
+                    <section className="prose prose-invert max-w-none text-slate-300">
                         {page.intro.paragraphs.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}
@@ -44,22 +44,22 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* Symptoms & Causes */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-100">
-                            <h3 className="text-lg font-bold text-yellow-900 mb-3">Symptoms</h3>
+                        <div className="bg-yellow-900/20 p-6 rounded-xl border border-yellow-500/20">
+                            <h3 className="text-lg font-bold text-yellow-400 mb-3">Symptoms</h3>
                             <ul className="space-y-2">
                                 {page.symptoms.map((item, i) => (
-                                    <li key={i} className="flex items-start text-yellow-800">
-                                        <span className="mr-2">•</span> {item}
+                                    <li key={i} className="flex items-start text-slate-300">
+                                        <span className="mr-2 text-yellow-500">•</span> {item}
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="bg-gray-100 p-6 rounded-xl border border-gray-200">
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Root Causes</h3>
+                        <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-800">
+                            <h3 className="text-lg font-bold text-slate-50 mb-3">Root Causes</h3>
                             <ul className="space-y-2">
                                 {page.root_causes.map((item, i) => (
-                                    <li key={i} className="flex items-start text-gray-700">
-                                        <span className="mr-2">•</span> {item}
+                                    <li key={i} className="flex items-start text-slate-300">
+                                        <span className="mr-2 text-slate-500">•</span> {item}
                                     </li>
                                 ))}
                             </ul>
@@ -68,8 +68,8 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* Expectations */}
                     <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">{page.section_home_alone_expectations.heading}</h2>
-                        <div className="prose prose-blue max-w-none text-gray-600">
+                        <h2 className="text-2xl font-bold text-slate-50 mb-4">{page.section_home_alone_expectations.heading}</h2>
+                        <div className="prose prose-invert max-w-none text-slate-300">
                             {page.section_home_alone_expectations.paragraphs.map((p, i) => (
                                 <p key={i}>{p}</p>
                             ))}
@@ -78,24 +78,24 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* Step by Step Plan */}
                     <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">{page.section_step_by_step_plan.heading}</h2>
+                        <h2 className="text-2xl font-bold text-slate-50 mb-6">{page.section_step_by_step_plan.heading}</h2>
                         <div className="space-y-6">
                             {page.section_step_by_step_plan.steps.map((step, i) => (
-                                <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                                <div key={i} className="bg-slate-900/30 p-6 rounded-xl shadow-sm border border-slate-800">
                                     <div className="flex items-center mb-2">
-                                        <span className="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded-full mr-3">
+                                        <span className="bg-indigo-900/30 text-indigo-300 text-xs font-bold px-2 py-1 rounded-full mr-3 border border-indigo-500/30">
                                             Step {i + 1}
                                         </span>
-                                        <h3 className="text-lg font-bold text-gray-900">{step.title}</h3>
+                                        <h3 className="text-lg font-bold text-slate-200">{step.title}</h3>
                                     </div>
-                                    <p className="text-gray-600 ml-1">{step.detail}</p>
+                                    <p className="text-slate-400 ml-1">{step.detail}</p>
                                 </div>
                             ))}
                         </div>
                     </section>
 
                     {/* Course Recommendation */}
-                    <section className="bg-indigo-600 rounded-2xl p-8 text-white">
+                    <section className="bg-indigo-600 rounded-2xl p-8 text-white shadow-xl shadow-indigo-900/20">
                         <h2 className="text-2xl font-bold mb-4">{page.course_recommendation.headline}</h2>
                         <p className="text-indigo-100 mb-6">{page.course_recommendation.body}</p>
                         <ul className="space-y-2 mb-8">
@@ -111,7 +111,7 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
                                 href={ctaConfig.offerPrimary.deepLinkPlaceholder}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-indigo-50 transition-colors"
+                                className="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-indigo-50 transition-colors shadow-lg"
                             >
                                 {ctaConfig.offerPrimary.label}
                             </a>
@@ -120,8 +120,8 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* When to get help */}
                     <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">{page.section_when_to_get_help.heading}</h2>
-                        <div className="prose prose-blue max-w-none text-gray-600">
+                        <h2 className="text-2xl font-bold text-slate-50 mb-4">{page.section_when_to_get_help.heading}</h2>
+                        <div className="prose prose-invert max-w-none text-slate-300">
                             {page.section_when_to_get_help.paragraphs.map((p, i) => (
                                 <p key={i}>{p}</p>
                             ))}
@@ -130,13 +130,13 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* Related Pages */}
                     {relatedPages.length > 0 && (
-                        <section className="border-t border-gray-200 pt-12">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+                        <section className="border-t border-slate-800 pt-12">
+                            <h2 className="text-2xl font-bold text-slate-50 mb-6">Related Guides</h2>
                             <div className="grid gap-4 sm:grid-cols-2">
                                 {relatedPages.map(p => (
-                                    <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
-                                        <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{p.page_type}</span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{p.title}</h3>
+                                    <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-slate-800 bg-slate-900/20 hover:bg-slate-900/40 hover:border-emerald-500/50 hover:shadow-sm transition-all group">
+                                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider group-hover:text-emerald-300">{p.page_type}</span>
+                                        <h3 className="font-bold text-slate-200 mt-1 group-hover:text-white">{p.title}</h3>
                                     </Link>
                                 ))}
                             </div>
@@ -150,7 +150,7 @@ export default function ProblemPageView({ page, ctaConfig, breedSlug, relatedPag
 
                     {/* Quiz CTA */}
                     {ctaConfig?.quizPrimary && ctaConfig.quizPrimary.visible && (
-                        <div className="bg-gradient-to-br from-orange-500 to-red-600 p-6 rounded-xl text-white shadow-lg sticky top-8">
+                        <div className="bg-gradient-to-br from-orange-600 to-red-700 p-6 rounded-xl text-white shadow-lg sticky top-8 border border-orange-500/30">
                             <h3 className="text-xl font-bold mb-2">{ctaConfig.quizPrimary.label}</h3>
                             <p className="text-orange-100 mb-6 text-sm">{ctaConfig.quizPrimary.description}</p>
                             <Link

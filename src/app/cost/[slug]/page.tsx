@@ -41,13 +41,18 @@ export default async function CostPage({ params }: PageProps) {
     // Get related pages
     let relatedPages: any[] = [];
     if (breedSlug) {
-        const related = await getRelatedForPage({
-            page_type: 'cost',
-            main_breed_slug: breedSlug,
-            city_slug: page.local_context.city.toLowerCase().replace(/ /g, '-'), // Approximate slug
-            limit_per_type: 2
-        });
-        relatedPages = [...related.primary_links, ...related.secondary_links];
+        try {
+            const related = await getRelatedForPage({
+                page_type: 'cost',
+                main_breed_slug: breedSlug,
+                city_slug: page.local_context.city.toLowerCase().replace(/ /g, '-'), // Approximate slug
+                limit_per_type: 2
+            });
+            relatedPages = [...related.primary_links, ...related.secondary_links];
+        } catch (error) {
+            console.error(`Failed to fetch related pages for cost page ${slug}:`, error);
+            // Continue rendering page without related links
+        }
     }
 
     const ctaConfig = monetization ? resolvePageCTAs(monetization, page) : {

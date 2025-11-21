@@ -11,19 +11,19 @@ interface CostPageViewProps {
 
 export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages = [] }: CostPageViewProps) {
     return (
-        <main className="min-h-screen bg-gray-50 pb-20">
+        <main className="min-h-screen bg-slate-950 pb-20">
             {/* Hero */}
-            <div className="bg-white border-b border-gray-200">
+            <div className="bg-slate-900/50 border-b border-slate-800 backdrop-blur-sm">
                 <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
                     {breedSlug && (
-                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-600 hover:text-indigo-800 font-medium mb-4 inline-block">
+                        <Link href={`/breeds/${breedSlug}`} className="text-indigo-400 hover:text-indigo-300 font-medium mb-4 inline-block transition-colors">
                             &larr; Back to {page.hero.breed_name} Profile
                         </Link>
                     )}
-                    <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4">
+                    <h1 className="text-4xl font-extrabold text-slate-50 tracking-tight sm:text-5xl mb-4">
                         {page.h1}
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-slate-300 max-w-2xl">
                         {page.hero.one_line_summary}
                     </p>
                 </div>
@@ -33,18 +33,18 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                 <div className="lg:col-span-2 space-y-12">
 
                     {/* Summary Card */}
-                    <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Cost Summary</h2>
+                    <section className="bg-slate-900/50 p-6 rounded-xl shadow-sm border border-slate-800 backdrop-blur-sm">
+                        <h2 className="text-2xl font-bold text-slate-50 mb-6">Cost Summary</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="bg-blue-50 p-4 rounded-lg">
-                                <div className="text-sm text-blue-600 font-semibold uppercase tracking-wide">First Year</div>
-                                <div className="text-3xl font-bold text-blue-900 mt-1">
+                            <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-500/20">
+                                <div className="text-sm text-blue-400 font-semibold uppercase tracking-wide">First Year</div>
+                                <div className="text-3xl font-bold text-blue-300 mt-1">
                                     ${page.summary.first_year_min_usd} - ${page.summary.first_year_max_usd}
                                 </div>
                             </div>
-                            <div className="bg-green-50 p-4 rounded-lg">
-                                <div className="text-sm text-green-600 font-semibold uppercase tracking-wide">Monthly After</div>
-                                <div className="text-3xl font-bold text-green-900 mt-1">
+                            <div className="bg-emerald-900/20 p-4 rounded-lg border border-emerald-500/20">
+                                <div className="text-sm text-emerald-400 font-semibold uppercase tracking-wide">Monthly After</div>
+                                <div className="text-3xl font-bold text-emerald-300 mt-1">
                                     ${page.summary.ongoing_monthly_min_usd} - ${page.summary.ongoing_monthly_max_usd}
                                 </div>
                             </div>
@@ -53,23 +53,23 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
 
                     {/* First Year Breakdown */}
                     <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">First Year Expenses</h2>
-                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                            <table className="min-w-full divide-y divide-gray-200">
-                                <thead className="bg-gray-50">
+                        <h2 className="text-2xl font-bold text-slate-50 mb-4">First Year Expenses</h2>
+                        <div className="bg-slate-900/30 rounded-xl shadow-sm border border-slate-800 overflow-hidden">
+                            <table className="min-w-full divide-y divide-slate-800">
+                                <thead className="bg-slate-900/50">
                                     <tr>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
-                                        <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Cost Range</th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Item</th>
+                                        <th className="px-6 py-3 text-right text-xs font-medium text-slate-400 uppercase tracking-wider">Cost Range</th>
                                     </tr>
                                 </thead>
-                                <tbody className="bg-white divide-y divide-gray-200">
+                                <tbody className="divide-y divide-slate-800">
                                     {page.first_year_breakdown.map((item, i) => (
-                                        <tr key={i}>
+                                        <tr key={i} className="hover:bg-slate-800/30 transition-colors">
                                             <td className="px-6 py-4">
-                                                <div className="text-sm font-medium text-gray-900">{item.category}</div>
-                                                <div className="text-sm text-gray-500">{item.notes}</div>
+                                                <div className="text-sm font-medium text-slate-200">{item.category}</div>
+                                                <div className="text-sm text-slate-500">{item.notes}</div>
                                             </td>
-                                            <td className="px-6 py-4 text-right text-sm text-gray-900 whitespace-nowrap">
+                                            <td className="px-6 py-4 text-right text-sm text-slate-300 whitespace-nowrap">
                                                 ${item.min_usd} - ${item.max_usd}
                                             </td>
                                         </tr>
@@ -81,23 +81,23 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
 
                     {/* Monthly Breakdown */}
                     <section>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Monthly Expenses</h2>
-                        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                            <table className="min-w-full divide-y divide-gray-200">
-                                <thead className="bg-gray-50">
+                        <h2 className="text-2xl font-bold text-slate-50 mb-4">Monthly Expenses</h2>
+                        <div className="bg-slate-900/30 rounded-xl shadow-sm border border-slate-800 overflow-hidden">
+                            <table className="min-w-full divide-y divide-slate-800">
+                                <thead className="bg-slate-900/50">
                                     <tr>
-                                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
-                                        <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Cost Range</th>
+                                        <th className="px-6 py-3 text-left text-xs font-medium text-slate-400 uppercase tracking-wider">Item</th>
+                                        <th className="px-6 py-3 text-right text-xs font-medium text-slate-400 uppercase tracking-wider">Cost Range</th>
                                     </tr>
                                 </thead>
-                                <tbody className="bg-white divide-y divide-gray-200">
+                                <tbody className="divide-y divide-slate-800">
                                     {page.monthly_breakdown.map((item, i) => (
-                                        <tr key={i}>
+                                        <tr key={i} className="hover:bg-slate-800/30 transition-colors">
                                             <td className="px-6 py-4">
-                                                <div className="text-sm font-medium text-gray-900">{item.category}</div>
-                                                <div className="text-sm text-gray-500">{item.notes}</div>
+                                                <div className="text-sm font-medium text-slate-200">{item.category}</div>
+                                                <div className="text-sm text-slate-500">{item.notes}</div>
                                             </td>
-                                            <td className="px-6 py-4 text-right text-sm text-gray-900 whitespace-nowrap">
+                                            <td className="px-6 py-4 text-right text-sm text-slate-300 whitespace-nowrap">
                                                 ${item.min_usd} - ${item.max_usd}
                                             </td>
                                         </tr>
@@ -108,17 +108,17 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                     </section>
 
                     {/* Emergency Section */}
-                    <section className="bg-red-50 p-6 rounded-xl border border-red-100">
-                        <h2 className="text-2xl font-bold text-red-900 mb-4">Emergency Costs</h2>
-                        <p className="text-red-800 mb-4">{page.emergency_costs.one_line_warning}</p>
-                        <div className="bg-white p-4 rounded-lg border border-red-100 mb-4">
-                            <div className="text-sm text-gray-500 uppercase tracking-wide">Typical Emergency Bill</div>
-                            <div className="text-2xl font-bold text-red-600">
+                    <section className="bg-red-900/20 p-6 rounded-xl border border-red-500/20">
+                        <h2 className="text-2xl font-bold text-red-400 mb-4">Emergency Costs</h2>
+                        <p className="text-red-300 mb-4">{page.emergency_costs.one_line_warning}</p>
+                        <div className="bg-slate-900/50 p-4 rounded-lg border border-red-500/20 mb-4">
+                            <div className="text-sm text-slate-400 uppercase tracking-wide">Typical Emergency Bill</div>
+                            <div className="text-2xl font-bold text-red-400">
                                 ${page.emergency_costs.typical_emergency_range_usd.low} - ${page.emergency_costs.typical_emergency_range_usd.high}
                             </div>
                         </div>
-                        <h3 className="font-bold text-red-900 mb-2">Common Issues:</h3>
-                        <ul className="list-disc list-inside text-red-800">
+                        <h3 className="font-bold text-red-300 mb-2">Common Issues:</h3>
+                        <ul className="list-disc list-inside text-red-200/80">
                             {page.emergency_costs.common_emergencies.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}
@@ -127,12 +127,12 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
 
                     {/* Insurance Section */}
                     {page.insurance_section.recommended && (
-                        <section className="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
-                            <h2 className="text-2xl font-bold text-indigo-900 mb-4">Is Pet Insurance Worth It?</h2>
-                            <p className="text-indigo-800 mb-4">{page.insurance_section.reason}</p>
-                            <div className="bg-white p-4 rounded-lg border border-indigo-100 mb-6">
-                                <div className="text-sm text-gray-500 uppercase tracking-wide">Typical Monthly Premium</div>
-                                <div className="text-2xl font-bold text-indigo-600">
+                        <section className="bg-indigo-900/20 p-6 rounded-xl border border-indigo-500/20">
+                            <h2 className="text-2xl font-bold text-indigo-400 mb-4">Is Pet Insurance Worth It?</h2>
+                            <p className="text-indigo-300 mb-4">{page.insurance_section.reason}</p>
+                            <div className="bg-slate-900/50 p-4 rounded-lg border border-indigo-500/20 mb-6">
+                                <div className="text-sm text-slate-400 uppercase tracking-wide">Typical Monthly Premium</div>
+                                <div className="text-2xl font-bold text-indigo-400">
                                     ${page.insurance_section.typical_premium_range_usd.low} - ${page.insurance_section.typical_premium_range_usd.high}
                                 </div>
                             </div>
@@ -143,11 +143,11 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                                         href={ctaConfig.offerPrimary.deepLinkPlaceholder}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition-colors w-full md:w-auto"
+                                        className="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-500 transition-colors w-full md:w-auto shadow-lg shadow-indigo-900/20"
                                     >
                                         {ctaConfig.offerPrimary.label}
                                     </a>
-                                    <p className="text-sm text-indigo-600 mt-2">{ctaConfig.offerPrimary.description}</p>
+                                    <p className="text-sm text-indigo-400 mt-2">{ctaConfig.offerPrimary.description}</p>
                                 </div>
                             )}
                         </section>
@@ -155,13 +155,13 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
 
                     {/* Related Pages */}
                     {relatedPages.length > 0 && (
-                        <section className="border-t border-gray-200 pt-12">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+                        <section className="border-t border-slate-800 pt-12">
+                            <h2 className="text-2xl font-bold text-slate-50 mb-6">Related Guides</h2>
                             <div className="grid gap-4 sm:grid-cols-2">
                                 {relatedPages.map(p => (
-                                    <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all">
-                                        <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{p.page_type}</span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{p.title}</h3>
+                                    <Link key={p.slug} href={`/${p.page_type === 'breed' ? 'breeds' : p.page_type === 'problem' ? 'problems' : p.page_type}/${p.slug}`} className="block p-4 rounded-xl border border-slate-800 bg-slate-900/20 hover:bg-slate-900/40 hover:border-emerald-500/50 hover:shadow-sm transition-all group">
+                                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider group-hover:text-emerald-300">{p.page_type}</span>
+                                        <h3 className="font-bold text-slate-200 mt-1 group-hover:text-white">{p.title}</h3>
                                     </Link>
                                 ))}
                             </div>
@@ -173,20 +173,20 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                 {/* Sidebar */}
                 <div className="lg:col-span-1 space-y-8">
                     {/* Local Context */}
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <h3 className="text-lg font-bold text-gray-900 mb-4">Local Context: {page.local_context.city}</h3>
-                        <p className="text-sm text-gray-600 mb-4">{page.local_context.cost_of_living_note}</p>
-                        <p className="text-sm text-gray-600">{page.local_context.dog_friendly_note}</p>
+                    <div className="bg-slate-900/50 p-6 rounded-xl shadow-sm border border-slate-800 backdrop-blur-sm">
+                        <h3 className="text-lg font-bold text-slate-50 mb-4">Local Context: {page.local_context.city}</h3>
+                        <p className="text-sm text-slate-400 mb-4">{page.local_context.cost_of_living_note}</p>
+                        <p className="text-sm text-slate-400">{page.local_context.dog_friendly_note}</p>
                     </div>
 
                     {/* Quiz CTA */}
                     {ctaConfig?.quizPrimary && ctaConfig.quizPrimary.visible && (
-                        <div className="bg-gradient-to-br from-purple-600 to-indigo-700 p-6 rounded-xl text-white shadow-lg">
+                        <div className="bg-gradient-to-br from-purple-900/80 to-indigo-900/80 p-6 rounded-xl text-white shadow-lg border border-indigo-500/30">
                             <h3 className="text-xl font-bold mb-2">{ctaConfig.quizPrimary.label}</h3>
-                            <p className="text-indigo-100 mb-6 text-sm">{ctaConfig.quizPrimary.description}</p>
+                            <p className="text-indigo-200 mb-6 text-sm">{ctaConfig.quizPrimary.description}</p>
                             <Link
                                 href={`/quiz/${ctaConfig.quizPrimary.quizSlug}`}
-                                className="block w-full bg-white text-indigo-600 text-center font-bold py-3 rounded-lg hover:bg-indigo-50 transition-colors"
+                                className="block w-full bg-white text-indigo-900 text-center font-bold py-3 rounded-lg hover:bg-indigo-50 transition-colors"
                             >
                                 Start Quiz
                             </Link>

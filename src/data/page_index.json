@@ -271,6 +271,44 @@
       "primary_intent": "informational",
       "short_label": "Best Dogs for Apartments: Top Breeds for Small Spaces"
     }
+    {
+      "slug": "golden-retriever",
+      "page_type": "cost",
+      "title": "Golden Retriever Cost: Price, Monthly Expenses & Vet Bills",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Cost Guide"
+    },
+    {
+      "slug": "golden-retriever",
+      "page_type": "anxiety",
+      "title": "Golden Retriever Anxiety: Symptoms, Causes & Solutions",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Anxiety Guide"
+    },
+    {
+      "slug": "golden-retriever",
+      "page_type": "problem",
+      "title": "Golden Retriever Common Problems: Health & Behavior",
+      "breed_slugs": [
+        "golden-retriever"
+      ],
+      "primary_intent": "informational",
+      "short_label": "Golden Retriever Problems & Solutions"
+    },
+    {
+      "slug": "best-family-dogs",
+      "page_type": "list",
+      "title": "Best Family Dogs: Top Breeds for Kids & Active Homes",
+      "breed_slugs": [],
+      "primary_intent": "informational",
+      "short_label": "Best Family Dogs"
+    }
   ],
   "generated_at": "2025-11-21T11:37:20.631Z"
 }
