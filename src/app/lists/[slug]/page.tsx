@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 import { getListPageBySlug, getListPageV7BySlug } from "@/lib/data";
-import { getAllStaticParams } from "@/lib/static-params";
 import ListPageView from "@/components/ListPageView";
 import { Metadata } from "next";
 import { legacyListPageToV7 } from "@/lib/v7-mappers";
 import type { ListV7Page } from "@/lib/types";
 import JsonLd from "@/components/JsonLd";
+import { getAllStaticParams } from "@/lib/static-params";
 
 export async function generateStaticParams() {
     const params = getAllStaticParams();

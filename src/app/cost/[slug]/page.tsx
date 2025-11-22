@@ -73,13 +73,13 @@ export default async function CostPage({ params }: PageProps) {
     const ctaConfig = monetization
         ? resolvePageCTAs(monetization, page)
         : {
-              quizPrimary: null,
-              quizSecondary: [],
-              offerPrimary: null,
-              offerSecondary: [],
-              showAds: false,
-              showEmailCapture: false,
-          };
+            quizPrimary: null,
+            quizSecondary: [],
+            offerPrimary: null,
+            offerSecondary: [],
+            showAds: false,
+            showEmailCapture: false,
+        };
 
     const jsonLd = {
         "@context": "https://schema.org",

@@ -15,8 +15,8 @@ The current codebase is in **high alignment** with the V7 Implementation Plan. T
 | **Phase 3** | **Seed Data** | ✅ **Verified** | `src/data_v7` contains all required JSON files and folder structure. |
 | **Phase 4** | **Monetization** | ✅ **Verified** | `src/lib/monetization.ts` and `page_monetization.json` are present. |
 | **Phase 5** | **Data Loaders** | ✅ **Verified** | `src/lib/data.ts` implements loaders for all page types. |
-| **Phase 6** | **Frontend Pages** | ✅ **Verified** | All 7 core routes (`breed`, `cost`, `problem`, etc.) and components exist. |
-| **Phase 7** | **Public JSON API** | ⚠️ **Minor Issue** | API routes exist, but there is a duplicate/ambiguous `api/costs` vs `api/cost`. |
+| **Phase 6** | **Frontend Pages** | ✅ **Verified** | SSG implemented with `generateStaticParams`. |
+| **Phase 7** | **Public JSON API** | ✅ **Verified** | `/api/answers` implemented. |
 | **Phase 8** | **Quiz Engine** | ✅ **Verified** | Quiz engine and components are implemented. |
 | **Phase 9** | **LLM Client** | ✅ **Verified** | `scripts/llmClient.ts` and generation scripts are present. |
 | **Phase 10** | **QA Scripts** | ✅ **Verified** | `qa-check`, `qa-seo`, `qa-quiz`, `qa-content-style` scripts exist. |
@@ -25,8 +25,9 @@ The current codebase is in **high alignment** with the V7 Implementation Plan. T
 | **Phase 13** | **Hybrid LLM** | ✅ **Verified** | `llmClient.ts` implements Cloud/Local hybrid fallback. `api/comparison` exists. |
 | **Phase 14** | **Internal Linking** | ✅ **Verified** | `src/lib/internal-links.ts` and build script exist. |
 | **Phase 15** | **Content Quality** | ✅ **Verified** | `qa-content-style.ts` checks for length, medical advice, and verdicts. |
-| **Phase 16** | **Tools & Guides** | ✅ **Verified** | `src/app/tools` and `src/app/guides` are implemented. |
+| **Phase 16** | **Tools & Guides** | ✅ **Verified** | `src/app/guides` implemented and data folder created. |
 | **Phase 17** | **V7 SEO & Outline** | ✅ **Verified** | Master keywords and V7 regeneration scripts are present. |
+| **Phase 18** | **Metrics & Refresh** | ⚠️ **Deferred** | Metrics files exist but integration deferred to Phase 18 execution. |
 | **Phase 19** | **Content Matrix** | ✅ **Verified** | Management JSON and build scripts are present. |
 | **Phase 20** | **Admin Dashboard** | ✅ **Verified** | Admin route and client component exist. |
 

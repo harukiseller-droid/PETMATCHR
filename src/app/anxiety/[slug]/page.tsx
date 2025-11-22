@@ -8,6 +8,12 @@ import { getRelatedForPage } from '@/lib/internal-links';
 import JsonLd from '@/components/JsonLd';
 import { legacyAnxietyPageToV7 } from '@/lib/v7-mappers';
 import type { AnxietyV7Page } from '@/lib/types';
+import { getAllStaticParams } from "@/lib/static-params";
+
+export async function generateStaticParams() {
+    const params = getAllStaticParams();
+    return params.anxiety || [];
+}
 
 interface Props {
     params: {

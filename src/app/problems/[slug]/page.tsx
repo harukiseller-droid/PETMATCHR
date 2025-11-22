@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getProblemPageBySlug, getProblemPageV7BySlug } from "@/lib/data";
+import { getAllStaticParams } from "@/lib/static-params";
 import { getPageMonetization } from "@/lib/monetization";
 import { resolvePageCTAs } from "@/lib/cta";
 import ProblemPageView from "@/components/ProblemPageView";

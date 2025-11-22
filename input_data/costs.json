@@ -28,27 +28,27 @@
         {
             "state": "Idaho",
             "lifetime_cost": 16000,
-            "annual_cost": 0
+            "annual_cost": 1260
         },
         {
             "state": "Florida",
             "lifetime_cost": 16500,
-            "annual_cost": 0
+            "annual_cost": 1300
         },
         {
             "state": "North Dakota",
             "lifetime_cost": 17000,
-            "annual_cost": 0
+            "annual_cost": 1340
         },
         {
             "state": "Oklahoma",
             "lifetime_cost": 17500,
-            "annual_cost": 0
+            "annual_cost": 1380
         },
         {
             "state": "Oregon",
             "lifetime_cost": 18000,
-            "annual_cost": 0
+            "annual_cost": 1420
         },
         {
             "state": "Neapolitan Mastiff",

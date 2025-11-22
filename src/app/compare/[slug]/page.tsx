@@ -4,8 +4,14 @@ import ComparisonPageView from '@/components/ComparisonPageView';
 import { ensureComparisonPage } from '@/lib/comparison-generator';
 import { resolvePageCTAs } from '@/lib/cta';
 import JsonLd from '@/components/JsonLd';
+import { getAllStaticParams } from "@/lib/static-params";
 
 export const dynamic = 'force-dynamic';
+
+export async function generateStaticParams() {
+    const params = getAllStaticParams();
+    return params.comparison || [];
+}
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
     const parts = params.slug.split('-vs-');

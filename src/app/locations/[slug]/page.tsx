@@ -7,6 +7,13 @@ import LocationPageView from '@/components/LocationPageView';
 import { legacyLocationPageToV7 } from '@/lib/v7-mappers';
 import type { LocationV7Page } from '@/lib/types';
 import JsonLd from '@/components/JsonLd';
+import { getAllStaticParams } from "@/lib/static-params";
+
+export async function generateStaticParams() {
+    const { getAllStaticParams } = await import("@/lib/static-params");
+    const params = getAllStaticParams();
+    return params.location || [];
+}
 
 interface Props {
     params: {

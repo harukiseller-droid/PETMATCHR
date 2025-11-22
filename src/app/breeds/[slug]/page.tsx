@@ -40,6 +40,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
 }
 
+export async function generateStaticParams() {
+    const { getAllStaticParams } = await import("@/lib/static-params");
+    const params = getAllStaticParams();
+    return params.breed || [];
+}
+
 export default async function BreedPage({ params }: PageProps) {
     const { slug } = params;
     const breed = await getBreedBySlug(slug);
