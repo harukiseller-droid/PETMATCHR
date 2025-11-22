@@ -34,6 +34,18 @@ interface PageMatrixItem {
     primary_intent: string;
 }
 
+async function getBreedImages(slug: string): Promise<string[]> {
+    const breedDir = path.join(process.cwd(), 'public/images/breeds', slug);
+    try {
+        const files = await fs.readdir(breedDir);
+        return files
+            .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
+            .map(f => `/images/breeds/${slug}/${f}`);
+    } catch {
+        return [];
+    }
+}
+
 async function generatePages() {
     const matrixPath = path.join(process.cwd(), 'pageMatrix.json');
 
@@ -110,6 +122,28 @@ async function generatePages() {
                             const citySlug = item.input_data?.city?.city_slug;
                             if (citySlug) {
                                 extra.city_slug = citySlug;
+                            }
+                        }
+
+                        const images = await getBreedImages(item.slug);
+                        if (images.length > 0 && data.sections && Array.isArray(data.sections)) {
+                            // Randomly select 1-3 images
+                            const shuffled = images.sort(() => 0.5 - Math.random());
+                            const selected = shuffled.slice(0, 3);
+
+                            let imgIdx = 0;
+                            // Distribute images across sections
+                            for (let s = 0; s < data.sections.length; s++) {
+                                if (imgIdx >= selected.length) break;
+
+                                // Simple heuristic: inject if section is long enough or we need to dump images
+                                // Avoid injecting in the very first section if possible to keep intro clean, unless it's the only one
+                                if (s > 0 || data.sections.length === 1) {
+                                    const section = data.sections[s];
+                                    // Append markdown image
+                                    section.content = (section.content || '') + `\n\n![${data.h1} - ${section.title}](${selected[imgIdx]})`;
+                                    imgIdx++;
+                                }
                             }
                         }
 

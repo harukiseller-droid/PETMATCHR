@@ -140,18 +140,36 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                                         )}
                                     </dl>
                                 </div>
-                                <div className="flex flex-col gap-2 w-full md:w-40">
+                                <div className="grid grid-cols-2 gap-2 w-full md:w-auto">
                                     <Link
                                         href={`/breeds/${match.breed_slug}`}
-                                        className="inline-flex justify-center rounded-full bg-indigo-600 px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-500 transition-colors"
+                                        className="col-span-2 inline-flex justify-center items-center rounded-full bg-indigo-600 px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-500 transition-colors"
                                     >
-                                        View full guide
+                                        View Full Profile
                                     </Link>
                                     <Link
-                                        href={`/cost`}
-                                        className="inline-flex justify-center rounded-full border border-gray-200 px-4 py-2 text-xs font-semibold text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                        href={`/breeds/${match.breed_slug}/cost`}
+                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
                                     >
-                                        Explore cost guides
+                                        Cost
+                                    </Link>
+                                    <Link
+                                        href={`/breeds/${match.breed_slug}/health-problems`}
+                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                    >
+                                        Health
+                                    </Link>
+                                    <Link
+                                        href={`/breeds/${match.breed_slug}/anxiety`}
+                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                    >
+                                        Anxiety
+                                    </Link>
+                                    <Link
+                                        href={`/breeds/${match.breed_slug}/compare`}
+                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                    >
+                                        Compare
                                     </Link>
                                 </div>
                             </div>

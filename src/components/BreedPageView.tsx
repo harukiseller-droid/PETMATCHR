@@ -89,7 +89,7 @@ export default function BreedPageView({
                         <section key={section.id}>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
                             <div className="prose prose-blue max-w-none text-gray-700">
-                                {section.content && <p className="mb-4 whitespace-pre-line">{section.content}</p>}
+                                {section.content && <MarkdownWithImages content={section.content} />}
                                 {section.type === "list" && section.items && (
                                     <ul className="list-disc pl-5 space-y-2">
                                         {section.items.map((item, i) => (
@@ -345,6 +345,40 @@ export default function BreedPageView({
                 </div>
             </div>
         </main>
+    );
+}
+
+function MarkdownWithImages({ content }: { content: string }) {
+    if (!content) return null;
+
+    // Split by image regex: ![alt](url)
+    const parts = content.split(/(!\[.*?\]\(.*?\))/g);
+
+    return (
+        <div className="mb-4 text-gray-700">
+            {parts.map((part, i) => {
+                const imgMatch = part.match(/!\[(.*?)\]\((.*?)\)/);
+                if (imgMatch) {
+                    return (
+                        <figure key={i} className="my-6">
+                            <img
+                                src={imgMatch[2]}
+                                alt={imgMatch[1]}
+                                className="w-full h-auto rounded-xl shadow-md object-cover max-h-[500px]"
+                            />
+                            {imgMatch[1] && (
+                                <figcaption className="text-center text-sm text-gray-500 mt-2 italic">
+                                    {imgMatch[1]}
+                                </figcaption>
+                            )}
+                        </figure>
+                    );
+                }
+                // Render text with newlines, avoiding empty spans
+                if (!part) return null;
+                return <span key={i} className="whitespace-pre-line">{part}</span>;
+            })}
+        </div>
     );
 }
 
