@@ -1,45 +1,62 @@
 {
-    "slug": "golden-retriever",
-    "meta": {
-        "title": "Golden Retriever Anxiety: Symptoms, Causes & Solutions",
-        "description": "Do Golden Retrievers get anxiety? Learn about separation anxiety, noise phobias, and how to help your anxious Golden."
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Anxiety: Symptoms, Causes & Solutions",
+    "description": "Do Golden Retrievers get anxiety? Learn about separation anxiety, noise phobias, and how to help your anxious Golden."
+  },
+  "h1": "Golden Retriever Anxiety Guide",
+  "hero": {
+    "title": "Understanding Golden Retriever Anxiety",
+    "subtitle": "Why your happy-go-lucky dog might be stressed.",
+    "image_url": "/images/anxiety/golden-retriever.jpg"
+  },
+  "intro": "While known for their friendly nature, Golden Retrievers are highly social dogs that can suffer from separation anxiety and noise phobias.",
+  "symptoms": [
+    "Pacing and panting",
+    "Destructive chewing",
+    "Barking or whining when left alone"
+  ],
+  "causes": [
+    "Lack of exercise",
+    "Being left alone for long periods",
+    "Loud noises (thunder, fireworks)"
+  ],
+  "solutions": [
+    {
+      "title": "Exercise",
+      "description": "A tired dog is a calm dog. Ensure 60+ minutes of activity daily."
     },
-    "h1": "Golden Retriever Anxiety Guide",
-    "hero": {
-        "title": "Understanding Golden Retriever Anxiety",
-        "subtitle": "Why your happy-go-lucky dog might be stressed.",
-        "image_url": "/images/anxiety/golden-retriever.jpg"
+    {
+      "title": "Crate Training",
+      "description": "Create a safe space for your dog to retreat to."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
     },
-    "intro": "While known for their friendly nature, Golden Retrievers are highly social dogs that can suffer from separation anxiety and noise phobias.",
-    "symptoms": [
-        "Pacing and panting",
-        "Destructive chewing",
-        "Barking or whining when left alone"
-    ],
-    "causes": [
-        "Lack of exercise",
-        "Being left alone for long periods",
-        "Loud noises (thunder, fireworks)"
-    ],
-    "solutions": [
-        {
-            "title": "Exercise",
-            "description": "A tired dog is a calm dog. Ensure 60+ minutes of activity daily."
-        },
-        {
-            "title": "Crate Training",
-            "description": "Create a safe space for your dog to retreat to."
-        }
-    ],
-    "faq": [],
-    "related_guides": [
-        {
-            "title": "Separation Anxiety",
-            "slug": "golden-retriever-separation-anxiety"
-        },
-        {
-            "title": "Noise Anxiety",
-            "slug": "golden-retriever-noise-anxiety"
-        }
-    ]
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "related_guides": [
+    {
+      "title": "Separation Anxiety",
+      "slug": "golden-retriever-separation-anxiety"
+    },
+    {
+      "title": "Noise Anxiety",
+      "slug": "golden-retriever-noise-anxiety"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ]
 }

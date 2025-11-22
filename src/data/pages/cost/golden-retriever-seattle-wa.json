@@ -1,50 +1,68 @@
 {
-    "slug": "golden-retriever-seattle-wa",
-    "meta": {
-        "title": "Golden Retriever Cost in Seattle, WA (2025 Price Guide)",
-        "description": "Complete breakdown of Golden Retriever costs in Seattle. Puppy prices, vet bills, grooming, and monthly expenses for Seattle dog owners."
+  "slug": "golden-retriever-seattle-wa",
+  "meta": {
+    "title": "Golden Retriever Cost in Seattle, WA (2025 Price Guide)",
+    "description": "Complete breakdown of Golden Retriever costs in Seattle. Puppy prices, vet bills, grooming, and monthly expenses for Seattle dog owners."
+  },
+  "h1": "How Much Does a Golden Retriever Cost in Seattle?",
+  "last_updated": "2025-01-15",
+  "city": {
+    "name": "Seattle",
+    "state": "WA",
+    "cost_index": 1.35
+  },
+  "breed": {
+    "name": "Golden Retriever",
+    "size": "Large"
+  },
+  "costs": {
+    "puppy_price": {
+      "low": 1400,
+      "high": 3200,
+      "average": 2400
     },
-    "h1": "How Much Does a Golden Retriever Cost in Seattle?",
-    "last_updated": "2025-01-15",
-    "city": {
-        "name": "Seattle",
-        "state": "WA",
-        "cost_index": 1.35
+    "initial_setup": {
+      "supplies": 600,
+      "medical": 420,
+      "license": 30,
+      "microchip": 50
     },
-    "breed": {
-        "name": "Golden Retriever",
-        "size": "Large"
+    "monthly": {
+      "food": 90,
+      "insurance": 70,
+      "preventative_meds": 40,
+      "toys_treats": 40,
+      "grooming": 95,
+      "total_min": 240,
+      "total_max": 420
     },
-    "costs": {
-        "puppy_price": {
-            "low": 1400,
-            "high": 3200,
-            "average": 2400
-        },
-        "initial_setup": {
-            "supplies": 600,
-            "medical": 420,
-            "license": 30,
-            "microchip": 50
-        },
-        "monthly": {
-            "food": 90,
-            "insurance": 70,
-            "preventative_meds": 40,
-            "toys_treats": 40,
-            "grooming": 95,
-            "total_min": 240,
-            "total_max": 420
-        },
-        "annual_total": 4000
-    },
-    "local_insights": [
-        "Rain gear for dogs is a common extra expense in Seattle.",
-        "Vet costs are high, similar to other tech hubs.",
-        "Dog daycares are popular and can cost $30-45/day."
-    ],
-    "monetization": {
-        "insurance_cta": "Get a quote for Seattle Pet Insurance",
-        "insurance_url": "https://example.com/insurance-seattle"
+    "annual_total": 4000
+  },
+  "local_insights": [
+    "Rain gear for dogs is a common extra expense in Seattle.",
+    "Vet costs are high, similar to other tech hubs.",
+    "Dog daycares are popular and can cost $30-45/day."
+  ],
+  "monetization": {
+    "insurance_cta": "Get a quote for Seattle Pet Insurance",
+    "insurance_url": "https://example.com/insurance-seattle"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
     }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

@@ -13,7 +13,7 @@ export default function TermsPage() {
                 <div className="prose prose-invert prose-lg">
                     <p>Last updated: November 21, 2025</p>
                     <p>
-                        These Terms of Service ("Terms") govern your access to and use of the PetMatchr website. By accessing or using the Service, you agree to be bound by these Terms.
+                        These Terms of Service (“Terms”) govern your access to and use of the PetMatchr website. By accessing or using the Service, you agree to be bound by these Terms.
                     </p>
                     <h2>1. Acceptance of Terms</h2>
                     <p>

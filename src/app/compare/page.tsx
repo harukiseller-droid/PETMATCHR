@@ -56,7 +56,7 @@ export default async function ComparePage() {
                                 VS
                             </div>
                             <h3 className="text-lg font-bold text-slate-100 mb-2">Honest Verdicts</h3>
-                            <p className="text-sm text-slate-400">We don't just list stats. We tell you who wins for apartments, kids, and busy schedules.</p>
+                            <p className="text-sm text-slate-400">We don’t just list stats. We tell you who wins for apartments, kids, and busy schedules.</p>
                         </div>
                         <div>
                             <div className="w-12 h-12 mx-auto bg-slate-900 rounded-full flex items-center justify-center mb-4 text-emerald-400 font-bold text-lg border border-slate-800">

@@ -1,43 +1,59 @@
 {
-    "slug": "new-york-ny",
-    "meta": {
-        "title": "Best Dogs for New York, NY Living",
-        "description": "Living in NYC? Here are the best dog breeds for apartment life and city streets."
+  "slug": "new-york-ny",
+  "meta": {
+    "title": "Best Dogs for New York, NY Living",
+    "description": "Living in NYC? Here are the best dog breeds for apartment life and city streets."
+  },
+  "h1": "Best Dogs for New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "intro": "NYC is a dog lover's paradise, but you need a dog that can handle noise, elevators, and small spaces.",
+  "top_breeds_for_city": [
+    {
+      "slug": "french-bulldog",
+      "name": "French Bulldog",
+      "reason": "Compact size and low energy make them perfect for apartments."
     },
-    "h1": "Best Dogs for New York, NY",
-    "city": "New York",
-    "state": "NY",
-    "intro": "NYC is a dog lover's paradise, but you need a dog that can handle noise, elevators, and small spaces.",
-    "top_breeds_for_city": [
-        {
-            "slug": "french-bulldog",
-            "name": "French Bulldog",
-            "reason": "Compact size and low energy make them perfect for apartments."
-        },
-        {
-            "slug": "cavalier-king-charles-spaniel",
-            "name": "Cavalier King Charles Spaniel",
-            "reason": "Gentle, quiet, and happy to people-watch from a cafe."
-        },
-        {
-            "slug": "golden-retriever",
-            "name": "Golden Retriever",
-            "reason": "Friendly enough for crowded streets, but needs a dedicated owner for exercise."
-        }
-    ],
-    "local_tips": [
-        {
-            "title": "Sidewalk Safety",
-            "content": "Watch out for salt in winter and hot pavement in summer. Booties are a must."
-        },
-        {
-            "title": "Subway Rules",
-            "content": "Dogs must be in a bag to ride the subway. Plan accordingly!"
-        }
-    ],
-    "cta": {
-        "quiz_anchor": "Find your perfect NYC companion"
+    {
+      "slug": "cavalier-king-charles-spaniel",
+      "name": "Cavalier King Charles Spaniel",
+      "reason": "Gentle, quiet, and happy to people-watch from a cafe."
     },
-    "quick_answers": [],
-    "faq": []
+    {
+      "slug": "golden-retriever",
+      "name": "Golden Retriever",
+      "reason": "Friendly enough for crowded streets, but needs a dedicated owner for exercise."
+    }
+  ],
+  "local_tips": [
+    {
+      "title": "Sidewalk Safety",
+      "content": "Watch out for salt in winter and hot pavement in summer. Booties are a must."
+    },
+    {
+      "title": "Subway Rules",
+      "content": "Dogs must be in a bag to ride the subway. Plan accordingly!"
+    }
+  ],
+  "cta": {
+    "quiz_anchor": "Find your perfect NYC companion"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

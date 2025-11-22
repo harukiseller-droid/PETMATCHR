@@ -1,34 +1,52 @@
 {
-    "slug": "seattle-wa",
-    "meta": {
-        "title": "Best Dogs for Seattle Living: Rain & Hiking Guide",
-        "description": "Living in Seattle with a dog? Discover the best breeds for the PNW lifestyle, top hiking trails, and tips for rainy day walks."
-    },
-    "h1": "Best Dogs for Seattle, WA",
-    "city": {
-        "name": "Seattle",
-        "state": "WA",
-        "climate": "Rainy/Temperate",
-        "dog_friendly_score": 9.5
-    },
-    "top_breeds": [
-        "Golden Retriever",
-        "Labrador Retriever",
-        "Australian Shepherd",
-        "Bernese Mountain Dog"
-    ],
-    "local_tips": [
-        "Invest in a good rain coat for your dog.",
-        "Check for blue-green algae in lakes before swimming.",
-        "Seattle is incredibly dog-friendly; many breweries allow dogs inside."
-    ],
-    "parks": [
-        "Magnuson Park Off-Leash Area",
-        "Golden Gardens Park",
-        "Marymoor Park (Redmond)"
-    ],
-    "monetization": {
-        "insurance_cta": "Protect Your Seattle Pup",
-        "insurance_url": "https://example.com/insurance-seattle"
+  "slug": "seattle-wa",
+  "meta": {
+    "title": "Best Dogs for Seattle Living: Rain & Hiking Guide",
+    "description": "Living in Seattle with a dog? Discover the best breeds for the PNW lifestyle, top hiking trails, and tips for rainy day walks."
+  },
+  "h1": "Best Dogs for Seattle, WA",
+  "city": {
+    "name": "Seattle",
+    "state": "WA",
+    "climate": "Rainy/Temperate",
+    "dog_friendly_score": 9.5
+  },
+  "top_breeds": [
+    "Golden Retriever",
+    "Labrador Retriever",
+    "Australian Shepherd",
+    "Bernese Mountain Dog"
+  ],
+  "local_tips": [
+    "Invest in a good rain coat for your dog.",
+    "Check for blue-green algae in lakes before swimming.",
+    "Seattle is incredibly dog-friendly; many breweries allow dogs inside."
+  ],
+  "parks": [
+    "Magnuson Park Off-Leash Area",
+    "Golden Gardens Park",
+    "Marymoor Park (Redmond)"
+  ],
+  "monetization": {
+    "insurance_cta": "Protect Your Seattle Pup",
+    "insurance_url": "https://example.com/insurance-seattle"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
     }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

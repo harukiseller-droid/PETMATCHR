@@ -1,28 +1,11 @@
 import { Metadata } from 'next';
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import ComparisonPageView from '@/components/ComparisonPageView';
 import { ensureComparisonPage } from '@/lib/comparison-generator';
-import { CTAConfig } from '@/lib/types';
+import { resolvePageCTAs } from '@/lib/cta';
 import JsonLd from '@/components/JsonLd';
 
 export const dynamic = 'force-dynamic';
-
-// Mock resolvePageCTAs if not available
-function resolvePageCTAs(pageType: string, slug: string): CTAConfig {
-    return {
-        quizPrimary: {
-            visible: true,
-            quizSlug: 'lifestyle-match',
-            label: 'Find your perfect match',
-            description: 'Take our 60-second quiz'
-        },
-        quizSecondary: [],
-        offerPrimary: null,
-        offerSecondary: [],
-        showAds: true,
-        showEmailCapture: true
-    };
-}
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
     const parts = params.slug.split('-vs-');
@@ -72,7 +55,7 @@ export default async function ComparisonPage({
                     <div className="w-16 h-16 border-4 border-emerald-500/30 border-t-emerald-500 rounded-full animate-spin mb-6"></div>
                     <h1 className="text-2xl font-bold mb-2">Generating Comparison...</h1>
                     <p className="text-slate-400 max-w-md">
-                        We're analyzing thousands of data points to compare {leftBreedSlug.replace(/-/g, ' ')} and {rightBreedSlug.replace(/-/g, ' ')} just for you.
+                        We’re analyzing thousands of data points to compare {leftBreedSlug.replace(/-/g, ' ')} and {rightBreedSlug.replace(/-/g, ' ')} just for you.
                     </p>
                     <p className="text-slate-500 text-sm mt-4">
                         This usually takes about 20-30 seconds. Please refresh the page in a moment.
@@ -95,7 +78,20 @@ export default async function ComparisonPage({
         }
     }
 
-    const ctaConfig = resolvePageCTAs('comparison', slug);
+    const ctaConfig = resolvePageCTAs({
+        slug,
+        page_type: 'comparison',
+        cluster: 'generic',
+        primary_funnel: 'lifestyle_quiz',
+        secondary_funnels: [],
+        primary_offer_type: 'none',
+        secondary_offer_types: [],
+        show_ads: true,
+        show_email_capture: true,
+        primary_quiz_slug: 'lifestyle-match',
+        secondary_quiz_slugs: [],
+        primary_campaign_id: null,
+    }, result.page);
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -112,9 +108,28 @@ export default async function ComparisonPage({
         }
     };
 
+    const qaSource = (result.page.quick_answers && result.page.quick_answers.length > 0
+        ? result.page.quick_answers.map((qa) => ({ question: qa.question, answer: qa.answer }))
+        : result.page.faq.map((f) => ({ question: f.question, answer: f.answer }))
+    ).slice(0, 10);
+
+    const faqJsonLd = qaSource.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": qaSource.map((item) => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer,
+            }
+        }))
+    } : null;
+
     return (
         <>
             <JsonLd data={jsonLd} />
+            {faqJsonLd && <JsonLd data={faqJsonLd} />}
             <ComparisonPageView page={result.page} ctaConfig={ctaConfig} />
         </>
     );

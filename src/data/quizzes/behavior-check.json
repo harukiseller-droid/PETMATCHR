@@ -1,6 +1,6 @@
 {
     "id": "quiz_behavior_001",
-    "slug": "behavior-check-quiz",
+    "slug": "behavior-check",
     "title": "Dog Behavior Assessment",
     "description": "Is your dog's behavior normal or a sign of a deeper issue? Get a quick assessment.",
     "questions": [
@@ -12,17 +12,20 @@
                 {
                     "id": "never",
                     "label": "Never",
-                    "value": 0
+                    "value": 0,
+                    "score": 0
                 },
                 {
                     "id": "sometimes",
                     "label": "Sometimes (5-10 mins)",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "always",
                     "label": "Always / For hours",
-                    "value": 10
+                    "value": 10,
+                    "score": 10
                 }
             ]
         },
@@ -34,17 +37,20 @@
                 {
                     "id": "no",
                     "label": "No",
-                    "value": 0
+                    "value": 0,
+                    "score": 0
                 },
                 {
                     "id": "minor",
                     "label": "Minor chewing",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "major",
                     "label": "Yes, significant damage",
-                    "value": 10
+                    "value": 10,
+                    "score": 10
                 }
             ]
         }
@@ -74,6 +80,38 @@
             "max_score": 4,
             "title": "Normal Behavior",
             "description": "Your dog seems well-adjusted! Keep up the good work.",
+            "cta_label": "Browse Fun Toys",
+            "cta_url": "https://partner.link/toys"
+        }
+    ],
+    "result_mapping": [
+        {
+            "slug": "severe",
+            "title": "Severe Separation Anxiety Likely",
+            "description": "Your dog shows signs of severe distress. Professional training or vet intervention is recommended.",
+            "min_score": 15,
+            "max_score": 20,
+            "primary_call_to_action": "show_active_dog_breeds",
+            "cta_label": "View Training Course",
+            "cta_url": "https://partner.link/training"
+        },
+        {
+            "slug": "mild",
+            "title": "Mild Anxiety / Boredom",
+            "description": "This might be boredom or mild anxiety. Increasing exercise and mental stimulation often helps.",
+            "min_score": 5,
+            "max_score": 14,
+            "primary_call_to_action": "show_family_friendly_breeds",
+            "cta_label": "See Mental Games",
+            "cta_url": "/articles/brain-games"
+        },
+        {
+            "slug": "normal",
+            "title": "Normal Behavior",
+            "description": "Your dog seems well-adjusted! Keep up the good work.",
+            "min_score": 0,
+            "max_score": 4,
+            "primary_call_to_action": "show_low_energy_breeds",
             "cta_label": "Browse Fun Toys",
             "cta_url": "https://partner.link/toys"
         }

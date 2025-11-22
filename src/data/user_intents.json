@@ -1,0 +1,55 @@
+{
+    "intent_definitions": {
+        "informational": "User is looking for information, answers, or education.",
+        "commercial": "User is investigating products or services with intent to buy soon.",
+        "transactional": "User is ready to buy or sign up.",
+        "navigational": "User is looking for a specific page or site."
+    },
+    "page_type_defaults": {
+        "breed": "informational",
+        "list": "informational",
+        "comparison": "commercial",
+        "cost": "commercial",
+        "problem": "informational",
+        "anxiety": "informational",
+        "location": "informational"
+    },
+    "keyword_patterns": [
+        {
+            "pattern": "cost",
+            "intent": "commercial"
+        },
+        {
+            "pattern": "price",
+            "intent": "commercial"
+        },
+        {
+            "pattern": "buy",
+            "intent": "transactional"
+        },
+        {
+            "pattern": "insurance",
+            "intent": "commercial"
+        },
+        {
+            "pattern": "training",
+            "intent": "commercial"
+        },
+        {
+            "pattern": "problems",
+            "intent": "informational"
+        },
+        {
+            "pattern": "health",
+            "intent": "informational"
+        },
+        {
+            "pattern": "vs",
+            "intent": "commercial"
+        },
+        {
+            "pattern": "compare",
+            "intent": "commercial"
+        }
+    ]
+}

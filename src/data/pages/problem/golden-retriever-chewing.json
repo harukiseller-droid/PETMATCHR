@@ -1,45 +1,63 @@
 {
-    "slug": "golden-retriever-chewing",
-    "meta": {
-        "title": "Golden Retriever Destructive Chewing: Causes & Solutions",
-        "description": "Stop your Golden Retriever from chewing furniture and shoes. Expert guide on redirecting chewing behavior and best durable toys."
+  "slug": "golden-retriever-chewing",
+  "meta": {
+    "title": "Golden Retriever Destructive Chewing: Causes & Solutions",
+    "description": "Stop your Golden Retriever from chewing furniture and shoes. Expert guide on redirecting chewing behavior and best durable toys."
+  },
+  "h1": "How to Stop a Golden Retriever From Chewing Everything",
+  "breed": "Golden Retriever",
+  "problem": "Destructive Chewing",
+  "category": "Behavior",
+  "overview": "Golden Retrievers are mouthy dogs by nature. Chewing is often a sign of boredom, teething (in puppies), or anxiety. Without proper outlets, they will turn to your furniture.",
+  "symptoms": [
+    "Gnawing on table legs or baseboards",
+    "Destroying shoes or pillows",
+    "Chewing when left alone"
+  ],
+  "causes": [
+    "Puppy teething (up to 6 months)",
+    "Boredom / Lack of exercise",
+    "Separation Anxiety"
+  ],
+  "solutions": [
+    {
+      "title": "Provide Durable Chew Toys",
+      "description": "Goldens are strong chewers. Use Kongs filled with frozen peanut butter or Nylabones."
     },
-    "h1": "How to Stop a Golden Retriever From Chewing Everything",
-    "breed": "Golden Retriever",
-    "problem": "Destructive Chewing",
-    "category": "Behavior",
-    "overview": "Golden Retrievers are mouthy dogs by nature. Chewing is often a sign of boredom, teething (in puppies), or anxiety. Without proper outlets, they will turn to your furniture.",
-    "symptoms": [
-        "Gnawing on table legs or baseboards",
-        "Destroying shoes or pillows",
-        "Chewing when left alone"
-    ],
-    "causes": [
-        "Puppy teething (up to 6 months)",
-        "Boredom / Lack of exercise",
-        "Separation Anxiety"
-    ],
-    "solutions": [
-        {
-            "title": "Provide Durable Chew Toys",
-            "description": "Goldens are strong chewers. Use Kongs filled with frozen peanut butter or Nylabones."
-        },
-        {
-            "title": "Increase Physical Exercise",
-            "description": "A tired dog is a good dog. Ensure at least 60 minutes of active play daily."
-        },
-        {
-            "title": "Crate Training",
-            "description": "Prevent access to destructive items when you cannot supervise."
-        }
-    ],
-    "product_recommendations": [
-        "Kong Classic Dog Toy",
-        "Nylabone DuraChew",
-        "Bitter Apple Spray"
-    ],
-    "monetization": {
-        "course_cta": "Unlock the 'No-Chew' Training Module",
-        "course_url": "https://example.com/training-chewing"
+    {
+      "title": "Increase Physical Exercise",
+      "description": "A tired dog is a good dog. Ensure at least 60 minutes of active play daily."
+    },
+    {
+      "title": "Crate Training",
+      "description": "Prevent access to destructive items when you cannot supervise."
     }
+  ],
+  "product_recommendations": [
+    "Kong Classic Dog Toy",
+    "Nylabone DuraChew",
+    "Bitter Apple Spray"
+  ],
+  "monetization": {
+    "course_cta": "Unlock the 'No-Chew' Training Module",
+    "course_url": "https://example.com/training-chewing"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

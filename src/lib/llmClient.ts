@@ -52,7 +52,7 @@ function getOpenAI() {
 // --- Helper to format prompt ---
 
 function formatUserPrompt(user: string, jsonInput?: any): string {
-    if (!jsonInput) return user;
+    if (jsonInput === undefined || jsonInput === null) return user;
     return `${user}\n\nINPUT_JSON:\n${JSON.stringify(jsonInput, null, 2)}`;
 }
 
@@ -77,10 +77,18 @@ export async function callCloudLLM(params: LLMParams): Promise<any> {
             temperature: params.temperature ?? 0.7,
         });
 
-        const result = completion.choices[0].message.content;
-        if (!result) throw new CloudLLMError("Empty response from Cloud LLM");
+        const message = completion.choices[0].message;
+        const result = message?.content;
+        if (!result) {
+            throw new CloudLLMError("Empty response from Cloud LLM");
+        }
 
-        return JSON.parse(result);
+        try {
+            return JSON.parse(result);
+        } catch (e: any) {
+            console.error("Cloud LLM JSON parse error:", e?.message || e);
+            throw new CloudLLMError("Cloud LLM returned invalid JSON");
+        }
     } catch (error: any) {
         console.error("Cloud LLM Error:", error.message);
         throw new CloudLLMError(error.message || "Unknown Cloud LLM Error");
@@ -143,7 +151,12 @@ export async function callLocalLLM(params: LLMParams): Promise<any> {
             resultString = JSON.stringify(data);
         }
 
-        return JSON.parse(resultString);
+        try {
+            return JSON.parse(resultString);
+        } catch (e: any) {
+            console.error("Local LLM JSON parse error:", e?.message || e);
+            throw new LocalLLMError("Local LLM returned invalid JSON");
+        }
 
     } catch (error: any) {
         console.error("Local LLM Error:", error.message);
@@ -170,7 +183,21 @@ export async function callHybridLLM(params: LLMParams): Promise<any> {
     }
 }
 
-// Backward compatibility wrapper if needed, but prefer using callHybridLLM directly
-export async function callLLM(system: string, user: string, jsonInput?: any): Promise<any> {
-    return callHybridLLM({ system, user, jsonInput });
+// callLLM supports both new object-style params and legacy positional args.
+export async function callLLM(
+    paramsOrSystem: LLMParams | string,
+    user?: string,
+    jsonInput?: any
+): Promise<any> {
+    if (typeof paramsOrSystem === 'string') {
+        // Legacy usage: callLLM(system, user, jsonInput)
+        return callHybridLLM({
+            system: paramsOrSystem,
+            user: user ?? '',
+            jsonInput,
+        });
+    }
+
+    // Preferred usage: callLLM({ system, user, jsonInput, temperature })
+    return callHybridLLM(paramsOrSystem);
 }

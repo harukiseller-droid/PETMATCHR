@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { PageIndexEntry, PageType } from '@/lib/types';
+import { getPageMonetization } from '@/lib/monetization';
 
 const DATA_DIR = path.join(process.cwd(), 'src/data');
 const INDEX_FILE = path.join(DATA_DIR, 'page_index.json');
@@ -57,33 +58,55 @@ export async function getRelatedForPage(params: {
     const primary: PageIndexEntry[] = [];
     const secondary: PageIndexEntry[] = [];
 
+    const pushSome = (source: PageIndexEntry[], max: number) => {
+        const used = new Set(primary.map(p => p.slug));
+        const toPrimary: PageIndexEntry[] = [];
+        const toSecondary: PageIndexEntry[] = [];
+        for (const entry of source) {
+            if (used.has(entry.slug)) {
+                toSecondary.push(entry);
+                continue;
+            }
+            if (toPrimary.length < max) {
+                toPrimary.push(entry);
+                used.add(entry.slug);
+            } else {
+                toSecondary.push(entry);
+            }
+        }
+        primary.push(...toPrimary);
+        secondary.push(...toSecondary);
+    };
+
     // Simple logic based on plan recommendations
     if (page_type === 'breed') {
-        primary.push(...byBreed.costPages.slice(0, 2));
-        primary.push(...byBreed.problemPages.slice(0, 2));
-        primary.push(...byBreed.comparisonPages.slice(0, 2));
-
-        secondary.push(...byBreed.costPages.slice(2));
-        secondary.push(...byBreed.problemPages.slice(2));
-        secondary.push(...byBreed.comparisonPages.slice(2));
+        pushSome(byBreed.costPages, limit_per_type);
+        pushSome(byBreed.problemPages, limit_per_type);
+        pushSome(byBreed.anxietyPages, limit_per_type);
+        pushSome(byBreed.comparisonPages, limit_per_type);
+        pushSome(byBreed.locationPages, 1);
+        pushSome(byBreed.listPages, 1);
     } else if (page_type === 'cost') {
         if (byBreed.breedPage) primary.push(byBreed.breedPage);
-        primary.push(...byBreed.costPages.filter(p => p.city_slug !== params.city_slug).slice(0, 2));
-        primary.push(...byBreed.problemPages.slice(0, 2));
+        pushSome(byBreed.costPages.filter(p => p.city_slug !== params.city_slug), limit_per_type);
+        pushSome(byBreed.problemPages, limit_per_type);
+        pushSome(byBreed.anxietyPages, 1);
+        pushSome(byBreed.comparisonPages, 1);
     } else if (page_type === 'problem' || page_type === 'anxiety') {
         if (byBreed.breedPage) primary.push(byBreed.breedPage);
-        primary.push(...byBreed.costPages.slice(0, 2));
-        primary.push(...byBreed.comparisonPages.slice(0, 1));
+        pushSome(byBreed.costPages, limit_per_type);
+        pushSome(byBreed.comparisonPages, 1);
+        pushSome(byBreed.anxietyPages, page_type === 'problem' ? 1 : 0);
     } else if (page_type === 'comparison') {
         // For comparison, we might want links for both breeds, but here we only have main_breed_slug
         // The caller should probably call this for both breeds if needed.
         if (byBreed.breedPage) primary.push(byBreed.breedPage);
-        primary.push(...byBreed.costPages.slice(0, 1));
-        primary.push(...byBreed.problemPages.slice(0, 1));
+        pushSome(byBreed.costPages, 1);
+        pushSome(byBreed.problemPages, 1);
     }
 
     return {
-        primary_links: primary.slice(0, limit_per_type * 2), // Cap total
+        primary_links: primary.slice(0, limit_per_type * 5),
         secondary_links: secondary
     };
 }
@@ -101,6 +124,8 @@ export async function updatePageIndexEntryForSlug(
     const index = await getPageIndex();
     const existingIdx = index.findIndex(e => e.slug === slug);
 
+    const monetization = await getPageMonetization(slug);
+
     const entry: PageIndexEntry = {
         slug,
         page_type,
@@ -108,7 +133,10 @@ export async function updatePageIndexEntryForSlug(
         breed_slugs: extra?.breed_slugs || [],
         city_slug: extra?.city_slug || null,
         problem_slug: extra?.problem_slug || null,
-        primary_intent: 'informational', // Default, logic to refine later
+        primary_intent: monetization
+            ? (monetization.cluster && monetization.cluster !== 'generic' ? 'commercial_high' : 'mixed')
+            : 'informational',
+        primary_cluster: monetization?.cluster ?? null,
         short_label: meta.title, // Default
     };
 

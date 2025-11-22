@@ -4,10 +4,11 @@ import { basicValidateOutput } from './validators';
 
 async function runQACheck() {
     const pagesDir = path.join(process.cwd(), 'src/data/pages');
-    const pageTypes = ['cost', 'problem', 'breed', 'list'];
+    const pageTypes = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
 
     let totalPages = 0;
     let errors = 0;
+    const failed: { type: string; file: string; reason: string }[] = [];
 
     for (const type of pageTypes) {
         const typeDir = path.join(pagesDir, type);
@@ -22,14 +23,29 @@ async function runQACheck() {
                     const content = await fs.readFile(filePath, 'utf-8');
                     const data = JSON.parse(content);
 
+                    const validationErrors = [];
                     if (!basicValidateOutput(type, data)) {
-                        console.error(`[FAIL] ${type}/${file}: Validation failed`);
+                        validationErrors.push("Basic validation failed");
+                    }
+
+                    // AEO Validation
+                    if (!data.quick_answers || !Array.isArray(data.quick_answers) || data.quick_answers.length === 0) {
+                        validationErrors.push("Missing or empty 'quick_answers'");
+                    }
+                    if (!data.faq || !Array.isArray(data.faq) || data.faq.length < 2) {
+                        validationErrors.push("FAQ missing or has fewer than 2 items");
+                    }
+
+                    if (validationErrors.length > 0) {
+                        const msg = validationErrors.join("; ");
+                        console.error(`[FAIL] ${type}/${file}: ${msg}`);
+                        failed.push({ type, file, reason: msg });
                         errors++;
-                    } else {
-                        // console.log(`[PASS] ${type}/${file}`);
                     }
                 } catch (e) {
-                    console.error(`[FAIL] ${type}/${file}: Invalid JSON`);
+                    const msg = `Invalid JSON`;
+                    console.error(`[FAIL] ${type}/${file}: ${msg}`);
+                    failed.push({ type, file, reason: msg });
                     errors++;
                 }
             }
@@ -41,6 +57,13 @@ async function runQACheck() {
     console.log(`QA Check Complete.`);
     console.log(`Total Pages: ${totalPages}`);
     console.log(`Errors: ${errors}`);
+
+    if (failed.length) {
+        console.log(`Failed pages detail:`);
+        for (const f of failed) {
+            console.log(`- ${f.type}/${f.file}: ${f.reason}`);
+        }
+    }
 
     if (errors > 0) process.exit(1);
 }

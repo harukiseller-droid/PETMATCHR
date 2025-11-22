@@ -1,52 +1,68 @@
 {
-    "slug": "golden-retriever",
-    "meta": {
-        "title": "Golden Retriever Breed Guide: Personality, Lifespan & Care",
-        "description": "Everything you need to know about Golden Retrievers. Temperament, shedding, energy levels, and why they are the ultimate family dog."
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Breed Guide: Personality, Lifespan & Care",
+    "description": "Everything you need to know about Golden Retrievers. Temperament, shedding, energy levels, and why they are the ultimate family dog."
+  },
+  "h1": "The Golden Retriever: Friendly, Devoted, and Enthusiastic",
+  "short_intro": "Golden Retrievers are one of America's most popular dog breeds for a reason. They are intelligent, friendly, and devoted companions that excel as family pets, service dogs, and working partners.",
+  "good_fit_if": [
+    "You want a dog that loves everyone",
+    "You have an active lifestyle",
+    "You are willing to deal with shedding"
+  ],
+  "avoid_if": [
+    "You want a guard dog",
+    "You are away from home for long periods",
+    "You hate dog hair"
+  ],
+  "personality": {
+    "title": "Golden Retriever Personality",
+    "paragraphs": [
+      "Goldens are known for their gentle and affectionate nature. They are eager to please and highly trainable.",
+      "They are generally great with children and other pets, making them ideal family additions."
+    ]
+  },
+  "living_needs": {
+    "title": "Living Needs",
+    "paragraphs": [
+      "Goldens need daily exercise. A fenced yard is great, but daily walks and fetch sessions are essential.",
+      "They thrive on human companionship and should live indoors with their family."
+    ]
+  },
+  "time_and_cost": {
+    "title": "Time and Cost",
+    "paragraphs": [
+      "Expect to spend significant time on exercise and grooming.",
+      "Costs can be higher due to their size and potential health issues."
+    ]
+  },
+  "lifestyle_summary": {
+    "title": "Is a Golden Retriever Right for You?",
+    "paragraphs": [
+      "If you can provide the love, exercise, and attention they crave, a Golden will be your best friend forever."
+    ]
+  },
+  "cta": {
+    "quiz_anchor_label": "Find Your Perfect Breed",
+    "quiz_anchor": "Not sure if a Golden is right for you? Take our Lifestyle Match Quiz."
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
     },
-    "h1": "The Golden Retriever: Friendly, Devoted, and Enthusiastic",
-    "short_intro": "Golden Retrievers are one of America's most popular dog breeds for a reason. They are intelligent, friendly, and devoted companions that excel as family pets, service dogs, and working partners.",
-    "good_fit_if": [
-        "You want a dog that loves everyone",
-        "You have an active lifestyle",
-        "You are willing to deal with shedding"
-    ],
-    "avoid_if": [
-        "You want a guard dog",
-        "You are away from home for long periods",
-        "You hate dog hair"
-    ],
-    "personality": {
-        "title": "Golden Retriever Personality",
-        "paragraphs": [
-            "Goldens are known for their gentle and affectionate nature. They are eager to please and highly trainable.",
-            "They are generally great with children and other pets, making them ideal family additions."
-        ]
-    },
-    "living_needs": {
-        "title": "Living Needs",
-        "paragraphs": [
-            "Goldens need daily exercise. A fenced yard is great, but daily walks and fetch sessions are essential.",
-            "They thrive on human companionship and should live indoors with their family."
-        ]
-    },
-    "time_and_cost": {
-        "title": "Time and Cost",
-        "paragraphs": [
-            "Expect to spend significant time on exercise and grooming.",
-            "Costs can be higher due to their size and potential health issues."
-        ]
-    },
-    "lifestyle_summary": {
-        "title": "Is a Golden Retriever Right for You?",
-        "paragraphs": [
-            "If you can provide the love, exercise, and attention they crave, a Golden will be your best friend forever."
-        ]
-    },
-    "cta": {
-        "quiz_anchor_label": "Find Your Perfect Breed",
-        "quiz_anchor": "Not sure if a Golden is right for you? Take our Lifestyle Match Quiz."
-    },
-    "quick_answers": [],
-    "faq": []
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

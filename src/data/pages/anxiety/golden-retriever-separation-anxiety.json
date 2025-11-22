@@ -1,40 +1,56 @@
 {
-    "slug": "golden-retriever-separation-anxiety",
-    "meta": {
-        "title": "Golden Retriever Anxiety: Symptoms and Solutions",
-        "description": "Do Golden Retrievers get anxiety? Learn the signs and how to help your anxious Golden."
+  "slug": "golden-retriever-separation-anxiety",
+  "meta": {
+    "title": "Golden Retriever Anxiety: Symptoms and Solutions",
+    "description": "Do Golden Retrievers get anxiety? Learn the signs and how to help your anxious Golden."
+  },
+  "h1": "Golden Retriever Anxiety Guide",
+  "hero": {
+    "title": "Helping Your Anxious Golden Retriever",
+    "subtitle": "Goldens are social dogs, which makes them prone to separation anxiety."
+  },
+  "symptoms_list": [
+    "Pacing and panting when you prepare to leave",
+    "Destructive chewing on doors or windows",
+    "Excessive barking or howling"
+  ],
+  "causes_list": [
+    "Lack of exercise",
+    "Being left alone for too long",
+    "Past trauma or rehoming"
+  ],
+  "solutions_list": [
+    {
+      "title": "Increase Exercise",
+      "description": "A tired dog is a calm dog. Ensure your Golden gets at least 60 minutes of activity.",
+      "recommended_product_type": "training"
     },
-    "h1": "Golden Retriever Anxiety Guide",
-    "hero": {
-        "title": "Helping Your Anxious Golden Retriever",
-        "subtitle": "Goldens are social dogs, which makes them prone to separation anxiety."
+    {
+      "title": "Calming Supplements",
+      "description": "CBD or natural chews can take the edge off.",
+      "recommended_product_type": "cbd"
+    }
+  ],
+  "cta": {
+    "quiz_anchor": "Check your dog's anxiety level",
+    "product_anchor": "View Calming Aids"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
     },
-    "symptoms_list": [
-        "Pacing and panting when you prepare to leave",
-        "Destructive chewing on doors or windows",
-        "Excessive barking or howling"
-    ],
-    "causes_list": [
-        "Lack of exercise",
-        "Being left alone for too long",
-        "Past trauma or rehoming"
-    ],
-    "solutions_list": [
-        {
-            "title": "Increase Exercise",
-            "description": "A tired dog is a calm dog. Ensure your Golden gets at least 60 minutes of activity.",
-            "recommended_product_type": "training"
-        },
-        {
-            "title": "Calming Supplements",
-            "description": "CBD or natural chews can take the edge off.",
-            "recommended_product_type": "cbd"
-        }
-    ],
-    "cta": {
-        "quiz_anchor": "Check your dog's anxiety level",
-        "product_anchor": "View Calming Aids"
-    },
-    "quick_answers": [],
-    "faq": []
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

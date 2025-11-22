@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Contact Us | PetMatchr",
-    description: "Contact PetMatchr. We'd love to hear from you.",
+    description: "Contact PetMatchr. We’d love to hear from you.",
 };
 
 export default function ContactPage() {
@@ -12,7 +12,7 @@ export default function ContactPage() {
                 <h1 className="text-4xl font-bold mb-8 text-emerald-400">Contact Us</h1>
                 <div className="prose prose-invert prose-lg">
                     <p>
-                        Have a question, suggestion, or just want to say hello? We'd love to hear from you!
+                        Have a question, suggestion, or just want to say hello? We’d love to hear from you!
                     </p>
 
                     <div className="bg-slate-900 p-8 rounded-xl border border-slate-800 mt-8">

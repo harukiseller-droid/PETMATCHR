@@ -1,0 +1,202 @@
+{
+  "slug": "anxiety-level",
+  "cluster": "anxiety",
+  "title": "Dog Anxiety Level Check",
+  "description": "Answer a few questions to see if your dog's anxiety is mild, moderate, or needs professional help.",
+  "questions": [
+    {
+      "id": "anx_frequency",
+      "text": "How often does your dog show anxious behavior when left alone?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "rarely",
+          "label": "Rarely or never",
+          "score": 0
+        },
+        {
+          "value": "sometimes",
+          "label": "Sometimes (a few times per month)",
+          "score": 4
+        },
+        {
+          "value": "often",
+          "label": "Often (most times you leave)",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": "anx_destruction",
+      "text": "Has your dog ever destroyed doors, crates, or furniture when anxious?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "no_damage",
+          "label": "No, never",
+          "score": 0
+        },
+        {
+          "value": "minor_damage",
+          "label": "Minor chewing or scratching",
+          "score": 4
+        },
+        {
+          "value": "major_damage",
+          "label": "Yes, significant damage (doors, walls, crates)",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": "anx_vocalization",
+      "text": "How intense is your dog's barking/whining when alone?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "quiet",
+          "label": "Mostly quiet",
+          "score": 0
+        },
+        {
+          "value": "short_bouts",
+          "label": "Short bouts that stop within 10–15 minutes",
+          "score": 4
+        },
+        {
+          "value": "long_bouts",
+          "label": "Long, intense barking/whining for 30+ minutes",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": "anx_physical_signs",
+      "text": "Do you notice physical signs of anxiety (drooling, pacing, shaking)?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "none",
+          "label": "No, not really",
+          "score": 0
+        },
+        {
+          "value": "occasional",
+          "label": "Occasionally in stressful situations",
+          "score": 4
+        },
+        {
+          "value": "frequent",
+          "label": "Frequently, even in everyday situations",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": "anx_duration",
+      "text": "How long has this anxious behavior been happening?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "under_1_month",
+          "label": "Less than 1 month",
+          "score": 2
+        },
+        {
+          "value": "one_to_six_months",
+          "label": "1–6 months",
+          "score": 4
+        },
+        {
+          "value": "over_6_months",
+          "label": "More than 6 months",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "id": "anx_history",
+      "text": "Has your dog ever bitten or snapped at someone when anxious or cornered?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "never",
+          "label": "No, never",
+          "score": 0
+        },
+        {
+          "value": "warning_only",
+          "label": "Growled or air-snapped but no contact",
+          "score": 4
+        },
+        {
+          "value": "made_contact",
+          "label": "Yes, made contact with skin or clothing",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "id": "anx_support",
+      "text": "How much structured support have you tried so far?",
+      "type": "single_choice",
+      "required": true,
+      "options": [
+        {
+          "value": "no_plan",
+          "label": "No structured plan yet",
+          "score": 4
+        },
+        {
+          "value": "basic_changes",
+          "label": "Basic changes (more exercise, puzzle toys, etc.)",
+          "score": 2
+        },
+        {
+          "value": "trainer_or_vet",
+          "label": "Working with a trainer and/or vet already",
+          "score": 0
+        }
+      ]
+    }
+  ],
+  "result_mapping": [
+    {
+      "slug": "mild_anxiety_or_boredom",
+      "title": "Mild anxiety or boredom",
+      "description": "Your dog's behavior suggests mild anxiety or simple boredom. With more exercise, mental games, and a calm routine, most dogs in this range settle well.",
+      "min_score": 0,
+      "max_score": 14,
+      "primary_call_to_action": "show_low_energy_breeds",
+      "cta_label": "See calming games and routines",
+      "cta_url": "/lists/best-dogs-for-apartments"
+    },
+    {
+      "slug": "moderate_anxiety_needs_structure",
+      "title": "Moderate anxiety – needs a clear plan",
+      "description": "Your dog shows clear anxiety patterns that will benefit from a structured, consistent plan. You likely need a mix of training, predictability, and enrichment.",
+      "min_score": 15,
+      "max_score": 30,
+      "primary_call_to_action": "show_family_friendly_breeds",
+      "cta_label": "See separation anxiety routine",
+      "cta_url": "/problems/golden-retriever-separation-anxiety"
+    },
+    {
+      "slug": "severe_anxiety_talk_to_pro",
+      "title": "Severe anxiety – talk to a pro",
+      "description": "Your dog's anxiety is likely severe. A qualified trainer or veterinary behaviorist can help you build a safe, step-by-step plan so both you and your dog can breathe again.",
+      "min_score": 31,
+      "max_score": 56,
+      "primary_call_to_action": "show_active_dog_breeds",
+      "cta_label": "Find training and support options",
+      "cta_url": "/answers"
+    }
+  ]
+}
+

@@ -1,133 +1,140 @@
 {
-    "slug": "golden-retriever-new-york-ny",
-    "meta": {
-        "title": "Golden Retriever Cost in New York, NY (First Year & Monthly Breakdown)",
-        "description": "See the real cost of owning a Golden Retriever in New York City. First-year setup, monthly expenses, vet bills, and apartment-specific costs."
+  "slug": "golden-retriever-new-york-ny",
+  "meta": {
+    "title": "Golden Retriever Cost in New York, NY (First Year & Monthly Breakdown)",
+    "description": "See the real cost of owning a Golden Retriever in New York City. First-year setup, monthly expenses, vet bills, and apartment-specific costs."
+  },
+  "h1": "Golden Retriever Cost in New York, NY",
+  "hero": {
+    "city": "New York, NY",
+    "breed_name": "Golden Retriever",
+    "one_line_summary": "In NYC, expect to spend around $2,500–$4,500 in the first year and $200–$350 per month after that for a Golden Retriever."
+  },
+  "summary": {
+    "first_year_min_usd": 2500,
+    "first_year_max_usd": 4500,
+    "ongoing_monthly_min_usd": 200,
+    "ongoing_monthly_max_usd": 350,
+    "emergency_fund_recommended_usd": 2000,
+    "insurance_recommended": true
+  },
+  "first_year_breakdown": [
+    {
+      "category": "Adoption or breeder fee",
+      "min_usd": 500,
+      "max_usd": 3000,
+      "notes": "High demand in the tri-state area drives breeder prices up."
     },
-    "h1": "Golden Retriever Cost in New York, NY",
-    "hero": {
-        "city": "New York, NY",
-        "breed_name": "Golden Retriever",
-        "one_line_summary": "In NYC, expect to spend around $2,500–$4,500 in the first year and $200–$350 per month after that for a Golden Retriever."
+    {
+      "category": "Initial vet care & vaccines",
+      "min_usd": 350,
+      "max_usd": 800,
+      "notes": "NYC vet prices are significantly higher than national average."
     },
-    "summary": {
-        "first_year_min_usd": 2500,
-        "first_year_max_usd": 4500,
-        "ongoing_monthly_min_usd": 200,
-        "ongoing_monthly_max_usd": 350,
-        "emergency_fund_recommended_usd": 2000,
-        "insurance_recommended": true
+    {
+      "category": "Spay/neuter",
+      "min_usd": 400,
+      "max_usd": 900,
+      "notes": "Surgery costs in Manhattan/Brooklyn are premium."
     },
-    "first_year_breakdown": [
-        {
-            "category": "Adoption or breeder fee",
-            "min_usd": 500,
-            "max_usd": 3000,
-            "notes": "High demand in the tri-state area drives breeder prices up."
-        },
-        {
-            "category": "Initial vet care & vaccines",
-            "min_usd": 350,
-            "max_usd": 800,
-            "notes": "NYC vet prices are significantly higher than national average."
-        },
-        {
-            "category": "Spay/neuter",
-            "min_usd": 400,
-            "max_usd": 900,
-            "notes": "Surgery costs in Manhattan/Brooklyn are premium."
-        },
-        {
-            "category": "Starter supplies",
-            "min_usd": 250,
-            "max_usd": 500,
-            "notes": "Crate, bed, bowls, leash, toys, plus apartment-specific gear."
-        },
-        {
-            "category": "Training classes",
-            "min_usd": 300,
-            "max_usd": 800,
-            "notes": "City socialization classes are essential and pricey."
-        }
+    {
+      "category": "Starter supplies",
+      "min_usd": 250,
+      "max_usd": 500,
+      "notes": "Crate, bed, bowls, leash, toys, plus apartment-specific gear."
+    },
+    {
+      "category": "Training classes",
+      "min_usd": 300,
+      "max_usd": 800,
+      "notes": "City socialization classes are essential and pricey."
+    }
+  ],
+  "monthly_breakdown": [
+    {
+      "category": "Food",
+      "min_usd": 80,
+      "max_usd": 150,
+      "notes": "Premium food delivery is common in NYC."
+    },
+    {
+      "category": "Dog Walker / Daycare",
+      "min_usd": 0,
+      "max_usd": 600,
+      "notes": "Optional but common if you work long hours. $20-30 per walk."
+    },
+    {
+      "category": "Preventatives (flea, tick, heartworm)",
+      "min_usd": 25,
+      "max_usd": 50,
+      "notes": "Standard city pricing."
+    },
+    {
+      "category": "Routine vet care (averaged)",
+      "min_usd": 40,
+      "max_usd": 80,
+      "notes": "Annual exams are pricier here."
+    },
+    {
+      "category": "Grooming & supplies",
+      "min_usd": 20,
+      "max_usd": 60,
+      "notes": "Professional grooming is expensive in the city."
+    }
+  ],
+  "emergency_costs": {
+    "typical_emergency_range_usd": {
+      "low": 1200,
+      "high": 5000
+    },
+    "common_emergencies": [
+      "Foreign object ingestion (sidewalk trash)",
+      "Injuries from dog parks",
+      "Gastrointestinal issues"
     ],
-    "monthly_breakdown": [
-        {
-            "category": "Food",
-            "min_usd": 80,
-            "max_usd": 150,
-            "notes": "Premium food delivery is common in NYC."
-        },
-        {
-            "category": "Dog Walker / Daycare",
-            "min_usd": 0,
-            "max_usd": 600,
-            "notes": "Optional but common if you work long hours. $20-30 per walk."
-        },
-        {
-            "category": "Preventatives (flea, tick, heartworm)",
-            "min_usd": 25,
-            "max_usd": 50,
-            "notes": "Standard city pricing."
-        },
-        {
-            "category": "Routine vet care (averaged)",
-            "min_usd": 40,
-            "max_usd": 80,
-            "notes": "Annual exams are pricier here."
-        },
-        {
-            "category": "Grooming & supplies",
-            "min_usd": 20,
-            "max_usd": 60,
-            "notes": "Professional grooming is expensive in the city."
-        }
-    ],
-    "emergency_costs": {
-        "typical_emergency_range_usd": {
-            "low": 1200,
-            "high": 5000
-        },
-        "common_emergencies": [
-            "Foreign object ingestion (sidewalk trash)",
-            "Injuries from dog parks",
-            "Gastrointestinal issues"
-        ],
-        "one_line_warning": "Emergency vet care in NYC is among the most expensive in the country. $1,200 is just to walk in the door for some ERs."
+    "one_line_warning": "Emergency vet care in NYC is among the most expensive in the country. $1,200 is just to walk in the door for some ERs."
+  },
+  "insurance_section": {
+    "recommended": true,
+    "reason": "NYC vet costs are astronomical. A single major surgery can cost $10,000+.",
+    "typical_premium_range_usd": {
+      "low": 60,
+      "high": 120
     },
-    "insurance_section": {
-        "recommended": true,
-        "reason": "NYC vet costs are astronomical. A single major surgery can cost $10,000+.",
-        "typical_premium_range_usd": {
-            "low": 60,
-            "high": 120
-        },
-        "value_explainer": "Insurance is practically mandatory for peace of mind in the city.",
-        "primary_offer_slot": {
-            "provider_placeholder": "EMBRACE_OR_TOP_PARTNER",
-            "cta_headline": "Check NYC Insurance Rates",
-            "cta_copy": "See how much you can save on NYC vet bills."
-        }
+    "value_explainer": "Insurance is practically mandatory for peace of mind in the city.",
+    "primary_offer_slot": {
+      "provider_placeholder": "EMBRACE_OR_TOP_PARTNER",
+      "cta_headline": "Check NYC Insurance Rates",
+      "cta_copy": "See how much you can save on NYC vet bills."
+    }
+  },
+  "local_context": {
+    "city": "New York",
+    "state": "NY",
+    "cost_of_living_note": "Everything costs more here, especially services like grooming and walking.",
+    "dog_friendly_note": "Very dog friendly, but logistics (elevators, subways) add complexity."
+  },
+  "faq": [
+    {
+      "question": "Can I afford a Golden Retriever in NYC?",
+      "answer": "If you have $300/month disposable income and $2,000 in savings, yes. Otherwise, it's risky."
     },
-    "local_context": {
-        "city": "New York",
-        "state": "NY",
-        "cost_of_living_note": "Everything costs more here, especially services like grooming and walking.",
-        "dog_friendly_note": "Very dog friendly, but logistics (elevators, subways) add complexity."
-    },
-    "faq": [
-        {
-            "question": "Can I afford a Golden Retriever in NYC?",
-            "answer": "If you have $300/month disposable income and $2,000 in savings, yes. Otherwise, it's risky."
-        },
-        {
-            "question": "Do I need a dog walker?",
-            "answer": "If you work 9-5 away from home, yes. Goldens need a midday break. Budget $400+/month for this."
-        }
-    ],
-    "cta": {
-        "cost_calculator_anchor": "Calculate your NYC dog budget",
-        "insurance_quiz_anchor": "Is insurance worth it in NYC?"
-    },
-    "quick_answers": [],
-    "faq_schema": []
+    {
+      "question": "Do I need a dog walker?",
+      "answer": "If you work 9-5 away from home, yes. Goldens need a midday break. Budget $400+/month for this."
+    }
+  ],
+  "cta": {
+    "cost_calculator_anchor": "Calculate your NYC dog budget",
+    "insurance_quiz_anchor": "Is insurance worth it in NYC?"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq_schema": []
 }

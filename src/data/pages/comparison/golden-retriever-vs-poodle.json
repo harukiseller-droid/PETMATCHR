@@ -1,39 +1,57 @@
 {
-    "slug": "golden-retriever-vs-poodle",
-    "meta": {
-        "title": "Golden Retriever vs Standard Poodle: Shedding & Smarts",
-        "description": "Comparing the Golden Retriever and Standard Poodle. Deciding between the goofy Golden and the intelligent, hypoallergenic Poodle."
+  "slug": "golden-retriever-vs-poodle",
+  "meta": {
+    "title": "Golden Retriever vs Standard Poodle: Shedding & Smarts",
+    "description": "Comparing the Golden Retriever and Standard Poodle. Deciding between the goofy Golden and the intelligent, hypoallergenic Poodle."
+  },
+  "h1": "Golden Retriever vs Standard Poodle",
+  "breed_1": "golden-retriever",
+  "breed_2": "poodle",
+  "comparison_points": [
+    {
+      "title": "Shedding / Allergies",
+      "breed_1_val": "High Shedding",
+      "breed_2_val": "Hypoallergenic",
+      "verdict": "Poodles are the clear winner for allergy sufferers."
     },
-    "h1": "Golden Retriever vs Standard Poodle",
-    "breed_1": "golden-retriever",
-    "breed_2": "poodle",
-    "comparison_points": [
-        {
-            "title": "Shedding / Allergies",
-            "breed_1_val": "High Shedding",
-            "breed_2_val": "Hypoallergenic",
-            "verdict": "Poodles are the clear winner for allergy sufferers."
-        },
-        {
-            "title": "Intelligence",
-            "breed_1_val": "High",
-            "breed_2_val": "Very High",
-            "verdict": "Poodles are one of the smartest breeds, but Goldens are easier to motivate."
-        },
-        {
-            "title": "Grooming Cost",
-            "breed_1_val": "Moderate",
-            "breed_2_val": "High (Professional cuts)",
-            "verdict": "Poodles require professional grooming every 6-8 weeks."
-        }
-    ],
-    "winner_for": {
-        "allergies": "Poodle",
-        "families": "Tie",
-        "low_maintenance": "Golden Retriever (coat-wise)"
+    {
+      "title": "Intelligence",
+      "breed_1_val": "High",
+      "breed_2_val": "Very High",
+      "verdict": "Poodles are one of the smartest breeds, but Goldens are easier to motivate."
     },
-    "monetization": {
-        "insurance_cta": "Get Pet Insurance Quotes",
-        "insurance_url": "https://example.com/insurance-quotes"
+    {
+      "title": "Grooming Cost",
+      "breed_1_val": "Moderate",
+      "breed_2_val": "High (Professional cuts)",
+      "verdict": "Poodles require professional grooming every 6-8 weeks."
     }
+  ],
+  "winner_for": {
+    "allergies": "Poodle",
+    "families": "Tie",
+    "low_maintenance": "Golden Retriever (coat-wise)"
+  },
+  "monetization": {
+    "insurance_cta": "Get Pet Insurance Quotes",
+    "insurance_url": "https://example.com/insurance-quotes"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

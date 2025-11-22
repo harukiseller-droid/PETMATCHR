@@ -1,5 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
+import { PageKeywordBundle, getKeywordsForPage, getFallbackKeywordsForPage } from '../src/lib/seo-keywords';
+import { PageType } from '../src/lib/types';
 
 // Types matching our data
 interface Breed {
@@ -19,10 +21,15 @@ interface Problem {
     title: string;
 }
 
+type PageTypeV7 = Extract<PageType, 'breed' | 'list' | 'comparison' | 'cost' | 'problem' | 'anxiety' | 'location'>;
+
 interface PageMatrixItem {
     slug: string;
-    page_type: 'cost' | 'problem' | 'comparison' | 'anxiety' | 'location' | 'list';
-    data: any; // Context data for the prompt
+    page_type: PageTypeV7;
+    input_data: any;
+    ai_prompt_version: string;
+    keywords: PageKeywordBundle;
+    primary_intent: string;
 }
 
 async function generatePageMatrix() {
@@ -40,14 +47,21 @@ async function generatePageMatrix() {
     // For this task, I'll generate for all loaded breeds/cities
     for (const breed of breeds) {
         for (const city of cities) {
+            const slug = `${breed.slug}-cost-${city.slug}`;
             matrix.push({
-                slug: `${breed.slug}-cost-${city.slug}`,
+                slug,
                 page_type: 'cost',
-                data: {
-                    breed_name: breed.name,
-                    city_name: city.name,
-                    state_code: city.state
-                }
+                input_data: {
+                    breed,
+                    city: {
+                        city_slug: city.slug,
+                        city_name: city.name,
+                        state_code: city.state,
+                    }
+                },
+                ai_prompt_version: 'v7',
+                keywords: getKeywordsForPage('cost', breed.name, city.name) ?? getFallbackKeywordsForPage('cost', { breed_name: breed.name, city_name: city.name }),
+                primary_intent: 'budget_costs',
             });
         }
     }
@@ -55,26 +69,36 @@ async function generatePageMatrix() {
     // Generate Problem Pages (Breed x Problem)
     for (const breed of breeds) {
         for (const problem of problems) {
+            const slug = `${breed.slug}-${problem.slug}`;
             matrix.push({
-                slug: `${breed.slug}-${problem.slug}`,
+                slug,
                 page_type: 'problem',
-                data: {
-                    breed_name: breed.name,
-                    problem_title: problem.title
-                }
+                input_data: {
+                    breed,
+                    problem,
+                },
+                ai_prompt_version: 'v7',
+                keywords: getKeywordsForPage('problem', breed.name, problem.title) ?? getFallbackKeywordsForPage('problem', { breed_name: breed.name, problem_title: problem.title }),
+                primary_intent: 'behavior_issues',
             });
         }
     }
 
     // Generate Comparison Pages (Breed x Breed) - Simple example: just compare first 2
     if (breeds.length >= 2) {
+        const a = breeds[0];
+        const b = breeds[1];
         matrix.push({
-            slug: `${breeds[0].slug}-vs-${breeds[1].slug}`,
+            slug: `${a.slug}-vs-${b.slug}`,
             page_type: 'comparison',
-            data: {
-                breed1_name: breeds[0].name,
-                breed2_name: breeds[1].name
-            }
+            input_data: {
+                breed_a: a,
+                breed_b: b,
+                persona_hint: null,
+            },
+            ai_prompt_version: 'v7',
+            keywords: getKeywordsForPage('comparison', a.name, b.name) ?? getFallbackKeywordsForPage('comparison', { breed_name: a.name, other_entity_name: b.name }),
+            primary_intent: 'general_research',
         });
     }
 
@@ -83,9 +107,12 @@ async function generatePageMatrix() {
         matrix.push({
             slug: `${breed.slug}-anxiety`,
             page_type: 'anxiety',
-            data: {
-                breed_name: breed.name
-            }
+            input_data: {
+                breed,
+            },
+            ai_prompt_version: 'v7',
+            keywords: getKeywordsForPage('anxiety', breed.name, 'anxiety') ?? getFallbackKeywordsForPage('anxiety', { breed_name: breed.name, problem_title: 'anxiety' }),
+            primary_intent: 'behavior_issues',
         });
     }
 
@@ -94,9 +121,16 @@ async function generatePageMatrix() {
         matrix.push({
             slug: `best-dogs-for-${city.slug}`,
             page_type: 'location',
-            data: {
-                city_name: city.name
-            }
+            input_data: {
+                city: {
+                    city_slug: city.slug,
+                    city_name: city.name,
+                    state_code: city.state,
+                }
+            },
+            ai_prompt_version: 'v7',
+            keywords: getKeywordsForPage('location', city.name) ?? getFallbackKeywordsForPage('location', { city_name: city.name }),
+            primary_intent: 'apartment_living',
         });
     }
 
@@ -106,9 +140,12 @@ async function generatePageMatrix() {
         matrix.push({
             slug: `best-dogs-for-${lifestyle}`,
             page_type: 'list',
-            data: {
+            input_data: {
                 lifestyle_name: lifestyle
-            }
+            },
+            ai_prompt_version: 'v7',
+            keywords: getKeywordsForPage('list', lifestyle) ?? getFallbackKeywordsForPage('list', { other_entity_name: lifestyle }),
+            primary_intent: 'general_research',
         });
     }
 

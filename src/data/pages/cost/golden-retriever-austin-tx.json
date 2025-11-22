@@ -1,137 +1,144 @@
 {
-    "slug": "golden-retriever-austin-tx",
-    "meta": {
-        "title": "Golden Retriever Cost in Austin, Texas (First Year & Monthly Breakdown)",
-        "description": "See the real cost of owning a Golden Retriever in Austin, Texas. First-year setup, monthly expenses, vet bills, insurance and emergency costs in one simple breakdown."
+  "slug": "golden-retriever-austin-tx",
+  "meta": {
+    "title": "Golden Retriever Cost in Austin, Texas (First Year & Monthly Breakdown)",
+    "description": "See the real cost of owning a Golden Retriever in Austin, Texas. First-year setup, monthly expenses, vet bills, insurance and emergency costs in one simple breakdown."
+  },
+  "h1": "Golden Retriever Cost in Austin, Texas",
+  "hero": {
+    "city": "Austin, Texas",
+    "breed_name": "Golden Retriever",
+    "one_line_summary": "In Austin, expect to spend around $2,000–$3,800 in the first year and $140–$270 per month after that for a Golden Retriever."
+  },
+  "summary": {
+    "first_year_min_usd": 2000,
+    "first_year_max_usd": 3800,
+    "ongoing_monthly_min_usd": 140,
+    "ongoing_monthly_max_usd": 270,
+    "emergency_fund_recommended_usd": 1000,
+    "insurance_recommended": true
+  },
+  "first_year_breakdown": [
+    {
+      "category": "Adoption or breeder fee",
+      "min_usd": 300,
+      "max_usd": 2500,
+      "notes": "Shelter adoption on the low end, reputable breeder on the high end."
     },
-    "h1": "Golden Retriever Cost in Austin, Texas",
-    "hero": {
-        "city": "Austin, Texas",
-        "breed_name": "Golden Retriever",
-        "one_line_summary": "In Austin, expect to spend around $2,000–$3,800 in the first year and $140–$270 per month after that for a Golden Retriever."
+    {
+      "category": "Initial vet care & vaccines",
+      "min_usd": 250,
+      "max_usd": 600,
+      "notes": "Includes exam, core vaccines, deworming and basic lab work."
     },
-    "summary": {
-        "first_year_min_usd": 2000,
-        "first_year_max_usd": 3800,
-        "ongoing_monthly_min_usd": 140,
-        "ongoing_monthly_max_usd": 270,
-        "emergency_fund_recommended_usd": 1000,
-        "insurance_recommended": true
+    {
+      "category": "Spay/neuter",
+      "min_usd": 250,
+      "max_usd": 500,
+      "notes": "Costs vary depending on clinic and weight; Austin prices are mid–high range."
     },
-    "first_year_breakdown": [
-        {
-            "category": "Adoption or breeder fee",
-            "min_usd": 300,
-            "max_usd": 2500,
-            "notes": "Shelter adoption on the low end, reputable breeder on the high end."
-        },
-        {
-            "category": "Initial vet care & vaccines",
-            "min_usd": 250,
-            "max_usd": 600,
-            "notes": "Includes exam, core vaccines, deworming and basic lab work."
-        },
-        {
-            "category": "Spay/neuter",
-            "min_usd": 250,
-            "max_usd": 500,
-            "notes": "Costs vary depending on clinic and weight; Austin prices are mid–high range."
-        },
-        {
-            "category": "Starter supplies",
-            "min_usd": 200,
-            "max_usd": 400,
-            "notes": "Crate, bed, bowls, leash, toys, brushes and basic grooming tools."
-        },
-        {
-            "category": "Training classes",
-            "min_usd": 200,
-            "max_usd": 500,
-            "notes": "Group obedience classes, highly recommended for a large, high-energy breed."
-        }
+    {
+      "category": "Starter supplies",
+      "min_usd": 200,
+      "max_usd": 400,
+      "notes": "Crate, bed, bowls, leash, toys, brushes and basic grooming tools."
+    },
+    {
+      "category": "Training classes",
+      "min_usd": 200,
+      "max_usd": 500,
+      "notes": "Group obedience classes, highly recommended for a large, high-energy breed."
+    }
+  ],
+  "monthly_breakdown": [
+    {
+      "category": "Food",
+      "min_usd": 70,
+      "max_usd": 120,
+      "notes": "Large-breed food; higher if you choose premium or fresh food subscriptions."
+    },
+    {
+      "category": "Preventatives (flea, tick, heartworm)",
+      "min_usd": 20,
+      "max_usd": 40,
+      "notes": "Prices in Austin are typical US averages."
+    },
+    {
+      "category": "Routine vet care (averaged)",
+      "min_usd": 25,
+      "max_usd": 50,
+      "notes": "Annual checkups and vaccines amortized by month."
+    },
+    {
+      "category": "Grooming & supplies",
+      "min_usd": 15,
+      "max_usd": 40,
+      "notes": "Home grooming plus occasional professional grooming for heavy shedding."
+    },
+    {
+      "category": "Training / enrichment",
+      "min_usd": 10,
+      "max_usd": 20,
+      "notes": "Toys, puzzle feeders, refresh training classes a few times per year."
+    }
+  ],
+  "emergency_costs": {
+    "typical_emergency_range_usd": {
+      "low": 800,
+      "high": 3000
+    },
+    "common_emergencies": [
+      "Injuries from running or rough play",
+      "Stomach issues from eating things they shouldn’t",
+      "Joint or hip-related problems"
     ],
-    "monthly_breakdown": [
-        {
-            "category": "Food",
-            "min_usd": 70,
-            "max_usd": 120,
-            "notes": "Large-breed food; higher if you choose premium or fresh food subscriptions."
-        },
-        {
-            "category": "Preventatives (flea, tick, heartworm)",
-            "min_usd": 20,
-            "max_usd": 40,
-            "notes": "Prices in Austin are typical US averages."
-        },
-        {
-            "category": "Routine vet care (averaged)",
-            "min_usd": 25,
-            "max_usd": 50,
-            "notes": "Annual checkups and vaccines amortized by month."
-        },
-        {
-            "category": "Grooming & supplies",
-            "min_usd": 15,
-            "max_usd": 40,
-            "notes": "Home grooming plus occasional professional grooming for heavy shedding."
-        },
-        {
-            "category": "Training / enrichment",
-            "min_usd": 10,
-            "max_usd": 20,
-            "notes": "Toys, puzzle feeders, refresh training classes a few times per year."
-        }
-    ],
-    "emergency_costs": {
-        "typical_emergency_range_usd": {
-            "low": 800,
-            "high": 3000
-        },
-        "common_emergencies": [
-            "Injuries from running or rough play",
-            "Stomach issues from eating things they shouldn’t",
-            "Joint or hip-related problems"
-        ],
-        "one_line_warning": "A single emergency vet visit in Austin can easily cost $1,000–$3,000 for a Golden Retriever."
+    "one_line_warning": "A single emergency vet visit in Austin can easily cost $1,000–$3,000 for a Golden Retriever."
+  },
+  "insurance_section": {
+    "recommended": true,
+    "reason": "Golden Retrievers have above-average risk of joint problems and cancer, and emergency vet care in Austin is expensive.",
+    "typical_premium_range_usd": {
+      "low": 45,
+      "high": 90
     },
-    "insurance_section": {
-        "recommended": true,
-        "reason": "Golden Retrievers have above-average risk of joint problems and cancer, and emergency vet care in Austin is expensive.",
-        "typical_premium_range_usd": {
-            "low": 45,
-            "high": 90
-        },
-        "value_explainer": "If you can’t comfortably cover a $2,500 emergency bill from savings, pet insurance can turn a financial disaster into a manageable monthly cost.",
-        "primary_offer_slot": {
-            "provider_placeholder": "EMBRACE_OR_TOP_PARTNER",
-            "cta_headline": "Check Golden Retriever Insurance Rates in Austin",
-            "cta_copy": "Answer a few questions about your dog and see customized quotes from top insurers in under 60 seconds."
-        }
+    "value_explainer": "If you can’t comfortably cover a $2,500 emergency bill from savings, pet insurance can turn a financial disaster into a manageable monthly cost.",
+    "primary_offer_slot": {
+      "provider_placeholder": "EMBRACE_OR_TOP_PARTNER",
+      "cta_headline": "Check Golden Retriever Insurance Rates in Austin",
+      "cta_copy": "Answer a few questions about your dog and see customized quotes from top insurers in under 60 seconds."
+    }
+  },
+  "local_context": {
+    "city": "Austin",
+    "state": "TX",
+    "cost_of_living_note": "Austin vet prices are slightly above national average, especially for emergency clinics and specialty care.",
+    "dog_friendly_note": "Austin is generally very dog-friendly with many parks and outdoor spaces, but hot summers increase risk of heat-related issues."
+  },
+  "faq": [
+    {
+      "question": "Is a Golden Retriever an expensive dog to own in Austin?",
+      "answer": "Yes. Golden Retrievers are large, active dogs with higher food needs and a real risk of joint and cancer expenses. Plan on $140–$270 per month in Austin, plus a solid emergency fund or insurance."
     },
-    "local_context": {
-        "city": "Austin",
-        "state": "TX",
-        "cost_of_living_note": "Austin vet prices are slightly above national average, especially for emergency clinics and specialty care.",
-        "dog_friendly_note": "Austin is generally very dog-friendly with many parks and outdoor spaces, but hot summers increase risk of heat-related issues."
+    {
+      "question": "Do I really need pet insurance for a Golden Retriever?",
+      "answer": "You don’t have to buy insurance, but many Golden Retriever owners are glad they did after the first big emergency. If a surprise $2,000–$3,000 vet bill would hurt, insurance is worth serious consideration."
     },
-    "faq": [
-        {
-            "question": "Is a Golden Retriever an expensive dog to own in Austin?",
-            "answer": "Yes. Golden Retrievers are large, active dogs with higher food needs and a real risk of joint and cancer expenses. Plan on $140–$270 per month in Austin, plus a solid emergency fund or insurance."
-        },
-        {
-            "question": "Do I really need pet insurance for a Golden Retriever?",
-            "answer": "You don’t have to buy insurance, but many Golden Retriever owners are glad they did after the first big emergency. If a surprise $2,000–$3,000 vet bill would hurt, insurance is worth serious consideration."
-        },
-        {
-            "question": "How can I lower my monthly Golden Retriever costs?",
-            "answer": "Choose a good-quality food in the middle price range, keep vaccines and preventatives up to date to avoid expensive illnesses, and invest in early training so you don’t have to pay for behavior problems later."
-        }
-    ],
-    "cta": {
-        "cost_calculator_anchor": "Not sure what this looks like for your income? Use the Golden Retriever Budget Calculator to plug in your numbers.",
-        "insurance_quiz_anchor": "Want a straight answer on insurance? Take the 60-second Insurance Fit Quiz to see if it’s worth it for you."
-    },
-    "quick_answers": [],
-    "faq_schema": []
+    {
+      "question": "How can I lower my monthly Golden Retriever costs?",
+      "answer": "Choose a good-quality food in the middle price range, keep vaccines and preventatives up to date to avoid expensive illnesses, and invest in early training so you don’t have to pay for behavior problems later."
+    }
+  ],
+  "cta": {
+    "cost_calculator_anchor": "Not sure what this looks like for your income? Use the Golden Retriever Budget Calculator to plug in your numbers.",
+    "insurance_quiz_anchor": "Want a straight answer on insurance? Take the 60-second Insurance Fit Quiz to see if it’s worth it for you."
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq_schema": []
 }

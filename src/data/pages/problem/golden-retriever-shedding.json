@@ -1,45 +1,63 @@
 {
-    "slug": "golden-retriever-shedding",
-    "meta": {
-        "title": "Golden Retriever Shedding: How to Manage the Fur",
-        "description": "Golden Retrievers shed a lot. Learn how to manage their double coat, reduce shedding, and keep your home clean."
+  "slug": "golden-retriever-shedding",
+  "meta": {
+    "title": "Golden Retriever Shedding: How to Manage the Fur",
+    "description": "Golden Retrievers shed a lot. Learn how to manage their double coat, reduce shedding, and keep your home clean."
+  },
+  "h1": "Managing Golden Retriever Shedding",
+  "breed": "Golden Retriever",
+  "problem": "Excessive Shedding",
+  "category": "Health",
+  "overview": "Goldens have a double coat that sheds year-round and 'blows' twice a year. Regular grooming is non-negotiable to keep fur under control.",
+  "symptoms": [
+    "Fur on furniture and clothes",
+    "Clumps of hair (tumbleweeds) on the floor",
+    "Matting behind ears"
+  ],
+  "causes": [
+    "Natural double coat cycle",
+    "Seasonal changes (Spring/Fall)",
+    "Poor diet"
+  ],
+  "solutions": [
+    {
+      "title": "Daily Brushing",
+      "description": "Use a slicker brush and undercoat rake to remove loose fur before it hits the floor."
     },
-    "h1": "Managing Golden Retriever Shedding",
-    "breed": "Golden Retriever",
-    "problem": "Excessive Shedding",
-    "category": "Health",
-    "overview": "Goldens have a double coat that sheds year-round and 'blows' twice a year. Regular grooming is non-negotiable to keep fur under control.",
-    "symptoms": [
-        "Fur on furniture and clothes",
-        "Clumps of hair (tumbleweeds) on the floor",
-        "Matting behind ears"
-    ],
-    "causes": [
-        "Natural double coat cycle",
-        "Seasonal changes (Spring/Fall)",
-        "Poor diet"
-    ],
-    "solutions": [
-        {
-            "title": "Daily Brushing",
-            "description": "Use a slicker brush and undercoat rake to remove loose fur before it hits the floor."
-        },
-        {
-            "title": "High-Quality Diet",
-            "description": "Omega-3 fatty acids promote skin health and can reduce excessive shedding."
-        },
-        {
-            "title": "De-Shedding Shampoo",
-            "description": "Bathing with specialized shampoo helps loosen dead undercoat."
-        }
-    ],
-    "product_recommendations": [
-        "Furminator Undercoat Tool",
-        "Slicker Brush",
-        "Robot Vacuum"
-    ],
-    "monetization": {
-        "course_cta": "Best Grooming Tools for Goldens",
-        "course_url": "https://example.com/grooming-tools"
+    {
+      "title": "High-Quality Diet",
+      "description": "Omega-3 fatty acids promote skin health and can reduce excessive shedding."
+    },
+    {
+      "title": "De-Shedding Shampoo",
+      "description": "Bathing with specialized shampoo helps loosen dead undercoat."
     }
+  ],
+  "product_recommendations": [
+    "Furminator Undercoat Tool",
+    "Slicker Brush",
+    "Robot Vacuum"
+  ],
+  "monetization": {
+    "course_cta": "Best Grooming Tools for Goldens",
+    "course_url": "https://example.com/grooming-tools"
+  },
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ]
 }

@@ -1,52 +1,69 @@
 {
-    "slug": "golden-retriever",
-    "meta": {
-        "title": "Golden Retriever Common Problems: Health & Behavior",
-        "description": "Common Golden Retriever problems including shedding, chewing, jumping, and health issues like hip dysplasia."
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Common Problems: Health & Behavior",
+    "description": "Common Golden Retriever problems including shedding, chewing, jumping, and health issues like hip dysplasia."
+  },
+  "h1": "Golden Retriever Problems & Solutions",
+  "hero": {
+    "title": "Common Golden Retriever Challenges",
+    "subtitle": "What to expect when owning a Golden.",
+    "image_url": "/images/problems/golden-retriever.jpg"
+  },
+  "intro": "Golden Retrievers are amazing dogs, but they aren't perfect. They shed heavily, can be mouthy, and are prone to specific health issues.",
+  "problems": [
+    {
+      "title": "Heavy Shedding",
+      "description": "Goldens shed year-round with heavy coat blows twice a year.",
+      "severity": "High"
     },
-    "h1": "Golden Retriever Problems & Solutions",
-    "hero": {
-        "title": "Common Golden Retriever Challenges",
-        "subtitle": "What to expect when owning a Golden.",
-        "image_url": "/images/problems/golden-retriever.jpg"
+    {
+      "title": "Mouthiness / Chewing",
+      "description": "As retrievers, they love to carry things in their mouths and may chew if bored.",
+      "severity": "Medium"
     },
-    "intro": "Golden Retrievers are amazing dogs, but they aren't perfect. They shed heavily, can be mouthy, and are prone to specific health issues.",
-    "problems": [
-        {
-            "title": "Heavy Shedding",
-            "description": "Goldens shed year-round with heavy coat blows twice a year.",
-            "severity": "High"
-        },
-        {
-            "title": "Mouthiness / Chewing",
-            "description": "As retrievers, they love to carry things in their mouths and may chew if bored.",
-            "severity": "Medium"
-        },
-        {
-            "title": "Hip Dysplasia",
-            "description": "A genetic joint condition common in the breed.",
-            "severity": "High"
-        }
-    ],
-    "solutions": [
-        {
-            "title": "Regular Grooming",
-            "description": "Brush 2-3 times a week to manage shedding."
-        },
-        {
-            "title": "Provide Chew Toys",
-            "description": "Give them appropriate outlets for their chewing instincts."
-        }
-    ],
-    "faq": [],
-    "related_guides": [
-        {
-            "title": "Stop Chewing",
-            "slug": "golden-retriever-chewing"
-        },
-        {
-            "title": "Manage Shedding",
-            "slug": "golden-retriever-shedding"
-        }
-    ]
+    {
+      "title": "Hip Dysplasia",
+      "description": "A genetic joint condition common in the breed.",
+      "severity": "High"
+    }
+  ],
+  "solutions": [
+    {
+      "title": "Regular Grooming",
+      "description": "Brush 2-3 times a week to manage shedding."
+    },
+    {
+      "title": "Provide Chew Toys",
+      "description": "Give them appropriate outlets for their chewing instincts."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "related_guides": [
+    {
+      "title": "Stop Chewing",
+      "slug": "golden-retriever-chewing"
+    },
+    {
+      "title": "Manage Shedding",
+      "slug": "golden-retriever-shedding"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ]
 }

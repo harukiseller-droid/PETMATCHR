@@ -1,60 +1,63 @@
 import { MetadataRoute } from 'next';
-import { getBreeds } from '@/lib/data';
+import { getPageIndex } from '@/lib/internal-links';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://petmatchr.com';
-    const breeds = await getBreeds();
+    const index = await getPageIndex();
 
-    const breedUrls = breeds.map((breed) => ({
-        url: `${baseUrl}/breeds/${breed.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
+    const urls: MetadataRoute.Sitemap = [];
+    const now = new Date();
+
+    urls.push({
+        url: baseUrl,
+        lastModified: now,
+        changeFrequency: 'daily',
+        priority: 1,
+    });
+
+    urls.push({
+        url: `${baseUrl}/answers`,
+        lastModified: now,
+        changeFrequency: 'weekly',
         priority: 0.8,
-    }));
+    });
 
-    const costUrls = breeds.map((breed) => ({
-        url: `${baseUrl}/cost/${breed.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-    }));
-
-    const problemUrls = breeds.map((breed) => ({
-        url: `${baseUrl}/problems/${breed.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-    }));
-
-    const anxietyUrls = breeds.map((breed) => ({
-        url: `${baseUrl}/anxiety/${breed.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-    }));
-
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/quiz/lifestyle-match`,
-            lastModified: new Date(),
+    const quizSlugs = ['insurance-fit-quiz', 'behavior-check-quiz', 'lifestyle-match'];
+    for (const slug of quizSlugs) {
+        urls.push({
+            url: `${baseUrl}/quiz/${slug}`,
+            lastModified: now,
             changeFrequency: 'monthly',
             priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/compare`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        ...breedUrls,
-        ...costUrls,
-        ...problemUrls,
-        ...anxietyUrls,
-    ];
+        });
+    }
+
+    urls.push({
+        url: `${baseUrl}/compare`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+    });
+
+    for (const entry of index) {
+        let path: string | null = null;
+        if (entry.page_type === 'breed') path = `/breeds/${entry.slug}`;
+        else if (entry.page_type === 'cost') path = `/cost/${entry.slug}`;
+        else if (entry.page_type === 'problem') path = `/problems/${entry.slug}`;
+        else if (entry.page_type === 'anxiety') path = `/anxiety/${entry.slug}`;
+        else if (entry.page_type === 'comparison') path = `/compare/${entry.slug}`;
+        else if (entry.page_type === 'location') path = `/locations/${entry.slug}`;
+        else if (entry.page_type === 'list') path = `/lists/${entry.slug}`;
+
+        if (!path) continue;
+
+        urls.push({
+            url: `${baseUrl}${path}`,
+            lastModified: now,
+            changeFrequency: 'weekly',
+            priority: 0.7,
+        });
+    }
+
+    return urls;
 }

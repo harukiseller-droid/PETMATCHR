@@ -49,6 +49,30 @@ This project uses a programmatic approach to generate thousands of pages.
    npm run sitemap
    ```
 
+## Content Quality Pipeline
+
+Once you have generated content, you can run additional QA passes:
+
+- **Structure QA** (basic schema validation):
+  ```bash
+  npm run qa
+  ```
+
+- **SEO QA** (meta, h1, keywords, FAQ / quick answers presence):
+  ```bash
+  npm run qa:seo
+  ```
+
+- **Quiz QA** (questions, result buckets, lifestyle-match depth):
+  ```bash
+  npm run qa:quiz
+  ```
+
+- **Content Style QA** (length, opinionated tone, medical-advice guardrails):
+  ```bash
+  npm run qa:content
+  ```
+
 ## Project Structure
 
 - `src/app`: Next.js App Router pages.

@@ -1,0 +1,39 @@
+{
+    "keywords": [
+        {
+            "term": "golden retriever cost",
+            "intent": "commercial",
+            "volume": 12000,
+            "difficulty": 45,
+            "cpc": 2.5
+        },
+        {
+            "term": "best dogs for apartments",
+            "intent": "informational",
+            "volume": 25000,
+            "difficulty": 60,
+            "cpc": 1.2
+        },
+        {
+            "term": "french bulldog health issues",
+            "intent": "informational",
+            "volume": 8000,
+            "difficulty": 35,
+            "cpc": 1.8
+        },
+        {
+            "term": "dog separation anxiety training",
+            "intent": "commercial",
+            "volume": 5000,
+            "difficulty": 50,
+            "cpc": 3.0
+        },
+        {
+            "term": "pet insurance comparison",
+            "intent": "commercial",
+            "volume": 15000,
+            "difficulty": 70,
+            "cpc": 10.0
+        }
+    ]
+}

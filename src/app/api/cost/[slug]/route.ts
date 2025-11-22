@@ -1,25 +1,43 @@
 import { NextResponse } from 'next/server';
-import { getCostPageBySlug } from '@/lib/data';
+import { loadCostV7 } from '@/lib/api-v7';
+import { getPageMonetization } from '@/lib/monetization';
 
 export async function GET(request: Request, { params }: { params: { slug: string } }) {
-    const page = await getCostPageBySlug(params.slug);
+    const page = await loadCostV7(params.slug);
     if (!page) {
         return NextResponse.json({ error: 'Cost page not found' }, { status: 404 });
     }
 
-    // Return a subset or full data depending on strategy. 
-    // For AEO, returning the summary and breakdown is key.
-    return NextResponse.json({
+    const monetization = await getPageMonetization(page.slug);
+
+    const payload = {
         slug: page.slug,
-        title: page.meta.title,
-        summary: page.summary,
-        first_year_breakdown: page.first_year_breakdown,
-        monthly_breakdown: page.monthly_breakdown,
-        emergency_costs: page.emergency_costs,
-        local_context: page.local_context,
+        page_type: 'cost' as const,
+        meta: page.meta,
+        h1: page.h1,
+        intro: page.intro,
+        cost_breakdown: page.cost_breakdown,
+        insurance_section: page.insurance_section,
+        saving_tips: page.saving_tips,
+        faq: page.faq || [],
+        quick_answers: page.quick_answers || [],
+        monetization: monetization ? {
+            cluster: monetization.cluster,
+            primary_funnel: monetization.primary_funnel,
+            primary_offer_type: monetization.primary_offer_type,
+            primary_quiz_slug: monetization.primary_quiz_slug,
+        } : null,
         _meta: {
-            generated: new Date().toISOString(),
-            source: "PetMatchr V7"
+            generated_at: new Date().toISOString(),
+            source: "PetMatchr",
+        }
+    };
+
+    return NextResponse.json(payload, {
+        status: 200,
+        headers: {
+            'Cache-Control': 's-maxage=300, stale-while-revalidate=900',
+            'Access-Control-Allow-Origin': '*',
         }
     });
 }

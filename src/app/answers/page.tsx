@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { getAllQuickAnswers } from "@/lib/quick-answers";
+import QuickAnswersClient from "./QuickAnswersClient";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
     title: "PetMatchr Answers Hub - Quizzes & Quick Guides",
     description: "Find quick answers to your dog questions and take our interactive quizzes.",
 };
 
-export default function AnswersHubPage() {
+export default async function AnswersHubPage() {
     const quizzes = [
         {
             slug: "insurance-fit-quiz",
@@ -21,15 +24,38 @@ export default function AnswersHubPage() {
             color: "bg-purple-500"
         },
         {
-            slug: "lifestyle-match-quiz",
+            slug: "anxiety-level",
+            title: "Anxiety Level Check",
+            description: "See if your dog's anxiety is mild or needs pro help.",
+            color: "bg-rose-500"
+        },
+        {
+            slug: "lifestyle-match",
             title: "Breed Lifestyle Match",
             description: "Find the perfect dog breed for your life.",
             color: "bg-green-500"
         }
     ];
 
+    const quickAnswers = await getAllQuickAnswers();
+    const faqEntities = quickAnswers.slice(0, 10).map((qa) => ({
+        "@type": "Question",
+        "name": qa.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": qa.answer,
+        }
+    }));
+
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqEntities
+    };
+
     return (
         <main className="min-h-screen bg-gray-50 pb-20">
+            <JsonLd data={faqJsonLd} />
             <div className="bg-white border-b border-gray-200">
                 <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4">
@@ -83,6 +109,8 @@ export default function AnswersHubPage() {
                         </div>
                     </div>
                 </div>
+
+                <QuickAnswersClient items={quickAnswers} />
             </div>
         </main>
     );

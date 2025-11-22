@@ -1,6 +1,6 @@
 {
     "id": "quiz_insurance_001",
-    "slug": "insurance-fit-quiz",
+    "slug": "insurance-fit",
     "title": "Is Pet Insurance Worth It For You?",
     "description": "Find out if pet insurance makes financial sense for your specific situation in under 60 seconds.",
     "questions": [
@@ -12,17 +12,20 @@
                 {
                     "id": "puppy",
                     "label": "Puppy (under 1 year)",
-                    "value": 10
+                    "value": 10,
+                    "score": 10
                 },
                 {
                     "id": "adult",
                     "label": "Adult (1-7 years)",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "senior",
                     "label": "Senior (8+ years)",
-                    "value": 0
+                    "value": 0,
+                    "score": 0
                 }
             ]
         },
@@ -34,17 +37,20 @@
                 {
                     "id": "small",
                     "label": "Small / Toy",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "medium",
                     "label": "Medium",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "large",
                     "label": "Large / Giant",
-                    "value": 10
+                    "value": 10,
+                    "score": 10
                 }
             ]
         },
@@ -56,17 +62,20 @@
                 {
                     "id": "yes_easy",
                     "label": "Yes, no problem",
-                    "value": 0
+                    "value": 0,
+                    "score": 0
                 },
                 {
                     "id": "yes_hard",
                     "label": "Yes, but it would hurt",
-                    "value": 5
+                    "value": 5,
+                    "score": 5
                 },
                 {
                     "id": "no",
                     "label": "No, I would struggle",
-                    "value": 10
+                    "value": 10,
+                    "score": 10
                 }
             ]
         }
@@ -96,6 +105,38 @@
             "max_score": 9,
             "title": "Low Priority: Self-Insurance Might Work",
             "description": "You seem financially prepared or have a lower-risk dog. Putting money into a savings account might be a better option for you.",
+            "cta_label": "Learn About Savings Accounts",
+            "cta_url": "/articles/pet-savings-account"
+        }
+    ],
+    "result_mapping": [
+        {
+            "slug": "high_fit",
+            "title": "High Priority: Insurance is Highly Recommended",
+            "description": "Based on your answers, you are in a high-risk category for expensive vet bills. Locking in a policy now could save you thousands.",
+            "min_score": 20,
+            "max_score": 30,
+            "primary_call_to_action": "show_top_apartment_breeds",
+            "cta_label": "See Top Rated Plans",
+            "cta_url": "https://partner.link/insurance"
+        },
+        {
+            "slug": "medium_fit",
+            "title": "Medium Priority: Consider Accident-Only or Major Medical",
+            "description": "You have some risk factors. If a full policy is too pricey, look for accident-only coverage to protect against catastrophes.",
+            "min_score": 10,
+            "max_score": 19,
+            "primary_call_to_action": "show_family_friendly_breeds",
+            "cta_label": "Compare Basic Plans",
+            "cta_url": "https://partner.link/insurance"
+        },
+        {
+            "slug": "low_fit",
+            "title": "Low Priority: Self-Insurance Might Work",
+            "description": "You seem financially prepared or have a lower-risk dog. Putting money into a savings account might be a better option for you.",
+            "min_score": 0,
+            "max_score": 9,
+            "primary_call_to_action": "show_low_energy_breeds",
             "cta_label": "Learn About Savings Accounts",
             "cta_url": "/articles/pet-savings-account"
         }
