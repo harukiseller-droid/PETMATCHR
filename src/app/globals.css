@@ -4,77 +4,83 @@
 
 @layer base {
   :root {
-    /* Background: #F8F9FA */
-    --background: 210 20% 98%;
-    /* Foreground: #1C1C1E */
-    --foreground: 240 4% 11%;
+    /* Background: #FFFFFF */
+    --background: 0 0% 100%;
+    /* Foreground: #00253A (Navy) */
+    --foreground: 201 100% 11%;
 
     /* Card: #FFFFFF */
     --card: 0 0% 100%;
-    --card-foreground: 240 4% 11%;
+    --card-foreground: 201 100% 11%;
 
     /* Popover: #FFFFFF */
     --popover: 0 0% 100%;
-    --popover-foreground: 240 4% 11%;
+    --popover-foreground: 201 100% 11%;
 
-    /* Primary: #4F7CAC */
-    --primary: 211 37% 49%;
+    /* Primary: #2CA6AF (Teal) */
+    --primary: 176 60% 43%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: #F4A259 */
-    --secondary: 28 87% 65%;
-    --secondary-foreground: 240 4% 11%;
+    /* Secondary: #00253A (Navy) */
+    --secondary: 201 100% 11%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted: #E9ECEF (Neutral-100) */
-    --muted: 210 14% 93%;
-    --muted-foreground: 240 2% 29%;
-    /* Neutral-600 */
+    /* Muted: #E6EDF0 (Light Gray) */
+    --muted: 198 25% 92%;
+    --muted-foreground: 201 100% 11%;
 
-    /* Accent: #F0F4F8 (Primary-50) */
-    --accent: 210 29% 96%;
-    --accent-foreground: 211 37% 49%;
+    /* Accent: #EE6644 (Orange) - Used for highlights/CTA */
+    --accent: 12 83% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Destructive: #D9534F */
-    --destructive: 2 64% 58%;
+    /* Destructive: #DB1328 (Red) */
+    --destructive: 354 84% 47%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Border: #D1D1D3 (Custom input border) or Neutral-200 */
-    --border: 210 14% 89%;
-    --input: 210 14% 89%;
-    --ring: 211 37% 49%;
+    /* Border: #E6EDF0 */
+    --border: 198 25% 92%;
+    /* Input: White bg, border handled by border var */
+    --input: 198 25% 92%;
+    /* Ring: #2CA6AF */
+    --ring: 176 60% 43%;
 
     --radius: 0.75rem;
   }
 
   .dark {
-    /* Dark mode mapping (approximated inverse) */
-    --background: 240 4% 11%;
-    --foreground: 210 20% 98%;
+    /* Dark mode mapping - using Navy as base */
+    /* Background: #00253A */
+    --background: 201 100% 11%;
+    /* Foreground: #FFFFFF */
+    --foreground: 0 0% 100%;
 
-    --card: 240 4% 11%;
-    --card-foreground: 210 20% 98%;
+    --card: 201 100% 11%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 240 4% 11%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 201 100% 11%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 211 37% 49%;
+    /* Primary: #2CA6AF */
+    --primary: 176 60% 43%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 28 87% 65%;
-    --secondary-foreground: 240 4% 11%;
+    /* Secondary: #00253A (Navy) */
+    --secondary: 201 100% 16%;
+    /* Slightly lighter navy for visibility */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 4% 16%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 201 50% 20%;
+    --muted-foreground: 198 25% 80%;
 
-    --accent: 240 4% 16%;
-    --accent-foreground: 210 20% 98%;
+    --accent: 12 83% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 2 64% 58%;
+    --destructive: 354 84% 47%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 211 37% 49%;
+    --border: 201 50% 20%;
+    --input: 201 50% 20%;
+    --ring: 176 60% 43%;
   }
 }
 
