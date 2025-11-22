@@ -139,22 +139,50 @@ async function generatePageMatrix() {
         }
     }
 
-    // Generate Comparison Pages (Breed x Breed) - Simple example: just compare first 2
-    if (breeds.length >= 2) {
-        const a = breeds[0];
-        const b = breeds[1];
-        matrix.push({
-            slug: `${a.slug}-vs-${b.slug}`,
-            page_type: 'comparison',
-            input_data: {
-                breed_a: a,
-                breed_b: b,
-                persona_hint: null,
-            },
-            ai_prompt_version: 'v7',
-            keywords: getKeywordsForPage('comparison', a.name, b.name) ?? getFallbackKeywordsForPage('comparison', { breed_name: a.name, other_entity_name: b.name }),
-            primary_intent: 'general_research',
-        });
+    // Generate Comparison Pages (Breed x Breed)
+    const comparisonCategories = loadInputData<any>('comparisons.json');
+    const breedMap = new Map(breeds.map(b => [b.slug, b]));
+    const generatedComparisons = new Set<string>();
+
+    for (const category of comparisonCategories) {
+        const categoryBreeds = category.breeds;
+        if (!categoryBreeds || !Array.isArray(categoryBreeds)) continue;
+
+        for (let i = 0; i < categoryBreeds.length; i++) {
+            for (let j = i + 1; j < categoryBreeds.length; j++) {
+                const slugA = categoryBreeds[i];
+                const slugB = categoryBreeds[j];
+
+                // Ensure we have breed data
+                const breedA = breedMap.get(slugA);
+                const breedB = breedMap.get(slugB);
+
+                if (!breedA || !breedB) {
+                    // console.warn(`Skipping comparison ${slugA} vs ${slugB}: Breed data not found.`);
+                    continue;
+                }
+
+                // Create consistent slug (alphabetical order to avoid duplicates)
+                const [first, second] = [breedA, breedB].sort((a, b) => a.slug.localeCompare(b.slug));
+                const comparisonSlug = `${first.slug}-vs-${second.slug}`;
+
+                if (generatedComparisons.has(comparisonSlug)) continue;
+                generatedComparisons.add(comparisonSlug);
+
+                matrix.push({
+                    slug: comparisonSlug,
+                    page_type: 'comparison',
+                    input_data: {
+                        breed_a: first,
+                        breed_b: second,
+                        persona_hint: category.title,
+                    },
+                    ai_prompt_version: 'v7',
+                    keywords: getKeywordsForPage('comparison', first.name, second.name) ?? getFallbackKeywordsForPage('comparison', { breed_name: first.name, other_entity_name: second.name }),
+                    primary_intent: 'general_research',
+                });
+            }
+        }
     }
 
     // Generate Anxiety Pages (Breed)
