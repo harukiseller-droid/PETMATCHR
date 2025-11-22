@@ -81,15 +81,15 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
     if (phase === "result" && result) {
         return (
             <div className="max-w-4xl mx-auto space-y-10">
-                <div className="bg-indigo-600 rounded-2xl p-8 text-white text-center shadow-lg">
+                <div className="bg-primary-600 rounded-2xl p-8 text-white text-center shadow-lg">
                     <h2 className="text-3xl font-bold mb-2">Your Dog Match Profile</h2>
                     <p className="text-xl font-semibold mb-3">{result.profile_label}</p>
-                    <p className="text-indigo-100 max-w-2xl mx-auto">{result.description}</p>
+                    <p className="text-primary-100 max-w-2xl mx-auto">{result.description}</p>
                 </div>
 
                 <section>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Top breed matches</h3>
-                    <p className="text-sm text-gray-600 mb-6">
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-4">Top breed matches</h3>
+                    <p className="text-sm text-neutral-600 mb-6">
                         These breeds line up best with your home, schedule, budget, and experience. They are not perfect guarantees,
                         but they are much safer starting points than random scrolling.
                     </p>
@@ -97,42 +97,42 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                         {result.top_matches.map((match) => (
                             <div
                                 key={match.breed_slug}
-                                className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-sm"
+                                className="bg-white border border-neutral-200 rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-sm"
                             >
                                 <div className="flex-1">
                                     <div className="flex items-center gap-3 mb-1">
-                                        <p className="text-lg font-bold text-gray-900 capitalize">
+                                        <p className="text-lg font-bold text-neutral-900 capitalize">
                                             {match.breed_slug.replace(/-/g, " ")}
                                         </p>
-                                        <span className="inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">
+                                        <span className="inline-flex items-center rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700">
                                             Match score: {match.match_score} / 100
                                         </span>
                                     </div>
-                                    <ul className="text-sm text-gray-700 list-disc pl-5 space-y-1">
+                                    <ul className="text-sm text-neutral-700 list-disc pl-5 space-y-1">
                                         {match.explanation_bullets.map((b, idx) => (
                                             <li key={idx}>{b}</li>
                                         ))}
                                     </ul>
-                                    <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-gray-500">
+                                    <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-neutral-500">
                                         <div>
-                                            <dt className="font-medium text-gray-600">Energy</dt>
+                                            <dt className="font-medium text-neutral-600">Energy</dt>
                                             <dd>{match.key_traits.energy_label}</dd>
                                         </div>
                                         <div>
-                                            <dt className="font-medium text-gray-600">Apartment score</dt>
+                                            <dt className="font-medium text-neutral-600">Apartment score</dt>
                                             <dd>{match.key_traits.apartment_score}/10</dd>
                                         </div>
                                         <div>
-                                            <dt className="font-medium text-gray-600">Kid friendly</dt>
+                                            <dt className="font-medium text-neutral-600">Kid friendly</dt>
                                             <dd>{match.key_traits.kid_friendly_score}/10</dd>
                                         </div>
                                         <div>
-                                            <dt className="font-medium text-gray-600">Shedding</dt>
+                                            <dt className="font-medium text-neutral-600">Shedding</dt>
                                             <dd className="capitalize">{match.key_traits.shedding_level} shedding</dd>
                                         </div>
                                         {match.key_traits.monthly_cost_range && (
                                             <div className="col-span-2">
-                                                <dt className="font-medium text-gray-600">Typical monthly cost</dt>
+                                                <dt className="font-medium text-neutral-600">Typical monthly cost</dt>
                                                 <dd>
                                                     ${match.key_traits.monthly_cost_range[0]} – ${match.key_traits.monthly_cost_range[1]}
                                                 </dd>
@@ -143,31 +143,31 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                                 <div className="grid grid-cols-2 gap-2 w-full md:w-auto">
                                     <Link
                                         href={`/breeds/${match.breed_slug}`}
-                                        className="col-span-2 inline-flex justify-center items-center rounded-full bg-indigo-600 px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-500 transition-colors"
+                                        className="col-span-2 inline-flex justify-center items-center rounded-full bg-primary-600 px-4 py-2 text-xs font-semibold text-white hover:bg-primary-500 transition-colors"
                                     >
                                         View Full Profile
                                     </Link>
                                     <Link
                                         href={`/cost/${match.breed_slug}`}
-                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                        className="inline-flex justify-center items-center rounded-full border border-neutral-200 px-3 py-1.5 text-xs font-medium text-neutral-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
                                     >
                                         Cost
                                     </Link>
                                     <Link
                                         href={`/problems/${match.breed_slug}`}
-                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                        className="inline-flex justify-center items-center rounded-full border border-neutral-200 px-3 py-1.5 text-xs font-medium text-neutral-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
                                     >
                                         Health
                                     </Link>
                                     <Link
                                         href={`/anxiety/${match.breed_slug}`}
-                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                        className="inline-flex justify-center items-center rounded-full border border-neutral-200 px-3 py-1.5 text-xs font-medium text-neutral-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
                                     >
                                         Anxiety
                                     </Link>
                                     <Link
                                         href={`/compare/${match.breed_slug}`}
-                                        className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
+                                        className="inline-flex justify-center items-center rounded-full border border-neutral-200 px-3 py-1.5 text-xs font-medium text-neutral-700 hover:border-primary-500 hover:text-primary-600 transition-colors"
                                     >
                                         Compare
                                     </Link>
@@ -177,9 +177,9 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                     </div>
                 </section>
 
-                <section className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">What to do next</h3>
-                    <ul className="list-disc pl-5 text-sm text-gray-700 space-y-1">
+                <section className="bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm">
+                    <h3 className="text-lg font-bold text-neutral-900 mb-2">What to do next</h3>
+                    <ul className="list-disc pl-5 text-sm text-neutral-700 space-y-1">
                         <li>Read at least one full breed guide for any match you’re serious about.</li>
                         <li>Open a cost breakdown for your top 1–2 breeds to reality-check your budget.</li>
                         <li>Share this list with anyone you live with so you’re aligned before you fall in love with a photo.</li>
@@ -204,9 +204,9 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
 
     return (
         <div className="max-w-2xl mx-auto">
-            <div className="mb-6 flex items-center justify-between text-xs text-gray-500">
+            <div className="mb-6 flex items-center justify-between text-xs text-neutral-500">
                 <div>
-                    <span className="font-semibold text-indigo-600">
+                    <span className="font-semibold text-primary-600">
                         {phase === 1 ? "Step 1 of 2 – Quick Profile" : "Step 2 of 2 – Deep Dive (optional)"}
                     </span>
                 </div>
@@ -217,16 +217,16 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
 
             {/* Progress Bar */}
             <div className="mb-6">
-                <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-2 bg-neutral-200 rounded-full overflow-hidden">
                     <div
-                        className="h-full bg-indigo-500 transition-all duration-500 ease-out"
+                        className="h-full bg-primary-500 transition-all duration-500 ease-out"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                     {currentQuestion.text}
                 </h2>
 
@@ -235,9 +235,9 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                         <button
                             key={option.value}
                             onClick={() => handleSelect(currentQuestion.id, option.value)}
-                            className="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-500 hover:bg-indigo-50 transition-all duration-200 group"
+                            className="w-full text-left p-4 rounded-xl border-2 border-neutral-100 hover:border-primary-500 hover:bg-primary-50 transition-all duration-200 group"
                         >
-                            <span className="font-medium text-gray-700 group-hover:text-indigo-700">
+                            <span className="font-medium text-neutral-700 group-hover:text-primary-700">
                                 {option.label}
                             </span>
                         </button>
@@ -248,7 +248,7 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                     <button
                         type="button"
                         onClick={handleSkipDeepDive}
-                        className="mt-6 inline-flex items-center justify-center rounded-full border border-gray-200 px-4 py-2 text-xs font-semibold text-gray-600 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+                        className="mt-6 inline-flex items-center justify-center rounded-full border border-neutral-200 px-4 py-2 text-xs font-semibold text-neutral-600 hover:border-primary-400 hover:text-primary-600 transition-colors"
                     >
                         Skip deep dive and see matches
                     </button>

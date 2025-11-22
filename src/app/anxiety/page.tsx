@@ -21,11 +21,11 @@ export default async function AnxietyIndexPage() {
     })).sort((a, b) => a.title.localeCompare(b.title));
 
     return (
-        <main className="min-h-screen bg-slate-950 py-12 px-4 sm:px-6 lg:px-8">
+        <main className="min-h-screen bg-neutral-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-slate-50 mb-4">Dog Anxiety Guides</h1>
-                    <p className="text-xl text-slate-400">
+                    <h1 className="text-4xl font-bold text-neutral-900 mb-4">Dog Anxiety Guides</h1>
+                    <p className="text-xl text-neutral-500">
                         Help your dog feel safe, calm, and confident.
                     </p>
                 </div>
@@ -35,15 +35,15 @@ export default async function AnxietyIndexPage() {
                         <Link
                             key={page.slug}
                             href={`/anxiety/${page.slug}`}
-                            className="group block rounded-2xl border border-slate-800 bg-slate-900/50 p-8 hover:border-purple-500/50 hover:bg-slate-900 transition-all"
+                            className="group block rounded-2xl border border-neutral-200 bg-white p-8 hover:border-primary-500/50 hover:shadow-md transition-all"
                         >
-                            <h2 className="text-2xl font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
                                 {page.title}
                             </h2>
-                            <p className="text-slate-400 mb-4">
+                            <p className="text-neutral-500 mb-4">
                                 {page.description}
                             </p>
-                            <div className="flex items-center text-sm font-medium text-purple-500">
+                            <div className="flex items-center text-sm font-medium text-primary-600">
                                 Read Guide <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
                             </div>
                         </Link>

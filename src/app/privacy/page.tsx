@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-50 py-20 px-4">
+        <div className="min-h-screen bg-neutral-50 text-neutral-900 py-20 px-4">
             <div className="max-w-3xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8 text-emerald-400">Privacy Policy</h1>
-                <div className="prose prose-invert prose-lg">
+                <h1 className="text-4xl font-bold mb-8 text-secondary-700">Privacy Policy</h1>
+                <div className="prose prose-neutral prose-lg">
                     <p>Last updated: November 21, 2025</p>
                     <p>
                         At PetMatchr, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclosure, and safeguard your information when you visit our website.

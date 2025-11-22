@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-50 py-20 px-4">
+        <div className="min-h-screen bg-neutral-50 text-neutral-900 py-20 px-4">
             <div className="max-w-3xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8 text-emerald-400">Terms of Service</h1>
-                <div className="prose prose-invert prose-lg">
+                <h1 className="text-4xl font-bold mb-8 text-secondary-700">Terms of Service</h1>
+                <div className="prose prose-neutral prose-lg">
                     <p>Last updated: November 21, 2025</p>
                     <p>
                         These Terms of Service (“Terms”) govern your access to and use of the PetMatchr website. By accessing or using the Service, you agree to be bound by these Terms.

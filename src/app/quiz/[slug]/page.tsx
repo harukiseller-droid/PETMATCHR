@@ -33,10 +33,10 @@ export default async function QuizPage({ params }: PageProps) {
         const lifestyleScores = await getLifestyleScores();
 
         return (
-            <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <main className="min-h-screen bg-neutral-50 py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-12">
-                    <h1 className="text-4xl font-extrabold text-gray-900 mb-4">{quiz.title}</h1>
-                    <p className="text-xl text-gray-600">{quiz.description}</p>
+                    <h1 className="text-4xl font-extrabold text-neutral-900 mb-4">{quiz.title}</h1>
+                    <p className="text-xl text-neutral-600">{quiz.description}</p>
                 </div>
                 <LifestyleMatchClient quiz={quiz} breeds={breeds} lifestyleScores={lifestyleScores} />
             </main>
@@ -47,10 +47,10 @@ export default async function QuizPage({ params }: PageProps) {
     if (!quiz) notFound();
 
     return (
-        <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <main className="min-h-screen bg-neutral-50 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
-                <h1 className="text-4xl font-extrabold text-gray-900 mb-4">{quiz.title}</h1>
-                <p className="text-xl text-gray-600">{quiz.description}</p>
+                <h1 className="text-4xl font-extrabold text-neutral-900 mb-4">{quiz.title}</h1>
+                <p className="text-xl text-neutral-600">{quiz.description}</p>
             </div>
 
             <QuizEngine quiz={quiz} />

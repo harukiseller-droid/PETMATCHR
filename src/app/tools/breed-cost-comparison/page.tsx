@@ -46,30 +46,30 @@ export default async function BreedCostComparisonPage() {
     const c2 = computeCosts(b2, city);
 
     return (
-        <main className="min-h-screen bg-slate-950 text-slate-50 py-12 px-4">
+        <main className="min-h-screen bg-neutral-50 text-neutral-900 py-12 px-4">
             <div className="max-w-5xl mx-auto space-y-10">
                 <header className="space-y-2">
                     <h1 className="text-3xl md:text-4xl font-bold">
                         Breed Cost Comparison
                     </h1>
-                    <p className="text-sm md:text-base text-slate-300 max-w-2xl">
+                    <p className="text-sm md:text-base text-neutral-600 max-w-2xl">
                         This is a simple, internal-facing view to compare two example breeds in{" "}
                         {city.name}, {city.state}. You can expand it later into a full tool if it proves useful.
                     </p>
                 </header>
 
-                <section className="bg-slate-900 rounded-2xl border border-slate-800 p-6 overflow-x-auto">
+                <section className="bg-white rounded-2xl border border-neutral-200 p-6 overflow-x-auto shadow-sm">
                     <table className="min-w-full text-sm">
                         <thead>
-                            <tr className="text-xs uppercase tracking-wide text-slate-400">
+                            <tr className="text-xs uppercase tracking-wide text-neutral-500">
                                 <th className="py-2 pr-4 text-left">Metric</th>
                                 <th className="py-2 px-4 text-left">{b1.name}</th>
                                 <th className="py-2 px-4 text-left">{b2.name}</th>
                             </tr>
                         </thead>
-                        <tbody className="divide-y divide-slate-800">
+                        <tbody className="divide-y divide-neutral-200">
                             <tr>
-                                <td className="py-3 pr-4 text-slate-400">First year total (approx)</td>
+                                <td className="py-3 pr-4 text-neutral-500">First year total (approx)</td>
                                 <td className="py-3 px-4">
                                     ${c1.first_year_min.toLocaleString()} – ${c1.first_year_max.toLocaleString()}
                                 </td>
@@ -78,7 +78,7 @@ export default async function BreedCostComparisonPage() {
                                 </td>
                             </tr>
                             <tr>
-                                <td className="py-3 pr-4 text-slate-400">Ongoing monthly cost</td>
+                                <td className="py-3 pr-4 text-neutral-500">Ongoing monthly cost</td>
                                 <td className="py-3 px-4">
                                     ${c1.monthly_min} – ${c1.monthly_max}
                                 </td>
@@ -87,7 +87,7 @@ export default async function BreedCostComparisonPage() {
                                 </td>
                             </tr>
                             <tr>
-                                <td className="py-3 pr-4 text-slate-400">Cost level (1–5)</td>
+                                <td className="py-3 pr-4 text-neutral-500">Cost level (1–5)</td>
                                 <td className="py-3 px-4">{b1.cost_level}</td>
                                 <td className="py-3 px-4">{b2.cost_level}</td>
                             </tr>

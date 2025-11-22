@@ -46,13 +46,13 @@ export default async function ComparisonPage({
         const { comparisonPages } = await getPagesByBreed(slug);
 
         return (
-            <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <main className="min-h-screen bg-neutral-50 py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl font-extrabold text-gray-900 mb-4 capitalize">
+                        <h1 className="text-4xl font-extrabold text-neutral-900 mb-4 capitalize">
                             {breed.name} Comparisons
                         </h1>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-xl text-neutral-600">
                             See how the {breed.name} stacks up against other popular breeds.
                         </p>
                     </div>
@@ -63,23 +63,23 @@ export default async function ComparisonPage({
                                 <a
                                     key={page.slug}
                                     href={`/compare/${page.slug}`}
-                                    className="block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-indigo-500 transition-all"
+                                    className="block bg-white rounded-xl border border-neutral-200 p-6 hover:shadow-md hover:border-primary-500 transition-all"
                                 >
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                    <h3 className="text-lg font-bold text-neutral-900 mb-2">
                                         {page.title}
                                     </h3>
-                                    <span className="text-indigo-600 font-medium text-sm">
+                                    <span className="text-primary-600 font-medium text-sm">
                                         Read comparison &rarr;
                                     </span>
                                 </a>
                             ))}
                         </div>
                     ) : (
-                        <div className="text-center bg-white rounded-xl p-12 border border-gray-200">
-                            <p className="text-gray-500">
+                        <div className="text-center bg-white rounded-xl p-12 border border-neutral-200">
+                            <p className="text-neutral-500">
                                 No comparisons available for the {breed.name} yet. Check back soon!
                             </p>
-                            <a href="/breeds" className="inline-block mt-4 text-indigo-600 font-medium hover:underline">
+                            <a href="/breeds" className="inline-block mt-4 text-primary-600 font-medium hover:underline">
                                 Browse all breeds
                             </a>
                         </div>
@@ -113,13 +113,13 @@ export default async function ComparisonPage({
         if (result.reason === "LLM_FAILED" || result.reason === "TIMEOUT") {
             // Show pending state
             return (
-                <div className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-slate-50 p-4 text-center">
-                    <div className="w-16 h-16 border-4 border-emerald-500/30 border-t-emerald-500 rounded-full animate-spin mb-6"></div>
+                <div className="min-h-screen flex flex-col items-center justify-center bg-neutral-50 text-neutral-900 p-4 text-center">
+                    <div className="w-16 h-16 border-4 border-secondary-500/30 border-t-secondary-500 rounded-full animate-spin mb-6"></div>
                     <h1 className="text-2xl font-bold mb-2">Generating Comparison...</h1>
-                    <p className="text-slate-400 max-w-md">
+                    <p className="text-neutral-500 max-w-md">
                         We’re analyzing thousands of data points to compare {leftBreedSlug.replace(/-/g, ' ')} and {rightBreedSlug.replace(/-/g, ' ')} just for you.
                     </p>
-                    <p className="text-slate-500 text-sm mt-4">
+                    <p className="text-neutral-400 text-sm mt-4">
                         This usually takes about 20-30 seconds. Please refresh the page in a moment.
                     </p>
                 </div>
@@ -129,12 +129,12 @@ export default async function ComparisonPage({
         } else {
             // MODE_OFF or LIMIT_REACHED
             return (
-                <div className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-slate-50 p-4 text-center">
+                <div className="min-h-screen flex flex-col items-center justify-center bg-neutral-50 text-neutral-900 p-4 text-center">
                     <h1 className="text-2xl font-bold mb-2">Comparison Unavailable</h1>
-                    <p className="text-slate-400 max-w-md">
+                    <p className="text-neutral-500 max-w-md">
                         We cannot generate this comparison at the moment. Please try again later or browse our existing comparisons.
                     </p>
-                    <a href="/compare" className="mt-6 text-emerald-400 hover:underline">Back to Compare</a>
+                    <a href="/compare" className="mt-6 text-secondary-600 hover:underline">Back to Compare</a>
                 </div>
             );
         }
