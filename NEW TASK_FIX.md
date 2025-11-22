@@ -26,3 +26,7 @@ request admin page phải cho full info giúp admin biết chính xác tình tr�
 phải show chính xác theo input data thì plan sẽ generate ra total bao nhiêu page. Tình trạng hiện tại như nào:
  bao nhiu generated page, bao nhiêu page completed, bao nhiêu page chưa generate content, 
 admin có thể request generate content cho 1 page bất kì from admin page
+
+==========
+chỉnh lại màu cho all page of website, hiện tại màu không đồng nhất trên all pages.
+màu hiện tại không phù hợp với niche dog. chỉnh lại cho khớp all page và niche dog.

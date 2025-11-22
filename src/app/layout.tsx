@@ -14,23 +14,23 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className="bg-slate-950 text-slate-50 antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
-                <header className="fixed top-0 z-50 w-full border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-xl">
+            <body className="bg-neutral-50 text-neutral-900 antialiased selection:bg-secondary-500/30 selection:text-secondary-900">
+                <header className="fixed top-0 z-50 w-full border-b border-neutral-200/80 bg-white/80 backdrop-blur-xl">
                     <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-                        <Link href="/" className="text-lg font-bold tracking-tight text-slate-100 hover:text-emerald-400 transition-colors">
+                        <Link href="/" className="text-lg font-bold tracking-tight text-neutral-900 hover:text-secondary-600 transition-colors">
                             PetMatchr
                         </Link>
-                        <nav className="flex flex-wrap items-center gap-4 md:gap-6 text-sm font-medium text-slate-300">
-                            <Link href="/quiz/lifestyle-match" className="hover:text-emerald-400 transition-colors">Quiz</Link>
-                            <Link href="/breeds" className="hover:text-emerald-400 transition-colors">Breeds</Link>
-                            <Link href="/compare" className="hover:text-emerald-400 transition-colors">Compare</Link>
-                            <Link href="/cost" className="hover:text-emerald-400 transition-colors">Costs</Link>
-                            <Link href="/anxiety" className="hover:text-emerald-400 transition-colors">Anxiety</Link>
-                            <Link href="/problems" className="hover:text-emerald-400 transition-colors">Problems</Link>
-                            <Link href="/answers" className="hover:text-emerald-400 transition-colors">Answers</Link>
+                        <nav className="flex flex-wrap items-center gap-4 md:gap-6 text-sm font-medium text-neutral-600">
+                            <Link href="/quiz/lifestyle-match" className="hover:text-secondary-600 transition-colors">Quiz</Link>
+                            <Link href="/breeds" className="hover:text-secondary-600 transition-colors">Breeds</Link>
+                            <Link href="/compare" className="hover:text-secondary-600 transition-colors">Compare</Link>
+                            <Link href="/cost" className="hover:text-secondary-600 transition-colors">Costs</Link>
+                            <Link href="/anxiety" className="hover:text-secondary-600 transition-colors">Anxiety</Link>
+                            <Link href="/problems" className="hover:text-secondary-600 transition-colors">Problems</Link>
+                            <Link href="/answers" className="hover:text-secondary-600 transition-colors">Answers</Link>
                             <Link
                                 href="/quiz/lifestyle-match"
-                                className="rounded-full bg-emerald-500/10 px-4 py-2 text-emerald-400 ring-1 ring-inset ring-emerald-500/20 hover:bg-emerald-500/20 transition-all"
+                                className="rounded-full bg-secondary-500/10 px-4 py-2 text-secondary-600 ring-1 ring-inset ring-secondary-500/20 hover:bg-secondary-500/20 transition-all"
                             >
                                 Find My Dog
                             </Link>

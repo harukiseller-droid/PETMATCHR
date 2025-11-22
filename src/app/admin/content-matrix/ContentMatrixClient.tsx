@@ -53,6 +53,7 @@ const statusOptions: { value: PageStatus | "all"; label: string }[] = [
 export default function ContentMatrixClient({ pages, summary }: Props) {
     const [pageType, setPageType] = useState<PageTypeV7 | "all">("all");
     const [status, setStatus] = useState<PageStatus | "all">("all");
+    const [generating, setGenerating] = useState<string | null>(null);
 
     const filtered = useMemo(
         () =>
@@ -63,6 +64,40 @@ export default function ContentMatrixClient({ pages, summary }: Props) {
             }),
         [pages, pageType, status]
     );
+
+    async function handleGenerate(page: ContentMatrixPage) {
+        if (generating) return;
+        const id = `${page.page_type}/${page.slug}`;
+        setGenerating(id);
+
+        try {
+            const res = await fetch('/api/admin/generate-page', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    slug: page.slug,
+                    page_type: page.page_type,
+                    input_data: (page as any).input_data,
+                    keywords: page.keywords
+                })
+            });
+
+            if (res.ok) {
+                // Optimistic update or reload
+                // For now, we'll just reload to get fresh matrix if needed, 
+                // but ideally we'd update local state. 
+                // Since matrix is passed as prop, full reload is safest or we need a router refresh.
+                window.location.reload();
+            } else {
+                const err = await res.json();
+                alert(`Failed: ${err.error}`);
+            }
+        } catch (e) {
+            alert('Error generating page');
+        } finally {
+            setGenerating(null);
+        }
+    }
 
     return (
         <div className="space-y-8">
@@ -134,52 +169,65 @@ export default function ContentMatrixClient({ pages, summary }: Props) {
                             </tr>
                         </thead>
                         <tbody>
-                            {filtered.map((page) => (
-                                <tr key={`${page.page_type}/${page.slug}`} className="border-t border-slate-800">
-                                    <td className="px-3 py-2 font-mono text-[11px] text-slate-300">
-                                        {page.slug}
-                                    </td>
-                                    <td className="px-3 py-2 text-xs capitalize text-slate-400">
-                                        {page.page_type}
-                                    </td>
-                                    <td className="px-3 py-2 text-xs">
-                                        <span
-                                            className={
-                                                "inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold " +
-                                                (page.status === "generated"
-                                                    ? "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30"
-                                                    : page.status === "planned"
-                                                      ? "bg-slate-700/40 text-slate-200 border border-slate-600"
-                                                      : "bg-blue-500/10 text-blue-300 border border-blue-500/30")
-                                            }
-                                        >
-                                            {page.status}
-                                        </span>
-                                    </td>
-                                    <td className="px-3 py-2 text-xs text-slate-400">{page.primary_intent}</td>
-                                    <td className="px-3 py-2 text-xs text-slate-300">
-                                        {page.keywords.primary_keyword || "—"}
-                                    </td>
-                                    <td className="px-3 py-2 text-right text-xs">
-                                        <span className="inline-flex gap-1">
-                                            <button
-                                                type="button"
-                                                disabled
-                                                className="rounded-full border border-slate-700 px-2 py-1 text-[10px] text-slate-400 cursor-not-allowed"
+                            {filtered.map((page) => {
+                                const id = `${page.page_type}/${page.slug}`;
+                                const isGenerating = generating === id;
+                                return (
+                                    <tr key={id} className="border-t border-slate-800">
+                                        <td className="px-3 py-2 font-mono text-[11px] text-slate-300">
+                                            {page.slug}
+                                        </td>
+                                        <td className="px-3 py-2 text-xs capitalize text-slate-400">
+                                            {page.page_type}
+                                        </td>
+                                        <td className="px-3 py-2 text-xs">
+                                            <span
+                                                className={
+                                                    "inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold " +
+                                                    (page.status === "generated"
+                                                        ? "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30"
+                                                        : page.status === "planned"
+                                                            ? "bg-slate-700/40 text-slate-200 border border-slate-600"
+                                                            : "bg-blue-500/10 text-blue-300 border border-blue-500/30")
+                                                }
                                             >
-                                                Regen (CLI)
-                                            </button>
-                                            <button
-                                                type="button"
-                                                disabled
-                                                className="rounded-full border border-slate-700 px-2 py-1 text-[10px] text-slate-400 cursor-not-allowed"
-                                            >
-                                                Publish
-                                            </button>
-                                        </span>
-                                    </td>
-                                </tr>
-                            ))}
+                                                {page.status}
+                                            </span>
+                                        </td>
+                                        <td className="px-3 py-2 text-xs text-slate-400">{page.primary_intent}</td>
+                                        <td className="px-3 py-2 text-xs text-slate-300">
+                                            {page.keywords.primary_keyword || "—"}
+                                        </td>
+                                        <td className="px-3 py-2 text-right text-xs">
+                                            <span className="inline-flex gap-1">
+                                                {page.status === 'planned' && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleGenerate(page)}
+                                                        disabled={!!generating}
+                                                        className={`rounded-full border px-2 py-1 text-[10px] transition-colors ${isGenerating
+                                                            ? "border-emerald-500/50 text-emerald-400 bg-emerald-500/10 cursor-wait"
+                                                            : "border-indigo-500/50 text-indigo-400 hover:bg-indigo-500/10 hover:border-indigo-500"
+                                                            } ${generating && !isGenerating ? "opacity-50 cursor-not-allowed" : ""}`}
+                                                    >
+                                                        {isGenerating ? "Generating..." : "Generate"}
+                                                    </button>
+                                                )}
+                                                {page.status === 'generated' && (
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleGenerate(page)}
+                                                        disabled={!!generating}
+                                                        className="rounded-full border border-slate-700 px-2 py-1 text-[10px] text-slate-400 hover:text-slate-200 hover:border-slate-500"
+                                                    >
+                                                        Regen
+                                                    </button>
+                                                )}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                );
+                            })}
                         </tbody>
                     </table>
                     {filtered.length === 0 && (

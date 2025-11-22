@@ -9,10 +9,10 @@ export interface QuickAnswersBoxProps {
 }
 
 const categoryColors: Record<QuickAnswerCategory, string> = {
-    Living: "text-emerald-500",
-    Costs: "text-amber-500",
-    Health: "text-rose-500",
-    Training: "text-indigo-500",
+    Living: "text-secondary-500",
+    Costs: "text-primary-500",
+    Health: "text-red-500",
+    Training: "text-primary-600",
 };
 
 export default function QuickAnswersBox({
@@ -25,11 +25,11 @@ export default function QuickAnswersBox({
     return (
         <section className="mt-8">
             <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+                <h2 className="text-2xl font-bold text-neutral-900">{title}</h2>
                 {showViewAllLink && (
                     <Link
                         href="/answers"
-                        className="text-xs font-medium text-indigo-600 hover:text-indigo-500"
+                        className="text-xs font-medium text-primary-600 hover:text-primary-500"
                     >
                         View more answers
                     </Link>
@@ -39,16 +39,16 @@ export default function QuickAnswersBox({
                 {items.map((qa, i) => (
                     <article
                         key={i}
-                        className="bg-white rounded-xl border border-gray-200 shadow-sm p-4"
+                        className="bg-white rounded-xl border border-neutral-200 shadow-sm p-4"
                     >
                         <div
-                            className={`text-xs font-semibold uppercase mb-1 ${categoryColors[qa.category] ?? "text-gray-500"
+                            className={`text-xs font-semibold uppercase mb-1 ${categoryColors[qa.category] ?? "text-neutral-500"
                                 }`}
                         >
                             {qa.category}
                         </div>
-                        <h3 className="text-sm font-bold text-gray-900 mb-1">{qa.question}</h3>
-                        <p className="text-sm text-gray-600">{qa.answer}</p>
+                        <h3 className="text-sm font-bold text-neutral-900 mb-1">{qa.question}</h3>
+                        <p className="text-sm text-neutral-600">{qa.answer}</p>
                     </article>
                 ))}
             </div>

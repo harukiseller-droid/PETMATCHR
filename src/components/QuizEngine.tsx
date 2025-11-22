@@ -56,23 +56,23 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
 
         return (
             <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div className="bg-indigo-600 p-8 text-center text-white">
+                <div className="bg-primary-600 p-8 text-center text-white">
                     <h2 className="text-3xl font-bold mb-2">{resultBucket.title}</h2>
-                    <p className="text-indigo-100">Based on your answers</p>
+                    <p className="text-primary-100">Based on your answers</p>
                 </div>
                 <div className="p-8 text-center">
-                    <p className="text-xl text-gray-700 mb-8">{resultBucket.description}</p>
+                    <p className="text-xl text-neutral-700 mb-8">{resultBucket.description}</p>
 
                     <a
                         href={ctaUrl}
-                        className="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-lg"
+                        className="inline-block bg-primary-600 text-white font-bold py-4 px-10 rounded-full hover:bg-primary-700 transition-transform transform hover:scale-105 shadow-lg"
                     >
                         {ctaLabel}
                     </a>
 
                     <button
                         onClick={() => window.location.reload()}
-                        className="block mt-6 mx-auto text-gray-500 hover:text-indigo-600 text-sm underline"
+                        className="block mt-6 mx-auto text-neutral-500 hover:text-primary-600 text-sm underline"
                     >
                         Retake Quiz
                     </button>
@@ -85,20 +85,20 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         <div className="max-w-2xl mx-auto">
             {/* Progress Bar */}
             <div className="mb-8">
-                <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-2 bg-neutral-200 rounded-full overflow-hidden">
                     <div
-                        className="h-full bg-indigo-500 transition-all duration-500 ease-out"
+                        className="h-full bg-primary-500 transition-all duration-500 ease-out"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
-                <div className="text-right text-xs text-gray-500 mt-1">
+                <div className="text-right text-xs text-neutral-500 mt-1">
                     Question {currentQuestionIndex + 1} of {totalQuestions}
                 </div>
             </div>
 
             {/* Question Card */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-8">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-8">
                     {currentQuestion.text}
                 </h2>
 
@@ -107,9 +107,9 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
                         <button
                             key={idx}
                             onClick={() => handleOptionSelect(option.score)}
-                            className="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-500 hover:bg-indigo-50 transition-all duration-200 group"
+                            className="w-full text-left p-4 rounded-xl border-2 border-neutral-200 hover:border-primary-500 hover:bg-primary-50 transition-all duration-200 group"
                         >
-                            <span className="font-medium text-gray-700 group-hover:text-indigo-700">
+                            <span className="font-medium text-neutral-700 group-hover:text-primary-700">
                                 {option.label}
                             </span>
                         </button>

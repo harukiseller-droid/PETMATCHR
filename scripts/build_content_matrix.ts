@@ -1,67 +1,63 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+const MATRIX_SOURCE = path.join(process.cwd(), 'pageMatrix.json');
 const V7_DATA_DIR = path.join(process.cwd(), 'src/data_v7/pages');
 const OUTPUT_FILE = path.join(process.cwd(), 'src/data_v7/content_matrix_management.json');
-const PAGE_TYPES = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
 
 export async function buildMatrix() {
     console.log('Building content matrix...');
 
+    let matrixSource: any[] = [];
+    try {
+        const raw = await fs.readFile(MATRIX_SOURCE, 'utf-8');
+        matrixSource = JSON.parse(raw);
+    } catch (e) {
+        console.warn('Could not read pageMatrix.json, falling back to empty.');
+    }
+
     const pages: any[] = [];
     const summary: any = {
-        total_pages: 0,
+        total_pages: matrixSource.length,
         by_page_type: {}
     };
 
+    // Initialize summary
+    const PAGE_TYPES = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
     for (const type of PAGE_TYPES) {
         summary.by_page_type[type] = { planned: 0, generated: 0, published: 0 };
-        const typeDir = path.join(V7_DATA_DIR, type);
+    }
+
+    for (const item of matrixSource) {
+        const type = item.page_type;
+        if (!summary.by_page_type[type]) {
+            summary.by_page_type[type] = { planned: 0, generated: 0, published: 0 };
+        }
+        summary.by_page_type[type].planned++;
+
+        const targetFile = path.join(V7_DATA_DIR, type, `${item.slug}.json`);
+        let status = 'planned';
 
         try {
-            // Ensure dir exists
-            try {
-                await fs.access(typeDir);
-            } catch {
-                continue;
-            }
-
-            const files = await fs.readdir(typeDir);
-            for (const file of files) {
-                if (!file.endsWith('.json')) continue;
-
-                const filePath = path.join(typeDir, file);
-                try {
-                    const content = await fs.readFile(filePath, 'utf-8');
-                    const page = JSON.parse(content);
-
-                    pages.push({
-                        slug: page.slug,
-                        page_type: type,
-                        status: 'generated', // Default to generated if file exists
-                        primary_intent: page.primary_intent || 'informational',
-                        keywords: {
-                            primary_keyword: page.meta?.title || '',
-                            secondary_keywords: [],
-                            faq_keywords: [],
-                            quick_answer_keywords: [],
-                            internal_anchor_keywords: []
-                        }
-                    });
-
-                    summary.total_pages++;
-                    summary.by_page_type[type].generated++;
-                } catch (e) {
-                    console.warn(`Failed to parse ${type}/${file}`);
-                }
-            }
-        } catch (e) {
-            console.warn(`Error reading dir ${type}`);
+            await fs.access(targetFile);
+            status = 'generated';
+            summary.by_page_type[type].generated++;
+        } catch {
+            // Not generated yet
         }
+
+        pages.push({
+            slug: item.slug,
+            page_type: type,
+            status: status,
+            primary_intent: item.primary_intent || 'informational',
+            keywords: item.keywords || {},
+            input_data: item.input_data // Pass input data for regeneration
+        });
     }
 
     const output = {
-        version: 1,
+        version: 2,
         last_built_at: new Date().toISOString(),
         summary,
         pages

@@ -37,18 +37,18 @@ export default function BreedPageView({
     const sections = content.sections || [];
 
     return (
-        <main className="min-h-screen bg-gray-50 pb-20">
+        <main className="min-h-screen bg-neutral-50 pb-20">
             {/* Hero Section */}
-            <div className="bg-white border-b border-gray-200">
+            <div className="bg-white border-b border-neutral-200">
                 <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-                    <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl mb-4">
+                    <h1 className="text-4xl font-extrabold text-neutral-900 tracking-tight sm:text-5xl mb-4">
                         {content.h1}
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-neutral-600 max-w-2xl">
                         {content.intro.short_hook}
                     </p>
                     {(content.intro as any).who_this_breed_is_for && (
-                        <p className="mt-4 text-gray-700">
+                        <p className="mt-4 text-neutral-700">
                             {(content.intro as any).who_this_breed_is_for}
                         </p>
                     )}
@@ -61,11 +61,11 @@ export default function BreedPageView({
                     {/* Good Fit / Avoid */}
                     {lifestyle && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                                <h3 className="text-lg font-bold text-green-900 mb-3">Good fit if...</h3>
+                            <div className="bg-secondary-50 p-6 rounded-xl border border-secondary-100">
+                                <h3 className="text-lg font-bold text-secondary-900 mb-3">Good fit if...</h3>
                                 <ul className="space-y-2">
                                     {lifestyle.best_for.map((item, i) => (
-                                        <li key={i} className="flex items-start text-green-800">
+                                        <li key={i} className="flex items-start text-secondary-800">
                                             <span className="mr-2">✓</span> {item}
                                         </li>
                                     ))}
@@ -87,8 +87,8 @@ export default function BreedPageView({
                     {/* Dynamic sections from V7 outline */}
                     {sections.map((section) => (
                         <section key={section.id}>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
-                            <div className="prose prose-blue max-w-none text-gray-700">
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-4">{section.title}</h2>
+                            <div className="prose prose-primary max-w-none text-neutral-700">
                                 {section.content && <MarkdownWithImages content={section.content} />}
                                 {section.type === "list" && section.items && (
                                     <ul className="list-disc pl-5 space-y-2">
@@ -101,7 +101,7 @@ export default function BreedPageView({
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {section.pros && (
                                             <div>
-                                                <h3 className="font-semibold text-green-700 mb-2">Pros</h3>
+                                                <h3 className="font-semibold text-secondary-700 mb-2">Pros</h3>
                                                 <ul className="list-disc pl-5 space-y-1">
                                                     {section.pros.map((p, i) => (
                                                         <li key={i}>{p}</li>
@@ -127,10 +127,10 @@ export default function BreedPageView({
 
                     {/* Cost Snapshot */}
                     {content.cost_snapshot && (
-                        <section className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                            <h2 className="text-2xl font-bold text-blue-900 mb-4">Cost snapshot</h2>
-                            <p className="text-blue-800 mb-4">{content.cost_snapshot.summary}</p>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-blue-900">
+                        <section className="bg-primary-50 p-6 rounded-2xl border border-primary-100">
+                            <h2 className="text-2xl font-bold text-primary-900 mb-4">Cost snapshot</h2>
+                            <p className="text-primary-800 mb-4">{content.cost_snapshot.summary}</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-primary-900">
                                 {content.cost_snapshot.first_year_range_usd && (
                                     <div>
                                         <div className="font-semibold">First year range</div>
@@ -154,41 +154,41 @@ export default function BreedPageView({
                     {/* Health & Risks */}
                     {content.health_and_risks && (
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Health & risks</h2>
-                            <p className="text-gray-700 mb-3">{content.health_and_risks.summary}</p>
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-4">Health & risks</h2>
+                            <p className="text-neutral-700 mb-3">{content.health_and_risks.summary}</p>
                             {content.health_and_risks.common_issues.length > 0 && (
-                                <ul className="list-disc pl-5 text-gray-700 mb-3">
+                                <ul className="list-disc pl-5 text-neutral-700 mb-3">
                                     {content.health_and_risks.common_issues.map((issue, i) => (
                                         <li key={i}>{issue}</li>
                                     ))}
                                 </ul>
                             )}
-                            <p className="text-gray-700">{content.health_and_risks.lifecycle_considerations}</p>
+                            <p className="text-neutral-700">{content.health_and_risks.lifecycle_considerations}</p>
                         </section>
                     )}
 
                     {/* Training & Behavior */}
                     {content.training_and_behavior && (
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Training & behavior</h2>
-                            <p className="text-gray-700 mb-3">{content.training_and_behavior.summary}</p>
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-4">Training & behavior</h2>
+                            <p className="text-neutral-700 mb-3">{content.training_and_behavior.summary}</p>
                             {content.training_and_behavior.typical_challenges.length > 0 && (
-                                <ul className="list-disc pl-5 text-gray-700 mb-3">
+                                <ul className="list-disc pl-5 text-neutral-700 mb-3">
                                     {content.training_and_behavior.typical_challenges.map((c, i) => (
                                         <li key={i}>{c}</li>
                                     ))}
                                 </ul>
                             )}
-                            <p className="text-gray-700">{content.training_and_behavior.who_needs_professional_help}</p>
+                            <p className="text-neutral-700">{content.training_and_behavior.who_needs_professional_help}</p>
                         </section>
                     )}
 
                     {/* Case Study */}
                     {content.case_study && (
-                        <section className="bg-amber-50 p-6 rounded-2xl border border-amber-100">
-                            <h2 className="text-2xl font-bold text-amber-900 mb-2">{content.case_study.title}</h2>
-                            <p className="text-amber-900 mb-3 whitespace-pre-line">{content.case_study.story}</p>
-                            <p className="text-sm font-semibold text-amber-800">
+                        <section className="bg-primary-50 p-6 rounded-2xl border border-primary-100">
+                            <h2 className="text-2xl font-bold text-primary-900 mb-2">{content.case_study.title}</h2>
+                            <p className="text-primary-900 mb-3 whitespace-pre-line">{content.case_study.story}</p>
+                            <p className="text-sm font-semibold text-primary-800">
                                 Key takeaway: {content.case_study.key_takeaway}
                             </p>
                         </section>
@@ -202,14 +202,14 @@ export default function BreedPageView({
                     {/* FAQ */}
                     {content.faq && content.faq.length > 0 && (
                         <section>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-4">Frequently asked questions</h2>
                             <div className="space-y-4">
                                 {content.faq.map((item, i) => (
-                                    <details key={i} className="bg-white rounded-xl border border-gray-200 p-4">
-                                        <summary className="font-medium text-gray-900 cursor-pointer">
+                                    <details key={i} className="bg-white rounded-xl border border-neutral-200 p-4">
+                                        <summary className="font-medium text-neutral-900 cursor-pointer">
                                             {item.question}
                                         </summary>
-                                        <p className="mt-2 text-gray-600">{item.answer}</p>
+                                        <p className="mt-2 text-neutral-600">{item.answer}</p>
                                     </details>
                                 ))}
                             </div>
@@ -218,13 +218,13 @@ export default function BreedPageView({
 
                     {/* Internal link suggestions */}
                     {content.internal_link_suggestions && content.internal_link_suggestions.length > 0 && (
-                        <section className="border-t border-gray-200 pt-8">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Related PetMatchr guides</h2>
+                        <section className="border-t border-neutral-200 pt-8">
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-4">Related PetMatchr guides</h2>
                             <ul className="space-y-2 text-sm">
                                 {content.internal_link_suggestions.map((link, i) => (
-                                    <li key={i} className="text-gray-700">
+                                    <li key={i} className="text-neutral-700">
                                         <span className="font-semibold">{link.anchor_text}</span>
-                                        <span className="text-gray-500"> – {link.reason}</span>
+                                        <span className="text-neutral-500"> – {link.reason}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -233,55 +233,55 @@ export default function BreedPageView({
 
                     {/* Related Guides (from index) */}
                     {hasRelatedGuides && (
-                        <section className="border-t border-gray-200 pt-12">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6">More guides for {breed.name}</h2>
+                        <section className="border-t border-neutral-200 pt-12">
+                            <h2 className="text-2xl font-bold text-neutral-900 mb-6">More guides for {breed.name}</h2>
                             <div className="grid gap-4 sm:grid-cols-2">
                                 {costPages.map((page) => (
                                     <Link
                                         key={page.slug}
                                         href={`/cost/${page.slug}`}
-                                        className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all"
+                                        className="block p-4 rounded-xl border border-neutral-200 hover:border-secondary-500 hover:shadow-sm transition-all"
                                     >
-                                        <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">
+                                        <span className="text-xs font-bold text-secondary-600 uppercase tracking-wider">
                                             Cost guide
                                         </span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                        <h3 className="font-bold text-neutral-900 mt-1">{page.meta.title}</h3>
                                     </Link>
                                 ))}
                                 {problemPages.map((page) => (
                                     <Link
                                         key={page.slug}
                                         href={`/problems/${page.slug}`}
-                                        className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all"
+                                        className="block p-4 rounded-xl border border-neutral-200 hover:border-secondary-500 hover:shadow-sm transition-all"
                                     >
                                         <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
                                             Behavior issue
                                         </span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                        <h3 className="font-bold text-neutral-900 mt-1">{page.meta.title}</h3>
                                     </Link>
                                 ))}
                                 {anxietyPages.map((page) => (
                                     <Link
                                         key={page.slug}
                                         href={`/anxiety/${page.slug}`}
-                                        className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all"
+                                        className="block p-4 rounded-xl border border-neutral-200 hover:border-secondary-500 hover:shadow-sm transition-all"
                                     >
                                         <span className="text-xs font-bold text-purple-600 uppercase tracking-wider">
                                             Anxiety
                                         </span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                        <h3 className="font-bold text-neutral-900 mt-1">{page.meta.title}</h3>
                                     </Link>
                                 ))}
                                 {comparisonPages.map((page) => (
                                     <Link
                                         key={page.slug}
                                         href={`/compare/${page.slug}`}
-                                        className="block p-4 rounded-xl border border-gray-200 hover:border-emerald-500 hover:shadow-sm transition-all"
+                                        className="block p-4 rounded-xl border border-neutral-200 hover:border-secondary-500 hover:shadow-sm transition-all"
                                     >
-                                        <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                                        <span className="text-xs font-bold text-primary-600 uppercase tracking-wider">
                                             Compare
                                         </span>
-                                        <h3 className="font-bold text-gray-900 mt-1">{page.meta.title}</h3>
+                                        <h3 className="font-bold text-neutral-900 mt-1">{page.meta.title}</h3>
                                     </Link>
                                 ))}
                             </div>
@@ -291,8 +291,8 @@ export default function BreedPageView({
 
                 {/* Sidebar Stats */}
                 <div className="lg:col-span-1 space-y-8">
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 sticky top-8">
-                        <h3 className="text-lg font-bold text-gray-900 mb-6">Breed stats</h3>
+                    <div className="bg-white p-6 rounded-xl shadow-sm border border-neutral-100 sticky top-8">
+                        <h3 className="text-lg font-bold text-neutral-900 mb-6">Breed stats</h3>
 
                         <div className="space-y-4">
                             <StatBar label="Energy" value={breed.energy_level} />
@@ -304,8 +304,8 @@ export default function BreedPageView({
                         </div>
 
                         {scores && (
-                            <div className="mt-8 pt-8 border-t border-gray-100">
-                                <h3 className="text-lg font-bold text-gray-900 mb-4">Lifestyle scores</h3>
+                            <div className="mt-8 pt-8 border-t border-neutral-100">
+                                <h3 className="text-lg font-bold text-neutral-900 mb-4">Lifestyle scores</h3>
                                 <div className="space-y-3">
                                     <ScoreBadge label="Apartment" score={scores.apartment_score} />
                                     <ScoreBadge label="Busy worker" score={scores.busy_worker_score} />
@@ -314,11 +314,11 @@ export default function BreedPageView({
                             </div>
                         )}
 
-                        <div className="mt-8 pt-8 border-t border-gray-100">
-                            <div className="text-sm text-gray-500 mb-1">Size</div>
+                        <div className="mt-8 pt-8 border-t border-neutral-100">
+                            <div className="text-sm text-neutral-500 mb-1">Size</div>
                             <div className="font-medium capitalize">{breed.size}</div>
 
-                            <div className="text-sm text-gray-500 mb-1 mt-4">Lifespan</div>
+                            <div className="text-sm text-neutral-500 mb-1 mt-4">Lifespan</div>
                             <div className="font-medium">
                                 {breed.lifespan_min_years} - {breed.lifespan_max_years} years
                             </div>
@@ -329,16 +329,16 @@ export default function BreedPageView({
 
             {/* CTA Section */}
             <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-                <div className="bg-indigo-600 rounded-2xl p-8 md:p-12 text-center text-white">
+                <div className="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
                     <h2 className="text-3xl font-bold mb-4">
                         Still deciding if {breed.name} is your match?
                     </h2>
-                    <p className="text-indigo-100 mb-8 text-lg">
+                    <p className="text-primary-100 mb-8 text-lg">
                         Take the Lifestyle Match quiz to see how this breed fits your day-to-day life, schedule, and budget.
                     </p>
                     <Link
                         href="/quiz/lifestyle-match"
-                        className="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-indigo-50 transition-colors"
+                        className="inline-block bg-white text-primary-600 font-bold py-3 px-8 rounded-full hover:bg-primary-50 transition-colors"
                     >
                         Take the quiz
                     </Link>
@@ -355,7 +355,7 @@ function MarkdownWithImages({ content }: { content: string }) {
     const parts = content.split(/(!\[.*?\]\(.*?\))/g);
 
     return (
-        <div className="mb-4 text-gray-700">
+        <div className="mb-4 text-neutral-700">
             {parts.map((part, i) => {
                 const imgMatch = part.match(/!\[(.*?)\]\((.*?)\)/);
                 if (imgMatch) {
@@ -367,7 +367,7 @@ function MarkdownWithImages({ content }: { content: string }) {
                                 className="w-full h-auto rounded-xl shadow-md object-cover max-h-[500px]"
                             />
                             {imgMatch[1] && (
-                                <figcaption className="text-center text-sm text-gray-500 mt-2 italic">
+                                <figcaption className="text-center text-sm text-neutral-500 mt-2 italic">
                                     {imgMatch[1]}
                                 </figcaption>
                             )}
@@ -386,12 +386,12 @@ function StatBar({ label, value }: { label: string; value: number }) {
     return (
         <div>
             <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600">{label}</span>
-                <span className="font-medium text-gray-900">{value}/5</span>
+                <span className="text-neutral-600">{label}</span>
+                <span className="font-medium text-neutral-900">{value}/5</span>
             </div>
-            <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+            <div className="h-2 bg-neutral-100 rounded-full overflow-hidden">
                 <div
-                    className="h-full bg-indigo-500 rounded-full"
+                    className="h-full bg-primary-500 rounded-full"
                     style={{ width: `${(value / 5) * 100}%` }}
                 />
             </div>
@@ -400,14 +400,14 @@ function StatBar({ label, value }: { label: string; value: number }) {
 }
 
 function ScoreBadge({ label, score }: { label: string; score: number }) {
-    let colorClass = "bg-gray-100 text-gray-800";
-    if (score >= 8) colorClass = "bg-green-100 text-green-800";
-    else if (score >= 5) colorClass = "bg-yellow-100 text-yellow-800";
+    let colorClass = "bg-neutral-100 text-neutral-800";
+    if (score >= 8) colorClass = "bg-secondary-100 text-secondary-800";
+    else if (score >= 5) colorClass = "bg-primary-100 text-primary-800";
     else colorClass = "bg-red-100 text-red-800";
 
     return (
         <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-600">{label}</span>
+            <span className="text-sm text-neutral-600">{label}</span>
             <span className={`text-xs font-bold px-2 py-1 rounded-full ${colorClass}`}>
                 {score}/10
             </span>
