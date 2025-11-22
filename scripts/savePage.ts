@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 
 export async function savePage(pageType: string, slug: string, data: any) {
-    const dataDir = path.join(process.cwd(), 'src/data/pages');
+    const dataDir = path.join(process.cwd(), 'src/data_v7/pages');
     const targetDir = path.join(dataDir, pageType);
 
     // Ensure directory exists

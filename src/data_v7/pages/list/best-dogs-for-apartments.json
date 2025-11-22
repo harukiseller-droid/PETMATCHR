@@ -1,0 +1,85 @@
+{
+  "page_type": "list",
+  "slug": "best-dogs-for-apartments",
+  "meta": {
+    "title": "Best Dogs for Apartments: Top Breeds for Small Spaces",
+    "description": "Living in an apartment? These dog breeds are quiet, low-energy, and perfect for small spaces. See our top picks."
+  },
+  "h1": "Best Dogs for Apartments",
+  "intro": {
+    "short_hook": "Living in an apartment? These dog breeds are quiet, low-energy, and perfect for small spaces. See our top picks.",
+    "context": "",
+    "who_this_list_is_for": "People looking for specific breed traits.",
+    "how_we_chose_these_breeds": "Based on characteristics and owner reviews."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.386Z",
+  "sections": [],
+  "breed_cards": [
+    {
+      "breed_slug": "french-bulldog",
+      "breed_name": "French Bulldog",
+      "one_line_summary": "Quiet, low energy, and loves to lounge.",
+      "why_it_works_for_this_lifestyle": "Quiet, low energy, and loves to lounge.",
+      "key_scores": {
+        "apartment": null,
+        "busy_worker": null,
+        "family_with_kids": null,
+        "allergy_friendly": null,
+        "beginner_friendly": null,
+        "active_outdoor": null
+      },
+      "major_caveats": []
+    },
+    {
+      "breed_slug": "cavalier-king-charles-spaniel",
+      "breed_name": "Cavalier King Charles Spaniel",
+      "one_line_summary": "Gentle, affectionate, and adaptable.",
+      "why_it_works_for_this_lifestyle": "Gentle, affectionate, and adaptable.",
+      "key_scores": {
+        "apartment": null,
+        "busy_worker": null,
+        "family_with_kids": null,
+        "allergy_friendly": null,
+        "beginner_friendly": null,
+        "active_outdoor": null
+      },
+      "major_caveats": []
+    },
+    {
+      "breed_slug": "pug",
+      "breed_name": "Pug",
+      "one_line_summary": "Charming, small, and doesn't need much exercise.",
+      "why_it_works_for_this_lifestyle": "Charming, small, and doesn't need much exercise.",
+      "key_scores": {
+        "apartment": null,
+        "busy_worker": null,
+        "family_with_kids": null,
+        "allergy_friendly": null,
+        "beginner_friendly": null,
+        "active_outdoor": null
+      },
+      "major_caveats": []
+    }
+  ]
+}

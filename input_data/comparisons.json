@@ -1,0 +1,132 @@
+[
+    {
+        "id": "a-dog-thats-easy-to-train",
+        "title": "A dog that's easy to train",
+        "breeds": [
+            "labrador",
+            "golden",
+            "poodle",
+            "german-shepherd"
+        ]
+    },
+    {
+        "id": "a-small-dog-for-an-apartment",
+        "title": "A small dog for an apartment",
+        "breeds": [
+            "french-bulldog",
+            "pug",
+            "shih-tzu",
+            "maltese",
+            "cavalier"
+        ]
+    },
+    {
+        "id": "a-family-dog",
+        "title": "A family dog",
+        "breeds": [
+            "golden",
+            "labrador",
+            "beagle",
+            "boxer",
+            "cavalier",
+            "poodle"
+        ]
+    },
+    {
+        "id": "a-guardprotection-dog",
+        "title": "A guard/protection dog",
+        "breeds": [
+            "german-shepherd",
+            "doberman",
+            "rottweiler",
+            "cane-corso"
+        ]
+    },
+    {
+        "id": "a-dog-for-a-senior",
+        "title": "A dog for a senior",
+        "breeds": [
+            "cavalier",
+            "shih-tzu",
+            "maltese",
+            "pug",
+            "greyhound"
+        ]
+    },
+    {
+        "id": "a-high-energy-hiking-buddy",
+        "title": "A high-energy hiking buddy",
+        "breeds": [
+            "border-collie",
+            "australian-shepherd",
+            "siberian-husky",
+            "labrador",
+            "golden"
+        ]
+    },
+    {
+        "id": "an-independent-dog-can-handle-alone-time",
+        "title": "An independent dog (can handle alone time)",
+        "breeds": [
+            "french-bulldog",
+            "bulldog",
+            "shiba-inu",
+            "greyhound",
+            "pomeranian"
+        ]
+    },
+    {
+        "id": "a-cuddly-companion",
+        "title": "A cuddly companion",
+        "breeds": [
+            "cavalier",
+            "golden",
+            "labrador",
+            "bulldog",
+            "havanese"
+        ]
+    },
+    {
+        "id": "a-first-time-owner-dog",
+        "title": "A first-time owner dog",
+        "breeds": [
+            "labrador",
+            "golden",
+            "poodle",
+            "french-bulldog",
+            "beagle"
+        ]
+    },
+    {
+        "id": "a-low-maintenance-dog",
+        "title": "A low-maintenance dog",
+        "breeds": [
+            "french-bulldog",
+            "bulldog",
+            "pug",
+            "beagle",
+            "dachshund"
+        ]
+    },
+    {
+        "id": "a-long-lived-dog-15-years",
+        "title": "A long-lived dog (15+ years)",
+        "breeds": [
+            "toy-poodle",
+            "shih-tzu",
+            "yorkshires-terrier",
+            "maltese",
+            "pomeranian"
+        ]
+    },
+    {
+        "id": "a-hypoallergenic-dog",
+        "title": "A hypoallergenic dog",
+        "breeds": [
+            "poodle-all-sizes",
+            "miniature-schnauzer",
+            "bichon-frise",
+            "maltese"
+        ]
+    }
+]

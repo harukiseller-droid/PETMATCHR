@@ -1,0 +1,55 @@
+{
+  "page_type": "problem",
+  "slug": "golden-retriever-pulling",
+  "meta": {
+    "title": "Stop Golden Retriever Pulling on Leash: Easy Training",
+    "description": "Is your Golden Retriever dragging you down the street? Learn effective loose-leash walking techniques and the best no-pull harnesses."
+  },
+  "h1": "How to Stop Your Golden Retriever From Pulling on Leash",
+  "intro": {
+    "short_hook": "Is your Golden Retriever dragging you down the street? Learn effective loose-leash walking techniques and the best no-pull harnesses.",
+    "context": "",
+    "who_struggles_with_this": "Owners of this breed often face this issue due to natural instincts."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.367Z",
+  "sections": [],
+  "problem_overview": {
+    "summary": "",
+    "common_triggers": [],
+    "how_common_it_is": "Common for this breed."
+  },
+  "why_it_happens": {
+    "breed_drivers": "",
+    "environment_drivers": ""
+  },
+  "what_you_can_try": {
+    "at_home_strategies": [],
+    "when_to_consider_trainer": "",
+    "when_to_talk_to_vet": "If behavior changes suddenly or is severe."
+  },
+  "realistic_expectations": {
+    "timeline": "Varies by dog, typically weeks to months.",
+    "what_success_looks_like": ""
+  }
+}

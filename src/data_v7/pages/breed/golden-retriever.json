@@ -1,0 +1,72 @@
+{
+  "page_type": "breed",
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Breed Guide: Personality, Lifespan & Care",
+    "description": "Everything you need to know about Golden Retrievers. Temperament, shedding, energy levels, and why they are the ultimate family dog."
+  },
+  "h1": "The Golden Retriever: Friendly, Devoted, and Enthusiastic",
+  "intro": {
+    "short_hook": "Everything you need to know about Golden Retrievers. Temperament, shedding, energy levels, and why they are the ultimate family dog.",
+    "context": "",
+    "who_this_breed_is_for": "You want a dog that loves everyone",
+    "who_should_avoid": "You want a guard dog"
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.341Z",
+  "sections": [
+    {
+      "id": "personality",
+      "title": "Golden Retriever Personality",
+      "type": "text",
+      "content": "Goldens are known for their gentle and affectionate nature. They are eager to please and highly trainable.\n\nThey are generally great with children and other pets, making them ideal family additions."
+    },
+    {
+      "id": "living_needs",
+      "title": "Living Needs",
+      "type": "text",
+      "content": "Goldens need daily exercise. A fenced yard is great, but daily walks and fetch sessions are essential.\n\nThey thrive on human companionship and should live indoors with their family."
+    }
+  ],
+  "lifestyle_match": {
+    "summary": "If you can provide the love, exercise, and attention they crave, a Golden will be your best friend forever.",
+    "scores": {
+      "apartment": 5,
+      "busy_worker": 5,
+      "family_with_kids": 5,
+      "allergy_friendly": 5,
+      "beginner_friendly": 5,
+      "active_outdoor": 5
+    },
+    "best_for": [
+      "You want a dog that loves everyone",
+      "You have an active lifestyle",
+      "You are willing to deal with shedding"
+    ],
+    "not_for": [
+      "You want a guard dog",
+      "You are away from home for long periods",
+      "You hate dog hair"
+    ]
+  }
+}

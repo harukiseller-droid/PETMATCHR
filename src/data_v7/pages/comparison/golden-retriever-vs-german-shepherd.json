@@ -1,0 +1,61 @@
+{
+  "page_type": "comparison",
+  "slug": "golden-retriever-vs-german-shepherd",
+  "meta": {
+    "title": "Golden Retriever vs German Shepherd: Breed Comparison",
+    "description": "Golden Retriever vs GSD: One is a lover, one is a protector. Which breed fits your lifestyle? Detailed comparison of temperament and needs."
+  },
+  "h1": "Golden Retriever vs German Shepherd",
+  "intro": {
+    "short_hook": "Golden Retriever vs GSD: One is a lover, one is a protector. Which breed fits your lifestyle? Detailed comparison of temperament and needs.",
+    "context": "",
+    "who_is_asking_this": "Potential owners deciding between these two breeds."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.373Z",
+  "sections": [],
+  "summary_verdict": {
+    "one_sentence_verdict": "",
+    "when_to_pick_a": "Choose golden-retriever if...",
+    "when_to_pick_b": "Choose german-shepherd if..."
+  },
+  "side_by_side_table": {
+    "rows": [
+      {
+        "breed_a_value": "Friendly, goofy",
+        "breed_b_value": "Loyal, protective",
+        "who_wins": "tie"
+      },
+      {
+        "breed_a_value": "High",
+        "breed_b_value": "Very High",
+        "who_wins": "tie"
+      },
+      {
+        "breed_a_value": "High",
+        "breed_b_value": "High (German Shedder)",
+        "who_wins": "tie"
+      }
+    ]
+  }
+}

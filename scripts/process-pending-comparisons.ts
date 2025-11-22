@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { ensureComparisonPage } from '../src/lib/comparison-generator';
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 const PENDING_FILE = path.join(DATA_DIR, 'comparison_requests_pending.json');
 
 async function loadPending(): Promise<any[]> {

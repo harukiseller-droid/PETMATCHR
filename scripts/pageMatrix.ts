@@ -1,24 +1,19 @@
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'path';
 import { PageKeywordBundle, getKeywordsForPage, getFallbackKeywordsForPage } from '../src/lib/seo-keywords';
 import { PageType } from '../src/lib/types';
+import {
+    Breed,
+    Problem,
+    loadInputData,
+    slugify
+} from './generate-content-matrix';
 
 // Types matching our data
-interface Breed {
-    id: string;
-    slug: string;
-    name: string;
-}
-
 interface City {
     slug: string;
     name: string;
     state: string;
-}
-
-interface Problem {
-    slug: string;
-    title: string;
 }
 
 type PageTypeV7 = Extract<PageType, 'breed' | 'list' | 'comparison' | 'cost' | 'problem' | 'anxiety' | 'location'>;
@@ -32,13 +27,57 @@ interface PageMatrixItem {
     primary_intent: string;
 }
 
-async function generatePageMatrix() {
-    const dataDir = path.join(process.cwd(), 'src/data');
+function loadCities(): City[] {
+    const citiesMap = new Map<string, City>();
 
-    // Load base data
-    const breeds: Breed[] = JSON.parse(await fs.readFile(path.join(dataDir, 'breeds.json'), 'utf-8'));
-    const cities: City[] = JSON.parse(await fs.readFile(path.join(dataDir, 'cities.json'), 'utf-8'));
-    const problems: Problem[] = JSON.parse(await fs.readFile(path.join(dataDir, 'problems.json'), 'utf-8'));
+    // 1. Get cities from locations.json (Largest cities)
+    const locations = loadInputData<any>('locations.json');
+    locations.forEach(loc => {
+        if (loc.largest_city) {
+            const slug = slugify(loc.largest_city);
+            citiesMap.set(slug, {
+                slug,
+                name: loc.largest_city,
+                state: loc.abbreviation || loc.state
+            });
+        }
+    });
+
+    // 2. Get cities from costs.json (Explicit cities list)
+    try {
+        const costsData = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'input_data', 'costs.json'), 'utf-8'));
+        if (costsData.cities && Array.isArray(costsData.cities)) {
+            costsData.cities.forEach((item: any) => {
+                // Filter out breeds disguised as cities (check if state contains '$')
+                if (item.state && !item.state.includes('$') && !item.city.includes('Terrier') && !item.city.includes('Bulldog')) {
+                    const slug = slugify(item.city);
+                    // Prefer data from costs.json if it has more specific state codes, or just add if new
+                    if (!citiesMap.has(slug)) {
+                        citiesMap.set(slug, {
+                            slug,
+                            name: item.city,
+                            state: item.state
+                        });
+                    }
+                }
+            });
+        }
+    } catch (e) {
+        console.warn('Error loading cities from costs.json', e);
+    }
+
+    return Array.from(citiesMap.values());
+}
+
+async function generatePageMatrix() {
+    console.log('Generating Page Matrix from input_data...');
+
+    // Load base data using the shared loader
+    const breeds = loadInputData<Breed>('breeds.json');
+    const problems = loadInputData<Problem>('problems.json');
+    const cities = loadCities();
+
+    console.log(`Loaded ${breeds.length} breeds, ${problems.length} problems, ${cities.length} cities.`);
 
     const matrix: PageMatrixItem[] = [];
 
@@ -78,7 +117,7 @@ async function generatePageMatrix() {
                     problem,
                 },
                 ai_prompt_version: 'v7',
-                keywords: getKeywordsForPage('problem', breed.name, problem.title) ?? getFallbackKeywordsForPage('problem', { breed_name: breed.name, problem_title: problem.title }),
+                keywords: getKeywordsForPage('problem', breed.name, problem.name) ?? getFallbackKeywordsForPage('problem', { breed_name: breed.name, problem_title: problem.name }),
                 primary_intent: 'behavior_issues',
             });
         }
@@ -150,7 +189,7 @@ async function generatePageMatrix() {
     }
 
     // Write matrix
-    await fs.writeFile(
+    await fs.promises.writeFile(
         path.join(process.cwd(), 'pageMatrix.json'),
         JSON.stringify(matrix, null, 2)
     );
@@ -158,4 +197,8 @@ async function generatePageMatrix() {
     console.log(`Generated page matrix with ${matrix.length} items.`);
 }
 
-generatePageMatrix().catch(console.error);
+if (require.main === module) {
+    generatePageMatrix().catch(console.error);
+}
+
+export { generatePageMatrix };

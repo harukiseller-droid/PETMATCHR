@@ -12,7 +12,7 @@ export type EnsureComparisonResult =
     | { ok: true; page: ComparisonV7Page }
     | { ok: false; reason: "INVALID_PAIR" | "MODE_OFF" | "LIMIT_REACHED" | "LLM_FAILED" | "TIMEOUT" };
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 const PENDING_FILE = path.join(DATA_DIR, 'comparison_requests_pending.json');
 const TELEMETRY_FILE = path.join(DATA_DIR, 'comparison_telemetry.log');
 

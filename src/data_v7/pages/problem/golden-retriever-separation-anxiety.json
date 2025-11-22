@@ -1,0 +1,71 @@
+{
+  "page_type": "problem",
+  "slug": "golden-retriever-separation-anxiety",
+  "meta": {
+    "title": "Golden Retriever Separation Anxiety: Real Fixes for Clingy Goldens",
+    "description": "Learn why Golden Retrievers develop separation anxiety and follow a clear, step-by-step plan to help your dog stay calm when you leave the house."
+  },
+  "h1": "Golden Retriever Separation Anxiety: Causes, Signs and a Realistic Plan",
+  "intro": {
+    "short_hook": "Learn why Golden Retrievers develop separation anxiety and follow a clear, step-by-step plan to help your dog stay calm when you leave the house.",
+    "context": "Goldens are people-pleasers and shadow dogs, which makes them lovable – and also prone to separation anxiety if you don’t train independence early.",
+    "who_struggles_with_this": "Owners of this breed often face this issue due to natural instincts."
+  },
+  "faq": [
+    {
+      "question": "Will my Golden Retriever grow out of separation anxiety?",
+      "answer": "Some mild anxiety improves with age and routine, but true separation anxiety usually needs training. Waiting and hoping often makes the pattern deeper and harder to change."
+    },
+    {
+      "question": "Is getting a second dog the solution?",
+      "answer": "A second dog adds more energy, cost and training needs. If your Golden is attached to you, not just lonely, another dog may not fix the core issue – and you now have two untrained dogs."
+    },
+    {
+      "question": "Do calming treats or CBD help with separation anxiety?",
+      "answer": "Good calming products can take the edge off and make training easier, but they’re not magic. Think of them as support for a solid training plan, not the entire solution."
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.368Z",
+  "sections": [],
+  "problem_overview": {
+    "summary": "If your Golden Retriever cries, barks or destroys things whenever you leave, you’re not alone. This breed bonds deeply with their people and can struggle when suddenly left alone.",
+    "common_triggers": [
+      "Very people-oriented temperament and constant human contact",
+      "Sudden change in routine (new job schedule, moving, breakup, etc.)",
+      "Too much attention and zero practice being alone as a puppy",
+      "Punishment-based training that increases anxiety instead of confidence"
+    ],
+    "how_common_it_is": "Common for this breed."
+  },
+  "why_it_happens": {
+    "breed_drivers": "Very people-oriented temperament and constant human contact",
+    "environment_drivers": "Sudden change in routine (new job schedule, moving, breakup, etc.)"
+  },
+  "what_you_can_try": {
+    "at_home_strategies": [
+      "Step 1: Rule Out Medical and Overarousal Issues: Before assuming it’s purely separation anxiety, rule out pain, urinary issues and extreme under-exercise. A young, under-exercised Golden with zero mental stimulation will melt down even with light alone time.",
+      "Step 2: Create a Safe 'Alone Zone': Set up a gated area or crate with a bed, chew toys and a food puzzle. Feed most meals here so your dog associates this space with safety and good things.",
+      "Step 3: Train Micro-Separations Every Day: Start with 10–30 seconds of going out of sight and returning calmly before your dog gets worked up. Slowly increase to 1, 2, 5, 10 minutes over days and weeks – always below the panic threshold.",
+      "Step 4: De-Big Deal Your Departures and Arrivals: Avoid long emotional goodbyes and wild reunions. Put on your shoes, pick up keys, walk out and come back like it’s no big deal. Your dog learns from your energy.",
+      "Step 5: Add Calming Support and Structured Enrichment: Give a long-lasting chew or stuffed Kong only when you leave. For some Goldens, vetted calming supplements or CBD products can take the edge off while you work on training.",
+      "Step 6: Get Professional Help If Panic Is Severe: If your Golden injures themselves, breaks crates or is drenched in drool when you return, you need a trainer or veterinary behaviorist. Severe cases rarely fix themselves."
+    ],
+    "when_to_consider_trainer": "If your Golden is breaking teeth or nails trying to escape, losing weight, or you’re getting complaints from neighbors, it’s time to get professional help.",
+    "when_to_talk_to_vet": "If behavior changes suddenly or is severe."
+  },
+  "realistic_expectations": {
+    "timeline": "Varies by dog, typically weeks to months.",
+    "what_success_looks_like": "Most adult Golden Retrievers can eventually learn to stay alone for 4–6 hours at a time, but you can’t jump from 'never alone' to '6 hours alone' overnight."
+  }
+}

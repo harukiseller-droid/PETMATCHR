@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { PageIndexEntry, PageType } from '../src/lib/types';
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 const PAGES_DIR = path.join(DATA_DIR, 'pages');
 const BREEDS_FILE = path.join(DATA_DIR, 'breeds.json');
 const MONETIZATION_FILE = path.join(DATA_DIR, 'page_monetization.json');

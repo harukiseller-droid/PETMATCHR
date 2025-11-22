@@ -1,0 +1,107 @@
+{
+  "page_type": "cost",
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Cost: Price, Monthly Expenses & Vet Bills",
+    "description": "How much does a Golden Retriever cost? Breakdown of puppy prices, monthly food costs, vet bills, and insurance premiums."
+  },
+  "h1": "Golden Retriever Cost Guide",
+  "intro": {
+    "short_hook": "How much does a Golden Retriever cost? Breakdown of puppy prices, monthly food costs, vet bills, and insurance premiums.",
+    "context": "Expect to spend $1,500–$3,000 for a puppy and $150–$250 monthly for care.",
+    "why_costs_can_spike": "Golden Retrievers are prone to expensive health issues like cancer and hip dysplasia."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.362Z",
+  "sections": [
+    {
+      "id": "local_context",
+      "title": "Local Context",
+      "type": "text",
+      "content": "Costs vary significantly by region."
+    }
+  ],
+  "cost_breakdown": {
+    "summary": "Expect to spend $1,500–$3,000 for a puppy and $150–$250 monthly for care.",
+    "first_year_range_usd": [
+      2000,
+      4000
+    ],
+    "monthly_range_usd": [
+      150,
+      250
+    ],
+    "emergency_fund_recommended_usd": 1500,
+    "line_items": [
+      {
+        "label": "Puppy Price",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          1000,
+          3500
+        ],
+        "notes": "Varies by breeder reputation and location."
+      },
+      {
+        "label": "Initial Supplies",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          300,
+          600
+        ],
+        "notes": "Crate, bed, toys, leash, collar."
+      },
+      {
+        "label": "Food",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          60,
+          100
+        ],
+        "notes": "High-quality large breed kibble."
+      },
+      {
+        "label": "Health & Vet",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          40,
+          80
+        ],
+        "notes": "Flea/tick prevention and annual exam savings."
+      }
+    ]
+  },
+  "insurance_section": {
+    "summary": "Pays for itself with one major incident.",
+    "when_insurance_makes_sense": "High risk of genetic health issues makes insurance a smart financial move.",
+    "when_you_might_skip_it": "If you have significant savings set aside for emergencies."
+  },
+  "saving_tips": {
+    "summary": "Ways to reduce expenses without compromising care.",
+    "tips": [
+      "Compare vet prices",
+      "Buy food in bulk",
+      "Consider pet insurance early"
+    ]
+  }
+}

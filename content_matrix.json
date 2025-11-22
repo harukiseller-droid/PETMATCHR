@@ -1,0 +1,3311 @@
+[
+  {
+    "slug": "french-bulldog",
+    "type": "breed",
+    "title": "French Bulldog",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "labrador-retriever",
+    "type": "breed",
+    "title": "Labrador Retriever",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "golden-retriever",
+    "type": "breed",
+    "title": "Golden Retriever",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "german-shepherd",
+    "type": "breed",
+    "title": "German Shepherd",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "poodle",
+    "type": "breed",
+    "title": "Poodle",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "dachshund",
+    "type": "breed",
+    "title": "Dachshund",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "beagle",
+    "type": "breed",
+    "title": "Beagle",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "rottweiler",
+    "type": "breed",
+    "title": "Rottweiler",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "bulldog",
+    "type": "breed",
+    "title": "Bulldog",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "german-shorthaired-pointer",
+    "type": "breed",
+    "title": "German Shorthaired Pointer",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "yorkshire-terrier",
+    "type": "breed",
+    "title": "Yorkshire Terrier",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "australian-shepherd",
+    "type": "breed",
+    "title": "Australian Shepherd",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "cavalier-king-charles-spaniel",
+    "type": "breed",
+    "title": "Cavalier King Charles Spaniel",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "cane-corso",
+    "type": "breed",
+    "title": "Cane Corso",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "pembroke-welsh-corgi",
+    "type": "breed",
+    "title": "Pembroke Welsh Corgi",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "doberman-pinscher",
+    "type": "breed",
+    "title": "Doberman Pinscher",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "boxer",
+    "type": "breed",
+    "title": "Boxer",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "miniature-schnauzer",
+    "type": "breed",
+    "title": "Miniature Schnauzer",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "shih-tzu",
+    "type": "breed",
+    "title": "Shih Tzu",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "pomeranian",
+    "type": "breed",
+    "title": "Pomeranian",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "boston-terrier",
+    "type": "breed",
+    "title": "Boston Terrier",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "great-dane",
+    "type": "breed",
+    "title": "Great Dane",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "havanese",
+    "type": "breed",
+    "title": "Havanese",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "chihuahua",
+    "type": "breed",
+    "title": "Chihuahua",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "siberian-husky",
+    "type": "breed",
+    "title": "Siberian Husky",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "shib-inu",
+    "type": "breed",
+    "title": "Shibа Inu",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "belgian-malinois",
+    "type": "breed",
+    "title": "Belgian Malinois",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "basset-hound",
+    "type": "breed",
+    "title": "Basset Hound",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "vizsla",
+    "type": "breed",
+    "title": "Vizsla",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "mastiff",
+    "type": "breed",
+    "title": "Mastiff",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "maltese",
+    "type": "breed",
+    "title": "Maltese",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "schnauzer-standard",
+    "type": "breed",
+    "title": "Schnauzer (Standard)",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "cocker-spaniel",
+    "type": "breed",
+    "title": "Cocker Spaniel",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "border-collie",
+    "type": "breed",
+    "title": "Border Collie",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "weimaraner",
+    "type": "breed",
+    "title": "Weimaraner",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "english-springer-spaniel",
+    "type": "breed",
+    "title": "English Springer Spaniel",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "jack-russell-terrier",
+    "type": "breed",
+    "title": "Jack Russell Terrier",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "pug",
+    "type": "breed",
+    "title": "Pug",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "bichon-frise",
+    "type": "breed",
+    "title": "Bichon Frise",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "brittany",
+    "type": "breed",
+    "title": "Brittany",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "bernese-mountain-dog",
+    "type": "breed",
+    "title": "Bernese Mountain Dog",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "german-wirehaired-pointer",
+    "type": "breed",
+    "title": "German Wirehaired Pointer",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "collie",
+    "type": "breed",
+    "title": "Collie",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "papillon",
+    "type": "breed",
+    "title": "Papillon",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "chow-chow",
+    "type": "breed",
+    "title": "Chow Chow",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "alaskan-malamute",
+    "type": "breed",
+    "title": "Alaskan Malamute",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "shiba-inu",
+    "type": "breed",
+    "title": "Shiba Inu",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "bloodhound",
+    "type": "breed",
+    "title": "Bloodhound",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "old-english-sheepdog",
+    "type": "breed",
+    "title": "Old English Sheepdog",
+    "data_source": "breeds.json"
+  },
+  {
+    "slug": "allergic-reactions",
+    "type": "problem",
+    "title": "Allergic Reactions",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "allergies",
+    "type": "problem",
+    "title": "Allergies",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "anesthesia-sensitivity",
+    "type": "problem",
+    "title": "Anesthesia Sensitivity",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "arrhythmogenic-right-ventricular-cardiomyopathy-arvc",
+    "type": "problem",
+    "title": "Arrhythmogenic Right Ventricular Cardiomyopathy (ARVC)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "arthritis",
+    "type": "problem",
+    "title": "Arthritis",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "autoimmune-diseases",
+    "type": "problem",
+    "title": "Autoimmune Diseases",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "back-problems",
+    "type": "problem",
+    "title": "Back Problems",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "backspine-issues",
+    "type": "problem",
+    "title": "Back/Spine Issues",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "bloat-gastric-dilatation-volvulusgdv",
+    "type": "problem",
+    "title": "Bloat (Gastric Dilatation-Volvulus/GDV)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "bloat-gdv",
+    "type": "problem",
+    "title": "Bloat (GDV)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "bone-growth-issues",
+    "type": "problem",
+    "title": "Bone & Growth Issues",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "brachycephalic-airway-syndrome-boas",
+    "type": "problem",
+    "title": "Brachycephalic Airway Syndrome (BOAS)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "brachycephalic-features",
+    "type": "problem",
+    "title": "Brachycephalic Features",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "brachycephalic-obstructive-airway-syndrome-boas",
+    "type": "problem",
+    "title": "Brachycephalic Obstructive Airway Syndrome (BOAS)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cancer",
+    "type": "problem",
+    "title": "Cancer",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cardiac-disease",
+    "type": "problem",
+    "title": "Cardiac Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cardiomyopathy",
+    "type": "problem",
+    "title": "Cardiomyopathy",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cataracts",
+    "type": "problem",
+    "title": "Cataracts",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cherry-eye",
+    "type": "problem",
+    "title": "Cherry Eye",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "chondrodystrophy-cddy",
+    "type": "problem",
+    "title": "Chondrodystrophy (CDDY)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "chronic-active-hepatitis",
+    "type": "problem",
+    "title": "Chronic Active Hepatitis",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "corneal-dystrophy",
+    "type": "problem",
+    "title": "Corneal Dystrophy",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "cruciate-ligament-injuries",
+    "type": "problem",
+    "title": "Cruciate Ligament Injuries",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "degenerative-myelopathy-dm",
+    "type": "problem",
+    "title": "Degenerative Myelopathy (DM)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "dental-issues",
+    "type": "problem",
+    "title": "Dental Issues",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "diabetes",
+    "type": "problem",
+    "title": "Diabetes",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "dilated-cardiomyopathy-dcm",
+    "type": "problem",
+    "title": "Dilated Cardiomyopathy (DCM)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "ear-infections",
+    "type": "problem",
+    "title": "Ear Infections",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "elbow-dysplasia",
+    "type": "problem",
+    "title": "Elbow Dysplasia",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "elongated-soft-palate",
+    "type": "problem",
+    "title": "Elongated Soft Palate",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "epilepsy",
+    "type": "problem",
+    "title": "Epilepsy",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "esophageal-disease",
+    "type": "problem",
+    "title": "Esophageal Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "excessive-barking",
+    "type": "problem",
+    "title": "Excessive Barking",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "exercise-intolerance",
+    "type": "problem",
+    "title": "Exercise Intolerance",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "exercise-induced-collapse-eic",
+    "type": "problem",
+    "title": "Exercise-Induced Collapse (EIC)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "eye-disorders",
+    "type": "problem",
+    "title": "Eye Disorders",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "eye-problems",
+    "type": "problem",
+    "title": "Eye Problems",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "gastric-dilatation-volvulus-gdvbloat",
+    "type": "problem",
+    "title": "Gastric Dilatation-Volvulus (GDV/Bloat)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "gastrointestinal-disorders",
+    "type": "problem",
+    "title": "Gastrointestinal Disorders",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "genetic-load",
+    "type": "problem",
+    "title": "Genetic Load",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "genetic-predisposition-to-obesity",
+    "type": "problem",
+    "title": "Genetic Predisposition to Obesity",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "glaucoma",
+    "type": "problem",
+    "title": "Glaucoma",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heart-conditions",
+    "type": "problem",
+    "title": "Heart Conditions",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heart-disease",
+    "type": "problem",
+    "title": "Heart Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heart-murmurs",
+    "type": "problem",
+    "title": "Heart Murmurs",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heart-problems",
+    "type": "problem",
+    "title": "Heart Problems",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heat-sensitivity",
+    "type": "problem",
+    "title": "Heat Sensitivity",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "heat-sensitivity-hyperthermia",
+    "type": "problem",
+    "title": "Heat Sensitivity & Hyperthermia",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "hip-dysplasia",
+    "type": "problem",
+    "title": "Hip Dysplasia",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "hip-dysplasia-prevalence",
+    "type": "problem",
+    "title": "Hip Dysplasia Prevalence",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "hypothyroidism",
+    "type": "problem",
+    "title": "Hypothyroidism",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "immune-mediated-thyroiditis",
+    "type": "problem",
+    "title": "Immune-mediated Thyroiditis",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "insurance-claims",
+    "type": "problem",
+    "title": "Insurance Claims",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "intervertebral-disc-disease-ivdd",
+    "type": "problem",
+    "title": "Intervertebral Disc Disease (IVDD)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "intervertebral-disc-disease-ivdd-type-i",
+    "type": "problem",
+    "title": "Intervertebral Disc Disease (IVDD) Type I",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "kidney-disease",
+    "type": "problem",
+    "title": "Kidney Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "kidney-stones",
+    "type": "problem",
+    "title": "Kidney Stones",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "legg-calv-perthes-disease",
+    "type": "problem",
+    "title": "Legg-Calvé-Perthes Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "liver-shunts",
+    "type": "problem",
+    "title": "Liver Shunts",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "luxating-patellas",
+    "type": "problem",
+    "title": "Luxating Patellas",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "most-common-genetic-disorders",
+    "type": "problem",
+    "title": "Most Common Genetic Disorders",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "myotonia-congenita",
+    "type": "problem",
+    "title": "Myotonia Congenita",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "myxomatous-mitral-valve-disease-mmvd",
+    "type": "problem",
+    "title": "Myxomatous Mitral Valve Disease (MMVD)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "neurologic-disease",
+    "type": "problem",
+    "title": "Neurologic Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "obesity",
+    "type": "problem",
+    "title": "Obesity",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "ocular-disease",
+    "type": "problem",
+    "title": "Ocular Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "osteochondritis-dissecans-ocd",
+    "type": "problem",
+    "title": "Osteochondritis Dissecans (OCD)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "pancreatitis",
+    "type": "problem",
+    "title": "Pancreatitis",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "pancreatitis-diabetes",
+    "type": "problem",
+    "title": "Pancreatitis & Diabetes",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "patellar-luxation",
+    "type": "problem",
+    "title": "Patellar Luxation",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "pregnancy-complications",
+    "type": "problem",
+    "title": "Pregnancy Complications",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "progressive-retinal-atrophy-pra-rcd3",
+    "type": "problem",
+    "title": "Progressive Retinal Atrophy (PRA-rcd3)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "progressive-retinal-atrophy-pra",
+    "type": "problem",
+    "title": "Progressive Retinal Atrophy (PRA)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "purebred-vs-mixed-breeds",
+    "type": "problem",
+    "title": "Purebred vs. Mixed Breeds",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "respiratory-disease",
+    "type": "problem",
+    "title": "Respiratory Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "schnauzer-comedo-syndrome",
+    "type": "problem",
+    "title": "Schnauzer Comedo Syndrome",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "separation-anxiety",
+    "type": "problem",
+    "title": "Separation Anxiety",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "skin-allergies",
+    "type": "problem",
+    "title": "Skin Allergies",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "skin-infections",
+    "type": "problem",
+    "title": "Skin Infections",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "small-nostrils-stenotic-nares",
+    "type": "problem",
+    "title": "Small Nostrils (Stenotic Nares)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "ventricular-arrhythmias",
+    "type": "problem",
+    "title": "Ventricular Arrhythmias",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "von-willebrands-disease",
+    "type": "problem",
+    "title": "Von Willebrand's Disease",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "von-willebrands-disease-vwd1",
+    "type": "problem",
+    "title": "Von Willebrand's Disease (vWD1)",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "wobbler-syndrome",
+    "type": "problem",
+    "title": "Wobbler Syndrome",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "x-scid",
+    "type": "problem",
+    "title": "X-SCID",
+    "data_source": "problems.json"
+  },
+  {
+    "slug": "a-dog-thats-easy-to-train",
+    "type": "comparison",
+    "title": "A dog that's easy to train",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-small-dog-for-an-apartment",
+    "type": "comparison",
+    "title": "A small dog for an apartment",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-family-dog",
+    "type": "comparison",
+    "title": "A family dog",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-guardprotection-dog",
+    "type": "comparison",
+    "title": "A guard/protection dog",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-dog-for-a-senior",
+    "type": "comparison",
+    "title": "A dog for a senior",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-high-energy-hiking-buddy",
+    "type": "comparison",
+    "title": "A high-energy hiking buddy",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "an-independent-dog-can-handle-alone-time",
+    "type": "comparison",
+    "title": "An independent dog (can handle alone time)",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-cuddly-companion",
+    "type": "comparison",
+    "title": "A cuddly companion",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-first-time-owner-dog",
+    "type": "comparison",
+    "title": "A first-time owner dog",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-low-maintenance-dog",
+    "type": "comparison",
+    "title": "A low-maintenance dog",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-long-lived-dog-15-years",
+    "type": "comparison",
+    "title": "A long-lived dog (15+ years)",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "a-hypoallergenic-dog",
+    "type": "comparison",
+    "title": "A hypoallergenic dog",
+    "data_source": "comparisons.json"
+  },
+  {
+    "slug": "busy-professionals",
+    "type": "lifestyle",
+    "title": "BUSY PROFESSIONALS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "activeathletic-families",
+    "type": "lifestyle",
+    "title": "ACTIVE/ATHLETIC FAMILIES",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "urban-dwellers",
+    "type": "lifestyle",
+    "title": "URBAN DWELLERS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "families-with-young-children",
+    "type": "lifestyle",
+    "title": "FAMILIES WITH YOUNG CHILDREN",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "retirees-seniors",
+    "type": "lifestyle",
+    "title": "RETIREES & SENIORS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "singleindependent-professionals",
+    "type": "lifestyle",
+    "title": "SINGLE/INDEPENDENT PROFESSIONALS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "first-time-dog-owners",
+    "type": "lifestyle",
+    "title": "FIRST-TIME DOG OWNERS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "rescueadopted-dog-owners",
+    "type": "lifestyle",
+    "title": "RESCUE/ADOPTED DOG OWNERS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "multi-dog-households",
+    "type": "lifestyle",
+    "title": "MULTI-DOG HOUSEHOLDS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "health-consciouswellness-focused-owners",
+    "type": "lifestyle",
+    "title": "HEALTH-CONSCIOUS/WELLNESS-FOCUSED OWNERS",
+    "data_source": "lifestyles.json"
+  },
+  {
+    "slug": "separation-anxiety",
+    "type": "anxiety",
+    "title": "SEPARATION ANXIETY",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "fear-noise-anxiety",
+    "type": "anxiety",
+    "title": "FEAR & NOISE ANXIETY",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "general-anxiety-nervousness",
+    "type": "anxiety",
+    "title": "GENERAL ANXIETY & NERVOUSNESS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "breed-specific-genetic-anxiety",
+    "type": "anxiety",
+    "title": "BREED-SPECIFIC GENETIC ANXIETY",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "aggression-linked-anxiety",
+    "type": "anxiety",
+    "title": "AGGRESSION-LINKED ANXIETY",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "age-related-anxiety",
+    "type": "anxiety",
+    "title": "AGE-RELATED ANXIETY",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "separation-anxiety-symptoms",
+    "type": "anxiety",
+    "title": "SEPARATION ANXIETY SYMPTOMS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "noisefear-anxiety-symptoms",
+    "type": "anxiety",
+    "title": "NOISE/FEAR ANXIETY SYMPTOMS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "general-anxiety-symptoms",
+    "type": "anxiety",
+    "title": "GENERAL ANXIETY SYMPTOMS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "primary-content-pillars",
+    "type": "anxiety",
+    "title": "PRIMARY CONTENT PILLARS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "secondary-content-angles",
+    "type": "anxiety",
+    "title": "SECONDARY CONTENT ANGLES",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "primary-product-angles",
+    "type": "anxiety",
+    "title": "PRIMARY PRODUCT ANGLES",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "secondary-product-angles",
+    "type": "anxiety",
+    "title": "SECONDARY PRODUCT ANGLES",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "high-intent-keywords",
+    "type": "anxiety",
+    "title": "HIGH-INTENT KEYWORDS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "informational-keywords",
+    "type": "anxiety",
+    "title": "INFORMATIONAL KEYWORDS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "comparison-keywords",
+    "type": "anxiety",
+    "title": "COMPARISON KEYWORDS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "q1",
+    "type": "anxiety",
+    "title": "Q1",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "q2",
+    "type": "anxiety",
+    "title": "Q2",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "q3",
+    "type": "anxiety",
+    "title": "Q3",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "q4",
+    "type": "anxiety",
+    "title": "Q4",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "interactive-content-ideas",
+    "type": "anxiety",
+    "title": "INTERACTIVE CONTENT IDEAS",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "user-generated-content",
+    "type": "anxiety",
+    "title": "USER-GENERATED CONTENT",
+    "data_source": "anxieties.json"
+  },
+  {
+    "slug": "alabama",
+    "type": "location",
+    "title": "Dogs in Alabama",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "alaska",
+    "type": "location",
+    "title": "Dogs in Alaska",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "arizona",
+    "type": "location",
+    "title": "Dogs in Arizona",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "arkansas",
+    "type": "location",
+    "title": "Dogs in Arkansas",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "california",
+    "type": "location",
+    "title": "Dogs in California",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "colorado",
+    "type": "location",
+    "title": "Dogs in Colorado",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "connecticut",
+    "type": "location",
+    "title": "Dogs in Connecticut",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "delaware",
+    "type": "location",
+    "title": "Dogs in Delaware",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "florida",
+    "type": "location",
+    "title": "Dogs in Florida",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "georgia",
+    "type": "location",
+    "title": "Dogs in Georgia",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "hawaii",
+    "type": "location",
+    "title": "Dogs in Hawaii",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "idaho",
+    "type": "location",
+    "title": "Dogs in Idaho",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "illinois",
+    "type": "location",
+    "title": "Dogs in Illinois",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "indiana",
+    "type": "location",
+    "title": "Dogs in Indiana",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "iowa",
+    "type": "location",
+    "title": "Dogs in Iowa",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "kansas",
+    "type": "location",
+    "title": "Dogs in Kansas",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "kentucky",
+    "type": "location",
+    "title": "Dogs in Kentucky",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "louisiana",
+    "type": "location",
+    "title": "Dogs in Louisiana",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "maine",
+    "type": "location",
+    "title": "Dogs in Maine",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "maryland",
+    "type": "location",
+    "title": "Dogs in Maryland",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "massachusetts",
+    "type": "location",
+    "title": "Dogs in Massachusetts",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "michigan",
+    "type": "location",
+    "title": "Dogs in Michigan",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "minnesota",
+    "type": "location",
+    "title": "Dogs in Minnesota",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "mississippi",
+    "type": "location",
+    "title": "Dogs in Mississippi",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "missouri",
+    "type": "location",
+    "title": "Dogs in Missouri",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "montana",
+    "type": "location",
+    "title": "Dogs in Montana",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "nebraska",
+    "type": "location",
+    "title": "Dogs in Nebraska",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "nevada",
+    "type": "location",
+    "title": "Dogs in Nevada",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "new-hampshire",
+    "type": "location",
+    "title": "Dogs in New Hampshire",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "new-jersey",
+    "type": "location",
+    "title": "Dogs in New Jersey",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "new-mexico",
+    "type": "location",
+    "title": "Dogs in New Mexico",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "new-york",
+    "type": "location",
+    "title": "Dogs in New York",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "north-carolina",
+    "type": "location",
+    "title": "Dogs in North Carolina",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "north-dakota",
+    "type": "location",
+    "title": "Dogs in North Dakota",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "ohio",
+    "type": "location",
+    "title": "Dogs in Ohio",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "oklahoma",
+    "type": "location",
+    "title": "Dogs in Oklahoma",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "oregon",
+    "type": "location",
+    "title": "Dogs in Oregon",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "pennsylvania",
+    "type": "location",
+    "title": "Dogs in Pennsylvania",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "rhode-island",
+    "type": "location",
+    "title": "Dogs in Rhode Island",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "south-carolina",
+    "type": "location",
+    "title": "Dogs in South Carolina",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "south-dakota",
+    "type": "location",
+    "title": "Dogs in South Dakota",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "tennessee",
+    "type": "location",
+    "title": "Dogs in Tennessee",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "texas",
+    "type": "location",
+    "title": "Dogs in Texas",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "utah",
+    "type": "location",
+    "title": "Dogs in Utah",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "vermont",
+    "type": "location",
+    "title": "Dogs in Vermont",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "virginia",
+    "type": "location",
+    "title": "Dogs in Virginia",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "washington",
+    "type": "location",
+    "title": "Dogs in Washington",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "west-virginia",
+    "type": "location",
+    "title": "Dogs in West Virginia",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "wisconsin",
+    "type": "location",
+    "title": "Dogs in Wisconsin",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "wyoming",
+    "type": "location",
+    "title": "Dogs in Wyoming",
+    "data_source": "locations.json"
+  },
+  {
+    "slug": "california",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in California",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "new-york",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in New York",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "massachusetts",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Massachusetts",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "new-jersey",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in New Jersey",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "washington",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Washington",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "idaho",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Idaho",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "florida",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Florida",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "north-dakota",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in North Dakota",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "oklahoma",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Oklahoma",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "oregon",
+    "type": "cost",
+    "title": "Cost of Dog Ownership in Oregon",
+    "data_source": "costs.json"
+  },
+  {
+    "slug": "best-dog-breed-for-apartments",
+    "type": "list",
+    "title": "best dog breed for apartments",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-apartment-living",
+    "type": "list",
+    "title": "best dog breed for apartment living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-small-spaces",
+    "type": "list",
+    "title": "best dog breed for small spaces",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-small-yards",
+    "type": "list",
+    "title": "best dog breed for small yards",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-no-yard",
+    "type": "list",
+    "title": "best dog breed for no yard",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-studio-apartment",
+    "type": "list",
+    "title": "best dog breed for studio apartment",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-city-living",
+    "type": "list",
+    "title": "best dog breed for city living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-urban-living",
+    "type": "list",
+    "title": "best dog breed for urban living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-condo-living",
+    "type": "list",
+    "title": "best dog breed for condo living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-without-backyard",
+    "type": "list",
+    "title": "best dog breed without backyard",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Living Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-first-time-owners",
+    "type": "list",
+    "title": "best dog breed for first time owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-beginners",
+    "type": "list",
+    "title": "best dog breed for beginners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-new-dog-owners",
+    "type": "list",
+    "title": "best dog breed for new dog owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-inexperienced-owners",
+    "type": "list",
+    "title": "best dog breed for inexperienced owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-easy-dog-breed-for-first-time-owners",
+    "type": "list",
+    "title": "best easy dog breed for first time owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "easiest-dog-breed-for-first-time-owners",
+    "type": "list",
+    "title": "easiest dog breed for first time owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-starter-dog-breeds",
+    "type": "list",
+    "title": "best starter dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Experience Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-families",
+    "type": "list",
+    "title": "best dog breed for families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-kids",
+    "type": "list",
+    "title": "best dog breed for kids",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-children",
+    "type": "list",
+    "title": "best dog breed for children",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-toddlers",
+    "type": "list",
+    "title": "best dog breed for toddlers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-babies",
+    "type": "list",
+    "title": "best dog breed for babies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-family-dog-breeds",
+    "type": "list",
+    "title": "best family dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-families-with-young-children",
+    "type": "list",
+    "title": "best dog breed for families with young children",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-with-kids",
+    "type": "list",
+    "title": "best dog breed with kids",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-around-children",
+    "type": "list",
+    "title": "best dog breed around children",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-large-families",
+    "type": "list",
+    "title": "best dog breed for large families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Family Situation"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-seniors",
+    "type": "list",
+    "title": "best dog breed for seniors",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-elderly",
+    "type": "list",
+    "title": "best dog breed for elderly",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-older-adults",
+    "type": "list",
+    "title": "best dog breed for older adults",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-retirees",
+    "type": "list",
+    "title": "best dog breed for retirees",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-senior-citizens",
+    "type": "list",
+    "title": "best dog breed for senior citizens",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-companion-dog-for-seniors",
+    "type": "list",
+    "title": "best companion dog for seniors",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Age Groups"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-allergies",
+    "type": "list",
+    "title": "best dog breed for allergies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-hypoallergenic-dog-breed",
+    "type": "list",
+    "title": "best hypoallergenic dog breed",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-dog-breed-that-dont-shed",
+    "type": "list",
+    "title": "best dog breed that don't shed",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-non-shedding-dog-breeds",
+    "type": "list",
+    "title": "best non-shedding dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-asthma",
+    "type": "list",
+    "title": "best dog breed for asthma",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-allergy-sufferers",
+    "type": "list",
+    "title": "best dog breed for allergy sufferers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-low-shedding-dog-breeds",
+    "type": "list",
+    "title": "best low shedding dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-dog-breed-that-doesnt-shed-a-lot",
+    "type": "list",
+    "title": "best dog breed that doesn't shed a lot",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Health & Allergies"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-hot-weather",
+    "type": "list",
+    "title": "best dog breed for hot weather",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-hot-climates",
+    "type": "list",
+    "title": "best dog breed for hot climates",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-warm-weather",
+    "type": "list",
+    "title": "best dog breed for warm weather",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-cold-weather",
+    "type": "list",
+    "title": "best dog breed for cold weather",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-cold-climates",
+    "type": "list",
+    "title": "best dog breed for cold climates",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-winter",
+    "type": "list",
+    "title": "best dog breed for winter",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-snow",
+    "type": "list",
+    "title": "best dog breed for snow",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-extreme-heat",
+    "type": "list",
+    "title": "best dog breed for extreme heat",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-florida",
+    "type": "list",
+    "title": "best dog breed for Florida",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-arizona",
+    "type": "list",
+    "title": "best dog breed for Arizona",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-texas-heat",
+    "type": "list",
+    "title": "best dog breed for Texas heat",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Climate & Weather"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-running",
+    "type": "list",
+    "title": "best dog breed for running",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-jogging",
+    "type": "list",
+    "title": "best dog breed for jogging",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-hiking",
+    "type": "list",
+    "title": "best dog breed for hiking",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-active-lifestyle",
+    "type": "list",
+    "title": "best dog breed for active lifestyle",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-outdoor-activities",
+    "type": "list",
+    "title": "best dog breed for outdoor activities",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-exercise",
+    "type": "list",
+    "title": "best dog breed for exercise",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-running-companion-dog",
+    "type": "list",
+    "title": "best running companion dog",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-marathon-runners",
+    "type": "list",
+    "title": "best dog breed for marathon runners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-trail-running",
+    "type": "list",
+    "title": "best dog breed for trail running",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-long-distance-running",
+    "type": "list",
+    "title": "best dog breed for long distance running",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Activity Level"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-busy-owners",
+    "type": "list",
+    "title": "best dog breed for busy owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-working-professionals",
+    "type": "list",
+    "title": "best dog breed for working professionals",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-people-who-work",
+    "type": "list",
+    "title": "best dog breed for people who work",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-single-person",
+    "type": "list",
+    "title": "best dog breed for single person",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-busy-families",
+    "type": "list",
+    "title": "best dog breed for busy families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-that-can-be-left-alone",
+    "type": "list",
+    "title": "best dog breed that can be left alone",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-work-from-home",
+    "type": "list",
+    "title": "best dog breed for work from home",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-low-maintenance-dog-breeds",
+    "type": "list",
+    "title": "best low maintenance dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Lifestyle & Work"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-autism",
+    "type": "list",
+    "title": "best dog breed for autism",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-adhd",
+    "type": "list",
+    "title": "best dog breed for ADHD",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-anxiety",
+    "type": "list",
+    "title": "best dog breed for anxiety",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-depression",
+    "type": "list",
+    "title": "best dog breed for depression",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-emotional-support-dog-breeds",
+    "type": "list",
+    "title": "best emotional support dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-therapy-dog-breeds",
+    "type": "list",
+    "title": "best therapy dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-service-dog-breeds",
+    "type": "list",
+    "title": "best service dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-ptsd",
+    "type": "list",
+    "title": "best dog breed for PTSD",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-disabled",
+    "type": "list",
+    "title": "best dog breed for disabled",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-autistic-child",
+    "type": "list",
+    "title": "best dog breed for autistic child",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Special Needs & Support"
+    }
+  },
+  {
+    "slug": "best-guard-dog-breeds",
+    "type": "list",
+    "title": "best guard dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-protection",
+    "type": "list",
+    "title": "best dog breed for protection",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-watchdog-breeds",
+    "type": "list",
+    "title": "best watchdog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-home-security",
+    "type": "list",
+    "title": "best dog breed for home security",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-protective-dog-breeds",
+    "type": "list",
+    "title": "best protective dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-guarding",
+    "type": "list",
+    "title": "best dog breed for guarding",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-family-guard-dog",
+    "type": "list",
+    "title": "best family guard dog",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-personal-protection-dog",
+    "type": "list",
+    "title": "best personal protection dog",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Protection & Security"
+    }
+  },
+  {
+    "slug": "best-quiet-dog-breeds",
+    "type": "list",
+    "title": "best quiet dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-dog-breed-that-doesnt-bark",
+    "type": "list",
+    "title": "best dog breed that doesn't bark",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-calm-dog-breeds",
+    "type": "list",
+    "title": "best calm dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-gentle-dog-breeds",
+    "type": "list",
+    "title": "best gentle dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-friendly-dog-breeds",
+    "type": "list",
+    "title": "best friendly dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-loyal-dog-breeds",
+    "type": "list",
+    "title": "best loyal dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-obedient-dog-breeds",
+    "type": "list",
+    "title": "best obedient dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Behavioral Traits"
+    }
+  },
+  {
+    "slug": "best-lap-dog-breeds",
+    "type": "list",
+    "title": "best lap dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-cuddly-dog-breeds",
+    "type": "list",
+    "title": "best cuddly dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-companion-dog-breeds",
+    "type": "list",
+    "title": "best companion dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-cuddling",
+    "type": "list",
+    "title": "best dog breed for cuddling",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-small-lap-dogs",
+    "type": "list",
+    "title": "best small lap dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-indoor-dog-breeds",
+    "type": "list",
+    "title": "best indoor dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-companionship",
+    "type": "list",
+    "title": "best dog breed for companionship",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Companionship Type"
+    }
+  },
+  {
+    "slug": "best-dog-breed-with-cats",
+    "type": "list",
+    "title": "best dog breed with cats",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Other Pets"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-multi-pet-households",
+    "type": "list",
+    "title": "best dog breed for multi-pet households",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Other Pets"
+    }
+  },
+  {
+    "slug": "best-dog-breed-that-get-along-with-other-dogs",
+    "type": "list",
+    "title": "best dog breed that get along with other dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Other Pets"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-homes-with-cats",
+    "type": "list",
+    "title": "best dog breed for homes with cats",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Other Pets"
+    }
+  },
+  {
+    "slug": "best-dog-for-apartment-reddit",
+    "type": "list",
+    "title": "best dog for apartment reddit",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-small-dog-breeds",
+    "type": "list",
+    "title": "best small dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-medium-dog-breeds",
+    "type": "list",
+    "title": "best medium dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-large-dog-breeds",
+    "type": "list",
+    "title": "best large dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-giant-dog-breeds",
+    "type": "list",
+    "title": "best giant dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-toy-dog-breeds",
+    "type": "list",
+    "title": "best toy dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-miniature-dog-breeds",
+    "type": "list",
+    "title": "best miniature dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Long-tail Keywords Từ Social Media & Forums"
+    }
+  },
+  {
+    "slug": "best-doodle-breeds",
+    "type": "list",
+    "title": "best doodle breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Trend Keywords 2026-2026​"
+    }
+  },
+  {
+    "slug": "best-goldendoodle-vs-labradoodle",
+    "type": "list",
+    "title": "best goldendoodle vs labradoodle",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Trend Keywords 2026-2026​"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-2025",
+    "type": "list",
+    "title": "best dog breeds 2025",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Seasonal/Timely Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-2026",
+    "type": "list",
+    "title": "best dog breeds 2026",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Seasonal/Timely Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-apartment-allergies",
+    "type": "list",
+    "title": "best dog breed for apartment + allergies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Purchase Intent Keywords​"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-families-with-autism",
+    "type": "list",
+    "title": "best dog breed for families with autism",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Purchase Intent Keywords​"
+    }
+  },
+  {
+    "slug": "best-guard-dog-for-families-with-kids",
+    "type": "list",
+    "title": "best guard dog for families with kids",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Purchase Intent Keywords​"
+    }
+  },
+  {
+    "slug": "best-running-dog-that-doesnt-shed",
+    "type": "list",
+    "title": "best running dog that doesn't shed",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Purchase Intent Keywords​"
+    }
+  },
+  {
+    "slug": "best-small-dog-for-seniors-with-allergies",
+    "type": "list",
+    "title": "best small dog for seniors with allergies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Purchase Intent Keywords​"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-us-climate",
+    "type": "list",
+    "title": "best dog breeds for US climate",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Local/Geographic Keywords"
+    }
+  },
+  {
+    "slug": "best-apartment-dogs-in-nyc",
+    "type": "list",
+    "title": "best apartment dogs in NYC",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Local/Geographic Keywords"
+    }
+  },
+  {
+    "slug": "best-dogs-for-california-weather",
+    "type": "list",
+    "title": "best dogs for California weather",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Local/Geographic Keywords"
+    }
+  },
+  {
+    "slug": "best-cold-weather-dogs-alaska",
+    "type": "list",
+    "title": "best cold weather dogs Alaska",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Local/Geographic Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-that-doesnt-need-much-exercise",
+    "type": "list",
+    "title": "best dog that doesn't need much exercise",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-that-doesnt-bark-much",
+    "type": "list",
+    "title": "best dog that doesn't bark much",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-for-people-with-no-experience",
+    "type": "list",
+    "title": "best dog for people with no experience",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-thats-easy-to-groom",
+    "type": "list",
+    "title": "best dog that's easy to groom",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-that-lives-long",
+    "type": "list",
+    "title": "best dog that lives long",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "good-breed-for-first-time-owners-smaller-spaces",
+    "type": "list",
+    "title": "\"good breed for first time owners smaller spaces\"",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-breed-for-single-active-guy-in-apartment",
+    "type": "list",
+    "title": "\"best breed for single active guy in apartment\"",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-families",
+    "type": "list",
+    "title": "best dog breed for families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-apartments",
+    "type": "list",
+    "title": "best dog breed for apartments",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-guard-dog-breeds",
+    "type": "list",
+    "title": "best guard dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-first-time-owners",
+    "type": "list",
+    "title": "best dog breeds for first time owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-seniors",
+    "type": "list",
+    "title": "best dog breed for seniors",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-running-dogs",
+    "type": "list",
+    "title": "best running dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-for-autism",
+    "type": "list",
+    "title": "best dog breed for autism",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-hiking-dogs",
+    "type": "list",
+    "title": "best hiking dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breed-studio-apartment-first-time-owner",
+    "type": "list",
+    "title": "best dog breed studio apartment first time owner",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-hypoallergenic-guard-dog-for-families",
+    "type": "list",
+    "title": "best hypoallergenic guard dog for families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-small-dog-breed-that-doesnt-bark-for-seniors",
+    "type": "list",
+    "title": "best small dog breed that doesn't bark for seniors",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-apartments",
+    "type": "list",
+    "title": "best dog breeds for apartments",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-small-spaces",
+    "type": "list",
+    "title": "best dog breeds for small spaces",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-condos",
+    "type": "list",
+    "title": "best dog breeds for condos",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-tiny-homes",
+    "type": "list",
+    "title": "best dog breeds for tiny homes",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-city-living",
+    "type": "list",
+    "title": "best dog breeds for city living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-suburban-homes",
+    "type": "list",
+    "title": "best dog breeds for suburban homes",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-rural-living",
+    "type": "list",
+    "title": "best dog breeds for rural living",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-farms",
+    "type": "list",
+    "title": "best dog breeds for farms",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-hot-climates",
+    "type": "list",
+    "title": "best dog breeds for hot climates",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-cold-climates",
+    "type": "list",
+    "title": "best dog breeds for cold climates",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-humid-climates",
+    "type": "list",
+    "title": "best dog breeds for humid climates",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-seniors",
+    "type": "list",
+    "title": "best dog breeds for seniors",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-elderly-owners",
+    "type": "list",
+    "title": "best dog breeds for elderly owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-retirees",
+    "type": "list",
+    "title": "best dog breeds for retirees",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-first-time-owners",
+    "type": "list",
+    "title": "best dog breeds for first time owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-busy-professionals",
+    "type": "list",
+    "title": "best dog breeds for busy professionals",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-full-time-workers",
+    "type": "list",
+    "title": "best dog breeds for full time workers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-work-from-home-owners",
+    "type": "list",
+    "title": "best dog breeds for work from home owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-college-students",
+    "type": "list",
+    "title": "best dog breeds for college students",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-families",
+    "type": "list",
+    "title": "best dog breeds for families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-families-with-toddlers",
+    "type": "list",
+    "title": "best dog breeds for families with toddlers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-families-with-teens",
+    "type": "list",
+    "title": "best dog breeds for families with teens",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-babies",
+    "type": "list",
+    "title": "best dog breeds for babies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-kids",
+    "type": "list",
+    "title": "best dog breeds for kids",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-children-with-autism",
+    "type": "list",
+    "title": "best dog breeds for children with autism",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-special-needs-children",
+    "type": "list",
+    "title": "best dog breeds for special needs children",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-large-families",
+    "type": "list",
+    "title": "best dog breeds for large families",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-single-owners",
+    "type": "list",
+    "title": "best dog breeds for single owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-introverts",
+    "type": "list",
+    "title": "best dog breeds for introverts",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-active-people",
+    "type": "list",
+    "title": "best dog breeds for active people",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-hikers",
+    "type": "list",
+    "title": "best dog breeds for hikers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-runners",
+    "type": "list",
+    "title": "best dog breeds for runners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-cyclists",
+    "type": "list",
+    "title": "best dog breeds for cyclists",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-travelers",
+    "type": "list",
+    "title": "best dog breeds for travelers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-road-trips",
+    "type": "list",
+    "title": "best dog breeds for road trips",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-campers",
+    "type": "list",
+    "title": "best dog breeds for campers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-small-yards",
+    "type": "list",
+    "title": "best dog breeds for small yards",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dog-breeds-for-homes-without-yards",
+    "type": "list",
+    "title": "best dog breeds for homes without yards",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Problem-Solving Keywords"
+    }
+  },
+  {
+    "slug": "best-dogs-for-allergy-sufferers",
+    "type": "list",
+    "title": "best dogs for allergy sufferers",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Allergy / Health-Driven Queries"
+    }
+  },
+  {
+    "slug": "best-dogs-for-asthma-households",
+    "type": "list",
+    "title": "best dogs for asthma households",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Allergy / Health-Driven Queries"
+    }
+  },
+  {
+    "slug": "best-dogs-for-sensitive-skin-owners",
+    "type": "list",
+    "title": "best dogs for sensitive skin owners",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Allergy / Health-Driven Queries"
+    }
+  },
+  {
+    "slug": "best-dogs-for-people-with-pet-allergies",
+    "type": "list",
+    "title": "best dogs for people with pet allergies",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Allergy / Health-Driven Queries"
+    }
+  },
+  {
+    "slug": "best-guard-dog-breeds",
+    "type": "list",
+    "title": "best guard dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-family-guard-dogs",
+    "type": "list",
+    "title": "best family guard dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-watchdog-breeds",
+    "type": "list",
+    "title": "best watchdog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-livestock-guardian-dogs",
+    "type": "list",
+    "title": "best livestock guardian dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-hunting-dog-breeds",
+    "type": "list",
+    "title": "best hunting dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-water-dog-breeds",
+    "type": "list",
+    "title": "best water dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-retriever-breeds",
+    "type": "list",
+    "title": "best retriever breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-herding-dogs",
+    "type": "list",
+    "title": "best herding dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-working-dogs",
+    "type": "list",
+    "title": "best working dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-companion-dogs",
+    "type": "list",
+    "title": "best companion dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-lap-dogs",
+    "type": "list",
+    "title": "best lap dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-couch-potato-dog-breeds",
+    "type": "list",
+    "title": "best couch potato dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-snuggly-dog-breeds",
+    "type": "list",
+    "title": "best snuggly dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-outdoor-dog-breeds",
+    "type": "list",
+    "title": "best outdoor dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-indoor-dog-breeds",
+    "type": "list",
+    "title": "best indoor dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Temperament / Use-Case Queries"
+    }
+  },
+  {
+    "slug": "best-small-dog-breeds",
+    "type": "list",
+    "title": "best small dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Size / Physical Traits"
+    }
+  },
+  {
+    "slug": "best-medium-dog-breeds",
+    "type": "list",
+    "title": "best medium dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Size / Physical Traits"
+    }
+  },
+  {
+    "slug": "best-large-dog-breeds",
+    "type": "list",
+    "title": "best large dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Size / Physical Traits"
+    }
+  },
+  {
+    "slug": "best-giant-dog-breeds",
+    "type": "list",
+    "title": "best giant dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Size / Physical Traits"
+    }
+  },
+  {
+    "slug": "best-lightweight-dog-breeds",
+    "type": "list",
+    "title": "best lightweight dog breeds",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Size / Physical Traits"
+    }
+  },
+  {
+    "slug": "best-dogs-for-seniors-in-apartments",
+    "type": "list",
+    "title": "best dogs for seniors in apartments",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Combination Long-Tail"
+    }
+  },
+  {
+    "slug": "best-hypoallergenic-family-dogs",
+    "type": "list",
+    "title": "best hypoallergenic family dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Combination Long-Tail"
+    }
+  },
+  {
+    "slug": "best-low-shedding-guard-dogs",
+    "type": "list",
+    "title": "best low shedding guard dogs",
+    "data_source": "keywords.json",
+    "meta": {
+      "category": "Combination Long-Tail"
+    }
+  }
+]

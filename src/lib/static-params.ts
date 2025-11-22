@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export function getAllStaticParams(): Record<string, { slug: string }[]> {
-    const baseDir = path.join(process.cwd(), "src/data/pages");
+    const baseDir = path.join(process.cwd(), "src/data_v7/pages");
 
     // Check if directory exists to avoid runtime errors during build if data is missing
     if (!fs.existsSync(baseDir)) {

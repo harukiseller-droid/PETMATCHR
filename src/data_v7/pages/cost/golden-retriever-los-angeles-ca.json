@@ -1,0 +1,69 @@
+{
+  "page_type": "cost",
+  "slug": "golden-retriever-los-angeles-ca",
+  "meta": {
+    "title": "Golden Retriever Cost in Los Angeles, CA (2025 Price Guide)",
+    "description": "Complete breakdown of Golden Retriever costs in LA. Puppy prices, vet bills, grooming, and monthly expenses for Los Angeles dog owners."
+  },
+  "h1": "How Much Does a Golden Retriever Cost in Los Angeles?",
+  "intro": {
+    "short_hook": "Complete breakdown of Golden Retriever costs in LA. Puppy prices, vet bills, grooming, and monthly expenses for Los Angeles dog owners.",
+    "context": ""
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.346Z",
+  "sections": [
+    {
+      "id": "local_context",
+      "title": "Local Context",
+      "type": "text",
+      "content": ""
+    }
+  ],
+  "cost_breakdown": {
+    "summary": "",
+    "first_year_range_usd": [
+      0,
+      0
+    ],
+    "monthly_range_usd": [
+      0,
+      0
+    ],
+    "emergency_fund_recommended_usd": 0,
+    "line_items": []
+  },
+  "insurance_section": {
+    "summary": "",
+    "when_insurance_makes_sense": "",
+    "when_you_might_skip_it": "If you have significant savings set aside for emergencies."
+  },
+  "saving_tips": {
+    "summary": "Ways to reduce expenses without compromising care.",
+    "tips": [
+      "Compare vet prices",
+      "Buy food in bulk",
+      "Consider pet insurance early"
+    ]
+  }
+}

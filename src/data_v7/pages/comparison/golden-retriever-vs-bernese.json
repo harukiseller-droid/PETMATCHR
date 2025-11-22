@@ -1,0 +1,61 @@
+{
+  "page_type": "comparison",
+  "slug": "golden-retriever-vs-bernese",
+  "meta": {
+    "title": "Golden Retriever vs Bernese Mountain Dog: Gentle Giants",
+    "description": "Golden Retriever vs Bernese Mountain Dog. Comparing two of the most affectionate family dogs. Size, lifespan, and shedding differences."
+  },
+  "h1": "Golden Retriever vs Bernese Mountain Dog",
+  "intro": {
+    "short_hook": "Golden Retriever vs Bernese Mountain Dog. Comparing two of the most affectionate family dogs. Size, lifespan, and shedding differences.",
+    "context": "",
+    "who_is_asking_this": "Potential owners deciding between these two breeds."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.371Z",
+  "sections": [],
+  "summary_verdict": {
+    "one_sentence_verdict": "",
+    "when_to_pick_a": "Choose golden-retriever if...",
+    "when_to_pick_b": "Choose bernese-mountain-dog if..."
+  },
+  "side_by_side_table": {
+    "rows": [
+      {
+        "breed_a_value": "Large (55-75 lbs)",
+        "breed_b_value": "Giant (70-115 lbs)",
+        "who_wins": "tie"
+      },
+      {
+        "breed_a_value": "10-12 years",
+        "breed_b_value": "7-10 years",
+        "who_wins": "tie"
+      },
+      {
+        "breed_a_value": "High",
+        "breed_b_value": "Moderate",
+        "who_wins": "tie"
+      }
+    ]
+  }
+}

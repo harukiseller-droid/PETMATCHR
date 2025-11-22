@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { QuizDefinition } from '../src/lib/quiz-types';
 
-const QUIZ_DIR = path.join(process.cwd(), 'src/data/quizzes');
+const QUIZ_DIR = path.join(process.cwd(), 'src/data_v7/quizzes');
 
 async function qaQuiz() {
     const files = await fs.readdir(QUIZ_DIR);

@@ -1,0 +1,52 @@
+{
+  "page_type": "anxiety",
+  "slug": "golden-retriever",
+  "meta": {
+    "title": "Golden Retriever Anxiety: Symptoms, Causes & Solutions",
+    "description": "Do Golden Retrievers get anxiety? Learn about separation anxiety, noise phobias, and how to help your anxious Golden."
+  },
+  "h1": "Golden Retriever Anxiety Guide",
+  "intro": {
+    "short_hook": "Do Golden Retrievers get anxiety? Learn about separation anxiety, noise phobias, and how to help your anxious Golden.",
+    "context": "",
+    "who_this_is_for": "Owners seeing signs of stress in their dog."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.380Z",
+  "sections": [],
+  "anxiety_pattern": {
+    "summary": "Why your happy-go-lucky dog might be stressed.",
+    "common_signs": [],
+    "situations_where_it_shows_up": []
+  },
+  "support_options": {
+    "at_home_strategies": [],
+    "environment_changes": [],
+    "when_to_consider_professional_training": "If aggression or self-harm occurs.",
+    "when_to_talk_to_vet_or_behaviorist": "For medication or severe cases."
+  },
+  "tools_and_products": {
+    "summary": "Helpful tools for managing anxiety.",
+    "types_of_tools": []
+  }
+}

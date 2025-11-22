@@ -1,0 +1,161 @@
+{
+  "page_type": "cost",
+  "slug": "golden-retriever-new-york-ny",
+  "meta": {
+    "title": "Golden Retriever Cost in New York, NY (First Year & Monthly Breakdown)",
+    "description": "See the real cost of owning a Golden Retriever in New York City. First-year setup, monthly expenses, vet bills, and apartment-specific costs."
+  },
+  "h1": "Golden Retriever Cost in New York, NY",
+  "intro": {
+    "short_hook": "See the real cost of owning a Golden Retriever in New York City. First-year setup, monthly expenses, vet bills, and apartment-specific costs.",
+    "context": "In NYC, expect to spend around $2,500–$4,500 in the first year and $200–$350 per month after that for a Golden Retriever.",
+    "why_costs_can_spike": "Emergency vet care in NYC is among the most expensive in the country. $1,200 is just to walk in the door for some ERs."
+  },
+  "faq": [
+    {
+      "question": "Can I afford a Golden Retriever in NYC?",
+      "answer": "If you have $300/month disposable income and $2,000 in savings, yes. Otherwise, it's risky."
+    },
+    {
+      "question": "Do I need a dog walker?",
+      "answer": "If you work 9-5 away from home, yes. Goldens need a midday break. Budget $400+/month for this."
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.348Z",
+  "sections": [
+    {
+      "id": "local_context",
+      "title": "Local Context",
+      "type": "text",
+      "content": "Everything costs more here, especially services like grooming and walking."
+    }
+  ],
+  "cost_breakdown": {
+    "summary": "In NYC, expect to spend around $2,500–$4,500 in the first year and $200–$350 per month after that for a Golden Retriever.",
+    "first_year_range_usd": [
+      2500,
+      4500
+    ],
+    "monthly_range_usd": [
+      200,
+      350
+    ],
+    "emergency_fund_recommended_usd": 2000,
+    "line_items": [
+      {
+        "label": "Adoption or breeder fee",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          500,
+          3000
+        ],
+        "notes": "High demand in the tri-state area drives breeder prices up."
+      },
+      {
+        "label": "Initial vet care & vaccines",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          350,
+          800
+        ],
+        "notes": "NYC vet prices are significantly higher than national average."
+      },
+      {
+        "label": "Spay/neuter",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          400,
+          900
+        ],
+        "notes": "Surgery costs in Manhattan/Brooklyn are premium."
+      },
+      {
+        "label": "Starter supplies",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          250,
+          500
+        ],
+        "notes": "Crate, bed, bowls, leash, toys, plus apartment-specific gear."
+      },
+      {
+        "label": "Training classes",
+        "frequency": "one_time",
+        "estimated_range_usd": [
+          300,
+          800
+        ],
+        "notes": "City socialization classes are essential and pricey."
+      },
+      {
+        "label": "Food",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          80,
+          150
+        ],
+        "notes": "Premium food delivery is common in NYC."
+      },
+      {
+        "label": "Dog Walker / Daycare",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          0,
+          600
+        ],
+        "notes": "Optional but common if you work long hours. $20-30 per walk."
+      },
+      {
+        "label": "Preventatives (flea, tick, heartworm)",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          25,
+          50
+        ],
+        "notes": "Standard city pricing."
+      },
+      {
+        "label": "Routine vet care (averaged)",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          40,
+          80
+        ],
+        "notes": "Annual exams are pricier here."
+      },
+      {
+        "label": "Grooming & supplies",
+        "frequency": "monthly",
+        "estimated_range_usd": [
+          20,
+          60
+        ],
+        "notes": "Professional grooming is expensive in the city."
+      }
+    ]
+  },
+  "insurance_section": {
+    "summary": "Insurance is practically mandatory for peace of mind in the city.",
+    "when_insurance_makes_sense": "NYC vet costs are astronomical. A single major surgery can cost $10,000+.",
+    "when_you_might_skip_it": "If you have significant savings set aside for emergencies."
+  },
+  "saving_tips": {
+    "summary": "Ways to reduce expenses without compromising care.",
+    "tips": [
+      "Compare vet prices",
+      "Buy food in bulk",
+      "Consider pet insurance early"
+    ]
+  }
+}

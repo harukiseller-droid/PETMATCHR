@@ -1,0 +1,253 @@
+[
+    {
+        "id": "separation-anxiety",
+        "name": "SEPARATION ANXIETY",
+        "triggers": [
+            "Left alone",
+            "rehomed",
+            "separated from family"
+        ],
+        "affected_breeds": [
+            "Dachshunds",
+            "Toy Poodles & Miniature Poodles",
+            "Cockapoos",
+            "French Bulldogs",
+            "Cavalier King Charles Spaniels",
+            "Cocker Spaniels",
+            "Labrador Retrievers",
+            "German Shepherds",
+            "Beagles",
+            "Shih Tzus",
+            "Maltese",
+            "Chihuahuas",
+            "Yorkshire Terriers",
+            "Pugs",
+            "Greyhounds",
+            "Vizslas",
+            "Lagotto Romagnolos",
+            "Border Collies",
+            "Jack Russell Terriers",
+            "Miniature Schnauzers",
+            "Boston Terriers",
+            "Cavalier King Charles Spaniels",
+            "Australian Shepherds"
+        ]
+    },
+    {
+        "id": "fear-noise-anxiety",
+        "name": "FEAR & NOISE ANXIETY",
+        "triggers": [
+            "Thunderstorms",
+            "fireworks",
+            "loud noises",
+            "unfamiliar environments",
+            "strangers"
+        ],
+        "affected_breeds": [
+            "Lagotto Romagnolos",
+            "Wheaten Terriers",
+            "Spanish Water Dogs",
+            "Shetland Dogs",
+            "Miniature Schnauzers",
+            "Greyhounds",
+            "Cavalier King Charles Spaniels",
+            "Vizslas",
+            "Jack Russell Terriers",
+            "Toy Breeds Generally",
+            "German Shepherds",
+            "Border Collies",
+            "Australian Shepherds",
+            "Beagles"
+        ]
+    },
+    {
+        "id": "general-anxiety-nervousness",
+        "name": "GENERAL ANXIETY & NERVOUSNESS",
+        "triggers": [
+            "Environmental changes",
+            "routine disruptions",
+            "general temperament",
+            "lack of stimulation"
+        ],
+        "affected_breeds": [
+            "Border Collies",
+            "Jack Russell Terriers",
+            "Chihuahuas",
+            "Miniature Pinschers",
+            "Yorkshire Terriers",
+            "Toy Poodles",
+            "German Shepherds",
+            "Vizslas",
+            "Cavalier King Charles Spaniels",
+            "Cocker Spaniels",
+            "Australian Shepherds"
+        ]
+    },
+    {
+        "id": "breed-specific-genetic-anxiety",
+        "name": "BREED-SPECIFIC GENETIC ANXIETY",
+        "triggers": [],
+        "affected_breeds": [
+            "Cavalier King Charles Spaniels",
+            "Lagotto Romagnolos",
+            "Wheaten Terriers",
+            "Spanish Water Dogs",
+            "Shetland Dogs",
+            "Miniature Schnauzers",
+            "Vizslas"
+        ]
+    },
+    {
+        "id": "aggression-linked-anxiety",
+        "name": "AGGRESSION-LINKED ANXIETY",
+        "triggers": [],
+        "affected_breeds": [
+            "Chihuahuas",
+            "Miniature Schnauzers",
+            "Jack Russell Terriers",
+            "German Shepherds",
+            "Dachshunds"
+        ]
+    },
+    {
+        "id": "age-related-anxiety",
+        "name": "AGE-RELATED ANXIETY",
+        "triggers": [],
+        "affected_breeds": [
+            "Cavalier King Charles Spaniels",
+            "Boxers",
+            "Golden Retrievers",
+            "Poodles",
+            "German Shepherds",
+            "Doberman Pinschers"
+        ]
+    },
+    {
+        "id": "separation-anxiety-symptoms",
+        "name": "SEPARATION ANXIETY SYMPTOMS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "noisefear-anxiety-symptoms",
+        "name": "NOISE/FEAR ANXIETY SYMPTOMS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "general-anxiety-symptoms",
+        "name": "GENERAL ANXIETY SYMPTOMS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "primary-content-pillars",
+        "name": "PRIMARY CONTENT PILLARS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "secondary-content-angles",
+        "name": "SECONDARY CONTENT ANGLES",
+        "triggers": [],
+        "affected_breeds": [
+            "Spring/Summer",
+            "Fall",
+            "Winter",
+            "Year-Round"
+        ]
+    },
+    {
+        "id": "primary-product-angles",
+        "name": "PRIMARY PRODUCT ANGLES",
+        "triggers": [],
+        "affected_breeds": [
+            "For",
+            "Key Breeds",
+            "Messaging",
+            "Dosage",
+            "Price Point",
+            "For",
+            "Key Moments",
+            "Messaging",
+            "Format",
+            "Price Point",
+            "Contents",
+            "Messaging",
+            "Price Point",
+            "Complementary Ingredients",
+            "Messaging",
+            "Standalone or Bundle",
+            "Price Point",
+            "Monthly Subscription Option",
+            "Messaging",
+            "Price Point"
+        ]
+    },
+    {
+        "id": "secondary-product-angles",
+        "name": "SECONDARY PRODUCT ANGLES",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "high-intent-keywords",
+        "name": "HIGH-INTENT KEYWORDS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "informational-keywords",
+        "name": "INFORMATIONAL KEYWORDS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "comparison-keywords",
+        "name": "COMPARISON KEYWORDS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "q1",
+        "name": "Q1",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "q2",
+        "name": "Q2",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "q3",
+        "name": "Q3",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "q4",
+        "name": "Q4",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "interactive-content-ideas",
+        "name": "INTERACTIVE CONTENT IDEAS",
+        "triggers": [],
+        "affected_breeds": []
+    },
+    {
+        "id": "user-generated-content",
+        "name": "USER-GENERATED CONTENT",
+        "triggers": [],
+        "affected_breeds": [
+            "70%",
+            "30-50%",
+            "1.9x",
+            "479-533%",
+            "Top 3 Separation Anxiety Breeds"
+        ]
+    }
+]

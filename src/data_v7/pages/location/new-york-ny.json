@@ -1,0 +1,72 @@
+{
+  "page_type": "location",
+  "slug": "new-york-ny",
+  "meta": {
+    "title": "Best Dogs for New York, NY Living",
+    "description": "Living in NYC? Here are the best dog breeds for apartment life and city streets."
+  },
+  "h1": "Best Dogs for New York, NY",
+  "intro": {
+    "short_hook": "Living in NYC? Here are the best dog breeds for apartment life and city streets.",
+    "context": "",
+    "who_this_city_is_great_for": "Dog owners living in or moving to New York"
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.383Z",
+  "sections": [
+    {
+      "id": "tip_0",
+      "title": "Sidewalk Safety",
+      "type": "text",
+      "content": "Watch out for salt in winter and hot pavement in summer. Booties are a must."
+    },
+    {
+      "id": "tip_1",
+      "title": "Subway Rules",
+      "type": "text",
+      "content": "Dogs must be in a bag to ride the subway. Plan accordingly!"
+    }
+  ],
+  "living_with_dogs_here": {
+    "summary": "NYC is a dog lover's paradise, but you need a dog that can handle noise, elevators, and small spaces.",
+    "climate_considerations": "Check local weather patterns.",
+    "housing_considerations": "Check apartment pet policies.",
+    "dog_friendly_score_explained": "Based on parks, vets, and services."
+  },
+  "cost_snapshot": {
+    "summary": "Cost of living overview.",
+    "vet_cost_level": "medium",
+    "example_monthly_ranges_usd": [
+      100,
+      300
+    ]
+  },
+  "best_fit_breeds_section": {
+    "summary": "Top breeds for this city.",
+    "breed_slugs": [
+      "french-bulldog",
+      "cavalier-king-charles-spaniel",
+      "golden-retriever"
+    ]
+  }
+}

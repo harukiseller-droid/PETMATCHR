@@ -1,14 +1,512 @@
 [
     {
-        "id": "separation-anxiety",
-        "slug": "separation-anxiety",
-        "name": "Separation Anxiety",
-        "description": "Distress when left alone"
+        "id": "allergic-reactions",
+        "slug": "allergic-reactions",
+        "name": "Allergic Reactions",
+        "description": "276% higher risk"
+    },
+    {
+        "id": "allergies",
+        "slug": "allergies",
+        "name": "Allergies",
+        "description": "Food and environmental allergies, chronic ear infections, skin infections"
+    },
+    {
+        "id": "anesthesia-sensitivity",
+        "slug": "anesthesia-sensitivity",
+        "name": "Anesthesia Sensitivity",
+        "description": "Sensitivity to anesthetic drugs"
+    },
+    {
+        "id": "arrhythmogenic-right-ventricular-cardiomyopathy-arvc",
+        "slug": "arrhythmogenic-right-ventricular-cardiomyopathy-arvc",
+        "name": "Arrhythmogenic Right Ventricular Cardiomyopathy (ARVC)",
+        "description": "Heart rhythm disorder"
+    },
+    {
+        "id": "arthritis",
+        "slug": "arthritis",
+        "name": "Arthritis",
+        "description": "Age-related joint disease"
+    },
+    {
+        "id": "autoimmune-diseases",
+        "slug": "autoimmune-diseases",
+        "name": "Autoimmune Diseases",
+        "description": "Skin conditions causing sores and hair loss"
+    },
+    {
+        "id": "back-problems",
+        "slug": "back-problems",
+        "name": "Back Problems",
+        "description": "Due to long spine and short legs"
+    },
+    {
+        "id": "backspine-issues",
+        "slug": "backspine-issues",
+        "name": "Back/Spine Issues",
+        "description": "Intervertebral disc disease"
+    },
+    {
+        "id": "bloat-gastric-dilatation-volvulusgdv",
+        "slug": "bloat-gastric-dilatation-volvulusgdv",
+        "name": "Bloat (Gastric Dilatation-Volvulus/GDV)",
+        "description": "Life-threatening stomach condition ($1,500-$7,500 treatment)"
+    },
+    {
+        "id": "bloat-gdv",
+        "slug": "bloat-gdv",
+        "name": "Bloat (GDV)",
+        "description": "Stomach torsion"
+    },
+    {
+        "id": "bone-growth-issues",
+        "slug": "bone-growth-issues",
+        "name": "Bone & Growth Issues",
+        "description": "Due to large size and rapid growth"
+    },
+    {
+        "id": "brachycephalic-airway-syndrome-boas",
+        "slug": "brachycephalic-airway-syndrome-boas",
+        "name": "Brachycephalic Airway Syndrome (BOAS)",
+        "description": "Breathing difficulties, especially in heat"
+    },
+    {
+        "id": "brachycephalic-features",
+        "slug": "brachycephalic-features",
+        "name": "Brachycephalic Features",
+        "description": "Breathing difficulties (moderate)"
+    },
+    {
+        "id": "brachycephalic-obstructive-airway-syndrome-boas",
+        "slug": "brachycephalic-obstructive-airway-syndrome-boas",
+        "name": "Brachycephalic Obstructive Airway Syndrome (BOAS)",
+        "description": "Breathing difficulties, snoring, heat sensitivity"
+    },
+    {
+        "id": "cancer",
+        "slug": "cancer",
+        "name": "Cancer",
+        "description": "Higher cancer rates"
+    },
+    {
+        "id": "cardiac-disease",
+        "slug": "cardiac-disease",
+        "name": "Cardiac Disease",
+        "description": "Highest risk among toy/small breeds in senior years"
+    },
+    {
+        "id": "cardiomyopathy",
+        "slug": "cardiomyopathy",
+        "name": "Cardiomyopathy",
+        "description": "Heart muscle disease"
+    },
+    {
+        "id": "cataracts",
+        "slug": "cataracts",
+        "name": "Cataracts",
+        "description": "Eye lens clouding"
+    },
+    {
+        "id": "cherry-eye",
+        "slug": "cherry-eye",
+        "name": "Cherry Eye",
+        "description": "Eyelid gland prolapse"
+    },
+    {
+        "id": "chondrodystrophy-cddy",
+        "slug": "chondrodystrophy-cddy",
+        "name": "Chondrodystrophy (CDDY)",
+        "description": "Developmental disorder affecting bone"
+    },
+    {
+        "id": "chronic-active-hepatitis",
+        "slug": "chronic-active-hepatitis",
+        "name": "Chronic Active Hepatitis",
+        "description": "Liver disease ($500-$2,500 annually)"
+    },
+    {
+        "id": "corneal-dystrophy",
+        "slug": "corneal-dystrophy",
+        "name": "Corneal Dystrophy",
+        "description": "Corneal cloudiness"
+    },
+    {
+        "id": "cruciate-ligament-injuries",
+        "slug": "cruciate-ligament-injuries",
+        "name": "Cruciate Ligament Injuries",
+        "description": "Knee ligament ruptures"
+    },
+    {
+        "id": "degenerative-myelopathy-dm",
+        "slug": "degenerative-myelopathy-dm",
+        "name": "Degenerative Myelopathy (DM)",
+        "description": "Progressive spinal cord disease"
+    },
+    {
+        "id": "dental-issues",
+        "slug": "dental-issues",
+        "name": "Dental Issues",
+        "description": "Poor dental health"
+    },
+    {
+        "id": "diabetes",
+        "slug": "diabetes",
+        "name": "Diabetes",
+        "description": "Endocrine disorder in senior years"
+    },
+    {
+        "id": "dilated-cardiomyopathy-dcm",
+        "slug": "dilated-cardiomyopathy-dcm",
+        "name": "Dilated Cardiomyopathy (DCM)",
+        "description": "Most common cardiac disease in breed; risk of sudden cardiac death"
+    },
+    {
+        "id": "ear-infections",
+        "slug": "ear-infections",
+        "name": "Ear Infections",
+        "description": "Chronic ear problems"
+    },
+    {
+        "id": "elbow-dysplasia",
+        "slug": "elbow-dysplasia",
+        "name": "Elbow Dysplasia",
+        "description": "Joint malformation in elbows"
+    },
+    {
+        "id": "elongated-soft-palate",
+        "slug": "elongated-soft-palate",
+        "name": "Elongated Soft Palate",
+        "description": "Airway obstruction"
+    },
+    {
+        "id": "epilepsy",
+        "slug": "epilepsy",
+        "name": "Epilepsy",
+        "description": "Seizures"
+    },
+    {
+        "id": "esophageal-disease",
+        "slug": "esophageal-disease",
+        "name": "Esophageal Disease",
+        "description": "265% higher risk"
     },
     {
         "id": "excessive-barking",
         "slug": "excessive-barking",
         "name": "Excessive Barking",
         "description": "Barking at everything"
+    },
+    {
+        "id": "exercise-intolerance",
+        "slug": "exercise-intolerance",
+        "name": "Exercise Intolerance",
+        "description": "Overheating and overexertion risks"
+    },
+    {
+        "id": "exercise-induced-collapse-eic",
+        "slug": "exercise-induced-collapse-eic",
+        "name": "Exercise-Induced Collapse (EIC)",
+        "description": "Sudden collapse during or after exercise"
+    },
+    {
+        "id": "eye-disorders",
+        "slug": "eye-disorders",
+        "name": "Eye Disorders",
+        "description": "Cataracts, eyelid disorders, eyelash disorders, corneal ulcers"
+    },
+    {
+        "id": "eye-problems",
+        "slug": "eye-problems",
+        "name": "Eye Problems",
+        "description": "Overexposure to injury"
+    },
+    {
+        "id": "gastric-dilatation-volvulus-gdvbloat",
+        "slug": "gastric-dilatation-volvulus-gdvbloat",
+        "name": "Gastric Dilatation-Volvulus (GDV/Bloat)",
+        "description": "Life-threatening stomach condition"
+    },
+    {
+        "id": "gastrointestinal-disorders",
+        "slug": "gastrointestinal-disorders",
+        "name": "Gastrointestinal Disorders",
+        "description": "Inflammatory bowel disease, pyloric stenosis, acid reflux, hiatal hernia"
+    },
+    {
+        "id": "genetic-load",
+        "slug": "genetic-load",
+        "name": "Genetic Load",
+        "description": "Highest concentration of harmful genetic variants among studied breeds"
+    },
+    {
+        "id": "genetic-predisposition-to-obesity",
+        "slug": "genetic-predisposition-to-obesity",
+        "name": "Genetic Predisposition to Obesity",
+        "description": "POMC gene mutation linked to increased appetite"
+    },
+    {
+        "id": "glaucoma",
+        "slug": "glaucoma",
+        "name": "Glaucoma",
+        "description": "Eye pressure disease"
+    },
+    {
+        "id": "heart-conditions",
+        "slug": "heart-conditions",
+        "name": "Heart Conditions",
+        "description": "Various cardiac issues"
+    },
+    {
+        "id": "heart-disease",
+        "slug": "heart-disease",
+        "name": "Heart Disease",
+        "description": "Dilated cardiomyopathy, heart murmurs"
+    },
+    {
+        "id": "heart-murmurs",
+        "slug": "heart-murmurs",
+        "name": "Heart Murmurs",
+        "description": "Valve disease complications"
+    },
+    {
+        "id": "heart-problems",
+        "slug": "heart-problems",
+        "name": "Heart Problems",
+        "description": "Subvalvular aortic stenosis, cardiomyopathy"
+    },
+    {
+        "id": "heat-sensitivity",
+        "slug": "heat-sensitivity",
+        "name": "Heat Sensitivity",
+        "description": "Cannot tolerate heat well; heatstroke risk"
+    },
+    {
+        "id": "heat-sensitivity-hyperthermia",
+        "slug": "heat-sensitivity-hyperthermia",
+        "name": "Heat Sensitivity & Hyperthermia",
+        "description": "533% higher risk; susceptible to heatstroke"
+    },
+    {
+        "id": "hip-dysplasia",
+        "slug": "hip-dysplasia",
+        "name": "Hip Dysplasia",
+        "description": "Malformed hip joints causing arthritis and mobility issues"
+    },
+    {
+        "id": "hip-dysplasia-prevalence",
+        "slug": "hip-dysplasia-prevalence",
+        "name": "Hip Dysplasia Prevalence",
+        "description": "Hip dysplasia affects numerous large breeds and some small breeds like French Bulldogs"
+    },
+    {
+        "id": "hypothyroidism",
+        "slug": "hypothyroidism",
+        "name": "Hypothyroidism",
+        "description": "Thyroid hormone deficiency"
+    },
+    {
+        "id": "immune-mediated-thyroiditis",
+        "slug": "immune-mediated-thyroiditis",
+        "name": "Immune-mediated Thyroiditis",
+        "description": "Thyroid autoimmune disease"
+    },
+    {
+        "id": "insurance-claims",
+        "slug": "insurance-claims",
+        "name": "Insurance Claims",
+        "description": "Different breeds show varying patterns in insurance claim rates for specific conditions"
+    },
+    {
+        "id": "intervertebral-disc-disease-ivdd",
+        "slug": "intervertebral-disc-disease-ivdd",
+        "name": "Intervertebral Disc Disease (IVDD)",
+        "description": "Back/spine issues"
+    },
+    {
+        "id": "intervertebral-disc-disease-ivdd-type-i",
+        "slug": "intervertebral-disc-disease-ivdd-type-i",
+        "name": "Intervertebral Disc Disease (IVDD) Type I",
+        "description": "Herniated discs pressing on spinal cord"
+    },
+    {
+        "id": "kidney-disease",
+        "slug": "kidney-disease",
+        "name": "Kidney Disease",
+        "description": "Progressive kidney disease"
+    },
+    {
+        "id": "kidney-stones",
+        "slug": "kidney-stones",
+        "name": "Kidney Stones",
+        "description": "Urolithiasis common in breed"
+    },
+    {
+        "id": "legg-calv-perthes-disease",
+        "slug": "legg-calv-perthes-disease",
+        "name": "Legg-Calvé-Perthes Disease",
+        "description": "Hip bone necrosis"
+    },
+    {
+        "id": "liver-shunts",
+        "slug": "liver-shunts",
+        "name": "Liver Shunts",
+        "description": "Portal vein abnormalities"
+    },
+    {
+        "id": "luxating-patellas",
+        "slug": "luxating-patellas",
+        "name": "Luxating Patellas",
+        "description": "Knee cap dislocation"
+    },
+    {
+        "id": "most-common-genetic-disorders",
+        "slug": "most-common-genetic-disorders",
+        "name": "Most Common Genetic Disorders",
+        "description": "Elbow dysplasia and dilated cardiomyopathy appear more frequently in purebred dogs; cruciate ligament rupture more common in mixed breeds"
+    },
+    {
+        "id": "myotonia-congenita",
+        "slug": "myotonia-congenita",
+        "name": "Myotonia Congenita",
+        "description": "Muscle stiffness"
+    },
+    {
+        "id": "myxomatous-mitral-valve-disease-mmvd",
+        "slug": "myxomatous-mitral-valve-disease-mmvd",
+        "name": "Myxomatous Mitral Valve Disease (MMVD)",
+        "description": "Most common disease in breed; heart condition"
+    },
+    {
+        "id": "neurologic-disease",
+        "slug": "neurologic-disease",
+        "name": "Neurologic Disease",
+        "description": "291% higher risk"
+    },
+    {
+        "id": "obesity",
+        "slug": "obesity",
+        "name": "Obesity",
+        "description": "Weight management challenges"
+    },
+    {
+        "id": "ocular-disease",
+        "slug": "ocular-disease",
+        "name": "Ocular Disease",
+        "description": "467% higher risk"
+    },
+    {
+        "id": "osteochondritis-dissecans-ocd",
+        "slug": "osteochondritis-dissecans-ocd",
+        "name": "Osteochondritis Dissecans (OCD)",
+        "description": "Abnormal cartilage development causing joint discomfort"
+    },
+    {
+        "id": "pancreatitis",
+        "slug": "pancreatitis",
+        "name": "Pancreatitis",
+        "description": "Inflammation of pancreas"
+    },
+    {
+        "id": "pancreatitis-diabetes",
+        "slug": "pancreatitis-diabetes",
+        "name": "Pancreatitis & Diabetes",
+        "description": "High risk in senior years"
+    },
+    {
+        "id": "patellar-luxation",
+        "slug": "patellar-luxation",
+        "name": "Patellar Luxation",
+        "description": "Knee cap dislocation"
+    },
+    {
+        "id": "pregnancy-complications",
+        "slug": "pregnancy-complications",
+        "name": "Pregnancy Complications",
+        "description": "419% higher risk"
+    },
+    {
+        "id": "progressive-retinal-atrophy-pra-rcd3",
+        "slug": "progressive-retinal-atrophy-pra-rcd3",
+        "name": "Progressive Retinal Atrophy (PRA-rcd3)",
+        "description": "Vision loss"
+    },
+    {
+        "id": "progressive-retinal-atrophy-pra",
+        "slug": "progressive-retinal-atrophy-pra",
+        "name": "Progressive Retinal Atrophy (PRA)",
+        "description": "Progressive vision loss"
+    },
+    {
+        "id": "purebred-vs-mixed-breeds",
+        "slug": "purebred-vs-mixed-breeds",
+        "name": "Purebred vs. Mixed Breeds",
+        "description": "Purebred dogs are 1.9x more likely to develop cancer than non-purebred dogs"
+    },
+    {
+        "id": "respiratory-disease",
+        "slug": "respiratory-disease",
+        "name": "Respiratory Disease",
+        "description": "479% higher risk than non-brachycephalic dogs"
+    },
+    {
+        "id": "schnauzer-comedo-syndrome",
+        "slug": "schnauzer-comedo-syndrome",
+        "name": "Schnauzer Comedo Syndrome",
+        "description": "Skin condition"
+    },
+    {
+        "id": "separation-anxiety",
+        "slug": "separation-anxiety",
+        "name": "Separation Anxiety",
+        "description": "Distress when left alone"
+    },
+    {
+        "id": "skin-allergies",
+        "slug": "skin-allergies",
+        "name": "Skin Allergies",
+        "description": "Itching, irritation, secondary infections"
+    },
+    {
+        "id": "skin-infections",
+        "slug": "skin-infections",
+        "name": "Skin Infections",
+        "description": "In facial folds"
+    },
+    {
+        "id": "small-nostrils-stenotic-nares",
+        "slug": "small-nostrils-stenotic-nares",
+        "name": "Small Nostrils (Stenotic Nares)",
+        "description": "Breathing obstruction"
+    },
+    {
+        "id": "ventricular-arrhythmias",
+        "slug": "ventricular-arrhythmias",
+        "name": "Ventricular Arrhythmias",
+        "description": "Irregular heartbeats"
+    },
+    {
+        "id": "von-willebrands-disease",
+        "slug": "von-willebrands-disease",
+        "name": "Von Willebrand's Disease",
+        "description": "Bleeding disorder"
+    },
+    {
+        "id": "von-willebrands-disease-vwd1",
+        "slug": "von-willebrands-disease-vwd1",
+        "name": "Von Willebrand's Disease (vWD1)",
+        "description": "Genetic bleeding disorder"
+    },
+    {
+        "id": "wobbler-syndrome",
+        "slug": "wobbler-syndrome",
+        "name": "Wobbler Syndrome",
+        "description": "Cervical vertebral instability ($500-$7,000)"
+    },
+    {
+        "id": "x-scid",
+        "slug": "x-scid",
+        "name": "X-SCID",
+        "description": "Severe combined immunodeficiency (rare)"
     }
 ]

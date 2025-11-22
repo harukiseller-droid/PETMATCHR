@@ -1,0 +1,52 @@
+{
+  "page_type": "anxiety",
+  "slug": "golden-retriever-noise-anxiety",
+  "meta": {
+    "title": "Golden Retriever Noise Anxiety: Thunder & Fireworks",
+    "description": "Help your Golden Retriever cope with loud noises like thunder and fireworks. Effective calming strategies and desensitization tips."
+  },
+  "h1": "Helping a Golden Retriever with Noise Anxiety",
+  "intro": {
+    "short_hook": "Help your Golden Retriever cope with loud noises like thunder and fireworks. Effective calming strategies and desensitization tips.",
+    "context": "",
+    "who_this_is_for": "Owners seeing signs of stress in their dog."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.377Z",
+  "sections": [],
+  "anxiety_pattern": {
+    "summary": "",
+    "common_signs": [],
+    "situations_where_it_shows_up": []
+  },
+  "support_options": {
+    "at_home_strategies": [],
+    "environment_changes": [],
+    "when_to_consider_professional_training": "If aggression or self-harm occurs.",
+    "when_to_talk_to_vet_or_behaviorist": "For medication or severe cases."
+  },
+  "tools_and_products": {
+    "summary": "Helpful tools for managing anxiety.",
+    "types_of_tools": []
+  }
+}

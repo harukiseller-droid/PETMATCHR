@@ -3,7 +3,7 @@ import path from 'path';
 import { basicValidateOutput } from './validators';
 
 async function runQACheck() {
-    const pagesDir = path.join(process.cwd(), 'src/data/pages');
+    const pagesDir = path.join(process.cwd(), 'src/data_v7/pages');
     const pageTypes = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
 
     let totalPages = 0;

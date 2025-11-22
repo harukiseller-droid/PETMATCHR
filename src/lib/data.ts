@@ -23,7 +23,7 @@ import {
 } from '@/lib/types';
 import { QuizDefinition } from '@/lib/quiz-types';
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 
 export async function getBreeds(): Promise<Breed[]> {
     const filePath = path.join(DATA_DIR, 'breeds.json');

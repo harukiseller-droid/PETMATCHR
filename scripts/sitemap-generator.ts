@@ -4,7 +4,7 @@ import path from 'path';
 const BASE_URL = 'https://www.petmatchr.com'; // Replace with actual domain
 
 async function generateSitemap() {
-    const pagesDir = path.join(process.cwd(), 'src/data/pages');
+    const pagesDir = path.join(process.cwd(), 'src/data_v7/pages');
     const pageTypes = ['cost', 'problem', 'breed', 'list'];
 
     let urls: string[] = [

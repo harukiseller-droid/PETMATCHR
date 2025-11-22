@@ -9,7 +9,7 @@ interface SeoIssue {
     issues: string[];
 }
 
-const DATA_DIR = path.join(process.cwd(), 'src/data/pages');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7/pages');
 const PAGE_TYPES: PageType[] = ['breed', 'list', 'comparison', 'cost', 'problem', 'anxiety', 'location'];
 
 function lengthInChars(text: string | undefined | null): number {

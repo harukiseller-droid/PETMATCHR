@@ -2566,3 +2566,17 @@ Khi trả lời, hãy:
    – src/components/admin/InputDataOverview.tsx
    3. Đảm bảo code có thể copy-paste vào repo và chạy được sau khi install dependency chuẩn của Next.js 14.
 4. Không tự ý đổi cấu trúc content_matrix_management.json hay input_data/*.json; chỉ đọc đúng theo schema đã mô tả.
+
+
+-----------
+PHASE 21
+0/ Parse data from INPUT_DATA_RAW to input_data -> run generate-content-matrix.ts
+1/ after completing our quiz. how to system determine best breed matches. from page /quiz/lifestyle-match user can check more detail of each breed type information with all detail available content generated. Must have link to relate pages from this page
+2/ each breed dog type will have 1 folder content images for each breed type
+3/ random select 1 - 3 image of each breed type & insert to relate post content of correct breed type.
+--------
+update code để admin có thể manage toàn bộ task này
+Muốn biết web có thể có bao nhiêu trang từ dữ liệu thô? -> Xem generate-content-matrix.ts.
+Muốn chạy tool tạo nội dung (cần keywords, prompt version)? -> Dùng pageMatrix.ts.
+Muốn biết đã tạo được bao nhiêu trang rồi? -> Dùng build_content_matrix.ts.
+---------

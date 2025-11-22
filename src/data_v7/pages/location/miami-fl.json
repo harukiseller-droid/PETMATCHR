@@ -1,0 +1,68 @@
+{
+  "page_type": "location",
+  "slug": "miami-fl",
+  "meta": {
+    "title": "Best Dogs for Miami Living: Heat & Humidity Guide",
+    "description": "Living in Miami with a dog? Discover the best breeds for hot weather, top dog beaches, and tips for keeping your pup cool in the 305."
+  },
+  "h1": "Best Dogs for Miami, FL",
+  "intro": {
+    "short_hook": "Living in Miami with a dog? Discover the best breeds for hot weather, top dog beaches, and tips for keeping your pup cool in the 305.",
+    "context": "",
+    "who_this_city_is_great_for": "Dog owners living in or moving to [object Object]"
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.383Z",
+  "sections": [
+    {
+      "id": "tip_0",
+      "type": "text"
+    },
+    {
+      "id": "tip_1",
+      "type": "text"
+    },
+    {
+      "id": "tip_2",
+      "type": "text"
+    }
+  ],
+  "living_with_dogs_here": {
+    "summary": "",
+    "climate_considerations": "Check local weather patterns.",
+    "housing_considerations": "Check apartment pet policies.",
+    "dog_friendly_score_explained": "Based on parks, vets, and services."
+  },
+  "cost_snapshot": {
+    "summary": "Cost of living overview.",
+    "vet_cost_level": "medium",
+    "example_monthly_ranges_usd": [
+      100,
+      300
+    ]
+  },
+  "best_fit_breeds_section": {
+    "summary": "Top breeds for this city.",
+    "breed_slugs": []
+  }
+}

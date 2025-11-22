@@ -1,0 +1,52 @@
+{
+  "page_type": "anxiety",
+  "slug": "golden-retriever-senior-anxiety",
+  "meta": {
+    "title": "Anxiety in Senior Golden Retrievers: Causes & Care",
+    "description": "Old age can bring new anxieties. Understand cognitive dysfunction (doggie dementia) and how to comfort your aging Golden."
+  },
+  "h1": "Managing Anxiety in Senior Golden Retrievers",
+  "intro": {
+    "short_hook": "Old age can bring new anxieties. Understand cognitive dysfunction (doggie dementia) and how to comfort your aging Golden.",
+    "context": "",
+    "who_this_is_for": "Owners seeing signs of stress in their dog."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.378Z",
+  "sections": [],
+  "anxiety_pattern": {
+    "summary": "",
+    "common_signs": [],
+    "situations_where_it_shows_up": []
+  },
+  "support_options": {
+    "at_home_strategies": [],
+    "environment_changes": [],
+    "when_to_consider_professional_training": "If aggression or self-harm occurs.",
+    "when_to_talk_to_vet_or_behaviorist": "For medication or severe cases."
+  },
+  "tools_and_products": {
+    "summary": "Helpful tools for managing anxiety.",
+    "types_of_tools": []
+  }
+}

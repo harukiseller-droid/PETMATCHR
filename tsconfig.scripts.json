@@ -1,23 +1,15 @@
 {
+    "extends": "./tsconfig.json",
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2019",
-        "lib": [
-            "es2019",
-            "dom"
-        ],
         "moduleResolution": "node",
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "./src/*"
-            ]
-        }
+        "noEmit": true
     },
     "include": [
-        "scripts/**/*",
-        "src/**/*"
+        "scripts/**/*.ts",
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

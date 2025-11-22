@@ -1,11 +1,11 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const V7_DATA_DIR = path.join(process.cwd(), 'src/data/pages');
+const V7_DATA_DIR = path.join(process.cwd(), 'src/data_v7/pages');
 const OUTPUT_FILE = path.join(process.cwd(), 'src/data_v7/content_matrix_management.json');
 const PAGE_TYPES = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
 
-async function buildMatrix() {
+export async function buildMatrix() {
     console.log('Building content matrix...');
 
     const pages: any[] = [];
@@ -67,8 +67,13 @@ async function buildMatrix() {
         pages
     };
 
+    // Ensure output dir exists
+    await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf-8');
     console.log(`Matrix built with ${pages.length} pages.`);
+    console.log(`Summary saved to: ${OUTPUT_FILE}`);
 }
 
-buildMatrix().catch(console.error);
+if (require.main === module) {
+    buildMatrix().catch(console.error);
+}

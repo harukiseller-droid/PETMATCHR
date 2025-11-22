@@ -1,0 +1,70 @@
+{
+  "page_type": "list",
+  "slug": "best-family-dogs",
+  "meta": {
+    "title": "Best Family Dogs: Top Breeds for Kids & Active Homes",
+    "description": "Looking for the perfect family dog? We've ranked the top breeds based on patience, energy, and trainability to help you find your new best friend."
+  },
+  "h1": "Best Family Dogs",
+  "intro": {
+    "short_hook": "Looking for the perfect family dog? We've ranked the top breeds based on patience, energy, and trainability to help you find your new best friend.",
+    "context": "",
+    "who_this_list_is_for": "People looking for specific breed traits.",
+    "how_we_chose_these_breeds": "Based on characteristics and owner reviews."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.387Z",
+  "sections": [],
+  "breed_cards": [
+    {
+      "breed_slug": "golden-retriever",
+      "breed_name": "Golden Retriever",
+      "one_line_summary": "Unmatched patience and gentleness with children.",
+      "why_it_works_for_this_lifestyle": "Unmatched patience and gentleness with children.",
+      "key_scores": {
+        "apartment": null,
+        "busy_worker": null,
+        "family_with_kids": null,
+        "allergy_friendly": null,
+        "beginner_friendly": null,
+        "active_outdoor": null
+      },
+      "major_caveats": []
+    },
+    {
+      "breed_slug": "labrador-retriever",
+      "breed_name": "Labrador Retriever",
+      "one_line_summary": "Playful, protective, and sturdy family companion.",
+      "why_it_works_for_this_lifestyle": "Playful, protective, and sturdy family companion.",
+      "key_scores": {
+        "apartment": null,
+        "busy_worker": null,
+        "family_with_kids": null,
+        "allergy_friendly": null,
+        "beginner_friendly": null,
+        "active_outdoor": null
+      },
+      "major_caveats": []
+    }
+  ]
+}

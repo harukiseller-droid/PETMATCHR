@@ -51,7 +51,7 @@ async function generatePages() {
             console.log(`Processing batch ${i / BATCH_SIZE + 1}...`);
 
             await Promise.all(batch.map(async (item) => {
-                const targetFile = path.join(process.cwd(), 'src/data/pages', item.page_type, `${item.slug}.json`);
+                const targetFile = path.join(process.cwd(), 'src/data_v7/pages', item.page_type, `${item.slug}.json`);
 
                 // Skip if exists
                 try {

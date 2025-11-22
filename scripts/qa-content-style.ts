@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const PAGES_DIR = path.join(process.cwd(), 'src/data/pages');
+const PAGES_DIR = path.join(process.cwd(), 'src/data_v7/pages');
 const PAGE_TYPES = ['breed', 'list', 'comparison', 'cost', 'problem', 'anxiety', 'location'];
 
 async function qaContentStyle() {

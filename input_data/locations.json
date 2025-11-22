@@ -1,0 +1,352 @@
+[
+    {
+        "state": "Alabama",
+        "abbreviation": "AL",
+        "capital": "Montgomery",
+        "largest_city": "Birmingham",
+        "region": "Southeast"
+    },
+    {
+        "state": "Alaska",
+        "abbreviation": "AK",
+        "capital": "Juneau",
+        "largest_city": "Anchorage",
+        "region": "Pacific"
+    },
+    {
+        "state": "Arizona",
+        "abbreviation": "AZ",
+        "capital": "Phoenix",
+        "largest_city": "Phoenix",
+        "region": "Southwest"
+    },
+    {
+        "state": "Arkansas",
+        "abbreviation": "AR",
+        "capital": "Little Rock",
+        "largest_city": "Little Rock",
+        "region": "Southeast"
+    },
+    {
+        "state": "California",
+        "abbreviation": "CA",
+        "capital": "Sacramento",
+        "largest_city": "Los Angeles",
+        "region": "West"
+    },
+    {
+        "state": "Colorado",
+        "abbreviation": "CO",
+        "capital": "Denver",
+        "largest_city": "Denver",
+        "region": "West"
+    },
+    {
+        "state": "Connecticut",
+        "abbreviation": "CT",
+        "capital": "Hartford",
+        "largest_city": "Bridgeport",
+        "region": "Northeast"
+    },
+    {
+        "state": "Delaware",
+        "abbreviation": "DE",
+        "capital": "Dover",
+        "largest_city": "Wilmington",
+        "region": "Mid-Atlantic"
+    },
+    {
+        "state": "Florida",
+        "abbreviation": "FL",
+        "capital": "Tallahassee",
+        "largest_city": "Jacksonville",
+        "region": "Southeast"
+    },
+    {
+        "state": "Georgia",
+        "abbreviation": "GA",
+        "capital": "Atlanta",
+        "largest_city": "Atlanta",
+        "region": "Southeast"
+    },
+    {
+        "state": "Hawaii",
+        "abbreviation": "HI",
+        "capital": "Honolulu",
+        "largest_city": "Honolulu",
+        "region": "Pacific"
+    },
+    {
+        "state": "Idaho",
+        "abbreviation": "ID",
+        "capital": "Boise",
+        "largest_city": "Boise",
+        "region": "West"
+    },
+    {
+        "state": "Illinois",
+        "abbreviation": "IL",
+        "capital": "Springfield",
+        "largest_city": "Chicago",
+        "region": "Midwest"
+    },
+    {
+        "state": "Indiana",
+        "abbreviation": "IN",
+        "capital": "Indianapolis",
+        "largest_city": "Indianapolis",
+        "region": "Midwest"
+    },
+    {
+        "state": "Iowa",
+        "abbreviation": "IA",
+        "capital": "Des Moines",
+        "largest_city": "Des Moines",
+        "region": "Midwest"
+    },
+    {
+        "state": "Kansas",
+        "abbreviation": "KS",
+        "capital": "Topeka",
+        "largest_city": "Wichita",
+        "region": "Midwest"
+    },
+    {
+        "state": "Kentucky",
+        "abbreviation": "KY",
+        "capital": "Frankfort",
+        "largest_city": "Louisville",
+        "region": "Mid-Atlantic"
+    },
+    {
+        "state": "Louisiana",
+        "abbreviation": "LA",
+        "capital": "Baton Rouge",
+        "largest_city": "New Orleans",
+        "region": "Southeast"
+    },
+    {
+        "state": "Maine",
+        "abbreviation": "ME",
+        "capital": "Augusta",
+        "largest_city": "Portland",
+        "region": "Northeast"
+    },
+    {
+        "state": "Maryland",
+        "abbreviation": "MD",
+        "capital": "Annapolis",
+        "largest_city": "Baltimore",
+        "region": "Mid-Atlantic"
+    },
+    {
+        "state": "Massachusetts",
+        "abbreviation": "MA",
+        "capital": "Boston",
+        "largest_city": "Boston",
+        "region": "Northeast"
+    },
+    {
+        "state": "Michigan",
+        "abbreviation": "MI",
+        "capital": "Lansing",
+        "largest_city": "Detroit",
+        "region": "Midwest"
+    },
+    {
+        "state": "Minnesota",
+        "abbreviation": "MN",
+        "capital": "Saint Paul",
+        "largest_city": "Minneapolis",
+        "region": "Midwest"
+    },
+    {
+        "state": "Mississippi",
+        "abbreviation": "MS",
+        "capital": "Jackson",
+        "largest_city": "Jackson",
+        "region": "Southeast"
+    },
+    {
+        "state": "Missouri",
+        "abbreviation": "MO",
+        "capital": "Jefferson City",
+        "largest_city": "Kansas City",
+        "region": "Midwest"
+    },
+    {
+        "state": "Montana",
+        "abbreviation": "MT",
+        "capital": "Helena",
+        "largest_city": "Billings",
+        "region": "West"
+    },
+    {
+        "state": "Nebraska",
+        "abbreviation": "NE",
+        "capital": "Lincoln",
+        "largest_city": "Omaha",
+        "region": "Midwest"
+    },
+    {
+        "state": "Nevada",
+        "abbreviation": "NV",
+        "capital": "Carson City",
+        "largest_city": "Las Vegas",
+        "region": "West"
+    },
+    {
+        "state": "New Hampshire",
+        "abbreviation": "NH",
+        "capital": "Concord",
+        "largest_city": "Manchester",
+        "region": "Northeast"
+    },
+    {
+        "state": "New Jersey",
+        "abbreviation": "NJ",
+        "capital": "Trenton",
+        "largest_city": "Newark",
+        "region": "Northeast"
+    },
+    {
+        "state": "New Mexico",
+        "abbreviation": "NM",
+        "capital": "Santa Fe",
+        "largest_city": "Albuquerque",
+        "region": "Southwest"
+    },
+    {
+        "state": "New York",
+        "abbreviation": "NY",
+        "capital": "Albany",
+        "largest_city": "New York City",
+        "region": "Northeast"
+    },
+    {
+        "state": "North Carolina",
+        "abbreviation": "NC",
+        "capital": "Raleigh",
+        "largest_city": "Charlotte",
+        "region": "Southeast"
+    },
+    {
+        "state": "North Dakota",
+        "abbreviation": "ND",
+        "capital": "Bismarck",
+        "largest_city": "Fargo",
+        "region": "Midwest"
+    },
+    {
+        "state": "Ohio",
+        "abbreviation": "OH",
+        "capital": "Columbus",
+        "largest_city": "Columbus",
+        "region": "Midwest"
+    },
+    {
+        "state": "Oklahoma",
+        "abbreviation": "OK",
+        "capital": "Oklahoma City",
+        "largest_city": "Oklahoma City",
+        "region": "Southwest"
+    },
+    {
+        "state": "Oregon",
+        "abbreviation": "OR",
+        "capital": "Salem",
+        "largest_city": "Portland",
+        "region": "West"
+    },
+    {
+        "state": "Pennsylvania",
+        "abbreviation": "PA",
+        "capital": "Harrisburg",
+        "largest_city": "Philadelphia",
+        "region": "Northeast"
+    },
+    {
+        "state": "Rhode Island",
+        "abbreviation": "RI",
+        "capital": "Providence",
+        "largest_city": "Providence",
+        "region": "Northeast"
+    },
+    {
+        "state": "South Carolina",
+        "abbreviation": "SC",
+        "capital": "Columbia",
+        "largest_city": "Charleston",
+        "region": "Southeast"
+    },
+    {
+        "state": "South Dakota",
+        "abbreviation": "SD",
+        "capital": "Pierre",
+        "largest_city": "Sioux Falls",
+        "region": "Midwest"
+    },
+    {
+        "state": "Tennessee",
+        "abbreviation": "TN",
+        "capital": "Nashville",
+        "largest_city": "Memphis",
+        "region": "Southeast"
+    },
+    {
+        "state": "Texas",
+        "abbreviation": "TX",
+        "capital": "Austin",
+        "largest_city": "Houston",
+        "region": "Southwest"
+    },
+    {
+        "state": "Utah",
+        "abbreviation": "UT",
+        "capital": "Salt Lake City",
+        "largest_city": "Salt Lake City",
+        "region": "West"
+    },
+    {
+        "state": "Vermont",
+        "abbreviation": "VT",
+        "capital": "Montpelier",
+        "largest_city": "Burlington",
+        "region": "Northeast"
+    },
+    {
+        "state": "Virginia",
+        "abbreviation": "VA",
+        "capital": "Richmond",
+        "largest_city": "Virginia Beach",
+        "region": "Mid-Atlantic"
+    },
+    {
+        "state": "Washington",
+        "abbreviation": "WA",
+        "capital": "Olympia",
+        "largest_city": "Seattle",
+        "region": "West"
+    },
+    {
+        "state": "West Virginia",
+        "abbreviation": "WV",
+        "capital": "Charleston",
+        "largest_city": "Charleston",
+        "region": "Mid-Atlantic"
+    },
+    {
+        "state": "Wisconsin",
+        "abbreviation": "WI",
+        "capital": "Madison",
+        "largest_city": "Milwaukee",
+        "region": "Midwest"
+    },
+    {
+        "state": "Wyoming",
+        "abbreviation": "WY",
+        "capital": "Cheyenne",
+        "largest_city": "Cheyenne",
+        "region": "West"
+    }
+]

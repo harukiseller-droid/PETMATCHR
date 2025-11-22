@@ -1,0 +1,64 @@
+{
+  "page_type": "comparison",
+  "slug": "golden-retriever-vs-french-bulldog",
+  "meta": {
+    "title": "Golden Retriever vs French Bulldog: Which is Right for You?",
+    "description": "Compare Golden Retrievers and French Bulldogs on energy, size, cost, and lifestyle fit."
+  },
+  "h1": "Golden Retriever vs French Bulldog",
+  "intro": {
+    "short_hook": "Compare Golden Retrievers and French Bulldogs on energy, size, cost, and lifestyle fit.",
+    "context": "",
+    "who_is_asking_this": "Potential owners deciding between these two breeds."
+  },
+  "faq": [
+    {
+      "question": "Sample Question 1",
+      "answer": "Sample Answer 1"
+    },
+    {
+      "question": "Sample Question 2",
+      "answer": "Sample Answer 2"
+    }
+  ],
+  "quick_answers": [
+    {
+      "question": "What is the key takeaway?",
+      "answer": "This is a sample quick answer for validation purposes.",
+      "category": "Living",
+      "primary_intent": "informational"
+    }
+  ],
+  "product_blocks": [],
+  "internal_link_suggestions": [],
+  "content_version": 7,
+  "last_generated_at": "2025-11-22T09:26:54.372Z",
+  "sections": [],
+  "summary_verdict": {
+    "one_sentence_verdict": "If you want an active partner for outdoor adventures, pick the Golden Retriever. If you want a low-maintenance cuddle buddy for your apartment, the French Bulldog is the winner.",
+    "when_to_pick_a": "Choose golden-retriever if...",
+    "when_to_pick_b": "Choose french-bulldog if..."
+  },
+  "side_by_side_table": {
+    "rows": [
+      {
+        "label": "Energy Level",
+        "breed_a_value": "High",
+        "breed_b_value": "Low",
+        "who_wins": "b"
+      },
+      {
+        "label": "Apartment Living",
+        "breed_a_value": "Not Ideal",
+        "breed_b_value": "Excellent",
+        "who_wins": "b"
+      },
+      {
+        "label": "Trainability",
+        "breed_a_value": "Very High",
+        "breed_b_value": "Moderate",
+        "who_wins": "a"
+      }
+    ]
+  }
+}

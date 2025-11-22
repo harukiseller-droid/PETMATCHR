@@ -5,7 +5,7 @@ import path from 'path';
 import { PageType, QuickAnswerCategory } from '@/lib/types';
 import { getPageMonetization } from '@/lib/monetization';
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 const PAGES_DIR = path.join(DATA_DIR, 'pages');
 
 export type QuickAnswerEntry = {

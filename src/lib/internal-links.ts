@@ -3,7 +3,7 @@ import path from 'path';
 import { PageIndexEntry, PageType } from '@/lib/types';
 import { getPageMonetization } from '@/lib/monetization';
 
-const DATA_DIR = path.join(process.cwd(), 'src/data');
+const DATA_DIR = path.join(process.cwd(), 'src/data_v7');
 const INDEX_FILE = path.join(DATA_DIR, 'page_index.json');
 
 export async function getPageIndex(): Promise<PageIndexEntry[]> {
