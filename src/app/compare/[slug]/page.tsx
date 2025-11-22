@@ -9,6 +9,13 @@ export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
     const parts = params.slug.split('-vs-');
+    if (parts.length === 1) {
+        // Hub page metadata
+        return {
+            title: `${params.slug.replace(/-/g, ' ')} Comparisons - PetMatchr`,
+            description: `Compare ${params.slug.replace(/-/g, ' ')} with other popular dog breeds. Find the best match for your lifestyle.`
+        };
+    }
     if (parts.length !== 2) return { title: 'Comparison Not Found' };
 
     const title = `${parts[0].replace(/-/g, ' ')} vs ${parts[1].replace(/-/g, ' ')} - Honest Comparison`;
@@ -28,6 +35,61 @@ export default async function ComparisonPage({
     const { slug } = params;
     const parts = slug.split('-vs-');
 
+    // --- HUB PAGE LOGIC (Single Breed) ---
+    if (parts.length === 1) {
+        const { getBreedBySlug } = await import("@/lib/data");
+        const { getPagesByBreed } = await import("@/lib/internal-links");
+
+        const breed = await getBreedBySlug(slug);
+        if (!breed) return notFound();
+
+        const { comparisonPages } = await getPagesByBreed(slug);
+
+        return (
+            <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h1 className="text-4xl font-extrabold text-gray-900 mb-4 capitalize">
+                            {breed.name} Comparisons
+                        </h1>
+                        <p className="text-xl text-gray-600">
+                            See how the {breed.name} stacks up against other popular breeds.
+                        </p>
+                    </div>
+
+                    {comparisonPages.length > 0 ? (
+                        <div className="grid gap-6 md:grid-cols-2">
+                            {comparisonPages.map((page) => (
+                                <a
+                                    key={page.slug}
+                                    href={`/compare/${page.slug}`}
+                                    className="block bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-indigo-500 transition-all"
+                                >
+                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                        {page.title}
+                                    </h3>
+                                    <span className="text-indigo-600 font-medium text-sm">
+                                        Read comparison &rarr;
+                                    </span>
+                                </a>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="text-center bg-white rounded-xl p-12 border border-gray-200">
+                            <p className="text-gray-500">
+                                No comparisons available for the {breed.name} yet. Check back soon!
+                            </p>
+                            <a href="/breeds" className="inline-block mt-4 text-indigo-600 font-medium hover:underline">
+                                Browse all breeds
+                            </a>
+                        </div>
+                    )}
+                </div>
+            </main>
+        );
+    }
+
+    // --- COMPARISON PAGE LOGIC (A vs B) ---
     if (parts.length !== 2) {
         return notFound();
     }

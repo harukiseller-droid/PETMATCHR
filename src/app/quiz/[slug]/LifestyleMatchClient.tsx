@@ -148,25 +148,25 @@ export default function LifestyleMatchClient({ quiz, breeds, lifestyleScores }: 
                                         View Full Profile
                                     </Link>
                                     <Link
-                                        href={`/breeds/${match.breed_slug}/cost`}
+                                        href={`/cost/${match.breed_slug}`}
                                         className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
                                     >
                                         Cost
                                     </Link>
                                     <Link
-                                        href={`/breeds/${match.breed_slug}/health-problems`}
+                                        href={`/problems/${match.breed_slug}`}
                                         className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
                                     >
                                         Health
                                     </Link>
                                     <Link
-                                        href={`/breeds/${match.breed_slug}/anxiety`}
+                                        href={`/anxiety/${match.breed_slug}`}
                                         className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
                                     >
                                         Anxiety
                                     </Link>
                                     <Link
-                                        href={`/breeds/${match.breed_slug}/compare`}
+                                        href={`/compare/${match.breed_slug}`}
                                         className="inline-flex justify-center items-center rounded-full border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-indigo-500 hover:text-indigo-600 transition-colors"
                                     >
                                         Compare
