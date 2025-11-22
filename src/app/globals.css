@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    /* Background: #FFFFFF */
-    --background: 0 0% 100%;
+    /* Background: #F9FBFD (Page BG) */
+    --background: 210 33% 98%;
     /* Foreground: #00253A (Navy) */
     --foreground: 201 100% 11%;
 
@@ -27,9 +27,10 @@
 
     /* Muted: #E6EDF0 (Light Gray) */
     --muted: 198 25% 92%;
-    --muted-foreground: 201 100% 11%;
+    /* Muted Foreground: #405565 (Brand Text Muted) */
+    --muted-foreground: 206 23% 32%;
 
-    /* Accent: #EE6644 (Orange) - Used for highlights/CTA */
+    /* Accent: #EE6644 (Orange) */
     --accent: 12 83% 60%;
     --accent-foreground: 0 0% 100%;
 
@@ -37,9 +38,9 @@
     --destructive: 354 84% 47%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Border: #E6EDF0 */
-    --border: 198 25% 92%;
-    /* Input: White bg, border handled by border var */
+    /* Border: #D3E2E7 (Brand Border) */
+    --border: 195 26% 87%;
+    /* Input: #E6EDF0 (Brand Gray/Section) */
     --input: 198 25% 92%;
     /* Ring: #2CA6AF */
     --ring: 176 60% 43%;
@@ -66,7 +67,6 @@
 
     /* Secondary: #00253A (Navy) */
     --secondary: 201 100% 16%;
-    /* Slightly lighter navy for visibility */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 201 50% 20%;
