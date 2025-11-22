@@ -144,20 +144,39 @@ export async function callLocalLLM(params: LLMParams): Promise<any> {
 // --- Hybrid LLM ---
 
 export async function callHybridLLM(params: LLMParams): Promise<any> {
-    // 1. Try Cloud
-    try {
-        return await callCloudLLM(params);
-    } catch (cloudError) {
-        console.warn("Cloud LLM failed, failing over to Local LLM...", cloudError);
+    const MAX_RETRIES = 2;
+    let lastError: any;
 
-        // 2. Try Local
+    // 1. Try Cloud first (with retries)
+    for (let i = 0; i <= MAX_RETRIES; i++) {
         try {
-            return await callLocalLLM(params);
-        } catch (localError) {
-            console.error("Local LLM also failed.", localError);
-            throw new HybridLLMError("Both Cloud and Local LLMs failed.");
+            return await callCloudLLM(params);
+        } catch (cloudError: any) {
+            console.warn(`Cloud LLM attempt ${i + 1} failed:`, cloudError.message);
+            lastError = cloudError;
+            if (i < MAX_RETRIES) {
+                await new Promise(r => setTimeout(r, 1000 * (i + 1))); // Exponential backoff
+            }
         }
     }
+
+    console.warn("All Cloud LLM attempts failed. Failing over to Local LLM...");
+
+    // 2. Try Local (with retries)
+    for (let i = 0; i <= MAX_RETRIES; i++) {
+        try {
+            return await callLocalLLM(params);
+        } catch (localError: any) {
+            console.warn(`Local LLM attempt ${i + 1} failed:`, localError.message);
+            lastError = localError;
+            if (i < MAX_RETRIES) {
+                await new Promise(r => setTimeout(r, 1000 * (i + 1)));
+            }
+        }
+    }
+
+    console.error("Both Cloud and Local LLMs failed after retries.");
+    throw new HybridLLMError(`Hybrid LLM failed: ${lastError?.message || "Unknown error"}`);
 }
 
 // Backward compatibility wrapper if needed, but prefer using callHybridLLM directly

@@ -131,7 +131,6 @@ page_index.json ghi lại mọi trang: slug, page_type, breed_slugs, city_slug, 
 Dùng để tạo internal links, related blocks, build sitemap, và kiểm tra QA.
 
 6. IMPLEMENTATION PLAN – 
-PHASED EXECUTION (TỪ IMPLEMENTATION_PLAN.md)
 PetMatchr được thiết kế để AI tự code 100%, bám theo Implementation Plan gồm nhiều 
 phase, từ SPEC → DATA → PAGES → API → QA → GROWTH.
 
@@ -144,18 +143,16 @@ Danh sách đầy đủ 7 page_type + route + schema + prompt tương ứng.
 Checklist các file quan trọng: specs V7, tech docs, prompts, quiz-types, types.ts.
 
 
-
 PHASE 1 – BASE PROJECT & HOMEPAGE
 Mục tiêu:
 Lên skeleton Next.js 14 + TS + App Router + landing page đủ chuẩn SEO để “demo investor” được ngay.
 Deliverables:
-Cấu trúc project: src/app, src/lib, src/data, src/components, scripts, docs.
+Cấu trúc project: src/app, src/lib, src/data_v7, src/components, scripts, docs.
 layout.tsx + page.tsx (homepage):
 Hero (tagline + value prop + CTA “Take the quiz”).
 Sections: “Why PetMatchr?”, “How it works”, “Quizzes & Tools”, “As seen on AI engines” (room để add sau).
 Internal links từ homepage sang quiz + answers hub.
 Build & lint pass.
-
 
 
 PHASE 2 – TYPES & CORE DATA MODEL
@@ -171,14 +168,13 @@ PageIndexEntry để quản lý internal links & index.
 Đồng bộ với quiz-types.ts (QuizDefinition, QuizQuestion, QuizResultBucket…).
 
 
-
 PHASE 3 – SEED DATA (JSON)
 Mục tiêu:
 Có đủ data mẫu để test end-to-end toàn bộ hệ thống: từ loader → UI → API → QA.
 Deliverables:
-Folder src/data/** với các JSON seed:
-breeds/, lifestyle_scores/, cities/, problems/, cost_models/.
-page_monetization/ (config CTA/offer cho từng page_type).
+Folder src/data_v7/** với các JSON seed:
+breeds.json, lifestyle_scores.json, cities.json, problems.json, cost_models.json.
+page_monetization.json (config CTA/offer cho từng page_type).
 pages/<type>/<slug>.json mẫu cho 7 page_type.
 quizzes/ (4+ mini quiz: lifestyle, cost, behavior, anxiety).
 Seed khoảng 5–10 giống, vài city, vài problem để test.
@@ -264,7 +260,7 @@ scripts/generate-pages.ts:
 Chọn đúng PAGE_PROMPT theo page_type (BREED_PAGE_PROMPT, LIST_PAGE_PROMPT, COST_PAGE_PROMPT, PROBLEM_PAGE_PROMPT, COMPARISON_PAGE_PROMPT, ANXIETY_PAGE_PROMPT, LOCATION_PAGE_PROMPT).
 Gọi callHybridLLM, parse JSON, validate type.
 Retry nếu fail, log lỗi.
-Save file vào src/data/pages/<type>/<slug>.json.
+Save file vào src/data_v7/pages/<type>/<slug>.json.
 Cập nhật page_index.json sau mỗi trang mới.
 
 
@@ -281,10 +277,6 @@ Report JSON/CSV để ưu tiên tối ưu 20% trang top.
 PHASE 11 – SITEMAPS & SEO GLUE
 Mục tiêu:
 Google hiểu cấu trúc site ngay từ đầu; index ổn định.
-Deliverables:
-sitemap.ts: chia sitemap theo page_type.
-JSON-LD: FAQPage, WebPage, Breadcrumb (nếu cần).
-Robots, cấu hình cơ bản.
 
 PHASE 12 – DX, SCRIPTS & README (AI-ONLY PIPELINE)
 Mục tiêu:
@@ -396,3 +388,182 @@ PHASE 0–16 để AI tự build 100% codebase và content.
 Có data model, programmatic strategy, AEO, quiz, monetization, internal linking, QA thiết kế ngay từ đầu.
 Đánh thẳng vào những quyết định high-ticket và recurring trong thị trường pet (insurance, training, subscription, CBD).
 Nhà đầu tư không phải bỏ tiền cho một ý tưởng mơ hồ, mà cho một bản thiết kế thực thi rõ ràng, có timeline, kill criteria, và mô hình doanh thu đã định nghĩa.
+
+PHASE 17 – SEO KEYWORD + OUTLINE ENGINE + FULL CONTENT REGEN (V7)
+Mục tiêu:
+Dùng keyword list đã nghiên cứu làm nguồn chính cho SEO (không để LLM tự bịa keyword).
+Map keyword → post type → outline → từng slot trong nội dung.
+Re-generate toàn bộ content cho các page hiện có theo outline mới (V7) + cảm xúc + case study + product block (print-on-demand, offer).
+Schema & hệ thống phải sẵn sàng scale lên nhiều outline type (vd 16) trong tương lai.
+Deliverables:
+17.1 – Master Keyword Source (Keyword Map)
+Tạo 1 nguồn dữ liệu keyword trung tâm: src/data_v7/keywords/master_keywords.json
+Helper src/lib/seo-keywords.ts để load và filter keyword.
+17.2 – Keyword → Page Matrix Mapping (with Fallback)
+Update scripts/generate-page-matrix.ts để gắn keyword bundle vào pageMatrix.json.
+Implement fallback keyword template thuần code (không dùng LLM) khi thiếu master keyword.
+17.3 – V7 Outline Schema
+Định nghĩa BaseV7Page và các V7PageType trong src/lib/types.ts.
+Thêm ProductBlock, InternalLinkSuggestion.
+17.4 – Content Outline per Post Type
+Update prompt V7 cho từng page_type (Breed, List, Comparison, Cost, Problem, Anxiety, Location) với yêu cầu case study và product block.
+17.5 – Full Regeneration
+Script scripts/regenerate_all_pages_v7.ts để chạy lại toàn bộ content với schema mới.
+17.6 – Scale Preparation
+Registry cho PageTypeDefinition để dễ dàng thêm page type mới.
+
+PHASE 18 – PERIODIC CONTENT REFRESH (ALWAYS-NEW PAGES)
+Mục tiêu:
+Nội dung không bị “cũ mèm”; luôn có lý do để Google và user quay lại.
+Tự động chọn page cần update, refresh bằng LLM không phá URL và cấu trúc.
+Deliverables:
+18.1 – Tracking & Metadata
+Lưu content_version, last_generated_at, last_refreshed_at trong page JSON.
+Tạo src/data_v7/metrics/page_metrics.json.
+Helper getPagesNeedingRefresh().
+18.2 – Refresh Criteria
+Rule refresh: > 6 tháng, traffic drop, keyword mới.
+18.3 – Refresh Modes
+Light refresh: meta, intro, faq.
+Deep refresh: regenerate body content.
+18.4 – Refresh Script & Flow
+Script scripts/refresh_pages_v7.ts.
+18.5 – QA Sau Refresh
+QA script check post-refresh integrity.
+18.6 – Lịch Refresh Định Kỳ
+Document refresh strategy.
+
+PHASE 19 – CONTENT MATRIX MANAGEMENT
+Mục tiêu:
+“Bảng điều khiển” toàn bộ content của site.
+Biết rõ: đã generate chưa, đã publish chưa, lỗi chỗ nào, cần refresh hay không.
+Deliverables:
+Cấu trúc folder input_data/ (breeds.json, problems.json, comparisons.json, cities.json, generation_config.json).
+File src/data_v7/content_matrix_management.json tự động build từ input_data.
+Script scripts/build_content_matrix.ts để sync input_data -> content_matrix.
+
+PHASE 20 – CONTENT MATRIX & ADMIN DASHBOARD
+Mục tiêu:
+Build 1 trang Admin Dashboard để quản lý toàn bộ content, keyword, và tiến độ generate.
+Deliverables:
+Route /admin/dashboard.
+UI hiển thị overview, filter, search pages.
+Input Data Overview panel.
+Hiển thị status, error, warning cho từng page.
+Code structure sẵn sàng scale.
+
+PHASE 21 – FINAL POLISH & MOBILE OPTIMIZATION
+Mục tiêu:
+Đảm bảo trải nghiệm người dùng mượt mà trên mọi thiết bị, flow logic chặt chẽ.
+Deliverables:
+Parse data từ INPUT_DATA_RAW -> input_data.
+Quiz logic improvement: determine best breed matches.
+Lifestyle match result page: link to detail pages.
+Image injection: random select images for breed types.
+Admin dashboard pagination & bulk actions.
+Verify mobile responsiveness & text contrast.
+
+10. CORE ALGORITHMS & FUNCTIONS (ACTUAL CODEBASE)
+Dưới đây là các function chính đang chạy trong codebase, chứng minh tính "programmatic" của dự án:
+
+### 10.1 The Brain: Hybrid LLM Client
+`scripts/llmClient.ts`
+Xử lý việc gọi AI, tự động retry, và fallback giữa Cloud (OpenAI) và Local LLM để tối ưu chi phí.
+
+```typescript
+export async function callHybridLLM(params: LLMParams): Promise<any> {
+    const MAX_RETRIES = 2;
+    // 1. Try Cloud first (with retries)
+    for (let i = 0; i <= MAX_RETRIES; i++) {
+        try {
+            return await callCloudLLM(params);
+        } catch (cloudError) { ... }
+    }
+    // 2. Failover to Local LLM (with retries)
+    for (let i = 0; i <= MAX_RETRIES; i++) {
+        try {
+            return await callLocalLLM(params);
+        } catch (localError) { ... }
+    }
+    throw new HybridLLMError("Both Cloud and Local LLMs failed.");
+}
+```
+
+### 10.2 The Planner: Page Matrix Generator
+`scripts/pageMatrix.ts`
+Tự động quét dữ liệu đầu vào (breeds, cities, problems...) để sinh ra hàng nghìn trang cần tạo.
+
+```typescript
+async function generatePageMatrix() {
+    // Load base data
+    const breeds = loadInputData<Breed>('breeds.json');
+    const cities = loadCities();
+    
+    // Generate 7 types of pages programmatically
+    // 1. Breed Pages
+    for (const breed of breeds) { ... }
+    
+    // 2. Cost Pages (Breed x City)
+    for (const breed of breeds) {
+        for (const city of cities) {
+            matrix.push({ slug: `${breed.slug}-cost-${city.slug}`, page_type: 'cost', ... });
+        }
+    }
+    
+    // 3. Problem, Anxiety, Comparison, Location, List...
+    // ...
+    
+    // Output: pageMatrix.json (The "Blueprints")
+}
+```
+
+### 10.3 The Builder: Content Generator
+`src/lib/generator.ts`
+Nhận "blueprint" từ matrix và thực thi việc tạo nội dung chi tiết, validate JSON, và inject hình ảnh.
+
+```typescript
+export async function generatePage(options: GeneratePageOptions): Promise<{ success: boolean }> {
+    const { slug, page_type, input_data } = options;
+    
+    // 1. Select Prompt based on Page Type
+    const userPrompt = getPromptForPageType(page_type);
+    
+    // 2. Call AI (The Brain)
+    const data = await callHybridLLM({
+        system: SYSTEM_PROMPT_PETMATCHR_V4,
+        user: userPrompt,
+        jsonInput: { slug, input_data, ... }
+    });
+
+    // 3. Validate & Inject Media
+    if (basicValidateOutput(page_type, data)) {
+        injectBreedImages(data, slug);
+        await savePage(page_type, slug, data);
+        return { success: true };
+    }
+}
+```
+
+### 10.4 The Monetizer: CTA Resolver
+`src/lib/monetization.ts`
+Quyết định xem người dùng sẽ thấy Quiz nào, Offer nào dựa trên ngữ cảnh của trang (Contextual Monetization).
+
+```typescript
+export function resolvePageCTAs(pageType: PageType, monetization?: PageMonetization): CTAConfig {
+    // 1. Map specific monetization rules if available
+    if (monetization) {
+        return {
+            quizPrimary: mapQuiz(monetization.primary_funnel),
+            offerPrimary: mapOffer(monetization.primary_offer_type),
+            ...
+        };
+    }
+    
+    // 2. Fallback Logic (Smart Defaults)
+    if (pageType === 'cost') {
+        return { quiz: 'insurance-quiz', offer: 'insurance-provider' };
+    } else if (pageType === 'problem') {
+        return { quiz: 'behavior-assessment', offer: 'dog-training-course' };
+    }
+    // ...
+}
