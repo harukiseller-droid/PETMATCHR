@@ -45,15 +45,15 @@ module.exports = {
                 },
                 neutral: {
                     DEFAULT: "#00253A",
-                    50: "#FFFFFF", // White
+                    50: "#F2F5F7", // Off-white for table backgrounds
                     100: "#E6EDF0", // Light Gray
                     200: "#CDD9DE",
                     300: "#B4C5CC",
                     400: "#9BB1BA",
                     500: "#829DA8",
-                    600: "#698996",
-                    700: "#4F7584",
-                    800: "#366172",
+                    600: "#00253A", // Forced to Navy for 100% opacity/darkness
+                    700: "#00253A", // Forced to Navy
+                    800: "#00253A", // Forced to Navy
                     900: "#00253A", // Navy
                     950: "#00121D",
                     foreground: "#FFFFFF",
@@ -84,28 +84,28 @@ module.exports = {
                 },
                 // Alias for backward compatibility
                 slate: {
-                    50: "#FFFFFF",
+                    50: "#F2F5F7",
                     100: "#E6EDF0",
                     200: "#CDD9DE",
                     300: "#B4C5CC",
                     400: "#9BB1BA",
                     500: "#829DA8",
-                    600: "#698996",
-                    700: "#4F7584",
-                    800: "#366172",
+                    600: "#00253A",
+                    700: "#00253A",
+                    800: "#00253A",
                     900: "#00253A",
                     950: "#00121D",
                 },
                 gray: {
-                    50: "#FFFFFF",
+                    50: "#F2F5F7",
                     100: "#E6EDF0",
                     200: "#CDD9DE",
                     300: "#B4C5CC",
                     400: "#9BB1BA",
                     500: "#829DA8",
-                    600: "#698996",
-                    700: "#4F7584",
-                    800: "#366172",
+                    600: "#00253A",
+                    700: "#00253A",
+                    800: "#00253A",
                     900: "#00253A",
                     950: "#00121D",
                 }
