@@ -25,23 +25,23 @@ export default function HomePage() {
             <section className="relative border-b border-border">
                 <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-20 md:flex-row md:items-center md:justify-between md:py-28">
                     <div className="max-w-xl space-y-8">
-                        <div className="inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700 backdrop-blur-sm">
+                        <div className="inline-flex items-center rounded-full border border-brand-border bg-white px-3 py-1 text-xs font-bold text-brand-navy backdrop-blur-sm shadow-sm">
                             <span className="mr-2 flex h-2 w-2">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-75"></span>
-                                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-500"></span>
+                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-orange opacity-75"></span>
+                                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-orange"></span>
                             </span>
                             PetMatchr · Dog Decision Engine
                         </div>
 
-                        <h1 className="text-4xl font-bold tracking-tight text-neutral-900 md:text-5xl lg:text-6xl text-balance leading-[1.1]">
+                        <h1 className="text-4xl font-extrabold tracking-tight text-brand-navy md:text-5xl lg:text-6xl text-balance leading-[1.1]">
                             Find the right dog breed{" "}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-500">
+                            <span className="text-brand-teal">
                                 for your real life
                             </span>,
                             not just a cute photo.
                         </h1>
 
-                        <p className="text-lg text-neutral-600 text-balance leading-relaxed">
+                        <p className="text-lg text-brand-navy/90 text-balance leading-relaxed font-medium">
                             PetMatchr looks at your lifestyle, schedule, budget, and home,
                             then shows you which breeds actually fit — with honest pros,
                             cons, and long-term costs in plain English.
@@ -51,42 +51,42 @@ export default function HomePage() {
                         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                             <Link
                                 href="/quiz/lifestyle-match"
-                                className="inline-flex items-center justify-center rounded-full bg-primary-600 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-500/20"
+                                className="inline-flex items-center justify-center rounded-full bg-brand-teal px-8 py-4 text-sm font-bold text-white transition-all hover:brightness-90 hover:shadow-lg hover:shadow-brand-teal/20"
                             >
                                 Take the 60-second lifestyle quiz
                             </Link>
                             <Link
                                 href="/breeds/golden-retriever"
-                                className="inline-flex items-center justify-center rounded-full border border-neutral-200 bg-white px-8 py-4 text-sm font-semibold text-neutral-700 transition-all hover:border-neutral-300 hover:bg-neutral-50 hover:text-neutral-900"
+                                className="inline-flex items-center justify-center rounded-full bg-brand-navy px-8 py-4 text-sm font-bold text-white transition-all hover:bg-brand-navy/90 hover:shadow-lg"
                             >
                                 See a real breed example
                             </Link>
                         </div>
 
                         {/* Trust bullets */}
-                        <ul className="space-y-2 text-sm text-neutral-500">
+                        <ul className="space-y-2 text-sm text-brand-navy/80 font-medium">
                             <li className="flex items-center gap-2">
-                                <svg className="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                                <svg className="h-4 w-4 text-brand-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                                 Honest pros and cons by lifestyle, not generic blog fluff.
                             </li>
                             <li className="flex items-center gap-2">
-                                <svg className="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                                <svg className="h-4 w-4 text-brand-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                                 Realistic cost ranges and emergency risk for your situation.
                             </li>
                             <li className="flex items-center gap-2">
-                                <svg className="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                                <svg className="h-4 w-4 text-brand-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                                 Behavior and anxiety risks explained in simple, actionable steps.
                             </li>
                         </ul>
                     </div>
 
                     {/* Preview Card */}
-                    <div className="glass-panel mt-8 w-full max-w-sm rounded-2xl p-6 shadow-xl shadow-neutral-200/50 md:mt-0 transform transition hover:scale-[1.02] duration-500 bg-white border border-neutral-100">
+                    <div className="mt-8 w-full max-w-sm rounded-card p-6 shadow-card md:mt-0 transform transition hover:scale-[1.02] duration-500 bg-white border border-brand-border">
                         <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-sm font-bold text-neutral-900 uppercase tracking-wider">
+                            <h2 className="text-sm font-bold text-brand-navy uppercase tracking-wider">
                                 Golden Retriever
                             </h2>
-                            <span className="px-2 py-1 rounded bg-primary-50 text-[10px] font-bold text-primary-700 border border-primary-100">POPULAR</span>
+                            <span className="px-2 py-1 rounded bg-brand-orange text-[10px] font-bold text-white">POPULAR</span>
                         </div>
 
                         <p className="text-xs text-neutral-600 leading-relaxed mb-6">
@@ -131,7 +131,7 @@ export default function HomePage() {
             </section>
 
             {/* How it works */}
-            <section className="border-b border-neutral-200 bg-neutral-50/50">
+            <section className="border-b border-brand-border bg-brand-gray">
                 <div className="mx-auto max-w-5xl px-4 py-20">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h2 className="text-3xl font-bold text-neutral-900 md:text-4xl mb-4">
@@ -161,7 +161,7 @@ export default function HomePage() {
                                 desc: "See best-fit breeds, cost expectations, behavior risks, and where training or insurance really matter."
                             }
                         ].map((item, i) => (
-                            <div key={i} className="glass-panel rounded-2xl p-8 bg-white border border-neutral-100 hover:border-primary-200 transition-colors group shadow-sm">
+                            <div key={i} className="rounded-card p-8 bg-white border border-brand-border hover:border-brand-teal transition-colors group shadow-card">
                                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary-600 mb-4">
                                     {item.step}
                                 </p>
@@ -178,7 +178,7 @@ export default function HomePage() {
                     <div className="mt-12 text-center">
                         <Link
                             href="/quiz/lifestyle-match"
-                            className="inline-flex items-center justify-center rounded-full bg-primary-600 px-8 py-3 text-sm font-bold text-white transition hover:bg-primary-700 shadow-md"
+                            className="inline-flex items-center justify-center rounded-full bg-brand-teal px-8 py-3 text-sm font-bold text-white transition hover:brightness-90 shadow-md"
                         >
                             Start the lifestyle quiz
                         </Link>
@@ -246,7 +246,7 @@ export default function HomePage() {
                                 linkText: "Browse top lists"
                             }
                         ].map((card, i) => (
-                            <div key={i} className="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-50 p-6 hover:bg-white hover:shadow-md hover:border-primary-200 transition-all">
+                            <div key={i} className="flex flex-col justify-between rounded-card border border-brand-border bg-white p-6 hover:shadow-card hover:border-brand-teal transition-all">
                                 <div>
                                     <h3 className="text-lg font-bold text-neutral-900 mb-3">
                                         {card.title}
@@ -268,11 +268,11 @@ export default function HomePage() {
             </section>
 
             {/* Who it's for */}
-            <section className="border-b border-neutral-200 bg-primary-50/30">
+            <section className="border-b border-brand-border bg-brand-gray">
                 <div className="mx-auto max-w-5xl px-4 py-20">
                     <h2 className="text-3xl font-bold text-neutral-900 md:text-4xl text-center max-w-3xl mx-auto mb-16 text-balance">
                         Built for people who want a dog for the next 10–15 years,{" "}
-                        <span className="text-primary-600">not just the next 10 days</span>.
+                        <span className="text-brand-teal">not just the next 10 days</span>.
                     </h2>
                     <div className="grid gap-8 md:grid-cols-3">
                         {[
@@ -306,7 +306,7 @@ export default function HomePage() {
             </section>
 
             {/* FAQ / Answers tease */}
-            <section className="bg-neutral-50">
+            <section className="bg-white">
                 <div className="mx-auto max-w-5xl px-4 py-20">
                     <div className="grid gap-12 md:grid-cols-[1.5fr,1fr] md:items-start">
                         <div>
@@ -341,7 +341,7 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="glass-panel rounded-2xl p-8 text-center bg-white border border-neutral-200 shadow-sm">
+                        <div className="rounded-card p-8 text-center bg-white border border-brand-border shadow-card">
                             <h3 className="text-lg font-bold text-neutral-900 mb-3">
                                 Prefer quick answers?
                             </h3>
@@ -362,7 +362,7 @@ export default function HomePage() {
                                 </p>
                                 <Link
                                     href="/quiz/lifestyle-match"
-                                    className="inline-flex items-center justify-center rounded-full bg-primary-600 px-6 py-2.5 text-sm font-bold text-white transition hover:bg-primary-700 w-full"
+                                    className="inline-flex items-center justify-center rounded-full bg-brand-teal px-6 py-2.5 text-sm font-bold text-white transition hover:brightness-90 w-full"
                                 >
                                     Take the lifestyle quiz
                                 </Link>

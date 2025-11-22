@@ -17,7 +17,7 @@ module.exports = {
                     bg: "#F9FBFD",        // global light background
                     border: "#D3E2E7",    // card borders, dividers
                     text: "#00253A",      // main text color
-                    textMuted: "#405565", // secondary text, meta
+                    textMuted: "#284657", // Muted Navy
                 },
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
@@ -127,7 +127,7 @@ module.exports = {
             },
             textColor: {
                 primary: "#00253A",
-                muted: "#405565",
+                muted: "#284657",
                 inverse: "#FFFFFF",
             },
             borderColor: {

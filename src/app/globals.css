@@ -6,7 +6,7 @@
   :root {
     /* Background: #F9FBFD (Page BG) */
     --background: 210 33% 98%;
-    /* Foreground: #00253A (Navy) */
+    /* Foreground: #00253A (Navy) - Body text >90% opacity */
     --foreground: 201 100% 11%;
 
     /* Card: #FFFFFF */
@@ -27,8 +27,8 @@
 
     /* Muted: #E6EDF0 (Light Gray) */
     --muted: 198 25% 92%;
-    /* Muted Foreground: #405565 (Brand Text Muted) */
-    --muted-foreground: 206 23% 32%;
+    /* Muted Foreground: #284657 (Muted Navy) */
+    --muted-foreground: 202 37% 25%;
 
     /* Accent: #EE6644 (Orange) */
     --accent: 12 83% 60%;
@@ -38,14 +38,15 @@
     --destructive: 354 84% 47%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Border: #D3E2E7 (Brand Border) */
+    /* Border: #D3E2E7 */
     --border: 195 26% 87%;
-    /* Input: #E6EDF0 (Brand Gray/Section) */
+    /* Input: #E6EDF0 */
     --input: 198 25% 92%;
     /* Ring: #2CA6AF */
     --ring: 176 60% 43%;
 
-    --radius: 0.75rem;
+    /* Radius: 18px */
+    --radius: 1.125rem;
   }
 
   .dark {

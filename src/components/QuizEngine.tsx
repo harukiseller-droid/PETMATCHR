@@ -55,24 +55,24 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         const ctaLabel = resultBucket.cta_label || "See Your Matches";
 
         return (
-            <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div className="bg-primary-600 p-8 text-center text-white">
+            <div className="max-w-2xl mx-auto bg-white rounded-card shadow-card overflow-hidden">
+                <div className="bg-brand-teal p-8 text-center text-white">
                     <h2 className="text-3xl font-bold mb-2">{resultBucket.title}</h2>
-                    <p className="text-primary-100">Based on your answers</p>
+                    <p className="text-white/90">Based on your answers</p>
                 </div>
                 <div className="p-8 text-center">
-                    <p className="text-xl text-neutral-700 mb-8">{resultBucket.description}</p>
+                    <p className="text-xl text-brand-navy/90 mb-8">{resultBucket.description}</p>
 
                     <a
                         href={ctaUrl}
-                        className="inline-block bg-primary-600 text-white font-bold py-4 px-10 rounded-full hover:bg-primary-700 transition-transform transform hover:scale-105 shadow-lg"
+                        className="inline-block bg-brand-teal text-white font-bold py-4 px-10 rounded-full hover:brightness-95 transition-transform transform hover:scale-105 shadow-md"
                     >
                         {ctaLabel}
                     </a>
 
                     <button
                         onClick={() => window.location.reload()}
-                        className="block mt-6 mx-auto text-neutral-500 hover:text-primary-600 text-sm underline"
+                        className="block mt-6 mx-auto text-brand-navy/60 hover:text-brand-teal text-sm underline font-medium"
                     >
                         Retake Quiz
                     </button>
@@ -85,20 +85,20 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
         <div className="max-w-2xl mx-auto">
             {/* Progress Bar */}
             <div className="mb-8">
-                <div className="h-2 bg-neutral-200 rounded-full overflow-hidden">
+                <div className="h-2 bg-brand-gray rounded-full overflow-hidden">
                     <div
-                        className="h-full bg-primary-500 transition-all duration-500 ease-out"
+                        className="h-full bg-brand-teal transition-all duration-500 ease-out"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
-                <div className="text-right text-xs text-neutral-500 mt-1">
+                <div className="text-right text-xs text-brand-navy/60 mt-1 font-medium">
                     Question {currentQuestionIndex + 1} of {totalQuestions}
                 </div>
             </div>
 
             {/* Question Card */}
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-neutral-900 mb-8">
+            <div className="bg-white rounded-card shadow-card p-8 border border-brand-border">
+                <h2 className="text-2xl font-bold text-brand-navy mb-8">
                     {currentQuestion.text}
                 </h2>
 
@@ -107,9 +107,9 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
                         <button
                             key={idx}
                             onClick={() => handleOptionSelect(option.score)}
-                            className="w-full text-left p-4 rounded-xl border-2 border-neutral-200 hover:border-primary-500 hover:bg-primary-50 transition-all duration-200 group"
+                            className="w-full text-left p-4 rounded-xl border-2 border-brand-border hover:border-brand-teal hover:bg-brand-teal/5 transition-all duration-200 group"
                         >
-                            <span className="font-medium text-neutral-700 group-hover:text-primary-700">
+                            <span className="font-bold text-brand-navy group-hover:text-brand-teal">
                                 {option.label}
                             </span>
                         </button>
