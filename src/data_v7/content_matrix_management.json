@@ -1,45 +1,462 @@
 {
   "version": 1,
-  "last_built_at": "2025-11-22T05:10:51.217Z",
+  "last_built_at": "2025-11-22T05:59:00.693Z",
   "summary": {
-    "total_pages": 0,
+    "total_pages": 32,
     "by_page_type": {
       "breed": {
         "planned": 0,
-        "generated": 0,
+        "generated": 1,
         "published": 0
       },
       "cost": {
         "planned": 0,
-        "generated": 0,
+        "generated": 7,
         "published": 0
       },
       "problem": {
         "planned": 0,
-        "generated": 0,
+        "generated": 8,
         "published": 0
       },
       "comparison": {
         "planned": 0,
-        "generated": 0,
+        "generated": 5,
         "published": 0
       },
       "anxiety": {
         "planned": 0,
-        "generated": 0,
+        "generated": 5,
         "published": 0
       },
       "location": {
         "planned": 0,
-        "generated": 0,
+        "generated": 4,
         "published": 0
       },
       "list": {
         "planned": 0,
-        "generated": 0,
+        "generated": 2,
         "published": 0
       }
     }
   },
-  "pages": []
+  "pages": [
+    {
+      "slug": "golden-retriever",
+      "page_type": "breed",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Breed Guide: Personality, Lifespan & Care",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-austin-tx",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in Austin, Texas (First Year & Monthly Breakdown)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-denver-co",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in Denver, CO (2025 Price Guide)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-los-angeles-ca",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in Los Angeles, CA (2025 Price Guide)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-miami-fl",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in Miami, FL (2025 Price Guide)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-new-york-ny",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in New York, NY (First Year & Monthly Breakdown)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-seattle-wa",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost in Seattle, WA (2025 Price Guide)",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever",
+      "page_type": "cost",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Cost: Price, Monthly Expenses & Vet Bills",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-aggression",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Aggression: Signs & Training Tips",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-chewing",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Destructive Chewing: Causes & Solutions",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-excessive-barking",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Excessive Barking: Causes & Solutions",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-hip-mobility",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Hip Dysplasia & Mobility Issues",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-pulling",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Stop Golden Retriever Pulling on Leash: Easy Training",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-separation-anxiety",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Separation Anxiety: Real Fixes for Clingy Goldens",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-shedding",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Shedding: How to Manage the Fur",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever",
+      "page_type": "problem",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Common Problems: Health & Behavior",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-vs-bernese",
+      "page_type": "comparison",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever vs Bernese Mountain Dog: Gentle Giants",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-vs-french-bulldog",
+      "page_type": "comparison",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever vs French Bulldog: Which is Right for You?",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-vs-german-shepherd",
+      "page_type": "comparison",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever vs German Shepherd: Breed Comparison",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-vs-labrador",
+      "page_type": "comparison",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever vs Labrador: Which Family Dog is Best?",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-vs-poodle",
+      "page_type": "comparison",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever vs Standard Poodle: Shedding & Smarts",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-noise-anxiety",
+      "page_type": "anxiety",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Noise Anxiety: Thunder & Fireworks",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-senior-anxiety",
+      "page_type": "anxiety",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Anxiety in Senior Golden Retrievers: Causes & Care",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-separation-anxiety",
+      "page_type": "anxiety",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Anxiety: Symptoms and Solutions",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever-travel-anxiety",
+      "page_type": "anxiety",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Car Anxiety: Travel Tips",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "golden-retriever",
+      "page_type": "anxiety",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Golden Retriever Anxiety: Symptoms, Causes & Solutions",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "austin-tx",
+      "page_type": "location",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Dogs for Austin, Texas Living",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "miami-fl",
+      "page_type": "location",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Dogs for Miami Living: Heat & Humidity Guide",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "new-york-ny",
+      "page_type": "location",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Dogs for New York, NY Living",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "seattle-wa",
+      "page_type": "location",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Dogs for Seattle Living: Rain & Hiking Guide",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "best-dogs-for-apartments",
+      "page_type": "list",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Dogs for Apartments: Top Breeds for Small Spaces",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    },
+    {
+      "slug": "best-family-dogs",
+      "page_type": "list",
+      "status": "generated",
+      "primary_intent": "informational",
+      "keywords": {
+        "primary_keyword": "Best Family Dogs: Top Breeds for Kids & Active Homes",
+        "secondary_keywords": [],
+        "faq_keywords": [],
+        "quick_answer_keywords": [],
+        "internal_anchor_keywords": []
+      }
+    }
+  ]
 }

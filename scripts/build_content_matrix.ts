@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const V7_DATA_DIR = path.join(process.cwd(), 'src/data_v7/pages');
+const V7_DATA_DIR = path.join(process.cwd(), 'src/data/pages');
 const OUTPUT_FILE = path.join(process.cwd(), 'src/data_v7/content_matrix_management.json');
 const PAGE_TYPES = ['breed', 'cost', 'problem', 'comparison', 'anxiety', 'location', 'list'];
 
