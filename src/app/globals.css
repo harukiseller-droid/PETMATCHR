@@ -2,16 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 12, 10, 9;
-  /* stone-950 */
-  --background-end-rgb: 12, 10, 9;
+@layer base {
+  :root {
+    /* Background: #F8F9FA */
+    --background: 210 20% 98%;
+    /* Foreground: #1C1C1E */
+    --foreground: 240 4% 11%;
+
+    /* Card: #FFFFFF */
+    --card: 0 0% 100%;
+    --card-foreground: 240 4% 11%;
+
+    /* Popover: #FFFFFF */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 4% 11%;
+
+    /* Primary: #4F7CAC */
+    --primary: 211 37% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: #F4A259 */
+    --secondary: 28 87% 65%;
+    --secondary-foreground: 240 4% 11%;
+
+    /* Muted: #E9ECEF (Neutral-100) */
+    --muted: 210 14% 93%;
+    --muted-foreground: 240 2% 29%;
+    /* Neutral-600 */
+
+    /* Accent: #F0F4F8 (Primary-50) */
+    --accent: 210 29% 96%;
+    --accent-foreground: 211 37% 49%;
+
+    /* Destructive: #D9534F */
+    --destructive: 2 64% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border: #D1D1D3 (Custom input border) or Neutral-200 */
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 211 37% 49%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark mode mapping (approximated inverse) */
+    --background: 240 4% 11%;
+    --foreground: 210 20% 98%;
+
+    --card: 240 4% 11%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 240 4% 11%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 211 37% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 28 87% 65%;
+    --secondary-foreground: 240 4% 11%;
+
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 4% 16%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 2 64% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 211 37% 49%;
+  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +93,6 @@ body {
   }
 
   .glass-panel {
-    @apply bg-neutral-900/50 backdrop-blur-md border border-neutral-800;
+    @apply bg-white/80 backdrop-blur-md border border-neutral-200 shadow-sm;
   }
 }

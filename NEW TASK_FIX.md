@@ -30,3 +30,31 @@ admin có thể request generate content cho 1 page bất kì from admin page
 ==========
 chỉnh lại màu cho all page of website, hiện tại màu không đồng nhất trên all pages.
 màu hiện tại không phù hợp với niche dog. chỉnh lại cho khớp all page và niche dog.
+=============
+home page màu chưa tương phản rõ ràng
+You are a UI/UX implementation assistant. Apply the following brand color system across the entire website. Ensure strong contrast and readability on all text and UI elements. Do not change layout or typography, only colors.
+
+COLOR SYSTEM:
+Primary: #4F7CAC
+Secondary / Accent: #F4A259
+Background (global): #F8F9FA
+Surface / Cards: #FFFFFF
+Primary Text: #1C1C1E
+Secondary Text: #4A4A4D
+Success: #7BAE7F
+Warning / Error: #D9534F
+
+REQUIREMENTS:
+- Maintain WCAG AA or higher contrast ratio for all text.
+- Body text must be dark on light backgrounds (no mid-gray text).
+- Buttons: solid primary background, white text, high contrast.
+- Links: Use primary color; hover darkened by 10–15%.
+- Inputs: White background, subtle border (#D1D1D3), dark text.
+- No gradients unless already in design.
+- Apply consistent spacing tokens; do not introduce new random colors.
+- Return final output as updated CSS variables or Tailwind config.
+- If a color currently violates contrast accessibility, correct it automatically without changing brand palette.
+
+OUTPUT FORMAT:
+- Provide updated CSS variables
+- Provide example for homepage hero section showing applied colors
