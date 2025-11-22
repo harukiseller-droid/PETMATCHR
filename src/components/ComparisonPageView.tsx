@@ -65,10 +65,10 @@ export default function ComparisonPageView({ page, ctaConfig }: Props) {
                             <table className="w-full border-collapse">
                                 <thead>
                                     <tr className="bg-brand-gray">
-                                        <th className="border-b border-brand-border p-4 text-left text-brand-navy/60 font-bold">Feature</th>
+                                        <th className="border-b border-brand-border p-4 text-left text-brand-navy/90 font-bold">Feature</th>
                                         <th className="border-b border-brand-border p-4 text-left text-brand-navy font-bold">{leftLabel}</th>
                                         <th className="border-b border-brand-border p-4 text-left text-brand-navy font-bold">{rightLabel}</th>
-                                        <th className="border-b border-brand-border p-4 text-left text-brand-navy/60 font-bold">Winner</th>
+                                        <th className="border-b border-brand-border p-4 text-left text-brand-navy/90 font-bold">Winner</th>
                                     </tr>
                                 </thead>
                                 <tbody>

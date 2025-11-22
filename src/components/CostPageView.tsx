@@ -74,10 +74,10 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                                 <table className="min-w-full divide-y divide-brand-border">
                                     <thead className="bg-brand-gray">
                                         <tr>
-                                            <th className="px-6 py-3 text-left text-xs font-bold text-brand-navy/60 uppercase tracking-wider">
+                                            <th className="px-6 py-3 text-left text-xs font-bold text-brand-navy/90 uppercase tracking-wider">
                                                 Item
                                             </th>
-                                            <th className="px-6 py-3 text-right text-xs font-bold text-brand-navy/60 uppercase tracking-wider">
+                                            <th className="px-6 py-3 text-right text-xs font-bold text-brand-navy/90 uppercase tracking-wider">
                                                 Cost range
                                             </th>
                                         </tr>
@@ -87,7 +87,7 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                                             <tr key={i} className="hover:bg-brand-gray/30 transition-colors">
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm font-bold text-brand-navy">{item.label}</div>
-                                                    <div className="text-sm text-brand-navy/60">{item.notes}</div>
+                                                    <div className="text-sm text-brand-navy/90">{item.notes}</div>
                                                 </td>
                                                 <td className="px-6 py-4 text-right text-sm text-brand-navy/80 whitespace-nowrap font-medium">
                                                     ${item.estimated_range_usd[0]} - ${item.estimated_range_usd[1]}
@@ -108,10 +108,10 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                                 <table className="min-w-full divide-y divide-brand-border">
                                     <thead className="bg-brand-gray">
                                         <tr>
-                                            <th className="px-6 py-3 text-left text-xs font-bold text-brand-navy/60 uppercase tracking-wider">
+                                            <th className="px-6 py-3 text-left text-xs font-bold text-brand-navy/90 uppercase tracking-wider">
                                                 Item
                                             </th>
-                                            <th className="px-6 py-3 text-right text-xs font-bold text-brand-navy/60 uppercase tracking-wider">
+                                            <th className="px-6 py-3 text-right text-xs font-bold text-brand-navy/90 uppercase tracking-wider">
                                                 Cost range
                                             </th>
                                         </tr>
@@ -121,7 +121,7 @@ export default function CostPageView({ page, ctaConfig, breedSlug, relatedPages 
                                             <tr key={i} className="hover:bg-brand-gray/30 transition-colors">
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm font-bold text-brand-navy">{item.label}</div>
-                                                    <div className="text-sm text-brand-navy/60">{item.notes}</div>
+                                                    <div className="text-sm text-brand-navy/90">{item.notes}</div>
                                                 </td>
                                                 <td className="px-6 py-4 text-right text-sm text-brand-navy/80 whitespace-nowrap font-medium">
                                                     ${item.estimated_range_usd[0]} - ${item.estimated_range_usd[1]}

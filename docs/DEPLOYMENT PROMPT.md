@@ -28,12 +28,3 @@ git push origin main
 vercel --prod --force
 
 =====================
-1/ make sure các url của các page mới generate phải auto đươc link chính xác từ main page của từng Breeds theo đúng plan
-2/ start from main page Golden Retriever: user có thể đi đến từng page của bread đó.
-all page liên quan tới 1 loai breed nào đó phải được link với nhau thành flow
-=============
-admin page /admin/content-matrix
-
-missing: Breed
-lifestyle : 
-check lại 

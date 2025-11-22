@@ -2581,3 +2581,19 @@ Muốn biết web có thể có bao nhiêu trang từ dữ liệu thô? -> Xem g
 Muốn chạy tool tạo nội dung (cần keywords, prompt version)? -> Dùng pageMatrix.ts.
 Muốn biết đã tạo được bao nhiêu trang rồi? -> Dùng build_content_matrix.ts.
 ---------
+1/ make sure các url của các page mới generate phải auto đươc link chính xác từ main page của từng Breeds theo đúng plan
+2/ start from main page Golden Retriever: user có thể đi đến từng page của bread đó.
+all page liên quan tới 1 loai breed nào đó phải được link với nhau thành flow
+=============
+phân trang cho admin page /admin/content-matrix 100 row per page
+add checkbox  option for user select each row or all row on page, or all total row
+
+verify lại ngay tại sao missing @breeds.json  @lifestyles.json
+===============
+tại sao website chưa tối ưu cho Mobile?
+hiển thị trên mobile lỗi menu show không đủ
+veridy lại code make sure website phải display correct and smoothly on mobile.
+
+=================
+tại sao có tình trạng các text display color chỉ có 60% ?
+check lại text phải 100% color display

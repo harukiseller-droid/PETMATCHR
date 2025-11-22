@@ -5,6 +5,7 @@ import { PageType } from '../src/lib/types';
 import {
     Breed,
     Problem,
+    Lifestyle,
     loadInputData,
     slugify
 } from './generate-content-matrix';
@@ -75,11 +76,26 @@ async function generatePageMatrix() {
     // Load base data using the shared loader
     const breeds = loadInputData<Breed>('breeds.json');
     const problems = loadInputData<Problem>('problems.json');
+    const lifestyles = loadInputData<Lifestyle>('lifestyles.json');
     const cities = loadCities();
 
-    console.log(`Loaded ${breeds.length} breeds, ${problems.length} problems, ${cities.length} cities.`);
+    console.log(`Loaded ${breeds.length} breeds, ${problems.length} problems, ${lifestyles.length} lifestyles, ${cities.length} cities.`);
 
     const matrix: PageMatrixItem[] = [];
+
+    // Generate Breed Pages
+    for (const breed of breeds) {
+        matrix.push({
+            slug: breed.slug,
+            page_type: 'breed',
+            input_data: {
+                breed,
+            },
+            ai_prompt_version: 'v7',
+            keywords: getKeywordsForPage('breed', breed.name) ?? getFallbackKeywordsForPage('breed', { breed_name: breed.name }),
+            primary_intent: 'general_research',
+        });
+    }
 
     // Generate Cost Pages (Breed x City)
     // Limit to first 2 breeds and 2 cities for testing/demo, or all if production
@@ -174,16 +190,16 @@ async function generatePageMatrix() {
     }
 
     // Generate List Pages (Lifestyle)
-    const lifestyles = ['apartments', 'families', 'active-owners'];
     for (const lifestyle of lifestyles) {
         matrix.push({
-            slug: `best-dogs-for-${lifestyle}`,
+            slug: `best-dogs-for-${lifestyle.id}`,
             page_type: 'list',
             input_data: {
-                lifestyle_name: lifestyle
+                lifestyle_name: lifestyle.name,
+                lifestyle: lifestyle
             },
             ai_prompt_version: 'v7',
-            keywords: getKeywordsForPage('list', lifestyle) ?? getFallbackKeywordsForPage('list', { other_entity_name: lifestyle }),
+            keywords: getKeywordsForPage('list', lifestyle.name) ?? getFallbackKeywordsForPage('list', { other_entity_name: lifestyle.name }),
             primary_intent: 'general_research',
         });
     }
